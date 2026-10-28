@@ -1,0 +1,12 @@
+{
+  "style": "Soft 3D plush toy render, fluffy felt texture, pastel warm colors, smooth rounded cuddly forms, gentle soft studio lighting, simple composition with one clear subject, plain pure white background, centered, no text, no letters, no words.",
+  "size": "1024x1024",
+  "mascotReference": "assets/style-samples/B-mascot.png",
+  "characters": {
+    "daming": "Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts",
+    "lingling": "Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress",
+    "sam": "Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts",
+    "amy": "Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress",
+    "ms-smart": "Ms Smart, a kind British woman teacher, short wavy brown hair, round glasses, light blue cardigan, gentle smile"
+  }
+}

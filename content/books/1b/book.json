@@ -1,0 +1,1049 @@
+{
+  "id": "1b",
+  "title": "一年级下册",
+  "subtitle": "新标准英语（一年级起点）",
+  "source": "textbooks/1b.pdf（TapXWorld/ChinaTextbook），词句取自课文和书后 Words and Expressions in Each Module",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "units": [
+        {
+          "id": "u1",
+          "title": "He's a doctor.",
+          "items": [
+            {
+              "id": "doctor",
+              "type": "word",
+              "text": "doctor",
+              "translation": "医生",
+              "image": "m1/doctor.webp",
+              "same": "doctor"
+            },
+            {
+              "id": "teacher",
+              "type": "word",
+              "text": "teacher",
+              "translation": "教师",
+              "image": "m1/teacher.webp",
+              "same": "teacher"
+            },
+            {
+              "id": "hes-a-doctor",
+              "type": "sentence",
+              "text": "He's a doctor.",
+              "translation": "他是一名医生。",
+              "image": "m1/hes-a-doctor.webp",
+              "same": "doctor"
+            },
+            {
+              "id": "shes-a-teacher",
+              "type": "sentence",
+              "text": "She's a teacher.",
+              "translation": "她是一名教师。",
+              "image": "m1/shes-a-teacher.webp",
+              "same": "teacher"
+            },
+            {
+              "id": "hes-a-boy",
+              "type": "sentence",
+              "text": "He's a boy.",
+              "translation": "他是男孩。",
+              "image": "m1/hes-a-boy.webp"
+            },
+            {
+              "id": "shes-a-girl",
+              "type": "sentence",
+              "text": "She's a girl.",
+              "translation": "她是女孩。",
+              "image": "m1/shes-a-girl.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "She's a nurse.",
+          "items": [
+            {
+              "id": "nurse",
+              "type": "word",
+              "text": "nurse",
+              "translation": "护士",
+              "image": "m1/nurse.webp",
+              "same": "nurse"
+            },
+            {
+              "id": "driver",
+              "type": "word",
+              "text": "driver",
+              "translation": "司机",
+              "image": "m1/driver.webp"
+            },
+            {
+              "id": "policeman",
+              "type": "word",
+              "text": "policeman",
+              "translation": "警察",
+              "image": "m1/policeman.webp"
+            },
+            {
+              "id": "pupil",
+              "type": "word",
+              "text": "pupil",
+              "translation": "小学生",
+              "image": "m1/pupil.webp"
+            },
+            {
+              "id": "shes-a-nurse",
+              "type": "sentence",
+              "text": "She's a nurse.",
+              "translation": "她是一名护士。",
+              "image": "m1/shes-a-nurse.webp",
+              "same": "nurse"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Where's the bird?",
+          "items": [
+            {
+              "id": "wheres-the-bird",
+              "type": "sentence",
+              "text": "Where's the bird?",
+              "translation": "小鸟在哪里？",
+              "image": "m2/wheres-the-bird.webp"
+            },
+            {
+              "id": "in-the-hat",
+              "type": "sentence",
+              "text": "It's in my hat.",
+              "translation": "它在我的帽子里。",
+              "image": "m2/in-the-hat.webp",
+              "same": "hat-in"
+            },
+            {
+              "id": "on-the-hat",
+              "type": "sentence",
+              "text": "It's on my hat.",
+              "translation": "它在我的帽子上。",
+              "image": "m2/on-the-hat.webp",
+              "same": "hat-on"
+            },
+            {
+              "id": "under-the-hat",
+              "type": "sentence",
+              "text": "It's under my hat.",
+              "translation": "它在我的帽子下面。",
+              "image": "m2/under-the-hat.webp",
+              "same": "hat-under"
+            },
+            {
+              "id": "hat",
+              "type": "word",
+              "text": "hat",
+              "translation": "帽子",
+              "image": "m2/hat.webp",
+              "same": [
+                "hat-in",
+                "hat-on",
+                "hat-under"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "The toy car is under the bed.",
+          "items": [
+            {
+              "id": "bed",
+              "type": "word",
+              "text": "bed",
+              "translation": "床",
+              "image": "m2/bed.webp"
+            },
+            {
+              "id": "toy-car",
+              "type": "word",
+              "text": "toy car",
+              "translation": "玩具汽车",
+              "image": "m2/toy-car.webp"
+            },
+            {
+              "id": "bear",
+              "type": "word",
+              "text": "bear",
+              "translation": "熊",
+              "image": "m2/bear.webp",
+              "same": [
+                "bear-under",
+                "bear-on"
+              ]
+            },
+            {
+              "id": "bear-under-bed",
+              "type": "sentence",
+              "text": "The bear is under the bed.",
+              "translation": "小熊在床底下。",
+              "image": "m2/bear-under-bed.webp",
+              "same": "bear-under"
+            },
+            {
+              "id": "bear-on-bed",
+              "type": "sentence",
+              "text": "The bear is on the bed.",
+              "translation": "小熊在床上。",
+              "image": "m2/bear-on-bed.webp",
+              "same": "bear-on"
+            },
+            {
+              "id": "cat-under-desk",
+              "type": "sentence",
+              "text": "The cat is under the desk.",
+              "translation": "小猫在书桌底下。",
+              "image": "m2/cat-under-desk.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Where's the orange cat?",
+          "items": [
+            {
+              "id": "wheres-the-orange-cat",
+              "type": "sentence",
+              "text": "Where's the orange cat?",
+              "translation": "橙色的猫在哪里？",
+              "image": "m3/wheres-the-orange-cat.webp"
+            },
+            {
+              "id": "cat-on-bed",
+              "type": "sentence",
+              "text": "On the bed.",
+              "translation": "在床上。",
+              "image": "m3/cat-on-bed.webp"
+            },
+            {
+              "id": "i-dont-know",
+              "type": "sentence",
+              "text": "I don't know!",
+              "translation": "我不知道！",
+              "image": "m3/i-dont-know.webp"
+            },
+            {
+              "id": "eleven",
+              "type": "word",
+              "text": "eleven",
+              "translation": "十一",
+              "image": "m3/eleven.webp"
+            },
+            {
+              "id": "twelve",
+              "type": "word",
+              "text": "twelve",
+              "translation": "十二",
+              "image": "m3/twelve.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "How many green birds?",
+          "items": [
+            {
+              "id": "tree",
+              "type": "word",
+              "text": "tree",
+              "translation": "树",
+              "image": "m3/tree.webp",
+              "same": "tree"
+            },
+            {
+              "id": "fish",
+              "type": "word",
+              "text": "fish",
+              "translation": "鱼",
+              "image": "m3/fish.webp"
+            },
+            {
+              "id": "so-many-birds",
+              "type": "sentence",
+              "text": "So many birds!",
+              "translation": "这么多鸟！",
+              "image": "m3/so-many-birds.webp",
+              "same": "tree"
+            },
+            {
+              "id": "four-green-birds",
+              "type": "sentence",
+              "text": "Four green birds.",
+              "translation": "四只绿色的鸟。",
+              "image": "m3/four-green-birds.webp"
+            },
+            {
+              "id": "lets-count",
+              "type": "sentence",
+              "text": "Let's count!",
+              "translation": "我们来数一数吧！",
+              "image": "m3/lets-count.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "units": [
+        {
+          "id": "u1",
+          "title": "This is my head.",
+          "items": [
+            {
+              "id": "head",
+              "type": "word",
+              "text": "head",
+              "translation": "头",
+              "image": "m4/head.webp"
+            },
+            {
+              "id": "face",
+              "type": "word",
+              "text": "face",
+              "translation": "脸",
+              "image": "m4/face.webp"
+            },
+            {
+              "id": "nose",
+              "type": "word",
+              "text": "nose",
+              "translation": "鼻子",
+              "image": "m4/nose.webp"
+            },
+            {
+              "id": "ear",
+              "type": "word",
+              "text": "ear",
+              "translation": "耳朵",
+              "image": "m4/ear.webp"
+            },
+            {
+              "id": "mouth",
+              "type": "word",
+              "text": "mouth",
+              "translation": "嘴",
+              "image": "m4/mouth.webp"
+            },
+            {
+              "id": "eye",
+              "type": "word",
+              "text": "eye",
+              "translation": "眼睛",
+              "image": "m4/eye.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "These are your eyes.",
+          "items": [
+            {
+              "id": "leg",
+              "type": "word",
+              "text": "leg",
+              "translation": "腿",
+              "image": "m4/leg.webp"
+            },
+            {
+              "id": "hand",
+              "type": "word",
+              "text": "hand",
+              "translation": "手",
+              "image": "m4/hand.webp"
+            },
+            {
+              "id": "feet",
+              "type": "word",
+              "text": "feet",
+              "translation": "脚",
+              "image": "m4/feet.webp"
+            },
+            {
+              "id": "body",
+              "type": "word",
+              "text": "body",
+              "translation": "身体",
+              "image": "m4/body.webp"
+            },
+            {
+              "id": "these-are-your-eyes",
+              "type": "sentence",
+              "text": "These are your eyes.",
+              "translation": "这些是你的眼睛。",
+              "image": "m4/these-are-your-eyes.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module 5",
+      "units": [
+        {
+          "id": "u1",
+          "title": "They're cows.",
+          "items": [
+            {
+              "id": "cow",
+              "type": "word",
+              "text": "cow",
+              "translation": "奶牛",
+              "image": "m5/cow.webp",
+              "same": "cow"
+            },
+            {
+              "id": "pig",
+              "type": "word",
+              "text": "pig",
+              "translation": "猪",
+              "image": "m5/pig.webp",
+              "same": "pig"
+            },
+            {
+              "id": "duck",
+              "type": "word",
+              "text": "duck",
+              "translation": "鸭子",
+              "image": "m5/duck.webp",
+              "same": "duck"
+            },
+            {
+              "id": "chicken",
+              "type": "word",
+              "text": "chicken",
+              "translation": "鸡",
+              "image": "m5/chicken.webp"
+            },
+            {
+              "id": "egg",
+              "type": "word",
+              "text": "egg",
+              "translation": "鸡蛋",
+              "image": "m5/egg.webp"
+            },
+            {
+              "id": "farm",
+              "type": "word",
+              "text": "farm",
+              "translation": "农场",
+              "image": "m5/farm.webp"
+            },
+            {
+              "id": "theyre-cows",
+              "type": "sentence",
+              "text": "They're cows.",
+              "translation": "它们是奶牛。",
+              "image": "m5/theyre-cows.webp",
+              "same": "cow"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It's thin.",
+          "items": [
+            {
+              "id": "fat",
+              "type": "word",
+              "text": "fat",
+              "translation": "胖的",
+              "image": "m5/fat.webp",
+              "same": "fat"
+            },
+            {
+              "id": "thin",
+              "type": "word",
+              "text": "thin",
+              "translation": "瘦的",
+              "image": "m5/thin.webp",
+              "same": [
+                "thin",
+                "pig"
+              ]
+            },
+            {
+              "id": "big",
+              "type": "word",
+              "text": "big",
+              "translation": "大的",
+              "image": "m5/big.webp",
+              "same": [
+                "big",
+                "pig"
+              ]
+            },
+            {
+              "id": "little",
+              "type": "word",
+              "text": "little",
+              "translation": "小的",
+              "image": "m5/little.webp",
+              "same": [
+                "little",
+                "pig"
+              ]
+            },
+            {
+              "id": "fat-cat",
+              "type": "sentence",
+              "text": "Look at the black cat. It's very fat.",
+              "translation": "看那只黑猫，它很胖。",
+              "image": "m5/fat-cat.webp",
+              "same": "fat"
+            },
+            {
+              "id": "six-baby-pigs",
+              "type": "sentence",
+              "text": "Six baby pigs.",
+              "translation": "六只小猪。",
+              "image": "m5/six-baby-pigs.webp",
+              "same": "pig"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Module 6",
+      "units": [
+        {
+          "id": "u1",
+          "title": "These snakes are short.",
+          "items": [
+            {
+              "id": "snake",
+              "type": "word",
+              "text": "snake",
+              "translation": "蛇",
+              "image": "m6/snake.webp",
+              "same": [
+                "snake-long",
+                "snake-short"
+              ]
+            },
+            {
+              "id": "elephant",
+              "type": "word",
+              "text": "elephant",
+              "translation": "大象",
+              "image": "m6/elephant.webp",
+              "same": "elephant"
+            },
+            {
+              "id": "giraffe",
+              "type": "word",
+              "text": "giraffe",
+              "translation": "长颈鹿",
+              "image": "m6/giraffe.webp",
+              "same": "giraffe"
+            },
+            {
+              "id": "tiger",
+              "type": "word",
+              "text": "tiger",
+              "translation": "老虎",
+              "image": "m6/tiger.webp",
+              "same": "tiger"
+            },
+            {
+              "id": "zoo",
+              "type": "word",
+              "text": "zoo",
+              "translation": "动物园",
+              "image": "m6/zoo.webp"
+            },
+            {
+              "id": "long-snake",
+              "type": "sentence",
+              "text": "These snakes are long.",
+              "translation": "这些蛇很长。",
+              "image": "m6/long-snake.webp",
+              "same": "snake-long"
+            },
+            {
+              "id": "short-snake",
+              "type": "sentence",
+              "text": "These snakes are short.",
+              "translation": "这些蛇很短。",
+              "image": "m6/short-snake.webp",
+              "same": "snake-short"
+            },
+            {
+              "id": "tall-giraffe",
+              "type": "sentence",
+              "text": "The giraffes are tall.",
+              "translation": "长颈鹿很高。",
+              "image": "m6/tall-giraffe.webp",
+              "same": "giraffe"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "They're little and cute.",
+          "items": [
+            {
+              "id": "horse",
+              "type": "word",
+              "text": "horse",
+              "translation": "马",
+              "image": "m6/horse.webp",
+              "same": "horse"
+            },
+            {
+              "id": "strong",
+              "type": "word",
+              "text": "strong",
+              "translation": "强壮的",
+              "image": "m6/strong.webp"
+            },
+            {
+              "id": "cute",
+              "type": "word",
+              "text": "cute",
+              "translation": "可爱的",
+              "image": "m6/cute.webp",
+              "same": "horse"
+            },
+            {
+              "id": "lion",
+              "type": "word",
+              "text": "lion",
+              "translation": "狮子",
+              "image": "m6/lion.webp",
+              "same": "lion"
+            },
+            {
+              "id": "little-and-cute",
+              "type": "sentence",
+              "text": "They're little and cute.",
+              "translation": "它们又小又可爱。",
+              "image": "m6/little-and-cute.webp",
+              "same": "horse"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Module 7",
+      "units": [
+        {
+          "id": "u1",
+          "title": "There is a cat in the tree.",
+          "items": [
+            {
+              "id": "cat-in-the-tree",
+              "type": "sentence",
+              "text": "There is a cat in the tree.",
+              "translation": "树上有一只猫。",
+              "image": "m7/cat-in-the-tree.webp"
+            },
+            {
+              "id": "elephant-under-tree",
+              "type": "sentence",
+              "text": "There is an elephant under the tree.",
+              "translation": "树下有一头大象。",
+              "image": "m7/elephant-under-tree.webp",
+              "same": "elephant"
+            },
+            {
+              "id": "table",
+              "type": "word",
+              "text": "table",
+              "translation": "桌子",
+              "image": "m7/table.webp"
+            },
+            {
+              "id": "policeman-over-there",
+              "type": "sentence",
+              "text": "There is a policeman over there.",
+              "translation": "那边有一位警察。",
+              "image": "m7/policeman-over-there.webp"
+            },
+            {
+              "id": "help-the-cat",
+              "type": "sentence",
+              "text": "Let's help the cat.",
+              "translation": "我们来帮助小猫吧。",
+              "image": "m7/help-the-cat.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "There are three brown monkeys.",
+          "items": [
+            {
+              "id": "three-brown-monkeys",
+              "type": "sentence",
+              "text": "There are three brown monkeys.",
+              "translation": "有三只棕色的猴子。",
+              "image": "m7/three-brown-monkeys.webp"
+            },
+            {
+              "id": "two-white-horses",
+              "type": "sentence",
+              "text": "There are two white horses.",
+              "translation": "有两匹白马。",
+              "image": "m7/two-white-horses.webp"
+            },
+            {
+              "id": "seven-tigers",
+              "type": "sentence",
+              "text": "There are seven tigers.",
+              "translation": "有七只老虎。",
+              "image": "m7/seven-tigers.webp",
+              "same": "tiger"
+            },
+            {
+              "id": "two-elephants",
+              "type": "sentence",
+              "text": "There are two elephants at the zoo.",
+              "translation": "动物园里有两头大象。",
+              "image": "m7/two-elephants.webp",
+              "same": "elephant"
+            },
+            {
+              "id": "animal",
+              "type": "word",
+              "text": "animal",
+              "translation": "动物",
+              "image": "m7/animal.webp",
+              "same": "lion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "Module 8",
+      "units": [
+        {
+          "id": "u1",
+          "title": "There's a pair of shorts under that duck.",
+          "items": [
+            {
+              "id": "shirt",
+              "type": "word",
+              "text": "shirt",
+              "translation": "衬衫",
+              "image": "m8/shirt.webp",
+              "same": "shirt"
+            },
+            {
+              "id": "shorts",
+              "type": "word",
+              "text": "shorts",
+              "translation": "短裤",
+              "image": "m8/shorts.webp",
+              "same": "shorts"
+            },
+            {
+              "id": "shoes",
+              "type": "word",
+              "text": "shoes",
+              "translation": "鞋子",
+              "image": "m8/shoes.webp",
+              "same": "shoes"
+            },
+            {
+              "id": "socks",
+              "type": "word",
+              "text": "socks",
+              "translation": "短袜",
+              "image": "m8/socks.webp"
+            },
+            {
+              "id": "shorts-under-duck",
+              "type": "sentence",
+              "text": "There's a pair of shorts under that duck.",
+              "translation": "那只鸭子下面有一条短裤。",
+              "image": "m8/shorts-under-duck.webp",
+              "same": "shorts"
+            },
+            {
+              "id": "lets-swim",
+              "type": "sentence",
+              "text": "Let's swim!",
+              "translation": "我们去游泳吧！",
+              "image": "m8/lets-swim.webp",
+              "same": "swim"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "There are two footballs under my desk.",
+          "items": [
+            {
+              "id": "football",
+              "type": "word",
+              "text": "football",
+              "translation": "足球",
+              "image": "m8/football.webp",
+              "same": "football"
+            },
+            {
+              "id": "basketball",
+              "type": "word",
+              "text": "basketball",
+              "translation": "篮球",
+              "image": "m8/basketball.webp",
+              "same": "basketball"
+            },
+            {
+              "id": "ping-pong",
+              "type": "word",
+              "text": "ping-pong",
+              "translation": "乒乓球",
+              "image": "m8/ping-pong.webp",
+              "same": "pingpong"
+            },
+            {
+              "id": "two-footballs",
+              "type": "sentence",
+              "text": "There are two footballs under my desk.",
+              "translation": "我的书桌下面有两个足球。",
+              "image": "m8/two-footballs.webp",
+              "same": "football"
+            },
+            {
+              "id": "dress",
+              "type": "word",
+              "text": "dress",
+              "translation": "连衣裙",
+              "image": "m8/dress.webp"
+            },
+            {
+              "id": "skirt",
+              "type": "word",
+              "text": "skirt",
+              "translation": "短裙",
+              "image": "m8/skirt.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Module 9",
+      "units": [
+        {
+          "id": "u1",
+          "title": "I like football.",
+          "items": [
+            {
+              "id": "i-like-football",
+              "type": "sentence",
+              "text": "I like football.",
+              "translation": "我喜欢足球。",
+              "image": "m9/i-like-football.webp",
+              "same": "football"
+            },
+            {
+              "id": "i-like-basketball",
+              "type": "sentence",
+              "text": "I like basketball.",
+              "translation": "我喜欢篮球。",
+              "image": "m9/i-like-basketball.webp",
+              "same": "basketball"
+            },
+            {
+              "id": "we-like-football",
+              "type": "sentence",
+              "text": "We like football, too.",
+              "translation": "我们也喜欢足球。",
+              "image": "m9/we-like-football.webp",
+              "same": "football"
+            },
+            {
+              "id": "play-together",
+              "type": "sentence",
+              "text": "Let's play together!",
+              "translation": "我们一起玩吧！",
+              "image": "m9/play-together.webp"
+            },
+            {
+              "id": "lions-are-big",
+              "type": "sentence",
+              "text": "Lions are big, cats are small.",
+              "translation": "狮子大，猫小。",
+              "image": "m9/lions-are-big.webp",
+              "same": "lion"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "What's your favourite sport?",
+          "items": [
+            {
+              "id": "favourite-sport",
+              "type": "sentence",
+              "text": "What's your favourite sport?",
+              "translation": "你最喜欢什么运动？",
+              "image": "m9/favourite-sport.webp"
+            },
+            {
+              "id": "swimming",
+              "type": "word",
+              "text": "swimming",
+              "translation": "游泳",
+              "image": "m9/swimming.webp",
+              "same": "swim"
+            },
+            {
+              "id": "favourite-colour",
+              "type": "sentence",
+              "text": "What's your favourite colour?",
+              "translation": "你最喜欢什么颜色？",
+              "image": "m9/favourite-colour.webp"
+            },
+            {
+              "id": "favourite-animal",
+              "type": "sentence",
+              "text": "What's your favourite animal?",
+              "translation": "你最喜欢什么动物？",
+              "image": "m9/favourite-animal.webp"
+            },
+            {
+              "id": "meatball",
+              "type": "word",
+              "text": "meatball",
+              "translation": "肉丸子",
+              "image": "m9/meatball.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Module 10",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Let's play football!",
+          "items": [
+            {
+              "id": "lets-play-football",
+              "type": "sentence",
+              "text": "Let's play football!",
+              "translation": "我们踢足球吧！",
+              "image": "m10/lets-play-football.webp",
+              "same": "football"
+            },
+            {
+              "id": "lets-play-basketball",
+              "type": "sentence",
+              "text": "Let's play basketball!",
+              "translation": "我们打篮球吧！",
+              "image": "m10/lets-play-basketball.webp",
+              "same": "basketball"
+            },
+            {
+              "id": "lets-play-ping-pong",
+              "type": "sentence",
+              "text": "Let's play ping-pong!",
+              "translation": "我们打乒乓球吧！",
+              "image": "m10/lets-play-ping-pong.webp",
+              "same": "pingpong"
+            },
+            {
+              "id": "lets-go-swimming",
+              "type": "sentence",
+              "text": "Let's go swimming!",
+              "translation": "我们去游泳吧！",
+              "image": "m10/lets-go-swimming.webp",
+              "same": "swim"
+            },
+            {
+              "id": "good-idea",
+              "type": "sentence",
+              "text": "Good idea!",
+              "translation": "好主意！",
+              "image": "m10/good-idea.webp"
+            },
+            {
+              "id": "im-hot",
+              "type": "sentence",
+              "text": "I'm hot.",
+              "translation": "我很热。",
+              "image": "m10/im-hot.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Let's sing!",
+          "items": [
+            {
+              "id": "lets-sing",
+              "type": "sentence",
+              "text": "Let's sing!",
+              "translation": "我们唱歌吧！",
+              "image": "m10/lets-sing.webp"
+            },
+            {
+              "id": "lets-dance",
+              "type": "sentence",
+              "text": "Let's dance!",
+              "translation": "我们跳舞吧！",
+              "image": "m10/lets-dance.webp"
+            },
+            {
+              "id": "im-tired",
+              "type": "sentence",
+              "text": "I'm tired.",
+              "translation": "我累了。",
+              "image": "m10/im-tired.webp"
+            },
+            {
+              "id": "lets-sit-down",
+              "type": "sentence",
+              "text": "Let's sit down!",
+              "translation": "我们坐下吧！",
+              "image": "m10/lets-sit-down.webp"
+            },
+            {
+              "id": "sing-and-dance",
+              "type": "sentence",
+              "text": "Let's sing and dance!",
+              "translation": "我们又唱又跳吧！",
+              "image": "m10/sing-and-dance.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

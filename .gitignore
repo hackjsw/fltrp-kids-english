@@ -1,0 +1,7 @@
+node_modules/
+dist/
+generated-images/
+textbooks/
+
+# Magpie 原图（447 MB），App 只用 content/images/ 里压缩后的 WebP；manifest.json 保留
+art/**/*.png

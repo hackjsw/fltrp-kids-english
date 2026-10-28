@@ -1,0 +1,32 @@
+import { createApp } from 'vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import App from './App.vue'
+import Home from './views/Home.vue'
+import Unit from './views/Unit.vue'
+import Cards from './views/Cards.vue'
+import ListenPick from './views/ListenPick.vue'
+import Repeat from './views/Repeat.vue'
+import Bubbles from './views/Bubbles.vue'
+import Feed from './views/Feed.vue'
+import Train from './views/Train.vue'
+import Voice from './views/Voice.vue'
+import './style.css'
+import './games.css'
+
+const GAME_VIEWS = { cards: Cards, listen: ListenPick, repeat: Repeat, bubbles: Bubbles, feed: Feed, train: Train, voice: Voice }
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes: [
+    { path: '/', component: Home },
+    { path: '/u/:module/:unit', component: Unit, props: true },
+    ...Object.entries(GAME_VIEWS).map(([id, component]) => ({
+      path: `/u/:module/:unit/${id}`,
+      component,
+      props: true,
+    })),
+  ],
+  scrollBehavior: () => ({ top: 0 }),
+})
+
+createApp(App).use(router).mount('#app')

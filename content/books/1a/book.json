@@ -1,0 +1,1071 @@
+{
+  "id": "1a",
+  "title": "一年级上册",
+  "subtitle": "新标准英语（一年级起点）",
+  "source": "textbooks/1a.pdf（TapXWorld/ChinaTextbook），词句取自课文和书后 Words and Expressions in Each Module",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Hello!",
+          "items": [
+            {
+              "id": "hello",
+              "type": "word",
+              "text": "hello",
+              "translation": "你好",
+              "image": "m1/hello.webp",
+              "same": "greet"
+            },
+            {
+              "id": "hi",
+              "type": "word",
+              "text": "hi",
+              "translation": "你好；嗨",
+              "image": "m1/hi.webp",
+              "same": "greet"
+            },
+            {
+              "id": "goodbye",
+              "type": "word",
+              "text": "goodbye",
+              "translation": "再见",
+              "image": "m1/goodbye.webp",
+              "same": "bye"
+            },
+            {
+              "id": "bye",
+              "type": "word",
+              "text": "bye",
+              "translation": "再见",
+              "image": "m1/bye.webp",
+              "same": "bye"
+            },
+            {
+              "id": "im-daming",
+              "type": "sentence",
+              "text": "Hi, I'm Daming.",
+              "translation": "你好，我是大明。",
+              "image": "m1/im-daming.webp"
+            },
+            {
+              "id": "im-sam",
+              "type": "sentence",
+              "text": "Hi, I'm Sam.",
+              "translation": "你好，我是萨姆。",
+              "image": "m1/im-sam.webp"
+            },
+            {
+              "id": "im-amy",
+              "type": "sentence",
+              "text": "Hello, I'm Amy.",
+              "translation": "你好，我是埃米。",
+              "image": "m1/im-amy.webp"
+            },
+            {
+              "id": "im-lingling",
+              "type": "sentence",
+              "text": "Hello, I'm Lingling.",
+              "translation": "你好，我是玲玲。",
+              "image": "m1/im-lingling.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "How are you?",
+          "items": [
+            {
+              "id": "how-are-you",
+              "type": "sentence",
+              "text": "How are you?",
+              "translation": "你好吗？",
+              "image": "m1/how-are-you.webp"
+            },
+            {
+              "id": "im-fine",
+              "type": "sentence",
+              "text": "I'm fine, thank you.",
+              "translation": "我很好，谢谢你。",
+              "image": "m1/im-fine.webp"
+            },
+            {
+              "id": "yes",
+              "type": "word",
+              "text": "yes",
+              "translation": "是，是的",
+              "image": "m1/yes.webp"
+            },
+            {
+              "id": "no",
+              "type": "word",
+              "text": "no",
+              "translation": "不，不是",
+              "image": "m1/no.webp"
+            },
+            {
+              "id": "sorry",
+              "type": "word",
+              "text": "sorry",
+              "translation": "对不起",
+              "image": "m1/sorry.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "units": [
+        {
+          "id": "u1",
+          "title": "What's your name?",
+          "items": [
+            {
+              "id": "good-morning",
+              "type": "word",
+              "text": "good morning",
+              "translation": "早上好",
+              "image": "m2/good-morning.webp"
+            },
+            {
+              "id": "good-morning-ms-smart",
+              "type": "sentence",
+              "text": "Good morning, Ms Smart.",
+              "translation": "早上好，斯马特女士。",
+              "image": "m2/good-morning-ms-smart.webp"
+            },
+            {
+              "id": "whats-your-name",
+              "type": "sentence",
+              "text": "What's your name?",
+              "translation": "你叫什么名字？",
+              "image": "m2/whats-your-name.webp"
+            },
+            {
+              "id": "my-name-daming",
+              "type": "sentence",
+              "text": "My name's Daming.",
+              "translation": "我的名字是大明。",
+              "image": "m2/my-name-daming.webp"
+            },
+            {
+              "id": "name",
+              "type": "word",
+              "text": "name",
+              "translation": "名字",
+              "image": "m2/name.webp"
+            },
+            {
+              "id": "bird",
+              "type": "word",
+              "text": "bird",
+              "translation": "鸟",
+              "image": "m2/bird.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I'm a boy.",
+          "items": [
+            {
+              "id": "boy",
+              "type": "word",
+              "text": "boy",
+              "translation": "男孩",
+              "image": "m2/boy.webp"
+            },
+            {
+              "id": "girl",
+              "type": "word",
+              "text": "girl",
+              "translation": "女孩",
+              "image": "m2/girl.webp"
+            },
+            {
+              "id": "panda",
+              "type": "word",
+              "text": "panda",
+              "translation": "熊猫",
+              "image": "m2/panda.webp"
+            },
+            {
+              "id": "good-afternoon",
+              "type": "word",
+              "text": "good afternoon",
+              "translation": "下午好",
+              "image": "m2/good-afternoon.webp"
+            },
+            {
+              "id": "im-a-boy",
+              "type": "sentence",
+              "text": "I'm a boy. My name is Sam.",
+              "translation": "我是男孩。我的名字是萨姆。",
+              "image": "m2/im-a-boy.webp"
+            },
+            {
+              "id": "im-a-girl",
+              "type": "sentence",
+              "text": "I'm a girl. My name is Amy.",
+              "translation": "我是女孩。我的名字是埃米。",
+              "image": "m2/im-a-girl.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Sit down!",
+          "items": [
+            {
+              "id": "sit-down",
+              "type": "sentence",
+              "text": "Sit down!",
+              "translation": "坐下！",
+              "image": "m3/sit-down.webp"
+            },
+            {
+              "id": "stand-up",
+              "type": "sentence",
+              "text": "Stand up!",
+              "translation": "起立！",
+              "image": "m3/stand-up.webp"
+            },
+            {
+              "id": "open-the-window",
+              "type": "sentence",
+              "text": "Open the window!",
+              "translation": "打开窗户！",
+              "image": "m3/open-the-window.webp",
+              "same": "window"
+            },
+            {
+              "id": "open-the-door",
+              "type": "sentence",
+              "text": "Open the door!",
+              "translation": "开门！",
+              "image": "m3/open-the-door.webp",
+              "same": "door"
+            },
+            {
+              "id": "see-you",
+              "type": "sentence",
+              "text": "See you!",
+              "translation": "再见！",
+              "image": "m3/see-you.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Point to the window!",
+          "items": [
+            {
+              "id": "window",
+              "type": "word",
+              "text": "window",
+              "translation": "窗户",
+              "image": "m3/window.webp",
+              "same": "window"
+            },
+            {
+              "id": "door",
+              "type": "word",
+              "text": "door",
+              "translation": "门",
+              "image": "m3/door.webp",
+              "same": "door"
+            },
+            {
+              "id": "desk",
+              "type": "word",
+              "text": "desk",
+              "translation": "书桌",
+              "image": "m3/desk.webp"
+            },
+            {
+              "id": "chair",
+              "type": "word",
+              "text": "chair",
+              "translation": "椅子",
+              "image": "m3/chair.webp"
+            },
+            {
+              "id": "point-to-the-window",
+              "type": "sentence",
+              "text": "Point to the window!",
+              "translation": "指向窗户！",
+              "image": "m3/point-to-the-window.webp",
+              "same": "window"
+            },
+            {
+              "id": "point-to-the-door",
+              "type": "sentence",
+              "text": "Point to the door!",
+              "translation": "指向门！",
+              "image": "m3/point-to-the-door.webp",
+              "same": "door"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "units": [
+        {
+          "id": "u1",
+          "title": "It's red.",
+          "items": [
+            {
+              "id": "red",
+              "type": "word",
+              "text": "red",
+              "translation": "红色",
+              "image": "m4/red.webp",
+              "same": "red"
+            },
+            {
+              "id": "blue",
+              "type": "word",
+              "text": "blue",
+              "translation": "蓝色",
+              "image": "m4/blue.webp",
+              "same": "blue"
+            },
+            {
+              "id": "yellow",
+              "type": "word",
+              "text": "yellow",
+              "translation": "黄色",
+              "image": "m4/yellow.webp",
+              "same": "yellow"
+            },
+            {
+              "id": "green",
+              "type": "word",
+              "text": "green",
+              "translation": "绿色",
+              "image": "m4/green.webp",
+              "same": "green"
+            },
+            {
+              "id": "black",
+              "type": "word",
+              "text": "black",
+              "translation": "黑色",
+              "image": "m4/black.webp",
+              "same": "black"
+            },
+            {
+              "id": "white",
+              "type": "word",
+              "text": "white",
+              "translation": "白色",
+              "image": "m4/white.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It's a red dog.",
+          "items": [
+            {
+              "id": "orange",
+              "type": "word",
+              "text": "orange",
+              "translation": "橙色",
+              "image": "m4/orange.webp",
+              "same": "orange"
+            },
+            {
+              "id": "red-dog",
+              "type": "sentence",
+              "text": "It's a red dog.",
+              "translation": "这是一只红色的狗。",
+              "image": "m4/red-dog.webp",
+              "same": "red"
+            },
+            {
+              "id": "green-cat",
+              "type": "sentence",
+              "text": "A green cat!",
+              "translation": "一只绿色的猫！",
+              "image": "m4/green-cat.webp",
+              "same": "green"
+            },
+            {
+              "id": "blue-cat",
+              "type": "sentence",
+              "text": "And a blue cat!",
+              "translation": "还有一只蓝色的猫！",
+              "image": "m4/blue-cat.webp",
+              "same": "blue"
+            },
+            {
+              "id": "orange-cat",
+              "type": "sentence",
+              "text": "It's an orange cat.",
+              "translation": "这是一只橙色的猫。",
+              "image": "m4/orange-cat.webp",
+              "same": "orange"
+            },
+            {
+              "id": "yellow-black-dog",
+              "type": "sentence",
+              "text": "A yellow and black dog.",
+              "translation": "一只黄黑相间的狗。",
+              "image": "m4/yellow-black-dog.webp",
+              "same": [
+                "yellow",
+                "black"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module 5",
+      "units": [
+        {
+          "id": "u1",
+          "title": "This is our teacher.",
+          "items": [
+            {
+              "id": "our-school",
+              "type": "sentence",
+              "text": "This is our school.",
+              "translation": "这是我们的学校。",
+              "image": "m5/our-school.webp"
+            },
+            {
+              "id": "my-classroom",
+              "type": "sentence",
+              "text": "This is my classroom.",
+              "translation": "这是我的教室。",
+              "image": "m5/my-classroom.webp"
+            },
+            {
+              "id": "our-teacher",
+              "type": "sentence",
+              "text": "This is our teacher.",
+              "translation": "这是我们的老师。",
+              "image": "m5/our-teacher.webp"
+            },
+            {
+              "id": "my-desk",
+              "type": "sentence",
+              "text": "This is my desk.",
+              "translation": "这是我的书桌。",
+              "image": "m5/my-desk.webp"
+            },
+            {
+              "id": "my-chair",
+              "type": "sentence",
+              "text": "And this is my chair.",
+              "translation": "这是我的椅子。",
+              "image": "m5/my-chair.webp"
+            },
+            {
+              "id": "nice-to-meet-you",
+              "type": "sentence",
+              "text": "Nice to meet you.",
+              "translation": "见到你很高兴。",
+              "image": "m5/nice-to-meet-you.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "That is a yellow cat.",
+          "items": [
+            {
+              "id": "bag",
+              "type": "sentence",
+              "text": "That is a bag.",
+              "translation": "那是一个包。",
+              "image": "m5/bag.webp"
+            },
+            {
+              "id": "white-cat",
+              "type": "sentence",
+              "text": "This is a white cat.",
+              "translation": "这是一只白色的猫。",
+              "image": "m5/white-cat.webp"
+            },
+            {
+              "id": "yellow-cat",
+              "type": "sentence",
+              "text": "That is a yellow cat.",
+              "translation": "那是一只黄色的猫。",
+              "image": "m5/yellow-cat.webp"
+            },
+            {
+              "id": "blue-dog",
+              "type": "sentence",
+              "text": "This is a blue dog.",
+              "translation": "这是一只蓝色的狗。",
+              "image": "m5/blue-dog.webp"
+            },
+            {
+              "id": "black-dog",
+              "type": "sentence",
+              "text": "That is a black dog.",
+              "translation": "那是一只黑色的狗。",
+              "image": "m5/black-dog.webp"
+            },
+            {
+              "id": "cat-in-a-hat",
+              "type": "sentence",
+              "text": "I'm a cat in a hat.",
+              "translation": "我是戴帽子的猫。",
+              "image": "m5/cat-in-a-hat.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Module 6",
+      "units": [
+        {
+          "id": "u1",
+          "title": "What's this?",
+          "items": [
+            {
+              "id": "whats-this",
+              "type": "sentence",
+              "text": "What's this?",
+              "translation": "这是什么？",
+              "image": "m6/whats-this.webp"
+            },
+            {
+              "id": "schoolbag",
+              "type": "word",
+              "text": "schoolbag",
+              "translation": "书包",
+              "image": "m6/schoolbag.webp"
+            },
+            {
+              "id": "book",
+              "type": "word",
+              "text": "book",
+              "translation": "书",
+              "image": "m6/book.webp"
+            },
+            {
+              "id": "pen",
+              "type": "word",
+              "text": "pen",
+              "translation": "钢笔",
+              "image": "m6/pen.webp"
+            },
+            {
+              "id": "pencil",
+              "type": "word",
+              "text": "pencil",
+              "translation": "铅笔",
+              "image": "m6/pencil.webp"
+            },
+            {
+              "id": "ruler",
+              "type": "word",
+              "text": "ruler",
+              "translation": "尺子",
+              "image": "m6/ruler.webp",
+              "same": "ruler"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It's my ruler.",
+          "items": [
+            {
+              "id": "eraser",
+              "type": "word",
+              "text": "eraser",
+              "translation": "橡皮",
+              "image": "m6/eraser.webp"
+            },
+            {
+              "id": "pencil-case",
+              "type": "word",
+              "text": "pencil case",
+              "translation": "铅笔盒",
+              "image": "m6/pencil-case.webp"
+            },
+            {
+              "id": "crayon",
+              "type": "word",
+              "text": "crayon",
+              "translation": "蜡笔",
+              "image": "m6/crayon.webp"
+            },
+            {
+              "id": "its-my-ruler",
+              "type": "sentence",
+              "text": "It's my ruler.",
+              "translation": "这是我的尺子。",
+              "image": "m6/its-my-ruler.webp",
+              "same": "ruler"
+            },
+            {
+              "id": "its-my-pencil-case",
+              "type": "sentence",
+              "text": "It's my pencil case.",
+              "translation": "这是我的铅笔盒。",
+              "image": "m6/its-my-pencil-case.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Module 7",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Is it a dog?",
+          "items": [
+            {
+              "id": "kite",
+              "type": "word",
+              "text": "kite",
+              "translation": "风筝",
+              "image": "m7/kite.webp",
+              "same": "kite"
+            },
+            {
+              "id": "monkey",
+              "type": "word",
+              "text": "monkey",
+              "translation": "猴子",
+              "image": "m7/monkey.webp",
+              "same": "monkey"
+            },
+            {
+              "id": "monster",
+              "type": "word",
+              "text": "monster",
+              "translation": "怪物",
+              "image": "m7/monster.webp"
+            },
+            {
+              "id": "cat-kite",
+              "type": "sentence",
+              "text": "Oh, it's a cat kite.",
+              "translation": "哦，是一个猫咪风筝。",
+              "image": "m7/cat-kite.webp",
+              "same": "kite"
+            },
+            {
+              "id": "help",
+              "type": "word",
+              "text": "Help!",
+              "translation": "救命！",
+              "image": "m7/help.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It's a yellow cat.",
+          "items": [
+            {
+              "id": "orange-box",
+              "type": "sentence",
+              "text": "It's an orange box.",
+              "translation": "这是一个橙色的箱子。",
+              "image": "m7/orange-box.webp"
+            },
+            {
+              "id": "orange-house",
+              "type": "sentence",
+              "text": "Is it an orange house?",
+              "translation": "它是一座橙色的房子吗？",
+              "image": "m7/orange-house.webp"
+            },
+            {
+              "id": "black-monkey",
+              "type": "sentence",
+              "text": "It's a black monkey.",
+              "translation": "这是一只黑色的猴子。",
+              "image": "m7/black-monkey.webp",
+              "same": "monkey"
+            },
+            {
+              "id": "red-book",
+              "type": "sentence",
+              "text": "It's a red book!",
+              "translation": "这是一本红色的书！",
+              "image": "m7/red-book.webp"
+            },
+            {
+              "id": "red-kite",
+              "type": "sentence",
+              "text": "It's a red kite.",
+              "translation": "这是一个红色的风筝。",
+              "image": "m7/red-kite.webp",
+              "same": "kite"
+            },
+            {
+              "id": "yellow-cat-box",
+              "type": "sentence",
+              "text": "No, it's a yellow cat.",
+              "translation": "不，它是一只黄色的猫。",
+              "image": "m7/yellow-cat-box.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "Module 8",
+      "units": [
+        {
+          "id": "u1",
+          "title": "How many?",
+          "items": [
+            {
+              "id": "one",
+              "type": "word",
+              "text": "one",
+              "translation": "一",
+              "image": "m8/one.webp",
+              "same": "one"
+            },
+            {
+              "id": "two",
+              "type": "word",
+              "text": "two",
+              "translation": "二",
+              "image": "m8/two.webp"
+            },
+            {
+              "id": "three",
+              "type": "word",
+              "text": "three",
+              "translation": "三",
+              "image": "m8/three.webp"
+            },
+            {
+              "id": "four",
+              "type": "word",
+              "text": "four",
+              "translation": "四",
+              "image": "m8/four.webp"
+            },
+            {
+              "id": "five",
+              "type": "word",
+              "text": "five",
+              "translation": "五",
+              "image": "m8/five.webp",
+              "same": "five"
+            },
+            {
+              "id": "how-many",
+              "type": "sentence",
+              "text": "How many?",
+              "translation": "多少个？",
+              "image": "m8/how-many.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "How many pink balls?",
+          "items": [
+            {
+              "id": "six",
+              "type": "word",
+              "text": "six",
+              "translation": "六",
+              "image": "m8/six.webp"
+            },
+            {
+              "id": "seven",
+              "type": "word",
+              "text": "seven",
+              "translation": "七",
+              "image": "m8/seven.webp"
+            },
+            {
+              "id": "eight",
+              "type": "word",
+              "text": "eight",
+              "translation": "八",
+              "image": "m8/eight.webp"
+            },
+            {
+              "id": "nine",
+              "type": "word",
+              "text": "nine",
+              "translation": "九",
+              "image": "m8/nine.webp"
+            },
+            {
+              "id": "ten",
+              "type": "word",
+              "text": "ten",
+              "translation": "十",
+              "image": "m8/ten.webp"
+            },
+            {
+              "id": "five-pink-balls",
+              "type": "sentence",
+              "text": "Five pink balls.",
+              "translation": "五个粉色的球。",
+              "image": "m8/five-pink-balls.webp",
+              "same": "five"
+            },
+            {
+              "id": "one-brown-ball",
+              "type": "sentence",
+              "text": "One brown ball.",
+              "translation": "一个棕色的球。",
+              "image": "m8/one-brown-ball.webp",
+              "same": "one"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Module 9",
+      "units": [
+        {
+          "id": "u1",
+          "title": "How old are you?",
+          "items": [
+            {
+              "id": "how-old-are-you",
+              "type": "sentence",
+              "text": "How old are you?",
+              "translation": "你几岁了？",
+              "image": "m9/how-old-are-you.webp"
+            },
+            {
+              "id": "im-six",
+              "type": "sentence",
+              "text": "I'm six.",
+              "translation": "我六岁。",
+              "image": "m9/im-six.webp"
+            },
+            {
+              "id": "im-seven",
+              "type": "sentence",
+              "text": "I'm seven.",
+              "translation": "我七岁。",
+              "image": "m9/im-seven.webp"
+            },
+            {
+              "id": "im-ten",
+              "type": "sentence",
+              "text": "I'm ten.",
+              "translation": "我十岁。",
+              "image": "m9/im-ten.webp"
+            },
+            {
+              "id": "im-three",
+              "type": "sentence",
+              "text": "I'm three.",
+              "translation": "我三岁。",
+              "image": "m9/im-three.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Happy birthday!",
+          "items": [
+            {
+              "id": "happy-birthday",
+              "type": "sentence",
+              "text": "Happy birthday!",
+              "translation": "生日快乐！",
+              "image": "m9/happy-birthday.webp"
+            },
+            {
+              "id": "pen-for-you",
+              "type": "sentence",
+              "text": "A pen for you.",
+              "translation": "送给你一支钢笔。",
+              "image": "m9/pen-for-you.webp"
+            },
+            {
+              "id": "book-for-you",
+              "type": "sentence",
+              "text": "A book for you.",
+              "translation": "送给你一本书。",
+              "image": "m9/book-for-you.webp"
+            },
+            {
+              "id": "thank-you",
+              "type": "sentence",
+              "text": "Thank you.",
+              "translation": "谢谢你。",
+              "image": "m9/thank-you.webp"
+            },
+            {
+              "id": "youre-welcome",
+              "type": "sentence",
+              "text": "You're welcome!",
+              "translation": "不客气！",
+              "image": "m9/youre-welcome.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Module 10",
+      "units": [
+        {
+          "id": "u1",
+          "title": "That is my father.",
+          "items": [
+            {
+              "id": "father",
+              "type": "word",
+              "text": "father",
+              "translation": "父亲",
+              "image": "m10/father.webp",
+              "same": "father"
+            },
+            {
+              "id": "mother",
+              "type": "word",
+              "text": "mother",
+              "translation": "母亲",
+              "image": "m10/mother.webp"
+            },
+            {
+              "id": "grandpa",
+              "type": "word",
+              "text": "grandpa",
+              "translation": "爷爷；外公",
+              "image": "m10/grandpa.webp"
+            },
+            {
+              "id": "grandma",
+              "type": "word",
+              "text": "grandma",
+              "translation": "奶奶；外婆",
+              "image": "m10/grandma.webp"
+            },
+            {
+              "id": "friend",
+              "type": "word",
+              "text": "friend",
+              "translation": "朋友",
+              "image": "m10/friend.webp"
+            },
+            {
+              "id": "that-is-my-father",
+              "type": "sentence",
+              "text": "That is my father.",
+              "translation": "那是我的爸爸。",
+              "image": "m10/that-is-my-father.webp",
+              "same": "father"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "That is his car.",
+          "items": [
+            {
+              "id": "sister",
+              "type": "word",
+              "text": "sister",
+              "translation": "姐妹",
+              "image": "m10/sister.webp"
+            },
+            {
+              "id": "brother",
+              "type": "word",
+              "text": "brother",
+              "translation": "兄弟",
+              "image": "m10/brother.webp"
+            },
+            {
+              "id": "his-car",
+              "type": "sentence",
+              "text": "That is his car.",
+              "translation": "那是他的汽车。",
+              "image": "m10/his-car.webp"
+            },
+            {
+              "id": "his-ball",
+              "type": "sentence",
+              "text": "That is his ball.",
+              "translation": "那是他的球。",
+              "image": "m10/his-ball.webp"
+            },
+            {
+              "id": "her-bag",
+              "type": "sentence",
+              "text": "That is her bag.",
+              "translation": "那是她的包。",
+              "image": "m10/her-bag.webp"
+            },
+            {
+              "id": "her-desk",
+              "type": "sentence",
+              "text": "That is her desk.",
+              "translation": "那是她的书桌。",
+              "image": "m10/her-desk.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "daming",
+      "name": "Daming",
+      "image": "characters/daming.webp"
+    },
+    {
+      "id": "lingling",
+      "name": "Lingling",
+      "image": "characters/lingling.webp"
+    },
+    {
+      "id": "sam",
+      "name": "Sam",
+      "image": "characters/sam.webp"
+    },
+    {
+      "id": "amy",
+      "name": "Amy",
+      "image": "characters/amy.webp"
+    },
+    {
+      "id": "ms-smart",
+      "name": "Ms Smart",
+      "image": "characters/ms-smart.webp"
+    }
+  ]
+}

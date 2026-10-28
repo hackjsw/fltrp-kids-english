@@ -1,0 +1,910 @@
+{
+  "book": "1a",
+  "model": "cpa/gpt-image-2",
+  "styleSource": "scripts/style.json",
+  "note": "prompt 只写画面内容，生成时追加 style.json 的 style 后缀；refs 是传给 Magpie 的参考图（相对 content/images/1a/，mascot 指 content/images/mascot.png）。",
+  "images": [
+    {
+      "path": "m1/hello.png",
+      "item": "hello",
+      "refs": [
+        "characters/daming.png",
+        "mascot"
+      ],
+      "prompt": "Daming waving his hand high and saying hello happily, mouth open, the little red panda mascot waving next to him"
+    },
+    {
+      "path": "m1/hi.png",
+      "item": "hi",
+      "refs": [
+        "characters/sam.png",
+        "characters/amy.png"
+      ],
+      "prompt": "Sam and Amy giving each other a cheerful high five, both smiling"
+    },
+    {
+      "path": "m1/goodbye.png",
+      "item": "goodbye",
+      "refs": [
+        "characters/lingling.png"
+      ],
+      "prompt": "Lingling walking out through an open felt door wearing a small school bag, turning back and waving goodbye"
+    },
+    {
+      "path": "m1/bye.png",
+      "item": "bye",
+      "refs": [
+        "characters/amy.png"
+      ],
+      "prompt": "Amy waving bye from the window of a small round yellow plush school bus"
+    },
+    {
+      "path": "m1/im-daming.png",
+      "item": "Hi, I'm Daming.",
+      "refs": [
+        "characters/daming.png"
+      ],
+      "prompt": "Daming pointing at himself with his thumb, proudly introducing himself, a blank round felt name badge on his red T-shirt"
+    },
+    {
+      "path": "m1/im-sam.png",
+      "item": "Hi, I'm Sam.",
+      "refs": [
+        "characters/sam.png"
+      ],
+      "prompt": "Sam with one hand on his chest introducing himself, other hand raised in a small wave, friendly smile"
+    },
+    {
+      "path": "m1/im-amy.png",
+      "item": "Hello, I'm Amy.",
+      "refs": [
+        "characters/amy.png"
+      ],
+      "prompt": "Amy doing a little curtsy and waving, introducing herself with a big smile"
+    },
+    {
+      "path": "m1/im-lingling.png",
+      "item": "Hello, I'm Lingling.",
+      "refs": [
+        "characters/lingling.png"
+      ],
+      "prompt": "Lingling with both hands pointing at herself, introducing herself cheerfully"
+    },
+    {
+      "path": "m1/how-are-you.png",
+      "item": "How are you?",
+      "refs": [
+        "characters/ms-smart.png",
+        "characters/amy.png"
+      ],
+      "prompt": "Ms Smart bending down kindly toward Amy, asking how she is, gentle caring expression, Amy looking up at her"
+    },
+    {
+      "path": "m1/im-fine.png",
+      "item": "I'm fine, thank you.",
+      "refs": [
+        "characters/daming.png"
+      ],
+      "prompt": "Daming giving a big thumbs up with a bright happy smile, feeling fine, small plush hearts floating around him"
+    },
+    {
+      "path": "m1/yes.png",
+      "item": "yes",
+      "refs": [
+        "characters/lingling.png"
+      ],
+      "prompt": "Lingling nodding happily, holding up a big round green felt sign with a white check mark"
+    },
+    {
+      "path": "m1/no.png",
+      "item": "no",
+      "refs": [
+        "characters/sam.png"
+      ],
+      "prompt": "Sam shaking his head and waving one hand side to side meaning no, holding a big round red felt sign with a white cross mark"
+    },
+    {
+      "path": "m1/sorry.png",
+      "item": "sorry",
+      "refs": [
+        "characters/sam.png"
+      ],
+      "prompt": "Sam looking apologetic with hands together and head slightly bowed, saying sorry, a small plush dog sitting beside him"
+    },
+    {
+      "path": "m2/good-morning.png",
+      "item": "good morning",
+      "refs": [
+        "mascot"
+      ],
+      "prompt": "The little red panda mascot stretching its arms after waking up, a plush smiling sun rising behind it with soft morning rays, a small felt alarm clock beside"
+    },
+    {
+      "path": "m2/good-morning-ms-smart.png",
+      "item": "Good morning, Ms Smart.",
+      "refs": [
+        "characters/ms-smart.png",
+        "characters/daming.png",
+        "characters/lingling.png"
+      ],
+      "prompt": "Daming and Lingling greeting Ms Smart in a cosy classroom in the morning, Ms Smart smiling back, a blank green felt blackboard behind, morning sun in the window"
+    },
+    {
+      "path": "m2/whats-your-name.png",
+      "item": "What's your name?",
+      "refs": [
+        "characters/sam.png",
+        "characters/lingling.png"
+      ],
+      "prompt": "Sam asking Lingling a question, leaning forward curiously with an open palm toward her, a plush question mark shape floating above Sam"
+    },
+    {
+      "path": "m2/my-name-daming.png",
+      "item": "My name's Daming.",
+      "refs": [
+        "characters/daming.png"
+      ],
+      "prompt": "Daming holding a blank light blue felt name card with both hands in front of his chest, proudly smiling"
+    },
+    {
+      "path": "m2/name.png",
+      "item": "name",
+      "refs": [
+        "mascot"
+      ],
+      "prompt": "The little red panda mascot holding up a big blank white felt name tag card with a red border, looking happy"
+    },
+    {
+      "path": "m2/bird.png",
+      "item": "bird",
+      "refs": [],
+      "prompt": "A small cute round plush blue bird with a yellow beak, sitting on a short felt branch, singing happily"
+    },
+    {
+      "path": "m2/boy.png",
+      "item": "boy",
+      "refs": [
+        "characters/sam.png"
+      ],
+      "prompt": "Sam standing proudly with hands on hips, one boy alone"
+    },
+    {
+      "path": "m2/girl.png",
+      "item": "girl",
+      "refs": [
+        "characters/amy.png"
+      ],
+      "prompt": "Amy standing and smiling sweetly with hands clasped, one girl alone"
+    },
+    {
+      "path": "m2/panda.png",
+      "item": "panda",
+      "refs": [],
+      "prompt": "A cute round plush giant panda, black and white, sitting and holding a green bamboo stick"
+    },
+    {
+      "path": "m2/good-afternoon.png",
+      "item": "good afternoon",
+      "refs": [
+        "characters/ms-smart.png",
+        "characters/lingling.png"
+      ],
+      "prompt": "Lingling greeting Ms Smart in a sunny afternoon schoolyard, warm golden afternoon light, a plush sun high in the sky"
+    },
+    {
+      "path": "m2/im-a-boy.png",
+      "item": "I'm a boy. My name is Sam.",
+      "refs": [
+        "characters/sam.png"
+      ],
+      "prompt": "Sam pointing at himself with a confident smile, a small light blue felt boy symbol badge on his T-shirt"
+    },
+    {
+      "path": "m2/im-a-girl.png",
+      "item": "I'm a girl. My name is Amy.",
+      "refs": [
+        "characters/amy.png"
+      ],
+      "prompt": "Amy pointing at herself with a sweet smile, a small pink felt girl symbol badge on her dress"
+    },
+    {
+      "path": "m3/sit-down.png",
+      "item": "Sit down!",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling sitting down on a small wooden classroom chair, hands on her knees. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/stand-up.png",
+      "item": "Stand up!",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming standing up straight next to a small classroom chair, arms by his sides. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/open-the-window.png",
+      "item": "Open the window!",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling pushing open a big classroom window, fresh breeze and a bird outside. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/open-the-door.png",
+      "item": "Open the door!",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam opening a round-topped felt door, peeking through. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/see-you.png",
+      "item": "See you!",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy waving goodbye to a small blue bird flying away out of a window. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/window.png",
+      "item": "window",
+      "refs": [],
+      "prompt": "A single plush classroom window with a light blue frame, closed, sky and a cloud seen through it",
+      "digits": false
+    },
+    {
+      "path": "m3/door.png",
+      "item": "door",
+      "refs": [],
+      "prompt": "A single plush wooden door with a round knob, closed, standing on its own",
+      "digits": false
+    },
+    {
+      "path": "m3/desk.png",
+      "item": "desk",
+      "refs": [],
+      "prompt": "A single small plush school desk, empty top",
+      "digits": false
+    },
+    {
+      "path": "m3/chair.png",
+      "item": "chair",
+      "refs": [],
+      "prompt": "A single small plush school chair",
+      "digits": false
+    },
+    {
+      "path": "m3/point-to-the-window.png",
+      "item": "Point to the window!",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam pointing with his arm stretched toward a window. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/point-to-the-door.png",
+      "item": "Point to the door!",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy pointing with her arm stretched toward a door. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/red.png",
+      "item": "red",
+      "refs": [],
+      "prompt": "One round plush balloon, bright RED, with a string",
+      "digits": false
+    },
+    {
+      "path": "m4/blue.png",
+      "item": "blue",
+      "refs": [],
+      "prompt": "One round plush balloon, bright BLUE, with a string",
+      "digits": false
+    },
+    {
+      "path": "m4/yellow.png",
+      "item": "yellow",
+      "refs": [],
+      "prompt": "One round plush balloon, bright YELLOW, with a string",
+      "digits": false
+    },
+    {
+      "path": "m4/green.png",
+      "item": "green",
+      "refs": [],
+      "prompt": "One round plush balloon, bright GREEN, with a string",
+      "digits": false
+    },
+    {
+      "path": "m4/black.png",
+      "item": "black",
+      "refs": [],
+      "prompt": "One round plush balloon, BLACK, with a string",
+      "digits": false
+    },
+    {
+      "path": "m4/white.png",
+      "item": "white",
+      "refs": [],
+      "prompt": "One round plush balloon, pure WHITE with a soft grey outline, with a string, on a very light blue background so it stands out",
+      "digits": false
+    },
+    {
+      "path": "m4/orange.png",
+      "item": "orange",
+      "refs": [],
+      "prompt": "One round plush balloon, bright ORANGE, with a string",
+      "digits": false
+    },
+    {
+      "path": "m4/red-dog.png",
+      "item": "It's a red dog.",
+      "refs": [],
+      "prompt": "A cute plush puppy that is entirely RED",
+      "digits": false
+    },
+    {
+      "path": "m4/green-cat.png",
+      "item": "A green cat!",
+      "refs": [],
+      "prompt": "A cute plush kitten that is entirely GREEN",
+      "digits": false
+    },
+    {
+      "path": "m4/blue-cat.png",
+      "item": "And a blue cat!",
+      "refs": [],
+      "prompt": "A cute plush kitten that is entirely BLUE",
+      "digits": false
+    },
+    {
+      "path": "m4/orange-cat.png",
+      "item": "It's an orange cat.",
+      "refs": [],
+      "prompt": "A cute plush kitten that is entirely ORANGE",
+      "digits": false
+    },
+    {
+      "path": "m4/yellow-black-dog.png",
+      "item": "A yellow and black dog.",
+      "refs": [],
+      "prompt": "A cute plush puppy with YELLOW fur and big BLACK spots",
+      "digits": false
+    },
+    {
+      "path": "m5/our-school.png",
+      "item": "This is our school.",
+      "refs": [],
+      "prompt": "A small cute plush school building with a red roof, a clock and a flag, a little path in front",
+      "digits": false
+    },
+    {
+      "path": "m5/my-classroom.png",
+      "item": "This is my classroom.",
+      "refs": [],
+      "prompt": "Inside a cosy plush classroom: rows of small desks, a green blackboard, sunny windows, no people",
+      "digits": false
+    },
+    {
+      "path": "m5/our-teacher.png",
+      "item": "This is our teacher.",
+      "refs": [
+        "1a/characters/ms-smart.png"
+      ],
+      "prompt": "Ms Smart standing in front of a blank green blackboard, smiling and holding a book. Characters: Ms Smart, a kind British woman teacher, short wavy brown hair, round glasses, light blue cardigan, gentle smile. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/my-desk.png",
+      "item": "This is my desk.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming standing next to his small school desk, one hand on it proudly. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/my-chair.png",
+      "item": "And this is my chair.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling patting the back of her small school chair, smiling. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/nice-to-meet-you.png",
+      "item": "Nice to meet you.",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Sam and Daming shaking hands and smiling at each other. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/bag.png",
+      "item": "That is a bag.",
+      "refs": [],
+      "prompt": "A single cute plush bag with a strap, light purple",
+      "digits": false
+    },
+    {
+      "path": "m5/white-cat.png",
+      "item": "This is a white cat.",
+      "refs": [],
+      "prompt": "A cute plush kitten that is entirely WHITE, on a very light blue background so it stands out",
+      "digits": false
+    },
+    {
+      "path": "m5/yellow-cat.png",
+      "item": "That is a yellow cat.",
+      "refs": [],
+      "prompt": "A cute plush kitten that is entirely YELLOW",
+      "digits": false
+    },
+    {
+      "path": "m5/blue-dog.png",
+      "item": "This is a blue dog.",
+      "refs": [],
+      "prompt": "A cute plush puppy that is entirely BLUE",
+      "digits": false
+    },
+    {
+      "path": "m5/black-dog.png",
+      "item": "That is a black dog.",
+      "refs": [],
+      "prompt": "A cute plush puppy that is entirely BLACK",
+      "digits": false
+    },
+    {
+      "path": "m5/cat-in-a-hat.png",
+      "item": "I'm a cat in a hat.",
+      "refs": [],
+      "prompt": "A cute plush grey kitten wearing a tall red and white striped hat",
+      "digits": false
+    },
+    {
+      "path": "m6/whats-this.png",
+      "item": "What's this?",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam looking curiously at a small closed gift box, a plush question mark floating above. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/schoolbag.png",
+      "item": "schoolbag",
+      "refs": [],
+      "prompt": "A single cute plush school backpack, bright blue",
+      "digits": false
+    },
+    {
+      "path": "m6/book.png",
+      "item": "book",
+      "refs": [],
+      "prompt": "A single cute plush closed picture book, red cover, no letters",
+      "digits": false
+    },
+    {
+      "path": "m6/pen.png",
+      "item": "pen",
+      "refs": [],
+      "prompt": "A single cute plush fountain pen, dark blue",
+      "digits": false
+    },
+    {
+      "path": "m6/pencil.png",
+      "item": "pencil",
+      "refs": [],
+      "prompt": "A single cute plush yellow pencil with a pink eraser tip",
+      "digits": false
+    },
+    {
+      "path": "m6/ruler.png",
+      "item": "ruler",
+      "refs": [],
+      "prompt": "A single cute plush straight ruler, light green, with tick marks but no numbers",
+      "digits": false
+    },
+    {
+      "path": "m6/eraser.png",
+      "item": "eraser",
+      "refs": [],
+      "prompt": "A single cute plush eraser, white and pink block",
+      "digits": false
+    },
+    {
+      "path": "m6/pencil-case.png",
+      "item": "pencil case",
+      "refs": [],
+      "prompt": "A single plain plush zip pencil case, orange fabric with a zipper along the top, no face, no eyes, no animal features",
+      "digits": false
+    },
+    {
+      "path": "m6/crayon.png",
+      "item": "crayon",
+      "refs": [],
+      "prompt": "Three cute plush crayons: red, blue and green, lying side by side",
+      "digits": false
+    },
+    {
+      "path": "m6/its-my-ruler.png",
+      "item": "It's my ruler.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy holding up a light green ruler proudly with both hands. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/its-my-pencil-case.png",
+      "item": "It's my pencil case.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling hugging an orange pencil case to her chest. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/kite.png",
+      "item": "kite",
+      "refs": [],
+      "prompt": "A single cute plush diamond-shaped kite, rainbow colours, with a ribbon tail, flying in a light sky",
+      "digits": false
+    },
+    {
+      "path": "m7/monkey.png",
+      "item": "monkey",
+      "refs": [],
+      "prompt": "A single cute plush brown monkey sitting",
+      "digits": false
+    },
+    {
+      "path": "m7/monster.png",
+      "item": "monster",
+      "refs": [],
+      "prompt": "A single cute friendly plush little monster, purple, one big eye, small horns, not scary",
+      "digits": false
+    },
+    {
+      "path": "m7/cat-kite.png",
+      "item": "Oh, it's a cat kite.",
+      "refs": [],
+      "prompt": "A plush kite shaped like a cat face, flying with a ribbon tail",
+      "digits": false
+    },
+    {
+      "path": "m7/help.png",
+      "item": "Help!",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam running away with a funny scared face, arms in the air, a big kite shadow behind him. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/orange-box.png",
+      "item": "It's an orange box.",
+      "refs": [],
+      "prompt": "A single plush ORANGE box with a lid",
+      "digits": false
+    },
+    {
+      "path": "m7/orange-house.png",
+      "item": "Is it an orange house?",
+      "refs": [],
+      "prompt": "A small cute plush ORANGE house with a brown roof and a round window",
+      "digits": false
+    },
+    {
+      "path": "m7/black-monkey.png",
+      "item": "It's a black monkey.",
+      "refs": [],
+      "prompt": "A cute plush monkey that is entirely BLACK",
+      "digits": false
+    },
+    {
+      "path": "m7/red-book.png",
+      "item": "It's a red book!",
+      "refs": [],
+      "prompt": "A plush RED book standing open slightly, no letters",
+      "digits": false
+    },
+    {
+      "path": "m7/red-kite.png",
+      "item": "It's a red kite.",
+      "refs": [],
+      "prompt": "A plush RED diamond kite with a ribbon tail flying",
+      "digits": false
+    },
+    {
+      "path": "m7/yellow-cat-box.png",
+      "item": "No, it's a yellow cat.",
+      "refs": [],
+      "prompt": "A yellow plush kitten popping out of a box, surprised",
+      "digits": false
+    },
+    {
+      "path": "m8/one.png",
+      "item": "one",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the digit 1, red felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/two.png",
+      "item": "two",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the digit 2, orange felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/three.png",
+      "item": "three",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the digit 3, yellow felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/four.png",
+      "item": "four",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the digit 4, green felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/five.png",
+      "item": "five",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the digit 5, blue felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/how-many.png",
+      "item": "How many?",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming counting on his fingers with a curious face, a few plush apples in front of him. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/six.png",
+      "item": "six",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the digit 6, purple felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/seven.png",
+      "item": "seven",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the digit 7, pink felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/eight.png",
+      "item": "eight",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the digit 8, light blue felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/nine.png",
+      "item": "nine",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the digit 9, lime green felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/ten.png",
+      "item": "ten",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the number 10, two digits side by side, red and yellow felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m8/five-pink-balls.png",
+      "item": "Five pink balls.",
+      "refs": [],
+      "prompt": "Exactly five big round PINK plush balls filling the whole picture, arranged in a neat pyramid of three on the bottom and two on top",
+      "digits": false
+    },
+    {
+      "path": "m8/one-brown-ball.png",
+      "item": "One brown ball.",
+      "refs": [],
+      "prompt": "Exactly one round BROWN plush ball",
+      "digits": false
+    },
+    {
+      "path": "m9/how-old-are-you.png",
+      "item": "How old are you?",
+      "refs": [
+        "1a/characters/ms-smart.png",
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Ms Smart bending down and smiling, asking Lingling a question, a plush question mark between them. Characters: Ms Smart, a kind British woman teacher, short wavy brown hair, round glasses, light blue cardigan, gentle smile; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/im-six.png",
+      "item": "I'm six.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming holding a big plush balloon shaped like the digit 6. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m9/im-seven.png",
+      "item": "I'm seven.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy holding a big plush balloon shaped like the digit 7. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m9/im-ten.png",
+      "item": "I'm ten.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam holding a big plush balloon shaped like the number 10. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m9/im-three.png",
+      "item": "I'm three.",
+      "refs": [],
+      "prompt": "A tiny plush toddler girl in a yellow romper holding a big plush balloon shaped like the digit 3",
+      "digits": true
+    },
+    {
+      "path": "m9/happy-birthday.png",
+      "item": "Happy birthday!",
+      "refs": [],
+      "prompt": "A plush birthday cake with pink frosting, candles lit, colourful confetti around",
+      "digits": false
+    },
+    {
+      "path": "m9/pen-for-you.png",
+      "item": "A pen for you.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam handing a small gift: a dark blue pen with a red ribbon bow. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/book-for-you.png",
+      "item": "A book for you.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling handing a red book wrapped with a yellow ribbon bow. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/thank-you.png",
+      "item": "Thank you.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy holding a wrapped present, bowing slightly with a grateful smile. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/youre-welcome.png",
+      "item": "You're welcome!",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming smiling warmly with one hand open in a friendly welcoming gesture. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/father.png",
+      "item": "father",
+      "refs": [],
+      "prompt": "A friendly plush dad with short brown hair and a beard, blue sweater",
+      "digits": false
+    },
+    {
+      "path": "m10/mother.png",
+      "item": "mother",
+      "refs": [],
+      "prompt": "A friendly plush mum with long wavy brown hair, green dress",
+      "digits": false
+    },
+    {
+      "path": "m10/grandpa.png",
+      "item": "grandpa",
+      "refs": [],
+      "prompt": "A friendly plush grandpa with white hair, round glasses and a walking stick, brown vest",
+      "digits": false
+    },
+    {
+      "path": "m10/grandma.png",
+      "item": "grandma",
+      "refs": [],
+      "prompt": "A friendly plush grandma with a grey hair bun, purple cardigan, holding knitting",
+      "digits": false
+    },
+    {
+      "path": "m10/friend.png",
+      "item": "friend",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Daming and Sam with arms around each other's shoulders, laughing together. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/that-is-my-father.png",
+      "item": "That is my father.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam pointing happily at his dad (short brown hair, beard, blue sweater) standing a little behind him. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/sister.png",
+      "item": "sister",
+      "refs": [],
+      "prompt": "Two plush girls who look alike, a big sister holding her little sister's hand",
+      "digits": false
+    },
+    {
+      "path": "m10/brother.png",
+      "item": "brother",
+      "refs": [],
+      "prompt": "Two plush boys who look alike, a big brother with his arm around his little brother",
+      "digits": false
+    },
+    {
+      "path": "m10/his-car.png",
+      "item": "That is his car.",
+      "refs": [],
+      "prompt": "A plush boy standing proudly next to a small round red toy car",
+      "digits": false
+    },
+    {
+      "path": "m10/his-ball.png",
+      "item": "That is his ball.",
+      "refs": [],
+      "prompt": "A plush boy holding a striped beach ball",
+      "digits": false
+    },
+    {
+      "path": "m10/her-bag.png",
+      "item": "That is her bag.",
+      "refs": [],
+      "prompt": "A plush girl carrying a pink handbag on her arm",
+      "digits": false
+    },
+    {
+      "path": "m10/her-desk.png",
+      "item": "That is her desk.",
+      "refs": [],
+      "prompt": "A plush girl sitting at a small desk, drawing",
+      "digits": false
+    }
+  ]
+}
