@@ -1,6 +1,6 @@
 # 小熊猫学英语
 
-外研版《新标准英语》（一年级起点）同步练习，给自家孩子用。规划见 [docs/PLAN.md](docs/PLAN.md)。
+外研版《新标准英语》（一年级起点）一至六年级、上下册共 12 册同步练习，给自家孩子用。规划见 [docs/PLAN.md](docs/PLAN.md)。
 
 ## 运行
 
@@ -31,8 +31,8 @@ python -I scripts/gen_audio.py
 
 ## 目录
 
-- `scripts/content/1a.mjs`、`1b.mjs`：一年级上下册词句和每张图的画面描述（按课本整理）；1a 的 Module 1–2 直接写在 `content/books/1a/book.json` 里
-- `content/books/{1a,1b}/book.json`：App 读取的教材内容，由 `node scripts/build_content.mjs 1a 1b` 生成
+- `scripts/content/{1a…6b}.mjs`：每册的词句和每张图的画面描述（按课本整理，写法见 `scripts/content/AUTHORING.md`）；1a 的 Module 1–2 直接写在 `content/books/1a/book.json` 里
+- `content/books/{book}/book.json`：App 读取的教材内容（打开哪一册才加载哪一册），由 `node scripts/build_content.mjs {book}` 生成
 - `art/`：Magpie 生成的原图 PNG；`art/{book}/manifest.json` 记录每张图的提示词和参考图
 - `content/images/`：App 实际加载的 WebP（单词图 512px，约 10–40 KB）
 - `content/audio/`：发音 MP3
@@ -45,5 +45,5 @@ python -I scripts/gen_audio.py
 1. 在 `scripts/content/{book}.mjs` 里加 module、unit 和词句（格式见文件开头注释），新册还要加进 `web/src/lib/content.js` 的 `BOOKS`。
 2. `node scripts/build_content.mjs {book}` 生成 book.json 和图片清单。
 3. `node scripts/gen_images.mjs {book}` 调本地 Magpie 批量生成缺失的图（4 张并发，失败自动重试 3 次）。
-4. `python -I scripts/contact_sheet.py art/{book}/m3 -o textbooks/sheet.jpg` 拼预览图人工检查，画坏的删掉 PNG 重跑第 3 步。
+4. `python -I scripts/contact_sheet.py art/{book}/m3 -o textbooks/sheet.jpg` 拼预览图人工检查（检查标准见 `scripts/content/REVIEW.md`），画坏的删掉 PNG 重跑第 3 步。
 5. `python -I scripts/optimize_images.py` 压成 WebP，`python -I scripts/gen_audio.py --book {book}` 生成发音。

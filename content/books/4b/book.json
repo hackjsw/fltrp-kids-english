@@ -1,0 +1,1241 @@
+{
+  "id": "4b",
+  "title": "四年级下册",
+  "subtitle": "新标准英语（一年级起点）",
+  "source": "textbooks/4b.pdf（TapXWorld/ChinaTextbook），词句取自课文和书后 Words and Expressions in Each Module",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Don't touch the machines, please!",
+          "items": [
+            {
+              "id": "machine",
+              "type": "word",
+              "text": "machine",
+              "translation": "机器",
+              "image": "m1/machine.webp",
+              "same": "machine"
+            },
+            {
+              "id": "potato",
+              "type": "word",
+              "text": "potato",
+              "translation": "土豆",
+              "image": "m1/potato.webp",
+              "same": "potato"
+            },
+            {
+              "id": "crisps",
+              "type": "word",
+              "text": "crisps",
+              "translation": "炸薯片",
+              "image": "m1/crisps.webp",
+              "same": "crisps"
+            },
+            {
+              "id": "welcome-to-our-factory",
+              "type": "sentence",
+              "text": "Welcome to our factory, children!",
+              "translation": "欢迎来到我们的工厂，孩子们！",
+              "image": "m1/welcome-to-our-factory.webp"
+            },
+            {
+              "id": "machine-cuts-the-potatoes",
+              "type": "sentence",
+              "text": "This machine cuts the potatoes.",
+              "translation": "这台机器切土豆。",
+              "image": "m1/machine-cuts-the-potatoes.webp",
+              "same": [
+                "machine",
+                "potato"
+              ]
+            },
+            {
+              "id": "dont-touch-the-machines",
+              "type": "sentence",
+              "text": "Don't touch the machines, please!",
+              "translation": "请不要碰机器！",
+              "image": "m1/dont-touch-the-machines.webp",
+              "same": "machine"
+            },
+            {
+              "id": "each-have-a-bag-of-crisps",
+              "type": "sentence",
+              "text": "You can each have a bag of crisps.",
+              "translation": "你们每人可以拿一袋薯片。",
+              "image": "m1/each-have-a-bag-of-crisps.webp",
+              "same": "crisps"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Don't feed the fish!",
+          "items": [
+            {
+              "id": "dont-feed-the-fish",
+              "type": "sentence",
+              "text": "Don't feed the fish!",
+              "translation": "不要喂鱼！",
+              "image": "m1/dont-feed-the-fish.webp"
+            },
+            {
+              "id": "dont-walk-on-the-grass",
+              "type": "sentence",
+              "text": "Don't walk on the grass!",
+              "translation": "不要在草地上走！",
+              "image": "m1/dont-walk-on-the-grass.webp"
+            },
+            {
+              "id": "dont-play-ball-games-here",
+              "type": "sentence",
+              "text": "Don't play ball games here!",
+              "translation": "不要在这里玩球类游戏！",
+              "image": "m1/dont-play-ball-games-here.webp"
+            },
+            {
+              "id": "dont-write-on-the-books",
+              "type": "sentence",
+              "text": "Don't write on the books!",
+              "translation": "不要在书上写字！",
+              "image": "m1/dont-write-on-the-books.webp"
+            },
+            {
+              "id": "the-baby-is-sleeping",
+              "type": "sentence",
+              "text": "The baby is sleeping.",
+              "translation": "宝宝在睡觉。",
+              "image": "m1/the-baby-is-sleeping.webp",
+              "same": "baby"
+            },
+            {
+              "id": "play-with-the-baby",
+              "type": "sentence",
+              "text": "Play with the baby!",
+              "translation": "和宝宝一起玩！",
+              "image": "m1/play-with-the-baby.webp",
+              "same": "baby"
+            },
+            {
+              "id": "be-quiet-please",
+              "type": "sentence",
+              "text": "Be quiet, please!",
+              "translation": "请安静！",
+              "image": "m1/be-quiet-please.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "units": [
+        {
+          "id": "u1",
+          "title": "It's cheap.",
+          "items": [
+            {
+              "id": "cheap",
+              "type": "word",
+              "text": "cheap",
+              "translation": "便宜的",
+              "image": "m2/cheap.webp",
+              "same": "cheap"
+            },
+            {
+              "id": "expensive",
+              "type": "word",
+              "text": "expensive",
+              "translation": "昂贵的",
+              "image": "m2/expensive.webp",
+              "same": "expensive"
+            },
+            {
+              "id": "camera-is-expensive",
+              "type": "sentence",
+              "text": "This camera is expensive.",
+              "translation": "这台相机很贵。",
+              "image": "m2/camera-is-expensive.webp",
+              "same": "expensive"
+            },
+            {
+              "id": "ive-got-a-new-hat",
+              "type": "sentence",
+              "text": "I've got a new hat.",
+              "translation": "我有一顶新帽子。",
+              "image": "m2/ive-got-a-new-hat.webp",
+              "same": "hat"
+            },
+            {
+              "id": "is-it-pink",
+              "type": "sentence",
+              "text": "Is it pink?",
+              "translation": "它是粉色的吗？",
+              "image": "m2/is-it-pink.webp",
+              "same": "hat"
+            },
+            {
+              "id": "dad-bought-a-computer",
+              "type": "sentence",
+              "text": "Dad bought a computer for me yesterday.",
+              "translation": "爸爸昨天给我买了一台电脑。",
+              "image": "m2/dad-bought-a-computer.webp"
+            },
+            {
+              "id": "send-emails",
+              "type": "sentence",
+              "text": "Now I can send emails to you, too.",
+              "translation": "现在我也可以给你发电子邮件了。",
+              "image": "m2/send-emails.webp",
+              "same": "email"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It costs one hundred and eighteen yuan.",
+          "items": [
+            {
+              "id": "hundred",
+              "type": "word",
+              "text": "hundred",
+              "translation": "一百",
+              "image": "m2/hundred.webp",
+              "same": "hundred"
+            },
+            {
+              "id": "costs-118-yuan",
+              "type": "sentence",
+              "text": "It costs one hundred and eighteen yuan.",
+              "translation": "它的价格是一百一十八元。",
+              "image": "m2/costs-118-yuan.webp",
+              "same": [
+                "hundred",
+                "pen"
+              ]
+            },
+            {
+              "id": "pen-costs-19-yuan",
+              "type": "sentence",
+              "text": "This pen costs nineteen yuan.",
+              "translation": "这支钢笔十九元。",
+              "image": "m2/pen-costs-19-yuan.webp",
+              "same": "pen"
+            },
+            {
+              "id": "pen-costs-1-yuan",
+              "type": "sentence",
+              "text": "This pen costs one yuan.",
+              "translation": "这支钢笔一元。",
+              "image": "m2/pen-costs-1-yuan.webp",
+              "same": [
+                "cheap",
+                "pen"
+              ]
+            },
+            {
+              "id": "i-want-to-buy-a-pen",
+              "type": "sentence",
+              "text": "I want to buy a pen.",
+              "translation": "我想买一支钢笔。",
+              "image": "m2/i-want-to-buy-a-pen.webp",
+              "same": "pen"
+            },
+            {
+              "id": "bag-costs-130-yuan",
+              "type": "sentence",
+              "text": "This bag costs one hundred and thirty yuan.",
+              "translation": "这个包一百三十元。",
+              "image": "m2/bag-costs-130-yuan.webp",
+              "same": [
+                "hundred",
+                "expensive"
+              ]
+            },
+            {
+              "id": "bear-costs-30-yuan",
+              "type": "sentence",
+              "text": "It costs 30 yuan.",
+              "translation": "它三十元。",
+              "image": "m2/bear-costs-30-yuan.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "units": [
+        {
+          "id": "u1",
+          "title": "He shouted, \"Wolf, wolf!\"",
+          "items": [
+            {
+              "id": "wolf",
+              "type": "word",
+              "text": "wolf",
+              "translation": "狼",
+              "image": "m3/wolf.webp",
+              "same": "wolf"
+            },
+            {
+              "id": "village",
+              "type": "word",
+              "text": "village",
+              "translation": "乡村",
+              "image": "m3/village.webp"
+            },
+            {
+              "id": "looked-after-sheep",
+              "type": "sentence",
+              "text": "He looked after sheep every day.",
+              "translation": "他每天都照看羊群。",
+              "image": "m3/looked-after-sheep.webp",
+              "same": "sheep"
+            },
+            {
+              "id": "the-boy-was-bored",
+              "type": "sentence",
+              "text": "The boy was bored.",
+              "translation": "这个男孩很无聊。",
+              "image": "m3/the-boy-was-bored.webp"
+            },
+            {
+              "id": "he-shouted-wolf",
+              "type": "word",
+              "text": "He shouted, \"Wolf, wolf!\"",
+              "translation": "他大喊：\"狼来了，狼来了！\"",
+              "image": "m3/he-shouted-wolf.webp"
+            },
+            {
+              "id": "the-people-were-angry",
+              "type": "sentence",
+              "text": "The people were angry.",
+              "translation": "人们很生气。",
+              "image": "m3/the-people-were-angry.webp"
+            },
+            {
+              "id": "the-wolf-ate-the-sheep",
+              "type": "sentence",
+              "text": "The wolf ate all the sheep.",
+              "translation": "狼吃掉了所有的羊。",
+              "image": "m3/the-wolf-ate-the-sheep.webp",
+              "same": "wolf"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "She went into a shop.",
+          "items": [
+            {
+              "id": "cheese",
+              "type": "word",
+              "text": "cheese",
+              "translation": "奶酪",
+              "image": "m3/cheese.webp",
+              "same": "cheese"
+            },
+            {
+              "id": "went-into-a-shop",
+              "type": "sentence",
+              "text": "She went into a shop.",
+              "translation": "她走进了一家商店。",
+              "image": "m3/went-into-a-shop.webp",
+              "same": "mouse"
+            },
+            {
+              "id": "ate-the-cheese",
+              "type": "sentence",
+              "text": "She ate the cheese.",
+              "translation": "她吃了奶酪。",
+              "image": "m3/ate-the-cheese.webp",
+              "same": [
+                "mouse",
+                "cheese"
+              ]
+            },
+            {
+              "id": "saw-a-cat-in-the-shop",
+              "type": "sentence",
+              "text": "Then Tilly saw a cat in the shop.",
+              "translation": "然后蒂莉在商店里看见了一只猫。",
+              "image": "m3/saw-a-cat-in-the-shop.webp",
+              "same": "mouse"
+            },
+            {
+              "id": "scared-and-ran-away",
+              "type": "sentence",
+              "text": "She was scared and ran away.",
+              "translation": "她很害怕，逃跑了。",
+              "image": "m3/scared-and-ran-away.webp",
+              "same": "mouse"
+            },
+            {
+              "id": "i-bought-some-apples",
+              "type": "sentence",
+              "text": "I bought some apples and ate two.",
+              "translation": "我买了一些苹果，吃了两个。",
+              "image": "m3/i-bought-some-apples.webp"
+            },
+            {
+              "id": "mouse-ran-up-the-clock",
+              "type": "sentence",
+              "text": "The mouse ran up the clock.",
+              "translation": "老鼠爬上了钟。",
+              "image": "m3/mouse-ran-up-the-clock.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Dad played the erhu.",
+          "items": [
+            {
+              "id": "violin",
+              "type": "word",
+              "text": "violin",
+              "translation": "小提琴",
+              "image": "m4/violin.webp",
+              "same": "violin"
+            },
+            {
+              "id": "guitar",
+              "type": "word",
+              "text": "guitar",
+              "translation": "吉他",
+              "image": "m4/guitar.webp",
+              "same": "guitar"
+            },
+            {
+              "id": "concert",
+              "type": "word",
+              "text": "concert",
+              "translation": "音乐会",
+              "image": "m4/concert.webp",
+              "same": "concert"
+            },
+            {
+              "id": "i-went-to-a-concert",
+              "type": "sentence",
+              "text": "I went to a concert yesterday.",
+              "translation": "我昨天去听了一场音乐会。",
+              "image": "m4/i-went-to-a-concert.webp",
+              "same": "concert"
+            },
+            {
+              "id": "dad-played-the-erhu",
+              "type": "sentence",
+              "text": "Dad played the erhu.",
+              "translation": "爸爸拉了二胡。",
+              "image": "m4/dad-played-the-erhu.webp",
+              "same": "violin"
+            },
+            {
+              "id": "mum-played-the-pipa",
+              "type": "sentence",
+              "text": "And Mum played the pipa.",
+              "translation": "妈妈弹了琵琶。",
+              "image": "m4/mum-played-the-pipa.webp",
+              "same": "guitar"
+            },
+            {
+              "id": "love-chinese-music",
+              "type": "sentence",
+              "text": "I love Chinese music.",
+              "translation": "我爱中国音乐。",
+              "image": "m4/love-chinese-music.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I was very nervous.",
+          "items": [
+            {
+              "id": "i-was-very-nervous",
+              "type": "sentence",
+              "text": "I was very nervous before the concert.",
+              "translation": "音乐会前我非常紧张。",
+              "image": "m4/i-was-very-nervous.webp",
+              "same": "nervous"
+            },
+            {
+              "id": "im-nervous-too",
+              "type": "sentence",
+              "text": "I'm nervous, too.",
+              "translation": "我也很紧张。",
+              "image": "m4/im-nervous-too.webp",
+              "same": "nervous"
+            },
+            {
+              "id": "come-and-dance",
+              "type": "sentence",
+              "text": "Don't be nervous! Come and dance!",
+              "translation": "别紧张！来跳舞吧！",
+              "image": "m4/come-and-dance.webp"
+            },
+            {
+              "id": "everyone-clapped",
+              "type": "sentence",
+              "text": "In the end, everyone clapped.",
+              "translation": "最后，大家都鼓掌了。",
+              "image": "m4/everyone-clapped.webp"
+            },
+            {
+              "id": "i-was-very-proud",
+              "type": "sentence",
+              "text": "And I was very proud.",
+              "translation": "我感到非常自豪。",
+              "image": "m4/i-was-very-proud.webp"
+            },
+            {
+              "id": "he-played-the-drums",
+              "type": "sentence",
+              "text": "He played the drums.",
+              "translation": "他打了鼓。",
+              "image": "m4/he-played-the-drums.webp"
+            },
+            {
+              "id": "the-lion-played-the-piano",
+              "type": "sentence",
+              "text": "The lion played the piano.",
+              "translation": "狮子弹了钢琴。",
+              "image": "m4/the-lion-played-the-piano.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module 5",
+      "units": [
+        {
+          "id": "u1",
+          "title": "We're having a party.",
+          "items": [
+            {
+              "id": "happy-mothers-day",
+              "type": "sentence",
+              "text": "Happy Mother's Day!",
+              "translation": "母亲节快乐！",
+              "image": "m5/happy-mothers-day.webp",
+              "same": "mum"
+            },
+            {
+              "id": "what-a-surprise",
+              "type": "sentence",
+              "text": "Oh, what a surprise!",
+              "translation": "哦，真是个惊喜！",
+              "image": "m5/what-a-surprise.webp",
+              "same": "mum"
+            },
+            {
+              "id": "were-having-a-party",
+              "type": "sentence",
+              "text": "We're having a party.",
+              "translation": "我们正在开派对。",
+              "image": "m5/were-having-a-party.webp"
+            },
+            {
+              "id": "amy-is-playing-the-piano",
+              "type": "sentence",
+              "text": "Amy is playing the piano.",
+              "translation": "埃米正在弹钢琴。",
+              "image": "m5/amy-is-playing-the-piano.webp"
+            },
+            {
+              "id": "tom-is-singing",
+              "type": "sentence",
+              "text": "Tom is singing.",
+              "translation": "汤姆正在唱歌。",
+              "image": "m5/tom-is-singing.webp"
+            },
+            {
+              "id": "sam-is-playing-the-violin",
+              "type": "sentence",
+              "text": "Sam is playing the violin.",
+              "translation": "萨姆正在拉小提琴。",
+              "image": "m5/sam-is-playing-the-violin.webp",
+              "same": "violin-m5"
+            },
+            {
+              "id": "they-are-clapping",
+              "type": "sentence",
+              "text": "Now they are clapping.",
+              "translation": "现在她们正在鼓掌。",
+              "image": "m5/they-are-clapping.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "He's drawing books and birds.",
+          "items": [
+            {
+              "id": "happy-fathers-day",
+              "type": "sentence",
+              "text": "Happy Father's Day!",
+              "translation": "父亲节快乐！",
+              "image": "m5/happy-fathers-day.webp",
+              "same": "card"
+            },
+            {
+              "id": "making-a-card",
+              "type": "sentence",
+              "text": "Daming is making a card for his father.",
+              "translation": "大明正在给爸爸做贺卡。",
+              "image": "m5/making-a-card.webp",
+              "same": "card"
+            },
+            {
+              "id": "drawing-books-and-birds",
+              "type": "sentence",
+              "text": "He's drawing books and birds.",
+              "translation": "他正在画书和鸟。",
+              "image": "m5/drawing-books-and-birds.webp",
+              "same": "card"
+            },
+            {
+              "id": "writing-a-message",
+              "type": "sentence",
+              "text": "He's writing a message to his father.",
+              "translation": "他正在给爸爸写留言。",
+              "image": "m5/writing-a-message.webp",
+              "same": "card"
+            },
+            {
+              "id": "violin-for-your-father",
+              "type": "sentence",
+              "text": "You're playing the violin for your father.",
+              "translation": "你正在为爸爸拉小提琴。",
+              "image": "m5/violin-for-your-father.webp",
+              "same": "violin-m5"
+            },
+            {
+              "id": "painting-a-picture-m5",
+              "type": "sentence",
+              "text": "Are you painting a picture on this special day?",
+              "translation": "在这个特别的日子你在画画吗？",
+              "image": "m5/painting-a-picture-m5.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Module 6",
+      "units": [
+        {
+          "id": "u1",
+          "title": "I'll draw the pictures.",
+          "items": [
+            {
+              "id": "lets-make-a-newspaper",
+              "type": "sentence",
+              "text": "Let's make an English newspaper!",
+              "translation": "我们来做一份英语报纸吧！",
+              "image": "m6/lets-make-a-newspaper.webp",
+              "same": "newspaper"
+            },
+            {
+              "id": "ill-draw-the-pictures",
+              "type": "sentence",
+              "text": "I'll draw the pictures.",
+              "translation": "我来画图。",
+              "image": "m6/ill-draw-the-pictures.webp",
+              "same": "draw"
+            },
+            {
+              "id": "ill-write-the-reports",
+              "type": "sentence",
+              "text": "I'll write the reports.",
+              "translation": "我来写报道。",
+              "image": "m6/ill-write-the-reports.webp"
+            },
+            {
+              "id": "ill-cut-the-paper",
+              "type": "sentence",
+              "text": "I'll cut the paper.",
+              "translation": "我来剪纸。",
+              "image": "m6/ill-cut-the-paper.webp"
+            },
+            {
+              "id": "stick-the-pictures",
+              "type": "sentence",
+              "text": "Will you stick the pictures on the newspaper?",
+              "translation": "你来把图片贴到报纸上好吗？",
+              "image": "m6/stick-the-pictures.webp",
+              "same": "newspaper"
+            },
+            {
+              "id": "newspaper-is-fantastic",
+              "type": "sentence",
+              "text": "Our English newspaper is fantastic!",
+              "translation": "我们的英语报纸棒极了！",
+              "image": "m6/newspaper-is-fantastic.webp",
+              "same": "newspaper"
+            },
+            {
+              "id": "good-at-pe",
+              "type": "sentence",
+              "text": "You are good at PE.",
+              "translation": "你擅长体育。",
+              "image": "m6/good-at-pe.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Let's have fun this Saturday!",
+          "items": [
+            {
+              "id": "lets-paint-a-picture",
+              "type": "sentence",
+              "text": "Let's paint a picture!",
+              "translation": "我们画一幅画吧！",
+              "image": "m6/lets-paint-a-picture.webp",
+              "same": "draw"
+            },
+            {
+              "id": "lets-do-some-sport",
+              "type": "sentence",
+              "text": "Let's do some sport!",
+              "translation": "我们做些运动吧！",
+              "image": "m6/lets-do-some-sport.webp"
+            },
+            {
+              "id": "lets-play-the-piano",
+              "type": "sentence",
+              "text": "Let's play the piano!",
+              "translation": "我们弹钢琴吧！",
+              "image": "m6/lets-play-the-piano.webp"
+            },
+            {
+              "id": "lets-fly-our-kites",
+              "type": "sentence",
+              "text": "Let's fly our kites!",
+              "translation": "我们放风筝吧！",
+              "image": "m6/lets-fly-our-kites.webp",
+              "same": "kite"
+            },
+            {
+              "id": "but-its-raining",
+              "type": "sentence",
+              "text": "But it's raining.",
+              "translation": "但是正在下雨。",
+              "image": "m6/but-its-raining.webp",
+              "same": "kite"
+            },
+            {
+              "id": "lets-watch-tv",
+              "type": "sentence",
+              "text": "Let's watch TV!",
+              "translation": "我们看电视吧！",
+              "image": "m6/lets-watch-tv.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Module 7",
+      "units": [
+        {
+          "id": "u1",
+          "title": "What's the time?",
+          "items": [
+            {
+              "id": "whats-the-time",
+              "type": "sentence",
+              "text": "What's the time?",
+              "translation": "几点了？",
+              "image": "m7/whats-the-time.webp"
+            },
+            {
+              "id": "its-10-oclock",
+              "type": "sentence",
+              "text": "It's 10 o'clock.",
+              "translation": "十点了。",
+              "image": "m7/its-10-oclock.webp"
+            },
+            {
+              "id": "its-2-oclock",
+              "type": "sentence",
+              "text": "It's 2 o'clock.",
+              "translation": "两点了。",
+              "image": "m7/its-2-oclock.webp"
+            },
+            {
+              "id": "its-4-oclock",
+              "type": "sentence",
+              "text": "It's 4 o'clock.",
+              "translation": "四点了。",
+              "image": "m7/its-4-oclock.webp"
+            },
+            {
+              "id": "its-6-oclock",
+              "type": "sentence",
+              "text": "It's 6 o'clock.",
+              "translation": "六点了。",
+              "image": "m7/its-6-oclock.webp"
+            },
+            {
+              "id": "cartoon",
+              "type": "word",
+              "text": "cartoon",
+              "translation": "动画片",
+              "image": "m7/cartoon.webp"
+            },
+            {
+              "id": "im-a-train",
+              "type": "sentence",
+              "text": "I'm a train.",
+              "translation": "我是一列火车。",
+              "image": "m7/im-a-train.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It's 6:30 am in New York.",
+          "items": [
+            {
+              "id": "630-am-in-new-york",
+              "type": "sentence",
+              "text": "It's 6:30 am in New York.",
+              "translation": "纽约现在是早上六点半。",
+              "image": "m7/630-am-in-new-york.webp",
+              "same": "breakfast"
+            },
+            {
+              "id": "breakfast-time",
+              "type": "sentence",
+              "text": "It's breakfast time.",
+              "translation": "现在是早饭时间。",
+              "image": "m7/breakfast-time.webp",
+              "same": "breakfast"
+            },
+            {
+              "id": "1130-am-in-london",
+              "type": "sentence",
+              "text": "It's 11:30 am in London.",
+              "translation": "伦敦现在是上午十一点半。",
+              "image": "m7/1130-am-in-london.webp",
+              "same": "lunch"
+            },
+            {
+              "id": "lunch-time",
+              "type": "sentence",
+              "text": "It's lunch time.",
+              "translation": "现在是午饭时间。",
+              "image": "m7/lunch-time.webp",
+              "same": "lunch"
+            },
+            {
+              "id": "730-pm-in-beijing",
+              "type": "sentence",
+              "text": "It's 7:30 pm in Beijing.",
+              "translation": "北京现在是晚上七点半。",
+              "image": "m7/730-pm-in-beijing.webp",
+              "same": "dinner"
+            },
+            {
+              "id": "dinner-time",
+              "type": "sentence",
+              "text": "It's dinner time.",
+              "translation": "现在是晚饭时间。",
+              "image": "m7/dinner-time.webp",
+              "same": "dinner"
+            },
+            {
+              "id": "school-time",
+              "type": "sentence",
+              "text": "No, it's school time.",
+              "translation": "不，现在是上学时间。",
+              "image": "m7/school-time.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "Module 8",
+      "units": [
+        {
+          "id": "u1",
+          "title": "He lives in the east of the US.",
+          "items": [
+            {
+              "id": "map",
+              "type": "word",
+              "text": "map",
+              "translation": "地图",
+              "image": "m8/map.webp"
+            },
+            {
+              "id": "lives-in-the-east-of-the-us",
+              "type": "sentence",
+              "text": "He lives in the east of the US.",
+              "translation": "他住在美国东部。",
+              "image": "m8/lives-in-the-east-of-the-us.webp",
+              "same": "us-east"
+            },
+            {
+              "id": "los-angeles-west",
+              "type": "sentence",
+              "text": "Los Angeles is in the west of the US.",
+              "translation": "洛杉矶在美国西部。",
+              "image": "m8/los-angeles-west.webp",
+              "same": "us-west"
+            },
+            {
+              "id": "capital-of-the-us",
+              "type": "sentence",
+              "text": "The capital of the US is Washington DC.",
+              "translation": "美国的首都是华盛顿特区。",
+              "image": "m8/capital-of-the-us.webp"
+            },
+            {
+              "id": "go-to-the-us-one-day",
+              "type": "sentence",
+              "text": "I want to go to the US one day.",
+              "translation": "我想有一天去美国。",
+              "image": "m8/go-to-the-us-one-day.webp"
+            },
+            {
+              "id": "home-is-the-best",
+              "type": "sentence",
+              "text": "Home is the best.",
+              "translation": "家是最好的。",
+              "image": "m8/home-is-the-best.webp"
+            },
+            {
+              "id": "lets-have-a-rest",
+              "type": "sentence",
+              "text": "Let's have a rest.",
+              "translation": "我们休息一下吧。",
+              "image": "m8/lets-have-a-rest.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It's in the north of China.",
+          "items": [
+            {
+              "id": "north-of-china",
+              "type": "sentence",
+              "text": "It's in the north of China.",
+              "translation": "它在中国的北部。",
+              "image": "m8/north-of-china.webp",
+              "same": "north"
+            },
+            {
+              "id": "beijing-is-the-capital",
+              "type": "sentence",
+              "text": "Beijing is the capital.",
+              "translation": "北京是首都。",
+              "image": "m8/beijing-is-the-capital.webp"
+            },
+            {
+              "id": "suzhou-is-an-old-city",
+              "type": "sentence",
+              "text": "Suzhou is an old city.",
+              "translation": "苏州是一座古城。",
+              "image": "m8/suzhou-is-an-old-city.webp"
+            },
+            {
+              "id": "lhasa-is-beautiful",
+              "type": "sentence",
+              "text": "Lhasa is a beautiful city.",
+              "translation": "拉萨是一座美丽的城市。",
+              "image": "m8/lhasa-is-beautiful.webp"
+            },
+            {
+              "id": "guangzhou-is-a-big-city",
+              "type": "sentence",
+              "text": "Guangzhou is a big city.",
+              "translation": "广州是一座大城市。",
+              "image": "m8/guangzhou-is-a-big-city.webp"
+            },
+            {
+              "id": "point-to-the-north",
+              "type": "sentence",
+              "text": "Point to the north.",
+              "translation": "指向北方。",
+              "image": "m8/point-to-the-north.webp",
+              "same": "north"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Module 9",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Why do you like Australia?",
+          "items": [
+            {
+              "id": "kangaroo",
+              "type": "word",
+              "text": "kangaroo",
+              "translation": "袋鼠",
+              "image": "m9/kangaroo.webp",
+              "same": "kangaroo"
+            },
+            {
+              "id": "i-love-koalas",
+              "type": "sentence",
+              "text": "I love koalas.",
+              "translation": "我爱考拉。",
+              "image": "m9/i-love-koalas.webp",
+              "same": "koala"
+            },
+            {
+              "id": "why-do-you-like-australia",
+              "type": "sentence",
+              "text": "Why do you like Australia?",
+              "translation": "你为什么喜欢澳大利亚？",
+              "image": "m9/why-do-you-like-australia.webp"
+            },
+            {
+              "id": "australian-animals",
+              "type": "sentence",
+              "text": "Because I love Australian animals.",
+              "translation": "因为我喜欢澳大利亚的动物。",
+              "image": "m9/australian-animals.webp",
+              "same": [
+                "kangaroo",
+                "koala"
+              ]
+            },
+            {
+              "id": "because-its-healthy",
+              "type": "sentence",
+              "text": "Because it's healthy.",
+              "translation": "因为它有益健康。",
+              "image": "m9/because-its-healthy.webp"
+            },
+            {
+              "id": "dont-eat-too-much",
+              "type": "sentence",
+              "text": "But don't eat too much!",
+              "translation": "但是不要吃太多！",
+              "image": "m9/dont-eat-too-much.webp"
+            },
+            {
+              "id": "because-they-are-cute",
+              "type": "sentence",
+              "text": "Because they are cute.",
+              "translation": "因为它们很可爱。",
+              "image": "m9/because-they-are-cute.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Kangaroos live in Australia.",
+          "items": [
+            {
+              "id": "kangaroos-live-in-australia",
+              "type": "sentence",
+              "text": "Kangaroos live in Australia.",
+              "translation": "袋鼠生活在澳大利亚。",
+              "image": "m9/kangaroos-live-in-australia.webp",
+              "same": "kangaroo"
+            },
+            {
+              "id": "special-bag-for-her-baby",
+              "type": "sentence",
+              "text": "The mother kangaroo has a special bag for her baby.",
+              "translation": "袋鼠妈妈有一个装宝宝的特别口袋。",
+              "image": "m9/special-bag-for-her-baby.webp",
+              "same": "kangaroo"
+            },
+            {
+              "id": "i-eat-grass",
+              "type": "sentence",
+              "text": "I eat grass.",
+              "translation": "我吃草。",
+              "image": "m9/i-eat-grass.webp"
+            },
+            {
+              "id": "fish-live-in-the-river",
+              "type": "sentence",
+              "text": "Fish live in the river.",
+              "translation": "鱼生活在河里。",
+              "image": "m9/fish-live-in-the-river.webp"
+            },
+            {
+              "id": "birds-live-in-the-tree",
+              "type": "sentence",
+              "text": "Birds live in the tree.",
+              "translation": "鸟生活在树上。",
+              "image": "m9/birds-live-in-the-tree.webp"
+            },
+            {
+              "id": "dogs-eat-meat",
+              "type": "sentence",
+              "text": "Dogs eat meat and vegetables.",
+              "translation": "狗吃肉和蔬菜。",
+              "image": "m9/dogs-eat-meat.webp"
+            },
+            {
+              "id": "do-you-eat-ice-cream",
+              "type": "sentence",
+              "text": "Do you eat ice cream?",
+              "translation": "你吃冰激凌吗？",
+              "image": "m9/do-you-eat-ice-cream.webp",
+              "same": "kangaroo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Module 10",
+      "units": [
+        {
+          "id": "u1",
+          "title": "I'll send you a postcard.",
+          "items": [
+            {
+              "id": "postcard",
+              "type": "word",
+              "text": "postcard",
+              "translation": "明信片",
+              "image": "m10/postcard.webp",
+              "same": "postcard"
+            },
+            {
+              "id": "send-you-a-postcard",
+              "type": "sentence",
+              "text": "I'll send you a postcard from China.",
+              "translation": "我会从中国给你寄一张明信片。",
+              "image": "m10/send-you-a-postcard.webp",
+              "same": "postcard"
+            },
+            {
+              "id": "go-back-to-the-uk",
+              "type": "sentence",
+              "text": "I will go back to the UK.",
+              "translation": "我将回英国。",
+              "image": "m10/go-back-to-the-uk.webp",
+              "same": "london"
+            },
+            {
+              "id": "visit-australia",
+              "type": "sentence",
+              "text": "She's going to visit Australia.",
+              "translation": "她要去澳大利亚游览。",
+              "image": "m10/visit-australia.webp"
+            },
+            {
+              "id": "london-zoo",
+              "type": "sentence",
+              "text": "He will go to London Zoo.",
+              "translation": "他将去伦敦动物园。",
+              "image": "m10/london-zoo.webp",
+              "same": "zoo"
+            },
+            {
+              "id": "speak-english-every-day",
+              "type": "sentence",
+              "text": "I'm going to speak English every day.",
+              "translation": "我要每天说英语。",
+              "image": "m10/speak-english-every-day.webp"
+            },
+            {
+              "id": "grandpas-farm",
+              "type": "sentence",
+              "text": "Maybe I'll visit my grandpa's farm.",
+              "translation": "也许我会去爷爷的农场。",
+              "image": "m10/grandpas-farm.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I'm going to visit London.",
+          "items": [
+            {
+              "id": "museum",
+              "type": "word",
+              "text": "museum",
+              "translation": "博物馆",
+              "image": "m10/museum.webp"
+            },
+            {
+              "id": "restaurant",
+              "type": "word",
+              "text": "restaurant",
+              "translation": "餐馆",
+              "image": "m10/restaurant.webp",
+              "same": "restaurant"
+            },
+            {
+              "id": "im-going-to-visit-london",
+              "type": "sentence",
+              "text": "Tomorrow, I'm going to visit London.",
+              "translation": "明天我要去伦敦游览。",
+              "image": "m10/im-going-to-visit-london.webp",
+              "same": "london"
+            },
+            {
+              "id": "eat-in-an-english-restaurant",
+              "type": "sentence",
+              "text": "We're going to eat in an English restaurant.",
+              "translation": "我们要在一家英国餐馆吃饭。",
+              "image": "m10/eat-in-an-english-restaurant.webp",
+              "same": "restaurant"
+            },
+            {
+              "id": "going-to-the-zoo",
+              "type": "sentence",
+              "text": "I'm going to the zoo.",
+              "translation": "我要去动物园。",
+              "image": "m10/going-to-the-zoo.webp",
+              "same": "zoo"
+            },
+            {
+              "id": "eat-some-fruit",
+              "type": "sentence",
+              "text": "I'm going to eat some fruit.",
+              "translation": "我要吃一些水果。",
+              "image": "m10/eat-some-fruit.webp"
+            },
+            {
+              "id": "zoo-by-bus",
+              "type": "sentence",
+              "text": "We will go to the zoo by bus.",
+              "translation": "我们将坐公共汽车去动物园。",
+              "image": "m10/zoo-by-bus.webp",
+              "same": "zoo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

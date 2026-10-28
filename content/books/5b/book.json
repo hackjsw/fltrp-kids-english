@@ -1,0 +1,1108 @@
+{
+  "id": "5b",
+  "title": "五年级下册",
+  "subtitle": "新标准英语（一年级起点）",
+  "source": "textbooks/5b.pdf（TapXWorld/ChinaTextbook），词句取自课文和书后 Words and Expressions in Each Module",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "units": [
+        {
+          "id": "u1",
+          "title": "She was a driver before.",
+          "items": [
+            {
+              "id": "she-was-a-driver",
+              "type": "sentence",
+              "text": "She was a driver before.",
+              "translation": "她以前是一名司机。",
+              "image": "m1/she-was-a-driver.webp",
+              "same": "bus"
+            },
+            {
+              "id": "she-drove-a-bus",
+              "type": "sentence",
+              "text": "She drove a bus.",
+              "translation": "她开公共汽车。",
+              "image": "m1/she-drove-a-bus.webp",
+              "same": "bus"
+            },
+            {
+              "id": "flute-player",
+              "type": "sentence",
+              "text": "He was a flute player before.",
+              "translation": "他以前是一名笛子演奏者。",
+              "image": "m1/flute-player.webp",
+              "same": "flute"
+            },
+            {
+              "id": "play-the-flute-too",
+              "type": "sentence",
+              "text": "I can play the flute, too.",
+              "translation": "我也会吹笛子。",
+              "image": "m1/play-the-flute-too.webp"
+            },
+            {
+              "id": "erhu-player",
+              "type": "sentence",
+              "text": "He's an erhu player.",
+              "translation": "他是一名二胡演奏者。",
+              "image": "m1/erhu-player.webp"
+            },
+            {
+              "id": "he-was-a-doctor",
+              "type": "sentence",
+              "text": "He was a doctor.",
+              "translation": "他以前是一名医生。",
+              "image": "m1/he-was-a-doctor.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "He worked in an office.",
+          "items": [
+            {
+              "id": "office",
+              "type": "word",
+              "text": "office",
+              "translation": "办公室",
+              "image": "m1/office.webp",
+              "same": "office"
+            },
+            {
+              "id": "worked-in-an-office",
+              "type": "sentence",
+              "text": "He worked in an office.",
+              "translation": "他以前在办公室工作。",
+              "image": "m1/worked-in-an-office.webp",
+              "same": "office"
+            },
+            {
+              "id": "worked-in-a-factory",
+              "type": "sentence",
+              "text": "She worked in a factory.",
+              "translation": "她以前在工厂工作。",
+              "image": "m1/worked-in-a-factory.webp"
+            },
+            {
+              "id": "hes-fishing",
+              "type": "sentence",
+              "text": "He's fishing.",
+              "translation": "他在钓鱼。",
+              "image": "m1/hes-fishing.webp"
+            },
+            {
+              "id": "drove-a-taxi",
+              "type": "sentence",
+              "text": "He drove a taxi ten years ago.",
+              "translation": "十年前他开出租车。",
+              "image": "m1/drove-a-taxi.webp"
+            },
+            {
+              "id": "worked-on-a-farm",
+              "type": "sentence",
+              "text": "She worked on a farm.",
+              "translation": "她以前在农场工作。",
+              "image": "m1/worked-on-a-farm.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "units": [
+        {
+          "id": "u1",
+          "title": "What did she have for lunch?",
+          "items": [
+            {
+              "id": "email-from-lingling",
+              "type": "sentence",
+              "text": "I've got an email from Lingling.",
+              "translation": "我收到了玲玲的一封电子邮件。",
+              "image": "m2/email-from-lingling.webp"
+            },
+            {
+              "id": "sausage",
+              "type": "word",
+              "text": "sausage",
+              "translation": "香肠",
+              "image": "m2/sausage.webp",
+              "same": "sausage"
+            },
+            {
+              "id": "eggs-and-sausages",
+              "type": "sentence",
+              "text": "She had eggs and sausages.",
+              "translation": "她吃了鸡蛋和香肠。",
+              "image": "m2/eggs-and-sausages.webp",
+              "same": "sausage"
+            },
+            {
+              "id": "she-had-sandwiches",
+              "type": "sentence",
+              "text": "She had sandwiches.",
+              "translation": "她吃了三明治。",
+              "image": "m2/she-had-sandwiches.webp"
+            },
+            {
+              "id": "fish-and-chips",
+              "type": "sentence",
+              "text": "She had fish and chips.",
+              "translation": "她吃了炸鱼加炸薯条。",
+              "image": "m2/fish-and-chips.webp"
+            },
+            {
+              "id": "bread-meat-vegetables",
+              "type": "sentence",
+              "text": "Bread, meat and vegetables.",
+              "translation": "面包、肉和蔬菜。",
+              "image": "m2/bread-meat-vegetables.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Lunch is usually at half past twelve.",
+          "items": [
+            {
+              "id": "lunch-at-half-past-twelve",
+              "type": "sentence",
+              "text": "Lunch is usually at half past twelve.",
+              "translation": "午饭通常在十二点半。",
+              "image": "m2/lunch-at-half-past-twelve.webp"
+            },
+            {
+              "id": "dinner-at-half-past-six",
+              "type": "sentence",
+              "text": "Dinner is usually at half past six.",
+              "translation": "晚饭通常在六点半。",
+              "image": "m2/dinner-at-half-past-six.webp"
+            },
+            {
+              "id": "chicken",
+              "type": "word",
+              "text": "chicken",
+              "translation": "鸡肉",
+              "image": "m2/chicken.webp",
+              "same": "chicken"
+            },
+            {
+              "id": "sunday-lunch",
+              "type": "sentence",
+              "text": "They eat chicken, potatoes and other vegetables.",
+              "translation": "他们吃鸡肉、土豆和其他蔬菜。",
+              "image": "m2/sunday-lunch.webp",
+              "same": "chicken"
+            },
+            {
+              "id": "noodles-and-an-egg",
+              "type": "sentence",
+              "text": "Today he has noodles and an egg.",
+              "translation": "今天他吃面条和一个鸡蛋。",
+              "image": "m2/noodles-and-an-egg.webp"
+            },
+            {
+              "id": "want-a-hamburger",
+              "type": "sentence",
+              "text": "I want a hamburger.",
+              "translation": "我想要一个汉堡包。",
+              "image": "m2/want-a-hamburger.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Have you got the Harry Potter DVDs?",
+          "items": [
+            {
+              "id": "dvd",
+              "type": "word",
+              "text": "DVD",
+              "translation": "数字化视频光盘",
+              "image": "m3/dvd.webp",
+              "same": "dvd"
+            },
+            {
+              "id": "librarian",
+              "type": "word",
+              "text": "librarian",
+              "translation": "图书馆管理员",
+              "image": "m3/librarian.webp",
+              "same": "librarian"
+            },
+            {
+              "id": "have-you-got-the-dvds",
+              "type": "sentence",
+              "text": "Excuse me. Have you got the Harry Potter DVDs?",
+              "translation": "打扰一下，你们有《哈利·波特》的光盘吗？",
+              "image": "m3/have-you-got-the-dvds.webp",
+              "same": [
+                "dvd",
+                "librarian"
+              ]
+            },
+            {
+              "id": "look-on-the-computer",
+              "type": "sentence",
+              "text": "I'll look on the computer.",
+              "translation": "我在电脑上查一下。",
+              "image": "m3/look-on-the-computer.webp",
+              "same": [
+                "librarian",
+                "computer"
+              ]
+            },
+            {
+              "id": "lots-of-books",
+              "type": "sentence",
+              "text": "You've got lots of books here!",
+              "translation": "你们这里有很多书！",
+              "image": "m3/lots-of-books.webp",
+              "same": "library"
+            },
+            {
+              "id": "your-library-card",
+              "type": "sentence",
+              "text": "Your library card, please.",
+              "translation": "请出示你的借书证。",
+              "image": "m3/your-library-card.webp",
+              "same": "borrow"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "You can use the computers.",
+          "items": [
+            {
+              "id": "this-is-our-library",
+              "type": "sentence",
+              "text": "This is our library.",
+              "translation": "这是我们的图书馆。",
+              "image": "m3/this-is-our-library.webp",
+              "same": "library"
+            },
+            {
+              "id": "borrow-books",
+              "type": "sentence",
+              "text": "You can borrow books.",
+              "translation": "你可以借书。",
+              "image": "m3/borrow-books.webp",
+              "same": "borrow"
+            },
+            {
+              "id": "use-the-computers",
+              "type": "sentence",
+              "text": "You can use the computers.",
+              "translation": "你可以使用电脑。",
+              "image": "m3/use-the-computers.webp",
+              "same": "computer"
+            },
+            {
+              "id": "do-your-homework",
+              "type": "sentence",
+              "text": "You can do your homework.",
+              "translation": "你可以做作业。",
+              "image": "m3/do-your-homework.webp"
+            },
+            {
+              "id": "cant-talk",
+              "type": "sentence",
+              "text": "But you can't talk to your friends.",
+              "translation": "但你不可以和朋友说话。",
+              "image": "m3/cant-talk.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Did you read them?",
+          "items": [
+            {
+              "id": "its-grandma",
+              "type": "sentence",
+              "text": "Daming, it's Grandma!",
+              "translation": "大明，我是奶奶！",
+              "image": "m4/its-grandma.webp"
+            },
+            {
+              "id": "sent-you-a-maths-game",
+              "type": "sentence",
+              "text": "I sent you a maths game.",
+              "translation": "我给你寄了一个数学游戏。",
+              "image": "m4/sent-you-a-maths-game.webp"
+            },
+            {
+              "id": "did-you-read-them",
+              "type": "sentence",
+              "text": "I sent you English books. Did you read them?",
+              "translation": "我给你寄了英语书。你读了吗？",
+              "image": "m4/did-you-read-them.webp"
+            },
+            {
+              "id": "american-chocolate",
+              "type": "sentence",
+              "text": "And I sent you American chocolate.",
+              "translation": "我还给你寄了美国巧克力。",
+              "image": "m4/american-chocolate.webp",
+              "same": "chocolate-m4"
+            },
+            {
+              "id": "mimi-eating-chocolate",
+              "type": "sentence",
+              "text": "Oh, Mimi is eating my chocolate!",
+              "translation": "哦，咪咪在吃我的巧克力！",
+              "image": "m4/mimi-eating-chocolate.webp",
+              "same": "chocolate-m4"
+            },
+            {
+              "id": "did-you-ride-the-bike",
+              "type": "sentence",
+              "text": "Did you ride the bike?",
+              "translation": "你骑那辆自行车了吗？",
+              "image": "m4/did-you-ride-the-bike.webp"
+            },
+            {
+              "id": "did-you-fly-the-kite",
+              "type": "sentence",
+              "text": "Did you fly the kite?",
+              "translation": "你放那只风筝了吗？",
+              "image": "m4/did-you-fly-the-kite.webp",
+              "same": "kite"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "My favourite season is spring.",
+          "items": [
+            {
+              "id": "spring",
+              "type": "sentence",
+              "text": "My favourite season is spring.",
+              "translation": "我最喜欢的季节是春天。",
+              "image": "m4/spring.webp",
+              "same": "spring"
+            },
+            {
+              "id": "summer",
+              "type": "sentence",
+              "text": "I love summer. I can go swimming.",
+              "translation": "我爱夏天。我可以去游泳。",
+              "image": "m4/summer.webp"
+            },
+            {
+              "id": "autumn",
+              "type": "sentence",
+              "text": "The leaves fall from the trees.",
+              "translation": "树叶从树上落下来。",
+              "image": "m4/autumn.webp"
+            },
+            {
+              "id": "snow",
+              "type": "sentence",
+              "text": "I can play with the snow.",
+              "translation": "我可以玩雪。",
+              "image": "m4/snow.webp",
+              "same": "snow"
+            },
+            {
+              "id": "go-skiing",
+              "type": "sentence",
+              "text": "I can go skiing in winter.",
+              "translation": "冬天我可以去滑雪。",
+              "image": "m4/go-skiing.webp",
+              "same": "snow"
+            },
+            {
+              "id": "fly-my-kite-in-spring",
+              "type": "sentence",
+              "text": "I can fly my kite in spring.",
+              "translation": "春天我可以放风筝。",
+              "image": "m4/fly-my-kite-in-spring.webp",
+              "same": [
+                "kite",
+                "spring"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module 5",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Your bag is broken.",
+          "items": [
+            {
+              "id": "your-bag-is-broken",
+              "type": "sentence",
+              "text": "Lingling, your bag is broken!",
+              "translation": "玲玲，你的包坏了！",
+              "image": "m5/your-bag-is-broken.webp"
+            },
+            {
+              "id": "it-looks-dirty",
+              "type": "sentence",
+              "text": "But it looks dirty.",
+              "translation": "但它看起来脏。",
+              "image": "m5/it-looks-dirty.webp"
+            },
+            {
+              "id": "black-bag-is-heavy",
+              "type": "sentence",
+              "text": "This black bag is nice. But it's very heavy.",
+              "translation": "这个黑包很好看，但很重。",
+              "image": "m5/black-bag-is-heavy.webp",
+              "same": "heavy"
+            },
+            {
+              "id": "green-one-is-light",
+              "type": "sentence",
+              "text": "Look at this green one. It's light.",
+              "translation": "看这个绿色的，它很轻。",
+              "image": "m5/green-one-is-light.webp"
+            },
+            {
+              "id": "red-bag-with-wheels",
+              "type": "sentence",
+              "text": "This red bag has got wheels.",
+              "translation": "这个红色的包有轮子。",
+              "image": "m5/red-bag-with-wheels.webp"
+            },
+            {
+              "id": "how-much-is-it",
+              "type": "sentence",
+              "text": "How much is it?",
+              "translation": "它多少钱？",
+              "image": "m5/how-much-is-it.webp"
+            },
+            {
+              "id": "yellow-pencils-broken",
+              "type": "sentence",
+              "text": "The yellow pencils are broken.",
+              "translation": "黄色的铅笔断了。",
+              "image": "m5/yellow-pencils-broken.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Mine is pink.",
+          "items": [
+            {
+              "id": "carry-it-on-my-back",
+              "type": "sentence",
+              "text": "I carry it on my back.",
+              "translation": "我把它背在背上。",
+              "image": "m5/carry-it-on-my-back.webp"
+            },
+            {
+              "id": "carry-with-my-hand",
+              "type": "sentence",
+              "text": "I carry it with my hand.",
+              "translation": "我用手提着它。",
+              "image": "m5/carry-with-my-hand.webp"
+            },
+            {
+              "id": "over-my-shoulder",
+              "type": "sentence",
+              "text": "Mine is pink. I carry it over my shoulder.",
+              "translation": "我的是粉色的。我把它挎在肩上。",
+              "image": "m5/over-my-shoulder.webp"
+            },
+            {
+              "id": "eight-thin-legs",
+              "type": "sentence",
+              "text": "It's got eight thin legs.",
+              "translation": "它有八条细腿。",
+              "image": "m5/eight-thin-legs.webp"
+            },
+            {
+              "id": "very-long-ears",
+              "type": "sentence",
+              "text": "It's got very long ears.",
+              "translation": "它有很长的耳朵。",
+              "image": "m5/very-long-ears.webp"
+            },
+            {
+              "id": "very-big-mouth",
+              "type": "sentence",
+              "text": "It's got a very big mouth.",
+              "translation": "它有一张很大的嘴。",
+              "image": "m5/very-big-mouth.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Module 6",
+      "units": [
+        {
+          "id": "u1",
+          "title": "We'll see lots of very big stones.",
+          "items": [
+            {
+              "id": "big-stones",
+              "type": "sentence",
+              "text": "We'll see lots of very big stones.",
+              "translation": "我们将会看到很多非常大的石头。",
+              "image": "m6/big-stones.webp",
+              "same": "stones"
+            },
+            {
+              "id": "in-a-circle",
+              "type": "sentence",
+              "text": "They are in a circle.",
+              "translation": "它们围成一个圆圈。",
+              "image": "m6/in-a-circle.webp",
+              "same": "stones"
+            },
+            {
+              "id": "circle",
+              "type": "word",
+              "text": "circle",
+              "translation": "圆，圆形",
+              "image": "m6/circle.webp"
+            },
+            {
+              "id": "three-hours-by-car",
+              "type": "sentence",
+              "text": "By car. It will take three hours.",
+              "translation": "坐汽车。要花三个小时。",
+              "image": "m6/three-hours-by-car.webp"
+            },
+            {
+              "id": "thousand",
+              "type": "word",
+              "text": "thousand",
+              "translation": "一千",
+              "image": "m6/thousand.webp"
+            },
+            {
+              "id": "great-wall",
+              "type": "sentence",
+              "text": "How old is the Great Wall?",
+              "translation": "长城有多少年历史了？",
+              "image": "m6/great-wall.webp",
+              "same": "great-wall"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It was amazing.",
+          "items": [
+            {
+              "id": "helicopter",
+              "type": "word",
+              "text": "helicopter",
+              "translation": "直升机",
+              "image": "m6/helicopter.webp",
+              "same": "helicopter"
+            },
+            {
+              "id": "helicopter-ride",
+              "type": "sentence",
+              "text": "We took a short helicopter ride over Stonehenge!",
+              "translation": "我们乘直升机在巨石阵上空短暂飞行了一圈！",
+              "image": "m6/helicopter-ride.webp",
+              "same": [
+                "helicopter",
+                "stones"
+              ]
+            },
+            {
+              "id": "took-nice-photos",
+              "type": "sentence",
+              "text": "I took some nice photos there.",
+              "translation": "我在那儿拍了一些好看的照片。",
+              "image": "m6/took-nice-photos.webp"
+            },
+            {
+              "id": "went-to-the-great-wall",
+              "type": "sentence",
+              "text": "We went to the Great Wall.",
+              "translation": "我们去了长城。",
+              "image": "m6/went-to-the-great-wall.webp",
+              "same": "great-wall"
+            },
+            {
+              "id": "take-a-bike-ride",
+              "type": "sentence",
+              "text": "Daming, come and take a bike ride.",
+              "translation": "大明，来骑自行车吧。",
+              "image": "m6/take-a-bike-ride.webp"
+            },
+            {
+              "id": "the-elephant-danced",
+              "type": "sentence",
+              "text": "The elephant danced.",
+              "translation": "那头大象跳舞了。",
+              "image": "m6/the-elephant-danced.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Module 7",
+      "units": [
+        {
+          "id": "u1",
+          "title": "My father goes to work at 8 o'clock every morning.",
+          "items": [
+            {
+              "id": "goes-to-work-at-8",
+              "type": "sentence",
+              "text": "My father goes to work at 8 o'clock every morning.",
+              "translation": "我爸爸每天早上八点去上班。",
+              "image": "m7/goes-to-work-at-8.webp"
+            },
+            {
+              "id": "hes-an-actor",
+              "type": "sentence",
+              "text": "He's an actor.",
+              "translation": "他是一名演员。",
+              "image": "m7/hes-an-actor.webp",
+              "same": "actor"
+            },
+            {
+              "id": "shes-a-nurse",
+              "type": "sentence",
+              "text": "She's a nurse.",
+              "translation": "她是一名护士。",
+              "image": "m7/shes-a-nurse.webp"
+            },
+            {
+              "id": "shes-a-taxi-driver",
+              "type": "sentence",
+              "text": "She's a taxi driver.",
+              "translation": "她是一名出租车司机。",
+              "image": "m7/shes-a-taxi-driver.webp"
+            },
+            {
+              "id": "busy",
+              "type": "sentence",
+              "text": "He's very busy.",
+              "translation": "他非常忙。",
+              "image": "m7/busy.webp",
+              "same": "busy"
+            },
+            {
+              "id": "evening",
+              "type": "word",
+              "text": "evening",
+              "translation": "傍晚，晚上",
+              "image": "m7/evening.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I'll be home at 7 o'clock.",
+          "items": [
+            {
+              "id": "ill-be-home-at-7",
+              "type": "sentence",
+              "text": "I'll be home at 7 o'clock.",
+              "translation": "我会在七点钟到家。",
+              "image": "m7/ill-be-home-at-7.webp"
+            },
+            {
+              "id": "happy-birthday",
+              "type": "sentence",
+              "text": "Happy birthday!",
+              "translation": "生日快乐！",
+              "image": "m7/happy-birthday.webp"
+            },
+            {
+              "id": "quarter-to-seven",
+              "type": "sentence",
+              "text": "It's a quarter to seven.",
+              "translation": "现在是六点四十五分。",
+              "image": "m7/quarter-to-seven.webp"
+            },
+            {
+              "id": "late-and-tired",
+              "type": "sentence",
+              "text": "I'm late and I'm tired.",
+              "translation": "我迟到了，而且很累。",
+              "image": "m7/late-and-tired.webp"
+            },
+            {
+              "id": "ill-be-late",
+              "type": "sentence",
+              "text": "School starts at 8 o'clock. I'll be late.",
+              "translation": "八点钟上课。我要迟到了。",
+              "image": "m7/ill-be-late.webp"
+            },
+            {
+              "id": "she-gets-up-at-7",
+              "type": "sentence",
+              "text": "She gets up at 7 o'clock.",
+              "translation": "她七点钟起床。",
+              "image": "m7/she-gets-up-at-7.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "Module 8",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Will you help me?",
+          "items": [
+            {
+              "id": "will-you-help-me",
+              "type": "sentence",
+              "text": "Will you help me? Of course I will.",
+              "translation": "你愿意帮我吗？我当然愿意。",
+              "image": "m8/will-you-help-me.webp",
+              "same": "make-kite"
+            },
+            {
+              "id": "chopsticks",
+              "type": "sentence",
+              "text": "What about chopsticks?",
+              "translation": "筷子怎么样？",
+              "image": "m8/chopsticks.webp",
+              "same": "chopsticks"
+            },
+            {
+              "id": "ill-make-a-kite",
+              "type": "sentence",
+              "text": "Good idea! I'll make a kite!",
+              "translation": "好主意！我要做一只风筝！",
+              "image": "m8/ill-make-a-kite.webp",
+              "same": "make-kite"
+            },
+            {
+              "id": "chinese-dragon-kite",
+              "type": "sentence",
+              "text": "It's a Chinese dragon.",
+              "translation": "它是一条中国龙。",
+              "image": "m8/chinese-dragon-kite.webp",
+              "same": "dragon"
+            },
+            {
+              "id": "paper-fish",
+              "type": "sentence",
+              "text": "I'll make a paper fish for her.",
+              "translation": "我要给它做一条纸鱼。",
+              "image": "m8/paper-fish.webp"
+            },
+            {
+              "id": "visit-my-cousin",
+              "type": "sentence",
+              "text": "I'm going to visit my cousin in New York.",
+              "translation": "我要去纽约看望我的表哥。",
+              "image": "m8/visit-my-cousin.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I made a kite.",
+          "items": [
+            {
+              "id": "scissors",
+              "type": "word",
+              "text": "scissors",
+              "translation": "剪刀",
+              "image": "m8/scissors.webp",
+              "same": "scissors"
+            },
+            {
+              "id": "string",
+              "type": "word",
+              "text": "string",
+              "translation": "线，细绳",
+              "image": "m8/string.webp",
+              "same": "string"
+            },
+            {
+              "id": "drew-a-dragon",
+              "type": "sentence",
+              "text": "I drew a dragon on a piece of yellow paper.",
+              "translation": "我在一张黄纸上画了一条龙。",
+              "image": "m8/drew-a-dragon.webp",
+              "same": [
+                "dragon",
+                "draw"
+              ]
+            },
+            {
+              "id": "i-painted-it",
+              "type": "sentence",
+              "text": "I painted it.",
+              "translation": "我给它涂了颜色。",
+              "image": "m8/i-painted-it.webp",
+              "same": [
+                "dragon",
+                "draw"
+              ]
+            },
+            {
+              "id": "cut-the-paper",
+              "type": "sentence",
+              "text": "I cut the paper with scissors.",
+              "translation": "我用剪刀剪纸。",
+              "image": "m8/cut-the-paper.webp",
+              "same": "scissors"
+            },
+            {
+              "id": "put-sticks-on-it",
+              "type": "sentence",
+              "text": "I put sticks on it.",
+              "translation": "我在上面放了棍子。",
+              "image": "m8/put-sticks-on-it.webp",
+              "same": [
+                "stick",
+                "kite-craft"
+              ]
+            },
+            {
+              "id": "tied-strings",
+              "type": "sentence",
+              "text": "I tied strings to it.",
+              "translation": "我在上面系了线。",
+              "image": "m8/tied-strings.webp",
+              "same": [
+                "string",
+                "kite-craft"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Module 9",
+      "units": [
+        {
+          "id": "u1",
+          "title": "We laughed a lot.",
+          "items": [
+            {
+              "id": "two-letters",
+              "type": "sentence",
+              "text": "Wow! I've got two letters in English!",
+              "translation": "哇！我收到了两封英文信！",
+              "image": "m9/two-letters.webp"
+            },
+            {
+              "id": "childrens-theatre",
+              "type": "sentence",
+              "text": "Last week, we went to a children's theatre.",
+              "translation": "上周我们去了一家儿童剧院。",
+              "image": "m9/childrens-theatre.webp",
+              "same": "theatre"
+            },
+            {
+              "id": "men-wore-womens-clothes",
+              "type": "sentence",
+              "text": "The men wore women's clothes.",
+              "translation": "男演员穿着女人的衣服。",
+              "image": "m9/men-wore-womens-clothes.webp"
+            },
+            {
+              "id": "women-wore-mens-clothes",
+              "type": "sentence",
+              "text": "The women wore men's clothes.",
+              "translation": "女演员穿着男人的衣服。",
+              "image": "m9/women-wore-mens-clothes.webp"
+            },
+            {
+              "id": "we-laughed-a-lot",
+              "type": "sentence",
+              "text": "It was very funny. We laughed a lot.",
+              "translation": "非常滑稽。我们笑得很开心。",
+              "image": "m9/we-laughed-a-lot.webp",
+              "same": "theatre"
+            },
+            {
+              "id": "ate-hamburgers-and-chips",
+              "type": "sentence",
+              "text": "We all ate hamburgers and chips.",
+              "translation": "我们都吃了汉堡包和薯条。",
+              "image": "m9/ate-hamburgers-and-chips.webp"
+            },
+            {
+              "id": "dog-wore-a-hat",
+              "type": "sentence",
+              "text": "I saw a dog. It wore a hat.",
+              "translation": "我看见一只狗。它戴着帽子。",
+              "image": "m9/dog-wore-a-hat.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Mum bought new chopsticks for you.",
+          "items": [
+            {
+              "id": "bought-new-chopsticks",
+              "type": "sentence",
+              "text": "Mum bought new chopsticks for you.",
+              "translation": "妈妈给你买了新筷子。",
+              "image": "m9/bought-new-chopsticks.webp"
+            },
+            {
+              "id": "another-bed",
+              "type": "sentence",
+              "text": "Dad put another bed in my room.",
+              "translation": "爸爸在我房间里又放了一张床。",
+              "image": "m9/another-bed.webp"
+            },
+            {
+              "id": "borrowed-a-bike",
+              "type": "sentence",
+              "text": "We borrowed a bike for you.",
+              "translation": "我们给你借了一辆自行车。",
+              "image": "m9/borrowed-a-bike.webp"
+            },
+            {
+              "id": "book-about-history",
+              "type": "sentence",
+              "text": "Dad read a book about Chinese history.",
+              "translation": "爸爸读了一本关于中国历史的书。",
+              "image": "m9/book-about-history.webp"
+            },
+            {
+              "id": "saw-a-koala",
+              "type": "sentence",
+              "text": "He saw a koala.",
+              "translation": "他看见了一只考拉。",
+              "image": "m9/saw-a-koala.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Module 10",
+      "units": [
+        {
+          "id": "u1",
+          "title": "What did you put in your bag?",
+          "items": [
+            {
+              "id": "ticket",
+              "type": "word",
+              "text": "ticket",
+              "translation": "票",
+              "image": "m10/ticket.webp",
+              "same": "plane"
+            },
+            {
+              "id": "passport",
+              "type": "word",
+              "text": "passport",
+              "translation": "护照",
+              "image": "m10/passport.webp"
+            },
+            {
+              "id": "what-did-you-put-in",
+              "type": "sentence",
+              "text": "What did you put in your bag?",
+              "translation": "你往包里放了什么？",
+              "image": "m10/what-did-you-put-in.webp"
+            },
+            {
+              "id": "go-to-the-airport",
+              "type": "sentence",
+              "text": "I'll go to the airport.",
+              "translation": "我将去机场。",
+              "image": "m10/go-to-the-airport.webp"
+            },
+            {
+              "id": "take-the-plane",
+              "type": "sentence",
+              "text": "Then I'll take the plane to the US.",
+              "translation": "然后我会坐飞机去美国。",
+              "image": "m10/take-the-plane.webp",
+              "same": "plane"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I played on the beach.",
+          "items": [
+            {
+              "id": "played-on-the-beach",
+              "type": "sentence",
+              "text": "I played on the beach.",
+              "translation": "我在海滩上玩。",
+              "image": "m10/played-on-the-beach.webp"
+            },
+            {
+              "id": "made-a-new-friend",
+              "type": "sentence",
+              "text": "I made a new friend there.",
+              "translation": "我在那儿交了一个新朋友。",
+              "image": "m10/made-a-new-friend.webp"
+            },
+            {
+              "id": "climbed-the-mountain",
+              "type": "sentence",
+              "text": "I climbed the mountain and had a picnic.",
+              "translation": "我爬了山，还野餐了。",
+              "image": "m10/climbed-the-mountain.webp"
+            },
+            {
+              "id": "went-to-the-moon",
+              "type": "sentence",
+              "text": "Last night, I went to the moon.",
+              "translation": "昨晚我去了月球。",
+              "image": "m10/went-to-the-moon.webp"
+            },
+            {
+              "id": "going-by-ship",
+              "type": "sentence",
+              "text": "I'm going by ship.",
+              "translation": "我要坐船去。",
+              "image": "m10/going-by-ship.webp"
+            },
+            {
+              "id": "he-danced",
+              "type": "sentence",
+              "text": "We had a party yesterday. He danced.",
+              "translation": "我们昨天开了个聚会。他跳舞了。",
+              "image": "m10/he-danced.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

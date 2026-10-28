@@ -1,0 +1,959 @@
+{
+  "images": [
+    {
+      "path": "m1/hot-dog.png",
+      "item": "I want a hot dog, please.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming pointing happily at a hot dog with a sausage in a long bun and yellow mustard. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/hamburger.png",
+      "item": "I want a hamburger.",
+      "refs": [],
+      "prompt": "A plush boy with short blond hair holding a big hamburger with lettuce and cheese",
+      "digits": false
+    },
+    {
+      "path": "m1/cashier.png",
+      "item": "cashier",
+      "refs": [],
+      "prompt": "A smiling plush woman in a cap and apron standing behind a fast food counter with a cash register",
+      "digits": false
+    },
+    {
+      "path": "m1/cola.png",
+      "item": "Cola, please.",
+      "refs": [],
+      "prompt": "A paper cup of cola with ice and a straw",
+      "digits": false
+    },
+    {
+      "path": "m1/soup.png",
+      "item": "Can I have some soup?",
+      "refs": [],
+      "prompt": "A steaming bowl of soup with a spoon",
+      "digits": false
+    },
+    {
+      "path": "m1/enjoy-your-meal.png",
+      "item": "Enjoy your meal!",
+      "refs": [],
+      "prompt": "A cashier handing a tray with two hamburgers, a hot dog and three colas over the counter",
+      "digits": false
+    },
+    {
+      "path": "m1/my-new-trousers.png",
+      "item": "Oh no! My new trousers!",
+      "refs": [],
+      "prompt": "A plush man with short blond hair looking shocked at cola spilled all over his trousers",
+      "digits": false
+    },
+    {
+      "path": "m1/want-to-eat.png",
+      "item": "What do you want to eat?",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling looking up at a picture menu on the wall of a restaurant, a finger on her chin, thinking. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/noodles-and-cola.png",
+      "item": "I want noodles and a cola, please.",
+      "refs": [],
+      "prompt": "A bowl of noodles next to a paper cup of cola on a tray",
+      "digits": false
+    },
+    {
+      "path": "m1/milk-please.png",
+      "item": "Milk, please.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling holding a glass of white milk. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/eat-some-meat.png",
+      "item": "I want to eat some meat.",
+      "refs": [],
+      "prompt": "A plate with a big piece of roast meat",
+      "digits": false
+    },
+    {
+      "path": "m1/chicken-and-rice.png",
+      "item": "I want some chicken and rice, please.",
+      "refs": [],
+      "prompt": "A plate with chicken legs and a bowl of white rice",
+      "digits": false
+    },
+    {
+      "path": "m1/some-pears.png",
+      "item": "And I want some pears.",
+      "refs": [],
+      "prompt": "Three yellow pears in a bowl",
+      "digits": false
+    },
+    {
+      "path": "m2/when-going-to-eat.png",
+      "item": "When are we going to eat?",
+      "refs": [],
+      "prompt": "A plush boy with short blond hair rubbing his tummy beside a closed picnic basket, looking at his mum",
+      "digits": false
+    },
+    {
+      "path": "m2/half-past-twelve.png",
+      "item": "At half past twelve.",
+      "refs": [],
+      "prompt": "A round clock showing half past twelve, the hour hand between 12 and 1 and the minute hand on 6",
+      "digits": true
+    },
+    {
+      "path": "m2/get-up-breakfast.png",
+      "item": "I'm going to get up and have breakfast.",
+      "refs": [],
+      "prompt": "A sleepy plush boy stretching and yawning as he gets out of bed",
+      "digits": false
+    },
+    {
+      "path": "m2/ducks-on-lake.png",
+      "item": "There are some ducks on the lake.",
+      "refs": [],
+      "prompt": "Several white ducks swimming on a calm blue lake in a park",
+      "digits": false
+    },
+    {
+      "path": "m2/dark-clouds.png",
+      "item": "It's going to rain soon.",
+      "refs": [],
+      "prompt": "Big dark grey clouds filling the sky over a green park",
+      "digits": false
+    },
+    {
+      "path": "m2/raining-now.png",
+      "item": "Oh dear! It's raining now!",
+      "refs": [],
+      "prompt": "Heavy rain pouring down from dark grey clouds onto a picnic blanket in a park, a plush woman and two boys running away with their hands over their heads, raindrops and puddles clearly visible (NOT without rain)",
+      "digits": false
+    },
+    {
+      "path": "m2/ducks-eating-sandwiches.png",
+      "item": "They're eating our sandwiches!",
+      "refs": [],
+      "prompt": "Naughty white ducks pecking at sandwiches on a picnic blanket",
+      "digits": false
+    },
+    {
+      "path": "m2/rain-in-beijing.png",
+      "item": "Tomorrow, it will rain in Beijing.",
+      "refs": [],
+      "prompt": "The red Tiananmen gate tower in Beijing under a dark grey sky, lots of raindrops clearly falling on it and puddles on the ground in front (the rain must be clearly visible, NOT a plain or sunny background)",
+      "digits": false
+    },
+    {
+      "path": "m2/snow-in-harbin.png",
+      "item": "In Harbin, it will snow.",
+      "refs": [],
+      "prompt": "Snow falling on a city with ice sculptures and snowy roofs",
+      "digits": false
+    },
+    {
+      "path": "m2/sunny-in-dalian.png",
+      "item": "In Dalian, it will be sunny.",
+      "refs": [],
+      "prompt": "A bright sun shining over a seaside city with a blue sea and a sandy beach",
+      "digits": false
+    },
+    {
+      "path": "m2/windy-in-xian.png",
+      "item": "In Xi'an, it will be windy.",
+      "refs": [],
+      "prompt": "Strong wind blowing trees and leaves in front of an old city wall, a kite flying high",
+      "digits": false
+    },
+    {
+      "path": "m2/hot-in-guangzhou.png",
+      "item": "In Guangzhou, it will be hot.",
+      "refs": [],
+      "prompt": "A plush boy sweating and fanning himself under a big hot red sun, a melting ice cream in his hand",
+      "digits": false
+    },
+    {
+      "path": "m2/cloudy.png",
+      "item": "It will be cloudy in Tianjin.",
+      "refs": [],
+      "prompt": "A city sky full of big grey and white clouds, no sun",
+      "digits": false
+    },
+    {
+      "path": "m3/took-photos.png",
+      "item": "I took some photos.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming taking a photo of ducks on a lake with a camera. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/big-lake-ducks.png",
+      "item": "There were lots of ducks.",
+      "refs": [],
+      "prompt": "A big blue lake in a park with lots and lots of white ducks swimming on it",
+      "digits": false
+    },
+    {
+      "path": "m3/started-to-rain.png",
+      "item": "Then it started to rain.",
+      "refs": [],
+      "prompt": "The first big raindrops falling from grey clouds onto a park path",
+      "digits": false
+    },
+    {
+      "path": "m3/ran-quickly.png",
+      "item": "We ran quickly to hide.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming and a plush boy with short blond hair running fast toward a big tree in the rain. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/ducks-had-a-picnic.png",
+      "item": "They had a picnic!",
+      "refs": [],
+      "prompt": "Ducks sitting on a picnic blanket eating sandwiches and drinking from cups",
+      "digits": false
+    },
+    {
+      "path": "m3/angry-with-ducks.png",
+      "item": "We were angry with the ducks!",
+      "refs": [],
+      "prompt": "Two plush boys with angry faces and hands on hips looking at ducks walking away",
+      "digits": false
+    },
+    {
+      "path": "m3/sun-is-shining.png",
+      "item": "The sun is shining.",
+      "refs": [],
+      "prompt": "A big bright sun shining in a clear blue sky over a green park",
+      "digits": false
+    },
+    {
+      "path": "m3/birds-singing.png",
+      "item": "The birds are singing in the trees.",
+      "refs": [],
+      "prompt": "Little birds sitting on tree branches with open beaks, music notes floating around them",
+      "digits": false
+    },
+    {
+      "path": "m3/birds-flying-away.png",
+      "item": "The birds are flying away.",
+      "refs": [],
+      "prompt": "A group of birds flying away from a tree into a grey sky as rain starts",
+      "digits": false
+    },
+    {
+      "path": "m3/dog-crying.png",
+      "item": "Look at the little dog. It's crying.",
+      "refs": [],
+      "prompt": "A little puppy sitting and crying with big tears",
+      "digits": false
+    },
+    {
+      "path": "m3/moon-shining.png",
+      "item": "The moon is shining sadly.",
+      "refs": [],
+      "prompt": "A sad-faced crescent moon shining in a dark night sky full of stars",
+      "digits": false
+    },
+    {
+      "path": "m3/having-a-picnic.png",
+      "item": "In this photo, we're having a picnic.",
+      "refs": [],
+      "prompt": "A family sitting on a picnic blanket in a sunny park, eating sandwiches",
+      "digits": false
+    },
+    {
+      "path": "m4/cant-carry.png",
+      "item": "I can't carry all these things.",
+      "refs": [],
+      "prompt": "A plush woman with short blond hair carrying too many shopping bags and a cake box, wobbling",
+      "digits": false
+    },
+    {
+      "path": "m4/on-the-phone.png",
+      "item": "Sorry, I can't. I'm on the phone.",
+      "refs": [],
+      "prompt": "A plush boy with short blond hair talking on a telephone and shaking his head",
+      "digits": false
+    },
+    {
+      "path": "m4/carry-the-box.png",
+      "item": "I can carry the box.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming carrying a big cardboard box in both arms. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/oranges-falling.png",
+      "item": "The oranges are falling!",
+      "refs": [],
+      "prompt": "Oranges falling out of a torn paper bag and rolling on the ground",
+      "digits": false
+    },
+    {
+      "path": "m4/grab-the-balloons.png",
+      "item": "Simon, grab the balloons!",
+      "refs": [],
+      "prompt": "A plush boy with short blond hair jumping up to grab the strings of colourful balloons",
+      "digits": false
+    },
+    {
+      "path": "m4/flying-away.png",
+      "item": "They're flying away!",
+      "refs": [],
+      "prompt": "Colourful balloons flying away high into the blue sky, strings hanging down",
+      "digits": false
+    },
+    {
+      "path": "m4/apples-falling-stairs.png",
+      "item": "The apples are falling down the stairs!",
+      "refs": [],
+      "prompt": "Red apples bouncing down a staircase one step after another",
+      "digits": false
+    },
+    {
+      "path": "m4/stairs.png",
+      "item": "stairs",
+      "refs": [],
+      "prompt": "A wooden staircase with a handrail going up",
+      "digits": false
+    },
+    {
+      "path": "m4/eggs-are-broken.png",
+      "item": "The eggs are broken!",
+      "refs": [],
+      "prompt": "Broken eggs on the floor with yellow yolks spilling out of the shells",
+      "digits": false
+    },
+    {
+      "path": "m4/cola-falling.png",
+      "item": "Now the cola is falling, too!",
+      "refs": [],
+      "prompt": "A big bottle of cola falling through the air and splashing",
+      "digits": false
+    },
+    {
+      "path": "m4/what-a-mess.png",
+      "item": "What a mess!",
+      "refs": [],
+      "prompt": "A floor covered with broken eggs, rolling apples, spilled cola and fallen shopping bags, a plush woman with her hands on her head",
+      "digits": false
+    },
+    {
+      "path": "m4/panda-kite.png",
+      "item": "Oh! It's a panda kite.",
+      "refs": [],
+      "prompt": "A black and white panda-shaped kite falling from the sky",
+      "digits": false
+    },
+    {
+      "path": "m4/sitting-down.png",
+      "item": "He's sitting down.",
+      "refs": [],
+      "prompt": "A plush boy sitting on a chair at his school desk",
+      "digits": false
+    },
+    {
+      "path": "m5/playing-suona.png",
+      "item": "He is playing the suona, but the telephone rings.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming blowing a Chinese suona horn, a red telephone ringing and shaking on a table beside him. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/telephone.png",
+      "item": "telephone",
+      "refs": [],
+      "prompt": "A single red telephone with a curly cord, ringing and shaking",
+      "digits": false
+    },
+    {
+      "path": "m5/bell-is-ringing.png",
+      "item": "The bell is ringing.",
+      "refs": [],
+      "prompt": "A finger pressing a doorbell button beside a front door, sound lines around it",
+      "digits": false
+    },
+    {
+      "path": "m5/dog-is-barking.png",
+      "item": "The dog is barking.",
+      "refs": [],
+      "prompt": "A small brown dog barking loudly with its mouth wide open",
+      "digits": false
+    },
+    {
+      "path": "m5/tom-is-crying.png",
+      "item": "Little Tom is crying.",
+      "refs": [],
+      "prompt": "A little plush boy crying loudly with tears running down his cheeks",
+      "digits": false
+    },
+    {
+      "path": "m5/birthday-party.png",
+      "item": "Daming is having a birthday party.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming in a party hat in front of a birthday cake with candles, friends and balloons around. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/dog-dancing.png",
+      "item": "The dog is barking and dancing with the suona.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "A small brown dog standing on its back legs and dancing while Daming plays a suona horn. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/jumping-in-water.png",
+      "item": "Some children are jumping in the water.",
+      "refs": [],
+      "prompt": "Children in rain boots jumping and splashing in big puddles in the rain",
+      "digits": false
+    },
+    {
+      "path": "m5/pigs-sleeping.png",
+      "item": "Some pigs are sleeping under a tree.",
+      "refs": [],
+      "prompt": "Three pink pigs sleeping under a big tree in the rain",
+      "digits": false
+    },
+    {
+      "path": "m5/carrying-umbrellas.png",
+      "item": "People are carrying umbrellas.",
+      "refs": [],
+      "prompt": "People walking along a street holding colourful umbrellas in the rain",
+      "digits": false
+    },
+    {
+      "path": "m5/raincoat.png",
+      "item": "A man is wearing a big hat and a raincoat.",
+      "refs": [],
+      "prompt": "A plush man in a yellow raincoat and a big rain hat",
+      "digits": false
+    },
+    {
+      "path": "m5/tunnel.png",
+      "item": "The train goes into a tunnel.",
+      "refs": [],
+      "prompt": "A green train going into a dark tunnel in the side of a mountain",
+      "digits": false
+    },
+    {
+      "path": "m5/train-arrives.png",
+      "item": "Now the train arrives at the station.",
+      "refs": [],
+      "prompt": "A train stopping at a railway station platform, people waiting with bags, the sun shining",
+      "digits": false
+    },
+    {
+      "path": "m5/come-back-kite.png",
+      "item": "Please come back, my dear kite!",
+      "refs": [],
+      "prompt": "A plush girl holding a broken string and reaching up as her kite flies far away into the sky",
+      "digits": false
+    },
+    {
+      "path": "m6/daming-birthday.png",
+      "item": "It was Daming's birthday yesterday.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming in a party hat holding many wrapped presents, a birthday cake on the table. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/bought-him-a-book.png",
+      "item": "Simon's mum bought him a book.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "A plush woman with short blond hair giving Daming a book wrapped with a ribbon. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/space-travel-book.png",
+      "item": "It was a book about space travel.",
+      "refs": [],
+      "prompt": "An open book showing pictures of rockets, planets and stars",
+      "digits": false
+    },
+    {
+      "path": "m6/earth.png",
+      "item": "earth",
+      "refs": [],
+      "prompt": "The planet earth floating in dark space, blue seas and green land",
+      "digits": false
+    },
+    {
+      "path": "m6/surprised.png",
+      "item": "Simon was surprised to see spaceships from China.",
+      "refs": [],
+      "prompt": "A plush boy with short blond hair with wide eyes and an open mouth, looking at a book picture of a white spaceship with a red Chinese flag on it",
+      "digits": false
+    },
+    {
+      "path": "m6/paper-spaceship.png",
+      "item": "They made a paper spaceship together.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming and a plush boy with short blond hair folding and gluing a white paper spaceship at a table. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/shenzhou-v.png",
+      "item": "The name of the spaceship is Shenzhou V.",
+      "refs": [],
+      "prompt": "A white Chinese spaceship (a capsule with two big blue solar panel wings, NOT an aeroplane, no plane wings or tail fins) flying in black space full of stars, the big round blue and green earth below it",
+      "digits": false
+    },
+    {
+      "path": "m6/taikonaut.png",
+      "item": "taikonaut",
+      "refs": [],
+      "prompt": "A Chinese astronaut in a white spacesuit and helmet, waving, a small Chinese flag on the arm",
+      "digits": false
+    },
+    {
+      "path": "m6/national-flag.png",
+      "item": "national flag",
+      "refs": [],
+      "prompt": "The red Chinese national flag with five yellow stars waving on a pole",
+      "digits": false
+    },
+    {
+      "path": "m6/seeds.png",
+      "item": "seeds",
+      "refs": [],
+      "prompt": "A child's open hand holding a few small brown seeds",
+      "digits": false
+    },
+    {
+      "path": "m6/made-a-model.png",
+      "item": "Daming made a model of a Chinese spaceship.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming proudly holding up a small toy model spaceship he has made. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/model-of-you.png",
+      "item": "Oh, look! It's a model of you!",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming laughing and holding a tiny doll that looks just like himself. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/flew-into-space.png",
+      "item": "My father flew into space in Shenzhou V.",
+      "refs": [],
+      "prompt": "A white rocket blasting off into the sky with fire and smoke below it",
+      "digits": false
+    },
+    {
+      "path": "m7/spent-hours-in-space.png",
+      "item": "He spent about twenty-one hours in space.",
+      "refs": [],
+      "prompt": "An astronaut in a white spacesuit floating inside a spaceship cabin, the blue earth seen through a round window",
+      "digits": false
+    },
+    {
+      "path": "m7/made-a-video.png",
+      "item": "He also made a video in space.",
+      "refs": [],
+      "prompt": "An astronaut in a white spacesuit floating in a spaceship cabin and filming with a video camera",
+      "digits": false
+    },
+    {
+      "path": "m7/came-back-to-earth.png",
+      "item": "Then he came back to the earth.",
+      "refs": [],
+      "prompt": "A round return capsule with a big red and white parachute landing on green grassland",
+      "digits": false
+    },
+    {
+      "path": "m7/bird-flew.png",
+      "item": "A bird flew into the sky.",
+      "refs": [],
+      "prompt": "A small bird flying up into a clear blue sky above the trees",
+      "digits": false
+    },
+    {
+      "path": "m7/go-into-space-someday.png",
+      "item": "I want to go into space someday, too.",
+      "refs": [],
+      "prompt": "A plush boy in a toy astronaut helmet looking up at the stars and moon through a window",
+      "digits": false
+    },
+    {
+      "path": "m7/couldnt-see-or-hear.png",
+      "item": "She couldn't see or hear.",
+      "refs": [],
+      "prompt": "A plush girl in an old-fashioned long dress with her eyes closed and her hands over her ears",
+      "digits": false
+    },
+    {
+      "path": "m7/could-read.png",
+      "item": "But she could read.",
+      "refs": [],
+      "prompt": "A plush girl in an old-fashioned dress with her eyes closed, reading a book of raised dots with her fingertips",
+      "digits": false
+    },
+    {
+      "path": "m7/helped-blind-people.png",
+      "item": "She also wrote books and helped blind people.",
+      "refs": [],
+      "prompt": "A kind plush woman helping a blind man with dark glasses and a white stick walk along a path",
+      "digits": false
+    },
+    {
+      "path": "m7/travelled-round-world.png",
+      "item": "Helen travelled round the world and told her story.",
+      "refs": [],
+      "prompt": "A plush woman with a suitcase standing beside a big globe, a plane flying around it",
+      "digits": false
+    },
+    {
+      "path": "m7/baby-couldnt-walk.png",
+      "item": "When I was a baby, I couldn't walk.",
+      "refs": [],
+      "prompt": "A baby crawling on a soft rug",
+      "digits": false
+    },
+    {
+      "path": "m7/great-teacher.png",
+      "item": "He was a great teacher.",
+      "refs": [],
+      "prompt": "An old Chinese teacher in ancient robes with a long white beard teaching students sitting around him",
+      "digits": false
+    },
+    {
+      "path": "m7/go-to-the-zoo.png",
+      "item": "Did you go to the zoo?",
+      "refs": [],
+      "prompt": "Two plush children at a zoo looking at a giraffe and an elephant",
+      "digits": false
+    },
+    {
+      "path": "m8/cups-on-heads.png",
+      "item": "Why do you have cups on your heads?",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/lingling.png",
+        "1a/characters/amy.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Daming, Lingling and Amy laughing with paper cups upside down on their heads, Sam looking puzzled. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/cup.png",
+      "item": "cup",
+      "refs": [],
+      "prompt": "A single white paper cup",
+      "digits": false
+    },
+    {
+      "path": "m8/baseball.png",
+      "item": "baseball",
+      "refs": [],
+      "prompt": "A white baseball with red stitches, a wooden bat and a brown glove",
+      "digits": false
+    },
+    {
+      "path": "m8/baseball-caps.png",
+      "item": "There were baseball caps!",
+      "refs": [],
+      "prompt": "An open school bag full of colourful baseball caps",
+      "digits": false
+    },
+    {
+      "path": "m8/played-baseball.png",
+      "item": "They played baseball together.",
+      "refs": [],
+      "prompt": "Children in baseball caps playing baseball in a school playground, one swinging a bat",
+      "digits": false
+    },
+    {
+      "path": "m8/under-my-bed.png",
+      "item": "Oh, it's under my bed.",
+      "refs": [],
+      "prompt": "A wooden bed with a blanket seen from the side, a school bag lying on the floor in the space underneath the bed (the bed must be clearly visible above the bag, NOT just a bag on its own)",
+      "digits": false
+    },
+    {
+      "path": "m8/wearing-a-hat.png",
+      "item": "Why are you wearing a hat?",
+      "refs": [],
+      "prompt": "A plush girl in a big straw sun hat under a hot bright sun",
+      "digits": false
+    },
+    {
+      "path": "m8/wearing-a-raincoat.png",
+      "item": "Because it's going to rain.",
+      "refs": [],
+      "prompt": "A plush boy in a yellow raincoat under dark rain clouds",
+      "digits": false
+    },
+    {
+      "path": "m8/wearing-a-tshirt.png",
+      "item": "Because I'm going to play basketball.",
+      "refs": [],
+      "prompt": "A plush boy in a T-shirt and shorts holding a basketball",
+      "digits": false
+    },
+    {
+      "path": "m8/wearing-a-dress.png",
+      "item": "Because I'm going to the theatre.",
+      "refs": [],
+      "prompt": "A plush girl in a pretty party dress standing in front of a theatre stage with big open red curtains and rows of seats (the stage and red curtains must be clearly visible, NOT just a girl on her own)",
+      "digits": false
+    },
+    {
+      "path": "m8/hide-and-seek.png",
+      "item": "We're playing hide-and-seek.",
+      "refs": [],
+      "prompt": "One child counting with eyes covered against a tree while other children hide behind bushes",
+      "digits": false
+    },
+    {
+      "path": "m8/scared-lion.png",
+      "item": "Why is he scared? Because there is a lion.",
+      "refs": [],
+      "prompt": "A plush boy shaking with fear, a lion peeking out from behind a bush",
+      "digits": false
+    },
+    {
+      "path": "m8/looking-at-sky.png",
+      "item": "Why are you looking at the sky?",
+      "refs": [],
+      "prompt": "A plush boy looking up at the sky, a big bird sitting in a tall tree above him",
+      "digits": false
+    },
+    {
+      "path": "m9/best-wishes.png",
+      "item": "Best wishes to you!",
+      "refs": [
+        "1a/characters/lingling.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Lingling giving Amy a card covered with hearts and flowers. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/good-luck.png",
+      "item": "Good luck to you!",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Daming giving Sam a four-leaf clover and a thumbs up, Sam holding a suitcase. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/great-friend.png",
+      "item": "You are a great friend.",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Amy and Lingling hugging each other and smiling. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/miss-you.png",
+      "item": "And I will miss you.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam waving goodbye with a tear on his cheek, standing beside a suitcase. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/brought-us-joy.png",
+      "item": "You brought us lots of joy.",
+      "refs": [
+        "1a/characters/ms-smart.png"
+      ],
+      "prompt": "Happy children giving a bunch of flowers to Ms Smart, everyone smiling. Characters: Ms Smart, a kind British woman teacher, short wavy brown hair, round glasses, light blue cardigan, gentle smile. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/best-friend.png",
+      "item": "You're my best friend.",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Daming and Sam standing arm in arm, both grinning. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/wishing-happiness.png",
+      "item": "Wishing you happiness every day.",
+      "refs": [],
+      "prompt": "A card with a big smiling sun, rainbows and hearts on it",
+      "digits": false
+    },
+    {
+      "path": "m9/goodbye-letters.png",
+      "item": "I'm writing goodbye letters to all my friends.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling writing a letter at her desk, a pile of envelopes beside her. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/this-one-for-amy.png",
+      "item": "This one is for Amy.",
+      "refs": [
+        "1a/characters/lingling.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Lingling handing an envelope with a heart sticker to Amy. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/forty-letters.png",
+      "item": "There are about forty letters here.",
+      "refs": [],
+      "prompt": "A very big pile of envelopes on a table, a plush man with glasses looking amazed",
+      "digits": false
+    },
+    {
+      "path": "m9/email-from-space.png",
+      "item": "I'm writing an email to my friends from the earth.",
+      "refs": [],
+      "prompt": "A cute green alien typing on a laptop inside a spaceship, the blue earth seen through the window",
+      "digits": false
+    },
+    {
+      "path": "m9/goodbye-my-friend.png",
+      "item": "Goodbye, goodbye, my friend!",
+      "refs": [],
+      "prompt": "Children waving goodbye to each other at a school gate",
+      "digits": false
+    },
+    {
+      "path": "m10/different-schools.png",
+      "item": "We're going to different schools.",
+      "refs": [],
+      "prompt": "Children waving to each other as they walk down two different roads toward two different school buildings",
+      "digits": false
+    },
+    {
+      "path": "m10/primary-school.png",
+      "item": "We're going to leave our primary school soon.",
+      "refs": [],
+      "prompt": "Young children with backpacks looking back at a small primary school with a flagpole, waving",
+      "digits": false
+    },
+    {
+      "path": "m10/speech.png",
+      "item": "A goodbye speech by Lingling",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling standing at a microphone on a school stage, giving a speech to her classmates. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/dog-middle-school.png",
+      "item": "Are you going to Dog Middle School?",
+      "refs": [],
+      "prompt": "A funny school building shaped like a big dog head, puppies with backpacks walking in",
+      "digits": false
+    },
+    {
+      "path": "m10/emails-each-other.png",
+      "item": "Let's write lots of emails to each other!",
+      "refs": [],
+      "prompt": "Two plush children far apart, each typing on a laptop, envelopes flying between them",
+      "digits": false
+    },
+    {
+      "path": "m10/always-be-friends.png",
+      "item": "We'll always be friends.",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/lingling.png",
+        "1a/characters/sam.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Daming, Lingling, Sam and Amy standing in a row with their arms around each other. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/lake-middle-school.png",
+      "item": "I'm going to Lake Middle School.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling walking toward a big school building beside a blue lake. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/park-middle-school.png",
+      "item": "I'm going to Park Middle School.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy walking toward a big school building next to a park with tall trees and flower beds. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/geography.png",
+      "item": "geography",
+      "refs": [],
+      "prompt": "A globe next to an unfolded map with mountains and rivers",
+      "digits": false
+    },
+    {
+      "path": "m10/chemistry.png",
+      "item": "chemistry",
+      "refs": [],
+      "prompt": "Glass test tubes and flasks with bubbling coloured liquids on a lab table",
+      "digits": false
+    },
+    {
+      "path": "m10/physics.png",
+      "item": "physics",
+      "refs": [],
+      "prompt": "A red horseshoe magnet picking up small nails, a glowing light bulb beside it",
+      "digits": false
+    },
+    {
+      "path": "m10/study-history.png",
+      "item": "I'm going to study History.",
+      "refs": [],
+      "prompt": "A plush girl reading a big book with pictures of old castles and ancient pots",
+      "digits": false
+    }
+  ],
+  "book": "6b"
+}

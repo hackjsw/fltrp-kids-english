@@ -1,0 +1,1244 @@
+{
+  "id": "2a",
+  "title": "二年级上册",
+  "subtitle": "新标准英语（一年级起点）",
+  "source": "textbooks/2a.pdf（TapXWorld/ChinaTextbook），词句取自课文和书后 Words and Expressions in Each Module",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "units": [
+        {
+          "id": "u1",
+          "title": "I like the ABC song.",
+          "items": [
+            {
+              "id": "song",
+              "type": "word",
+              "text": "song",
+              "translation": "歌曲",
+              "image": "m1/song.webp",
+              "same": "song"
+            },
+            {
+              "id": "i-like-the-abc-song",
+              "type": "sentence",
+              "text": "I like the ABC song.",
+              "translation": "我喜欢ABC歌。",
+              "image": "m1/i-like-the-abc-song.webp",
+              "same": "song"
+            },
+            {
+              "id": "its-my-favourite-song",
+              "type": "sentence",
+              "text": "It's my favourite song.",
+              "translation": "这是我最喜欢的歌。",
+              "image": "m1/its-my-favourite-song.webp",
+              "same": "song"
+            },
+            {
+              "id": "letter-a",
+              "type": "word",
+              "text": "a",
+              "translation": "字母 a",
+              "image": "m1/letter-a.webp"
+            },
+            {
+              "id": "letter-b",
+              "type": "word",
+              "text": "b",
+              "translation": "字母 b",
+              "image": "m1/letter-b.webp"
+            },
+            {
+              "id": "letter-c",
+              "type": "word",
+              "text": "c",
+              "translation": "字母 c",
+              "image": "m1/letter-c.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I like football.",
+          "items": [
+            {
+              "id": "i-like-football",
+              "type": "sentence",
+              "text": "I like football.",
+              "translation": "我喜欢足球。",
+              "image": "m1/i-like-football.webp",
+              "same": "football"
+            },
+            {
+              "id": "team",
+              "type": "word",
+              "text": "team",
+              "translation": "球队",
+              "image": "m1/team.webp",
+              "same": "football"
+            },
+            {
+              "id": "come-on-team-a",
+              "type": "sentence",
+              "text": "Come on, Team A!",
+              "translation": "A队，加油！",
+              "image": "m1/come-on-team-a.webp"
+            },
+            {
+              "id": "i-like-your-bike",
+              "type": "sentence",
+              "text": "I like your bike.",
+              "translation": "我喜欢你的自行车。",
+              "image": "m1/i-like-your-bike.webp",
+              "same": "bike"
+            },
+            {
+              "id": "i-like-your-kite",
+              "type": "sentence",
+              "text": "I like your kite.",
+              "translation": "我喜欢你的风筝。",
+              "image": "m1/i-like-your-kite.webp",
+              "same": "kite"
+            },
+            {
+              "id": "lets-ride-my-bike",
+              "type": "sentence",
+              "text": "Let's ride my bike.",
+              "translation": "我们骑我的自行车吧。",
+              "image": "m1/lets-ride-my-bike.webp",
+              "same": "bike"
+            },
+            {
+              "id": "lets-fly-my-kite",
+              "type": "sentence",
+              "text": "Let's fly my kite.",
+              "translation": "我们放我的风筝吧。",
+              "image": "m1/lets-fly-my-kite.webp",
+              "same": "kite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "units": [
+        {
+          "id": "u1",
+          "title": "I don't like meat.",
+          "items": [
+            {
+              "id": "meat",
+              "type": "word",
+              "text": "meat",
+              "translation": "肉",
+              "image": "m2/meat.webp",
+              "same": "meat"
+            },
+            {
+              "id": "noodles",
+              "type": "word",
+              "text": "noodles",
+              "translation": "面条",
+              "image": "m2/noodles.webp",
+              "same": "noodles"
+            },
+            {
+              "id": "rice",
+              "type": "word",
+              "text": "rice",
+              "translation": "米饭",
+              "image": "m2/rice.webp",
+              "same": "rice"
+            },
+            {
+              "id": "sweets",
+              "type": "word",
+              "text": "sweets",
+              "translation": "糖果",
+              "image": "m2/sweets.webp",
+              "same": "sweets"
+            },
+            {
+              "id": "i-dont-like-meat",
+              "type": "sentence",
+              "text": "I don't like meat.",
+              "translation": "我不喜欢吃肉。",
+              "image": "m2/i-dont-like-meat.webp",
+              "same": "meat"
+            },
+            {
+              "id": "i-like-noodles",
+              "type": "sentence",
+              "text": "I like noodles.",
+              "translation": "我喜欢吃面条。",
+              "image": "m2/i-like-noodles.webp",
+              "same": "noodles"
+            },
+            {
+              "id": "sweets-for-you",
+              "type": "sentence",
+              "text": "Sweets for you!",
+              "translation": "给你们糖果！",
+              "image": "m2/sweets-for-you.webp",
+              "same": "sweets"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I don't like ginger.",
+          "items": [
+            {
+              "id": "ginger",
+              "type": "word",
+              "text": "ginger",
+              "translation": "姜",
+              "image": "m2/ginger.webp",
+              "same": "ginger"
+            },
+            {
+              "id": "onion",
+              "type": "word",
+              "text": "onion",
+              "translation": "洋葱",
+              "image": "m2/onion.webp",
+              "same": "onion"
+            },
+            {
+              "id": "ice-cream",
+              "type": "word",
+              "text": "ice cream",
+              "translation": "冰淇淋",
+              "image": "m2/ice-cream.webp",
+              "same": "icecream"
+            },
+            {
+              "id": "i-dont-like-ginger",
+              "type": "sentence",
+              "text": "I don't like ginger.",
+              "translation": "我不喜欢吃姜。",
+              "image": "m2/i-dont-like-ginger.webp",
+              "same": "ginger"
+            },
+            {
+              "id": "i-dont-like-onions",
+              "type": "sentence",
+              "text": "I don't like onions.",
+              "translation": "我不喜欢吃洋葱。",
+              "image": "m2/i-dont-like-onions.webp",
+              "same": "onion"
+            },
+            {
+              "id": "i-like-ice-cream",
+              "type": "sentence",
+              "text": "I like ice cream.",
+              "translation": "我喜欢吃冰淇淋。",
+              "image": "m2/i-like-ice-cream.webp",
+              "same": "icecream"
+            },
+            {
+              "id": "noodles-and-rice",
+              "type": "sentence",
+              "text": "Noodles and rice are very, very nice.",
+              "translation": "面条和米饭非常非常好吃。",
+              "image": "m2/noodles-and-rice.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Do you like bananas?",
+          "items": [
+            {
+              "id": "banana",
+              "type": "word",
+              "text": "banana",
+              "translation": "香蕉",
+              "image": "m3/banana.webp",
+              "same": "banana"
+            },
+            {
+              "id": "apple",
+              "type": "word",
+              "text": "apple",
+              "translation": "苹果",
+              "image": "m3/apple.webp",
+              "same": "apple"
+            },
+            {
+              "id": "milk",
+              "type": "word",
+              "text": "milk",
+              "translation": "牛奶",
+              "image": "m3/milk.webp",
+              "same": "milk"
+            },
+            {
+              "id": "orange",
+              "type": "word",
+              "text": "orange",
+              "translation": "橙子",
+              "image": "m3/orange.webp",
+              "same": "orange"
+            },
+            {
+              "id": "do-you-like-bananas",
+              "type": "sentence",
+              "text": "Do you like bananas?",
+              "translation": "你喜欢香蕉吗？",
+              "image": "m3/do-you-like-bananas.webp",
+              "same": "banana"
+            },
+            {
+              "id": "do-you-like-milk",
+              "type": "sentence",
+              "text": "Do you like milk?",
+              "translation": "你喜欢牛奶吗？",
+              "image": "m3/do-you-like-milk.webp",
+              "same": "milk"
+            },
+            {
+              "id": "fruit-milkshake",
+              "type": "sentence",
+              "text": "It's a fruit milkshake.",
+              "translation": "这是水果奶昔。",
+              "image": "m3/fruit-milkshake.webp",
+              "same": [
+                "banana",
+                "apple",
+                "milk"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Do they like apples?",
+          "items": [
+            {
+              "id": "tomato",
+              "type": "word",
+              "text": "tomato",
+              "translation": "西红柿",
+              "image": "m3/tomato.webp",
+              "same": "tomato"
+            },
+            {
+              "id": "do-they-like-apples",
+              "type": "sentence",
+              "text": "Do they like apples?",
+              "translation": "它们喜欢苹果吗？",
+              "image": "m3/do-they-like-apples.webp",
+              "same": [
+                "pig-apple",
+                "apple"
+              ]
+            },
+            {
+              "id": "they-like-rice",
+              "type": "sentence",
+              "text": "They like rice.",
+              "translation": "它们喜欢吃米饭。",
+              "image": "m3/they-like-rice.webp",
+              "same": "rice-m3"
+            },
+            {
+              "id": "pigs-like-everything",
+              "type": "sentence",
+              "text": "Pigs like everything.",
+              "translation": "猪什么都喜欢吃。",
+              "image": "m3/pigs-like-everything.webp",
+              "same": [
+                "pig-apple",
+                "rice-m3",
+                "apple",
+                "banana",
+                "tomato"
+              ]
+            },
+            {
+              "id": "rice-is-nice",
+              "type": "sentence",
+              "text": "Rice is nice.",
+              "translation": "米饭真好吃。",
+              "image": "m3/rice-is-nice.webp",
+              "same": "rice-m3"
+            },
+            {
+              "id": "girl-likes-frog",
+              "type": "sentence",
+              "text": "The girl likes the frog.",
+              "translation": "女孩喜欢青蛙。",
+              "image": "m3/girl-likes-frog.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Sam likes T-shirts.",
+          "items": [
+            {
+              "id": "t-shirt",
+              "type": "word",
+              "text": "T-shirt",
+              "translation": "T恤衫",
+              "image": "m4/t-shirt.webp",
+              "same": "tshirt"
+            },
+            {
+              "id": "dress",
+              "type": "word",
+              "text": "dress",
+              "translation": "连衣裙",
+              "image": "m4/dress.webp",
+              "same": "dress"
+            },
+            {
+              "id": "sam-likes-t-shirts",
+              "type": "sentence",
+              "text": "Sam likes T-shirts.",
+              "translation": "Sam喜欢T恤衫。",
+              "image": "m4/sam-likes-t-shirts.webp",
+              "same": "tshirt"
+            },
+            {
+              "id": "heres-a-t-shirt",
+              "type": "sentence",
+              "text": "Here's a T-shirt for you.",
+              "translation": "这是给你的T恤衫。",
+              "image": "m4/heres-a-t-shirt.webp",
+              "same": "tshirt"
+            },
+            {
+              "id": "amy-likes-dresses",
+              "type": "sentence",
+              "text": "Amy likes dresses.",
+              "translation": "Amy喜欢连衣裙。",
+              "image": "m4/amy-likes-dresses.webp",
+              "same": "dress"
+            },
+            {
+              "id": "its-too-small",
+              "type": "sentence",
+              "text": "But it's too small.",
+              "translation": "但它太小了。",
+              "image": "m4/its-too-small.webp",
+              "same": "dress"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "He doesn't like these trousers.",
+          "items": [
+            {
+              "id": "trousers",
+              "type": "word",
+              "text": "trousers",
+              "translation": "裤子",
+              "image": "m4/trousers.webp",
+              "same": "trousers"
+            },
+            {
+              "id": "party",
+              "type": "word",
+              "text": "party",
+              "translation": "聚会",
+              "image": "m4/party.webp",
+              "same": "party"
+            },
+            {
+              "id": "sams-at-a-party",
+              "type": "sentence",
+              "text": "Sam's at a party.",
+              "translation": "Sam在参加聚会。",
+              "image": "m4/sams-at-a-party.webp",
+              "same": "party"
+            },
+            {
+              "id": "doesnt-like-trousers",
+              "type": "sentence",
+              "text": "He doesn't like these trousers.",
+              "translation": "他不喜欢这条裤子。",
+              "image": "m4/doesnt-like-trousers.webp",
+              "same": [
+                "trousers",
+                "sam-frown"
+              ]
+            },
+            {
+              "id": "doesnt-like-shirt",
+              "type": "sentence",
+              "text": "He doesn't like this shirt.",
+              "translation": "他不喜欢这件衬衫。",
+              "image": "m4/doesnt-like-shirt.webp"
+            },
+            {
+              "id": "doesnt-like-shoes",
+              "type": "sentence",
+              "text": "He doesn't like these shoes.",
+              "translation": "他不喜欢这双鞋。",
+              "image": "m4/doesnt-like-shoes.webp",
+              "same": "sam-frown"
+            },
+            {
+              "id": "three-colour-t-shirt",
+              "type": "sentence",
+              "text": "He likes the yellow, blue and red T-shirt.",
+              "translation": "他喜欢那件黄、蓝、红三色的T恤衫。",
+              "image": "m4/three-colour-t-shirt.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module 5",
+      "units": [
+        {
+          "id": "u1",
+          "title": "At 7, I get up.",
+          "items": [
+            {
+              "id": "get-up",
+              "type": "word",
+              "text": "get up",
+              "translation": "起床",
+              "image": "m5/get-up.webp",
+              "same": "getup"
+            },
+            {
+              "id": "go-to-school",
+              "type": "word",
+              "text": "go to school",
+              "translation": "去上学",
+              "image": "m5/go-to-school.webp",
+              "same": "school"
+            },
+            {
+              "id": "have-lunch",
+              "type": "word",
+              "text": "have lunch",
+              "translation": "吃午饭",
+              "image": "m5/have-lunch.webp",
+              "same": "lunch"
+            },
+            {
+              "id": "at-7-get-up",
+              "type": "sentence",
+              "text": "At 7, I get up.",
+              "translation": "我七点起床。",
+              "image": "m5/at-7-get-up.webp",
+              "same": "getup"
+            },
+            {
+              "id": "at-8-go-to-school",
+              "type": "sentence",
+              "text": "At 8, I go to school.",
+              "translation": "我八点去上学。",
+              "image": "m5/at-8-go-to-school.webp",
+              "same": "school"
+            },
+            {
+              "id": "at-12-have-lunch",
+              "type": "sentence",
+              "text": "At 12, I have lunch.",
+              "translation": "我十二点吃午饭。",
+              "image": "m5/at-12-have-lunch.webp",
+              "same": "lunch"
+            },
+            {
+              "id": "at-4-play-football",
+              "type": "sentence",
+              "text": "At 4, I play football.",
+              "translation": "我四点踢足球。",
+              "image": "m5/at-4-play-football.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I go home at 5.",
+          "items": [
+            {
+              "id": "go-home",
+              "type": "word",
+              "text": "go home",
+              "translation": "回家",
+              "image": "m5/go-home.webp",
+              "same": "home"
+            },
+            {
+              "id": "tv",
+              "type": "word",
+              "text": "TV",
+              "translation": "电视",
+              "image": "m5/tv.webp",
+              "same": "tv"
+            },
+            {
+              "id": "watch-tv",
+              "type": "word",
+              "text": "watch TV",
+              "translation": "看电视",
+              "image": "m5/watch-tv.webp",
+              "same": "tv"
+            },
+            {
+              "id": "go-home-at-5",
+              "type": "sentence",
+              "text": "I go home at 5.",
+              "translation": "我五点回家。",
+              "image": "m5/go-home-at-5.webp",
+              "same": "home"
+            },
+            {
+              "id": "watch-tv-at-7",
+              "type": "sentence",
+              "text": "I watch TV at 7.",
+              "translation": "我七点看电视。",
+              "image": "m5/watch-tv-at-7.webp",
+              "same": "tv"
+            },
+            {
+              "id": "basketball-at-4",
+              "type": "sentence",
+              "text": "I play basketball at 4.",
+              "translation": "我四点打篮球。",
+              "image": "m5/basketball-at-4.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Module 6",
+      "units": [
+        {
+          "id": "u1",
+          "title": "What do you do on Sundays?",
+          "items": [
+            {
+              "id": "park",
+              "type": "word",
+              "text": "park",
+              "translation": "公园",
+              "image": "m6/park.webp",
+              "same": "park"
+            },
+            {
+              "id": "what-do-you-do-on-sundays",
+              "type": "sentence",
+              "text": "What do you do on Sundays?",
+              "translation": "你星期天做什么？",
+              "image": "m6/what-do-you-do-on-sundays.webp"
+            },
+            {
+              "id": "football-on-sundays",
+              "type": "sentence",
+              "text": "I play football on Sundays.",
+              "translation": "我星期天踢足球。",
+              "image": "m6/football-on-sundays.webp",
+              "same": "football-m6"
+            },
+            {
+              "id": "at-the-park",
+              "type": "sentence",
+              "text": "At the park.",
+              "translation": "在公园里。",
+              "image": "m6/at-the-park.webp",
+              "same": [
+                "park",
+                "football-m6"
+              ]
+            },
+            {
+              "id": "goal",
+              "type": "word",
+              "text": "Goal!",
+              "translation": "进球了！",
+              "image": "m6/goal.webp",
+              "same": "football-m6"
+            },
+            {
+              "id": "hooray",
+              "type": "word",
+              "text": "Hooray!",
+              "translation": "好哇！",
+              "image": "m6/hooray.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Where do you live?",
+          "items": [
+            {
+              "id": "moon",
+              "type": "word",
+              "text": "moon",
+              "translation": "月亮",
+              "image": "m6/moon.webp",
+              "same": "moon"
+            },
+            {
+              "id": "sky",
+              "type": "word",
+              "text": "sky",
+              "translation": "天空",
+              "image": "m6/sky.webp",
+              "same": "sky"
+            },
+            {
+              "id": "city",
+              "type": "word",
+              "text": "city",
+              "translation": "城市",
+              "image": "m6/city.webp",
+              "same": "city"
+            },
+            {
+              "id": "i-live-in-the-sky",
+              "type": "sentence",
+              "text": "I live in the sky.",
+              "translation": "我住在天上。",
+              "image": "m6/i-live-in-the-sky.webp",
+              "same": [
+                "moon",
+                "sky"
+              ]
+            },
+            {
+              "id": "i-live-in-shanghai",
+              "type": "sentence",
+              "text": "I live in Shanghai.",
+              "translation": "我住在上海。",
+              "image": "m6/i-live-in-shanghai.webp"
+            },
+            {
+              "id": "beijing-big-city",
+              "type": "sentence",
+              "text": "Beijing is a very big city.",
+              "translation": "北京是一个很大的城市。",
+              "image": "m6/beijing-big-city.webp",
+              "same": "city"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Module 7",
+      "units": [
+        {
+          "id": "u1",
+          "title": "How do you go to school?",
+          "items": [
+            {
+              "id": "train",
+              "type": "word",
+              "text": "train",
+              "translation": "火车",
+              "image": "m7/train.webp",
+              "same": "train"
+            },
+            {
+              "id": "bus",
+              "type": "word",
+              "text": "bus",
+              "translation": "公共汽车",
+              "image": "m7/bus.webp",
+              "same": "bus"
+            },
+            {
+              "id": "bike",
+              "type": "word",
+              "text": "bike",
+              "translation": "自行车",
+              "image": "m7/bike.webp",
+              "same": "bike-m7"
+            },
+            {
+              "id": "by-car",
+              "type": "word",
+              "text": "by car",
+              "translation": "坐小汽车",
+              "image": "m7/by-car.webp"
+            },
+            {
+              "id": "school-by-bus",
+              "type": "sentence",
+              "text": "I go to school by bus.",
+              "translation": "我坐公共汽车去上学。",
+              "image": "m7/school-by-bus.webp",
+              "same": "bus"
+            },
+            {
+              "id": "walk-to-school",
+              "type": "sentence",
+              "text": "I walk to school.",
+              "translation": "我走路去上学。",
+              "image": "m7/walk-to-school.webp"
+            },
+            {
+              "id": "work-by-bike",
+              "type": "sentence",
+              "text": "He goes to work by bike.",
+              "translation": "他骑自行车去上班。",
+              "image": "m7/work-by-bike.webp",
+              "same": "bike-m7"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I go by train.",
+          "items": [
+            {
+              "id": "ship",
+              "type": "word",
+              "text": "ship",
+              "translation": "轮船",
+              "image": "m7/ship.webp",
+              "same": "ship"
+            },
+            {
+              "id": "plane",
+              "type": "word",
+              "text": "plane",
+              "translation": "飞机",
+              "image": "m7/plane.webp",
+              "same": "plane"
+            },
+            {
+              "id": "i-go-by-train",
+              "type": "sentence",
+              "text": "I go by train.",
+              "translation": "我坐火车去。",
+              "image": "m7/i-go-by-train.webp",
+              "same": "train"
+            },
+            {
+              "id": "then-by-ship",
+              "type": "sentence",
+              "text": "Then I go by ship.",
+              "translation": "然后我坐轮船去。",
+              "image": "m7/then-by-ship.webp",
+              "same": "ship"
+            },
+            {
+              "id": "we-go-by-plane",
+              "type": "sentence",
+              "text": "We go by plane.",
+              "translation": "我们坐飞机去。",
+              "image": "m7/we-go-by-plane.webp",
+              "same": "plane"
+            },
+            {
+              "id": "walk-and-run",
+              "type": "sentence",
+              "text": "I walk and run to school.",
+              "translation": "我走着跑着去上学。",
+              "image": "m7/walk-and-run.webp"
+            },
+            {
+              "id": "we-love-china",
+              "type": "sentence",
+              "text": "We love China.",
+              "translation": "我们爱中国。",
+              "image": "m7/we-love-china.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "Module 8",
+      "units": [
+        {
+          "id": "u1",
+          "title": "She goes swimming.",
+          "items": [
+            {
+              "id": "she-goes-swimming",
+              "type": "sentence",
+              "text": "She goes swimming.",
+              "translation": "她去游泳。",
+              "image": "m8/she-goes-swimming.webp",
+              "same": "swim"
+            },
+            {
+              "id": "she-watches-tv",
+              "type": "sentence",
+              "text": "She watches TV.",
+              "translation": "她看电视。",
+              "image": "m8/she-watches-tv.webp",
+              "same": "tv-m8"
+            },
+            {
+              "id": "she-reads-books",
+              "type": "sentence",
+              "text": "She reads books.",
+              "translation": "她看书。",
+              "image": "m8/she-reads-books.webp"
+            },
+            {
+              "id": "mother-goes-swimming",
+              "type": "sentence",
+              "text": "My mother goes swimming on Sundays.",
+              "translation": "我妈妈星期天去游泳。",
+              "image": "m8/mother-goes-swimming.webp",
+              "same": "swim"
+            },
+            {
+              "id": "goodbye-ms-smart",
+              "type": "sentence",
+              "text": "Goodbye, Ms Smart.",
+              "translation": "再见，Smart老师。",
+              "image": "m8/goodbye-ms-smart.webp",
+              "same": "goodbye"
+            },
+            {
+              "id": "have-a-good-weekend",
+              "type": "sentence",
+              "text": "Have a good weekend!",
+              "translation": "周末愉快！",
+              "image": "m8/have-a-good-weekend.webp",
+              "same": "goodbye"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Does he play the piano?",
+          "items": [
+            {
+              "id": "piano",
+              "type": "word",
+              "text": "piano",
+              "translation": "钢琴",
+              "image": "m8/piano.webp",
+              "same": "piano"
+            },
+            {
+              "id": "drum",
+              "type": "word",
+              "text": "drum",
+              "translation": "鼓",
+              "image": "m8/drum.webp",
+              "same": "drum"
+            },
+            {
+              "id": "music",
+              "type": "word",
+              "text": "music",
+              "translation": "音乐",
+              "image": "m8/music.webp"
+            },
+            {
+              "id": "cd",
+              "type": "word",
+              "text": "CD",
+              "translation": "光盘",
+              "image": "m8/cd.webp",
+              "same": "cd"
+            },
+            {
+              "id": "does-he-play-the-piano",
+              "type": "sentence",
+              "text": "Does he play the piano?",
+              "translation": "他弹钢琴吗？",
+              "image": "m8/does-he-play-the-piano.webp",
+              "same": "piano"
+            },
+            {
+              "id": "he-plays-the-drums",
+              "type": "sentence",
+              "text": "He plays the drums.",
+              "translation": "他打鼓。",
+              "image": "m8/he-plays-the-drums.webp",
+              "same": "drum"
+            },
+            {
+              "id": "listen-to-cds",
+              "type": "sentence",
+              "text": "Does he listen to CDs?",
+              "translation": "他听光盘吗？",
+              "image": "m8/listen-to-cds.webp",
+              "same": "cd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Module 9",
+      "units": [
+        {
+          "id": "u1",
+          "title": "It's winter.",
+          "items": [
+            {
+              "id": "spring",
+              "type": "word",
+              "text": "spring",
+              "translation": "春天",
+              "image": "m9/spring.webp",
+              "same": "spring"
+            },
+            {
+              "id": "summer",
+              "type": "word",
+              "text": "summer",
+              "translation": "夏天",
+              "image": "m9/summer.webp",
+              "same": "summer"
+            },
+            {
+              "id": "autumn",
+              "type": "word",
+              "text": "autumn",
+              "translation": "秋天",
+              "image": "m9/autumn.webp",
+              "same": "autumn"
+            },
+            {
+              "id": "its-winter",
+              "type": "sentence",
+              "text": "It's winter.",
+              "translation": "冬天到了。",
+              "image": "m9/its-winter.webp",
+              "same": "winter"
+            },
+            {
+              "id": "fly-kites-in-spring",
+              "type": "sentence",
+              "text": "I fly kites in spring.",
+              "translation": "我春天放风筝。",
+              "image": "m9/fly-kites-in-spring.webp",
+              "same": "spring"
+            },
+            {
+              "id": "we-wear-sweaters",
+              "type": "sentence",
+              "text": "We wear sweaters.",
+              "translation": "我们穿毛衣。",
+              "image": "m9/we-wear-sweaters.webp",
+              "same": "autumn"
+            },
+            {
+              "id": "coats-and-gloves",
+              "type": "sentence",
+              "text": "We wear coats and gloves.",
+              "translation": "我们穿外套、戴手套。",
+              "image": "m9/coats-and-gloves.webp",
+              "same": [
+                "winter",
+                "gloves"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "What does he do in summer?",
+          "items": [
+            {
+              "id": "swimming-in-summer",
+              "type": "sentence",
+              "text": "He goes swimming in summer.",
+              "translation": "他夏天去游泳。",
+              "image": "m9/swimming-in-summer.webp",
+              "same": "swim-m9"
+            },
+            {
+              "id": "he-goes-skating",
+              "type": "sentence",
+              "text": "He goes skating.",
+              "translation": "他去滑冰。",
+              "image": "m9/he-goes-skating.webp",
+              "same": "skating"
+            },
+            {
+              "id": "skating",
+              "type": "word",
+              "text": "skating",
+              "translation": "滑冰",
+              "image": "m9/skating.webp",
+              "same": "skating"
+            },
+            {
+              "id": "swimming-in-winter",
+              "type": "sentence",
+              "text": "Does he go swimming in winter?",
+              "translation": "他冬天去游泳吗？",
+              "image": "m9/swimming-in-winter.webp",
+              "same": "swim-m9"
+            },
+            {
+              "id": "jacket",
+              "type": "word",
+              "text": "jacket",
+              "translation": "夹克",
+              "image": "m9/jacket.webp"
+            },
+            {
+              "id": "sunglasses",
+              "type": "word",
+              "text": "sunglasses",
+              "translation": "太阳镜",
+              "image": "m9/sunglasses.webp",
+              "same": "summer"
+            },
+            {
+              "id": "glove",
+              "type": "word",
+              "text": "glove",
+              "translation": "手套",
+              "image": "m9/glove.webp",
+              "same": [
+                "gloves",
+                "winter"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Module 10",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Happy New Year!",
+          "items": [
+            {
+              "id": "happy-new-year",
+              "type": "sentence",
+              "text": "Happy New Year!",
+              "translation": "新年快乐！",
+              "image": "m10/happy-new-year.webp",
+              "same": "newyear"
+            },
+            {
+              "id": "come-in-please",
+              "type": "sentence",
+              "text": "Come in, please!",
+              "translation": "请进！",
+              "image": "m10/come-in-please.webp"
+            },
+            {
+              "id": "present",
+              "type": "word",
+              "text": "present",
+              "translation": "礼物",
+              "image": "m10/present.webp",
+              "same": "present"
+            },
+            {
+              "id": "a-present-for-you",
+              "type": "sentence",
+              "text": "A present for you.",
+              "translation": "送你一份礼物。",
+              "image": "m10/a-present-for-you.webp",
+              "same": "present"
+            },
+            {
+              "id": "dumpling",
+              "type": "word",
+              "text": "dumpling",
+              "translation": "饺子",
+              "image": "m10/dumpling.webp",
+              "same": "dumpling"
+            },
+            {
+              "id": "we-eat-dumplings",
+              "type": "sentence",
+              "text": "We eat dumplings at Chinese New Year.",
+              "translation": "春节我们吃饺子。",
+              "image": "m10/we-eat-dumplings.webp",
+              "same": [
+                "dumpling",
+                "newyear"
+              ]
+            },
+            {
+              "id": "firecrackers",
+              "type": "sentence",
+              "text": "They're firecrackers!",
+              "translation": "它们是鞭炮！",
+              "image": "m10/firecrackers.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "We have Christmas.",
+          "items": [
+            {
+              "id": "christmas",
+              "type": "word",
+              "text": "Christmas",
+              "translation": "圣诞节",
+              "image": "m10/christmas.webp",
+              "same": "christmas"
+            },
+            {
+              "id": "christmas-trees",
+              "type": "sentence",
+              "text": "We have Christmas trees and Christmas presents.",
+              "translation": "我们有圣诞树和圣诞礼物。",
+              "image": "m10/christmas-trees.webp",
+              "same": "christmas"
+            },
+            {
+              "id": "big-dinner",
+              "type": "sentence",
+              "text": "We have a big dinner and sing songs.",
+              "translation": "我们吃大餐、唱歌。",
+              "image": "m10/big-dinner.webp"
+            },
+            {
+              "id": "happy-christmas",
+              "type": "sentence",
+              "text": "We wish you a happy Christmas.",
+              "translation": "祝你圣诞快乐。",
+              "image": "m10/happy-christmas.webp",
+              "same": "christmas"
+            },
+            {
+              "id": "theyre-sweets",
+              "type": "sentence",
+              "text": "Oh, they're sweets.",
+              "translation": "哦，是糖果。",
+              "image": "m10/theyre-sweets.webp",
+              "same": "present"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1069 @@
+{
+  "id": "5a",
+  "title": "五年级上册",
+  "subtitle": "新标准英语（一年级起点）",
+  "source": "textbooks/5a.pdf（TapXWorld/ChinaTextbook），词句取自课文和书后 Words and Expressions in Each Module",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "units": [
+        {
+          "id": "u1",
+          "title": "There wasn't a clock here before.",
+          "items": [
+            {
+              "id": "lingling-in-london",
+              "type": "sentence",
+              "text": "Lingling is in London with Sam and Amy.",
+              "translation": "玲玲和萨姆、埃米在伦敦。",
+              "image": "m1/lingling-in-london.webp"
+            },
+            {
+              "id": "there-wasnt-a-clock",
+              "type": "sentence",
+              "text": "There wasn't a clock here before.",
+              "translation": "以前这里没有钟。",
+              "image": "m1/there-wasnt-a-clock.webp"
+            },
+            {
+              "id": "bench",
+              "type": "word",
+              "text": "bench",
+              "translation": "长凳",
+              "image": "m1/bench.webp",
+              "same": "bench"
+            },
+            {
+              "id": "there-are-benches-now",
+              "type": "sentence",
+              "text": "There are benches now.",
+              "translation": "现在有长凳了。",
+              "image": "m1/there-are-benches-now.webp",
+              "same": "bench"
+            },
+            {
+              "id": "there-was-a-house",
+              "type": "sentence",
+              "text": "There was a house.",
+              "translation": "以前这里有一座房子。",
+              "image": "m1/there-was-a-house.webp"
+            },
+            {
+              "id": "feed-the-birds",
+              "type": "sentence",
+              "text": "We can feed the birds.",
+              "translation": "我们可以喂鸟。",
+              "image": "m1/feed-the-birds.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "There are tall trees now.",
+          "items": [
+            {
+              "id": "playground",
+              "type": "word",
+              "text": "playground",
+              "translation": "操场",
+              "image": "m1/playground.webp",
+              "same": "playground"
+            },
+            {
+              "id": "big-playground",
+              "type": "sentence",
+              "text": "There is a big playground now.",
+              "translation": "现在有一个大操场。",
+              "image": "m1/big-playground.webp",
+              "same": "playground"
+            },
+            {
+              "id": "tall-trees",
+              "type": "sentence",
+              "text": "There are tall trees now.",
+              "translation": "现在有高高的大树。",
+              "image": "m1/tall-trees.webp"
+            },
+            {
+              "id": "little-trees",
+              "type": "sentence",
+              "text": "There were lots of little trees before.",
+              "translation": "以前有很多小树。",
+              "image": "m1/little-trees.webp"
+            },
+            {
+              "id": "big-desks",
+              "type": "sentence",
+              "text": "There are big desks in the classroom now.",
+              "translation": "现在教室里有大课桌。",
+              "image": "m1/big-desks.webp"
+            },
+            {
+              "id": "three-children",
+              "type": "sentence",
+              "text": "There are three children now.",
+              "translation": "现在有三个孩子。",
+              "image": "m1/three-children.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "units": [
+        {
+          "id": "u1",
+          "title": "This one is heavy.",
+          "items": [
+            {
+              "id": "go-to-the-supermarket",
+              "type": "sentence",
+              "text": "Let's go to the supermarket.",
+              "translation": "我们去超市吧。",
+              "image": "m2/go-to-the-supermarket.webp"
+            },
+            {
+              "id": "many-sweets",
+              "type": "sentence",
+              "text": "There are many sweets over there.",
+              "translation": "那边有很多糖果。",
+              "image": "m2/many-sweets.webp"
+            },
+            {
+              "id": "lot-of-fruit",
+              "type": "sentence",
+              "text": "There is a lot of fruit, too.",
+              "translation": "还有很多水果。",
+              "image": "m2/lot-of-fruit.webp"
+            },
+            {
+              "id": "heavy",
+              "type": "word",
+              "text": "heavy",
+              "translation": "重的",
+              "image": "m2/heavy.webp",
+              "same": "heavy"
+            },
+            {
+              "id": "this-one-is-heavy",
+              "type": "sentence",
+              "text": "This one is heavy.",
+              "translation": "这个很重。",
+              "image": "m2/this-one-is-heavy.webp",
+              "same": "heavy"
+            },
+            {
+              "id": "let-me-help-you",
+              "type": "sentence",
+              "text": "Let me help you.",
+              "translation": "让我来帮你。",
+              "image": "m2/let-me-help-you.webp"
+            },
+            {
+              "id": "have-an-ice-cream",
+              "type": "sentence",
+              "text": "Have an ice cream.",
+              "translation": "吃个冰激凌吧。",
+              "image": "m2/have-an-ice-cream.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "They sell many different things.",
+          "items": [
+            {
+              "id": "sell-many-things",
+              "type": "sentence",
+              "text": "They sell many different things.",
+              "translation": "它们卖很多不同的东西。",
+              "image": "m2/sell-many-things.webp"
+            },
+            {
+              "id": "things-from-china",
+              "type": "sentence",
+              "text": "They sell many things from China, too.",
+              "translation": "它们也卖很多来自中国的东西。",
+              "image": "m2/things-from-china.webp"
+            },
+            {
+              "id": "restaurants-at-supermarkets",
+              "type": "sentence",
+              "text": "Sometimes there are restaurants at the supermarkets.",
+              "translation": "有时超市里有餐馆。",
+              "image": "m2/restaurants-at-supermarkets.webp"
+            },
+            {
+              "id": "families-go-together",
+              "type": "sentence",
+              "text": "Many families go to the supermarkets together.",
+              "translation": "很多家庭一起去超市。",
+              "image": "m2/families-go-together.webp"
+            },
+            {
+              "id": "we-sell-books",
+              "type": "sentence",
+              "text": "This is our shop. We sell books.",
+              "translation": "这是我们的商店。我们卖书。",
+              "image": "m2/we-sell-books.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Today is Halloween.",
+          "items": [
+            {
+              "id": "halloween",
+              "type": "word",
+              "text": "Halloween",
+              "translation": "万圣节前夕",
+              "image": "m3/halloween.webp",
+              "same": "halloween"
+            },
+            {
+              "id": "mask",
+              "type": "word",
+              "text": "mask",
+              "translation": "面具",
+              "image": "m3/mask.webp",
+              "same": "halloween"
+            },
+            {
+              "id": "scary-clothes",
+              "type": "sentence",
+              "text": "Children wear scary clothes.",
+              "translation": "孩子们穿吓人的衣服。",
+              "image": "m3/scary-clothes.webp",
+              "same": "halloween"
+            },
+            {
+              "id": "trick-or-treat",
+              "type": "sentence",
+              "text": "Trick or treat?",
+              "translation": "不给糖就捣蛋！",
+              "image": "m3/trick-or-treat.webp",
+              "same": "halloween"
+            },
+            {
+              "id": "here-are-some-sweets",
+              "type": "sentence",
+              "text": "Here are some sweets.",
+              "translation": "给你们一些糖果。",
+              "image": "m3/here-are-some-sweets.webp",
+              "same": "halloween"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Easter is in spring in the UK.",
+          "items": [
+            {
+              "id": "chick",
+              "type": "word",
+              "text": "chick",
+              "translation": "小鸡",
+              "image": "m3/chick.webp",
+              "same": "chick"
+            },
+            {
+              "id": "easter-hats",
+              "type": "sentence",
+              "text": "There are toy chicks and flowers on the hats.",
+              "translation": "帽子上有玩具小鸡和花。",
+              "image": "m3/easter-hats.webp",
+              "same": "chick"
+            },
+            {
+              "id": "chocolate",
+              "type": "word",
+              "text": "chocolate",
+              "translation": "巧克力",
+              "image": "m3/chocolate.webp",
+              "same": "chocolate"
+            },
+            {
+              "id": "chocolate-eggs",
+              "type": "sentence",
+              "text": "People give children chocolate eggs.",
+              "translation": "人们送给孩子们巧克力蛋。",
+              "image": "m3/chocolate-eggs.webp",
+              "same": "chocolate"
+            },
+            {
+              "id": "small-eggs-in-big-eggs",
+              "type": "sentence",
+              "text": "Sometimes there are small eggs in the big eggs!",
+              "translation": "有时大蛋里面有小蛋！",
+              "image": "m3/small-eggs-in-big-eggs.webp",
+              "same": "chocolate"
+            },
+            {
+              "id": "there-are-ten",
+              "type": "sentence",
+              "text": "Oh, there are ten!",
+              "translation": "哦，有十个！",
+              "image": "m3/there-are-ten.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "units": [
+        {
+          "id": "u1",
+          "title": "We're going to tell stories.",
+          "items": [
+            {
+              "id": "invitation",
+              "type": "word",
+              "text": "invitation",
+              "translation": "请帖",
+              "image": "m4/invitation.webp",
+              "same": "invite"
+            },
+            {
+              "id": "tell-stories",
+              "type": "sentence",
+              "text": "After lunch, we're going to tell stories.",
+              "translation": "午饭后，我们要讲故事。",
+              "image": "m4/tell-stories.webp",
+              "same": "story"
+            },
+            {
+              "id": "hes-telling-a-story",
+              "type": "sentence",
+              "text": "He's telling a story.",
+              "translation": "他正在讲故事。",
+              "image": "m4/hes-telling-a-story.webp",
+              "same": "story"
+            },
+            {
+              "id": "have-lunch-together",
+              "type": "sentence",
+              "text": "We're going to have lunch together.",
+              "translation": "我们要一起吃午饭。",
+              "image": "m4/have-lunch-together.webp"
+            },
+            {
+              "id": "make-a-birthday-cake",
+              "type": "sentence",
+              "text": "Mum is going to make a birthday cake for me.",
+              "translation": "妈妈要为我做一个生日蛋糕。",
+              "image": "m4/make-a-birthday-cake.webp",
+              "same": "cake"
+            },
+            {
+              "id": "see-a-film",
+              "type": "sentence",
+              "text": "Then we're going to see a film.",
+              "translation": "然后我们要去看电影。",
+              "image": "m4/see-a-film.webp"
+            },
+            {
+              "id": "tidy-up",
+              "type": "sentence",
+              "text": "You are going to help me tidy up!",
+              "translation": "你们要帮我收拾整理！",
+              "image": "m4/tidy-up.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I'm going to be eleven.",
+          "items": [
+            {
+              "id": "going-to-be-eleven",
+              "type": "sentence",
+              "text": "I'm going to be eleven.",
+              "translation": "我就要十一岁了。",
+              "image": "m4/going-to-be-eleven.webp",
+              "same": "cake"
+            },
+            {
+              "id": "please-come-to-my-party",
+              "type": "sentence",
+              "text": "Please come to my birthday party!",
+              "translation": "请来参加我的生日聚会！",
+              "image": "m4/please-come-to-my-party.webp",
+              "same": "invite"
+            },
+            {
+              "id": "play-football-on-saturday",
+              "type": "sentence",
+              "text": "I'm going to play football on Saturday.",
+              "translation": "我星期六要去踢足球。",
+              "image": "m4/play-football-on-saturday.webp"
+            },
+            {
+              "id": "football-in-the-river",
+              "type": "sentence",
+              "text": "Xiaoyong is going to play football in the river.",
+              "translation": "小勇要在河里踢足球。",
+              "image": "m4/football-in-the-river.webp"
+            },
+            {
+              "id": "hip-hip-hooray",
+              "type": "sentence",
+              "text": "Let's all sing hip, hip, hooray!",
+              "translation": "我们一起唱：嘻普，嘻普，万岁！",
+              "image": "m4/hip-hip-hooray.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module 5",
+      "units": [
+        {
+          "id": "u1",
+          "title": "It's mine!",
+          "items": [
+            {
+              "id": "whose-eraser",
+              "type": "sentence",
+              "text": "Whose eraser is it?",
+              "translation": "这是谁的橡皮？",
+              "image": "m5/whose-eraser.webp"
+            },
+            {
+              "id": "its-mine",
+              "type": "sentence",
+              "text": "It isn't yours. It's mine!",
+              "translation": "这不是你的。这是我的！",
+              "image": "m5/its-mine.webp"
+            },
+            {
+              "id": "they-are-wet",
+              "type": "sentence",
+              "text": "They are wet.",
+              "translation": "它们是湿的。",
+              "image": "m5/they-are-wet.webp",
+              "same": "wet-tshirt"
+            },
+            {
+              "id": "im-sorry",
+              "type": "sentence",
+              "text": "I'm sorry, Lingling.",
+              "translation": "对不起，玲玲。",
+              "image": "m5/im-sorry.webp",
+              "same": "sorry"
+            },
+            {
+              "id": "thats-ok",
+              "type": "sentence",
+              "text": "That's OK.",
+              "translation": "没关系。",
+              "image": "m5/thats-ok.webp",
+              "same": "sorry"
+            },
+            {
+              "id": "its-hers",
+              "type": "sentence",
+              "text": "Whose bag is it? It's hers.",
+              "translation": "这是谁的包？是她的。",
+              "image": "m5/its-hers.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Amy's blue dress is wet.",
+          "items": [
+            {
+              "id": "amys-blue-dress",
+              "type": "sentence",
+              "text": "Amy's blue dress is wet.",
+              "translation": "埃米的蓝色连衣裙湿了。",
+              "image": "m5/amys-blue-dress.webp"
+            },
+            {
+              "id": "lingling-skirt-dirty",
+              "type": "sentence",
+              "text": "Lingling's favourite skirt is dirty.",
+              "translation": "玲玲最喜欢的裙子脏了。",
+              "image": "m5/lingling-skirt-dirty.webp"
+            },
+            {
+              "id": "sams-shoes",
+              "type": "sentence",
+              "text": "Sam's shoes are wet and dirty.",
+              "translation": "萨姆的鞋又湿又脏。",
+              "image": "m5/sams-shoes.webp"
+            },
+            {
+              "id": "tom-is-laughing",
+              "type": "sentence",
+              "text": "Tom is laughing!",
+              "translation": "汤姆在笑！",
+              "image": "m5/tom-is-laughing.webp"
+            },
+            {
+              "id": "workers-still-working",
+              "type": "sentence",
+              "text": "The workers are still working.",
+              "translation": "工人们还在工作。",
+              "image": "m5/workers-still-working.webp"
+            },
+            {
+              "id": "this-hat-is-his",
+              "type": "sentence",
+              "text": "This hat is his.",
+              "translation": "这顶帽子是他的。",
+              "image": "m5/this-hat-is-his.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Module 6",
+      "units": [
+        {
+          "id": "u1",
+          "title": "You can play basketball well.",
+          "items": [
+            {
+              "id": "play-basketball-well",
+              "type": "sentence",
+              "text": "You can play basketball well, Lingling.",
+              "translation": "玲玲，你篮球打得很好。",
+              "image": "m6/play-basketball-well.webp",
+              "same": "basketball"
+            },
+            {
+              "id": "jump-really-high",
+              "type": "sentence",
+              "text": "You can jump really high!",
+              "translation": "你能跳得很高！",
+              "image": "m6/jump-really-high.webp",
+              "same": "basketball"
+            },
+            {
+              "id": "run-fast",
+              "type": "sentence",
+              "text": "Can you run fast?",
+              "translation": "你能跑得快吗？",
+              "image": "m6/run-fast.webp"
+            },
+            {
+              "id": "were-the-winners",
+              "type": "sentence",
+              "text": "Hooray! We're the winners!",
+              "translation": "万岁！我们赢了！",
+              "image": "m6/were-the-winners.webp",
+              "same": "win"
+            },
+            {
+              "id": "your-first-fan",
+              "type": "sentence",
+              "text": "I'm your first fan!",
+              "translation": "我是你的头号球迷！",
+              "image": "m6/your-first-fan.webp"
+            },
+            {
+              "id": "birds-in-the-sky",
+              "type": "sentence",
+              "text": "Look at the birds up in the sky!",
+              "translation": "看天上的鸟！",
+              "image": "m6/birds-in-the-sky.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "They got seventy points.",
+          "items": [
+            {
+              "id": "sixty",
+              "type": "word",
+              "text": "sixty",
+              "translation": "六十",
+              "image": "m6/sixty.webp"
+            },
+            {
+              "id": "seventy",
+              "type": "word",
+              "text": "seventy",
+              "translation": "七十",
+              "image": "m6/seventy.webp"
+            },
+            {
+              "id": "eighty",
+              "type": "word",
+              "text": "eighty",
+              "translation": "八十",
+              "image": "m6/eighty.webp"
+            },
+            {
+              "id": "they-got-seventy-points",
+              "type": "sentence",
+              "text": "They got seventy points.",
+              "translation": "他们得了七十分。",
+              "image": "m6/they-got-seventy-points.webp",
+              "same": "win"
+            },
+            {
+              "id": "he-got-forty-points",
+              "type": "sentence",
+              "text": "Oh, he got forty points.",
+              "translation": "哦，他得了四十分。",
+              "image": "m6/he-got-forty-points.webp"
+            },
+            {
+              "id": "played-in-the-park",
+              "type": "sentence",
+              "text": "Sam, Amy and Lingling played basketball in the park.",
+              "translation": "萨姆、埃米和玲玲在公园里打篮球。",
+              "image": "m6/played-in-the-park.webp",
+              "same": "basketball"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Module 7",
+      "units": [
+        {
+          "id": "u1",
+          "title": "His dog can help him.",
+          "items": [
+            {
+              "id": "blind",
+              "type": "word",
+              "text": "blind",
+              "translation": "失明的",
+              "image": "m7/blind.webp",
+              "same": "blind"
+            },
+            {
+              "id": "his-dog-can-help-him",
+              "type": "sentence",
+              "text": "His dog can help him.",
+              "translation": "他的狗能帮助他。",
+              "image": "m7/his-dog-can-help-him.webp",
+              "same": "blind"
+            },
+            {
+              "id": "tv-show-about-dogs",
+              "type": "sentence",
+              "text": "Look! There's a TV show about dogs.",
+              "translation": "看！有一个关于狗的电视节目。",
+              "image": "m7/tv-show-about-dogs.webp"
+            },
+            {
+              "id": "only-wants-to-play",
+              "type": "sentence",
+              "text": "He only wants to play!",
+              "translation": "它只想玩！",
+              "image": "m7/only-wants-to-play.webp"
+            },
+            {
+              "id": "dog-cant-read",
+              "type": "sentence",
+              "text": "This dog can't read.",
+              "translation": "这只狗不会读书。",
+              "image": "m7/dog-cant-read.webp"
+            },
+            {
+              "id": "panda-ride-a-bike",
+              "type": "sentence",
+              "text": "This panda can ride a bike.",
+              "translation": "这只熊猫会骑自行车。",
+              "image": "m7/panda-ride-a-bike.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It could find the people.",
+          "items": [
+            {
+              "id": "there-was-a-fire",
+              "type": "sentence",
+              "text": "There was a fire.",
+              "translation": "发生了一场火灾。",
+              "image": "m7/there-was-a-fire.webp",
+              "same": "fire"
+            },
+            {
+              "id": "firefighter",
+              "type": "word",
+              "text": "firefighter",
+              "translation": "消防队员",
+              "image": "m7/firefighter.webp",
+              "same": "fire"
+            },
+            {
+              "id": "it-could-find-the-people",
+              "type": "sentence",
+              "text": "It could find the people.",
+              "translation": "它能找到人。",
+              "image": "m7/it-could-find-the-people.webp"
+            },
+            {
+              "id": "bird-speak-english",
+              "type": "sentence",
+              "text": "It could speak English.",
+              "translation": "它会说英语。",
+              "image": "m7/bird-speak-english.webp"
+            },
+            {
+              "id": "girl-can-walk-now",
+              "type": "sentence",
+              "text": "The girl can walk now.",
+              "translation": "这个女孩现在能走路了。",
+              "image": "m7/girl-can-walk-now.webp"
+            },
+            {
+              "id": "stand-on-his-hands",
+              "type": "sentence",
+              "text": "Xiaoyong can stand on his hands.",
+              "translation": "小勇能用手倒立。",
+              "image": "m7/stand-on-his-hands.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "Module 8",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Children often sit around tables.",
+          "items": [
+            {
+              "id": "sit-around-tables",
+              "type": "sentence",
+              "text": "In the UK, children often sit around tables in class.",
+              "translation": "在英国，孩子们上课时常围着桌子坐。",
+              "image": "m8/sit-around-tables.webp",
+              "same": "sit"
+            },
+            {
+              "id": "sit-in-lines",
+              "type": "sentence",
+              "text": "We sit in lines in China.",
+              "translation": "在中国，我们排成行坐。",
+              "image": "m8/sit-in-lines.webp",
+              "same": "sit"
+            },
+            {
+              "id": "sing-songs-together",
+              "type": "sentence",
+              "text": "They sing songs together every morning.",
+              "translation": "他们每天早上一起唱歌。",
+              "image": "m8/sing-songs-together.webp"
+            },
+            {
+              "id": "morning-exercises",
+              "type": "sentence",
+              "text": "We do morning exercises.",
+              "translation": "我们做早操。",
+              "image": "m8/morning-exercises.webp"
+            },
+            {
+              "id": "starts-at-nine",
+              "type": "sentence",
+              "text": "School often starts at 9 o'clock.",
+              "translation": "学校常常九点开始上课。",
+              "image": "m8/starts-at-nine.webp"
+            },
+            {
+              "id": "finishes-at-half-past-three",
+              "type": "sentence",
+              "text": "It finishes at half past three.",
+              "translation": "三点半放学。",
+              "image": "m8/finishes-at-half-past-three.webp"
+            },
+            {
+              "id": "miss-my-friends",
+              "type": "sentence",
+              "text": "I miss my friends back in China.",
+              "translation": "我想念在中国的朋友们。",
+              "image": "m8/miss-my-friends.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "There are lots of games.",
+          "items": [
+            {
+              "id": "wall",
+              "type": "word",
+              "text": "wall",
+              "translation": "墙",
+              "image": "m8/wall.webp",
+              "same": "wall"
+            },
+            {
+              "id": "paintings-on-the-walls",
+              "type": "sentence",
+              "text": "There are children's paintings on the walls.",
+              "translation": "墙上有孩子们的画。",
+              "image": "m8/paintings-on-the-walls.webp",
+              "same": "wall"
+            },
+            {
+              "id": "lots-of-games",
+              "type": "sentence",
+              "text": "There are lots of games.",
+              "translation": "有很多游戏。",
+              "image": "m8/lots-of-games.webp"
+            },
+            {
+              "id": "fun-at-break-time",
+              "type": "sentence",
+              "text": "The students can have fun at break time.",
+              "translation": "学生们课间休息时可以玩得很开心。",
+              "image": "m8/fun-at-break-time.webp"
+            },
+            {
+              "id": "study-hard",
+              "type": "sentence",
+              "text": "English children study hard.",
+              "translation": "英国孩子学习很努力。",
+              "image": "m8/study-hard.webp",
+              "same": "study"
+            },
+            {
+              "id": "homework-every-day",
+              "type": "sentence",
+              "text": "They do homework every day.",
+              "translation": "他们每天都做作业。",
+              "image": "m8/homework-every-day.webp",
+              "same": "study"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Module 9",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Are you sad?",
+          "items": [
+            {
+              "id": "sad",
+              "type": "word",
+              "text": "sad",
+              "translation": "难过的",
+              "image": "m9/sad.webp",
+              "same": "sad"
+            },
+            {
+              "id": "angry",
+              "type": "word",
+              "text": "angry",
+              "translation": "生气的",
+              "image": "m9/angry.webp"
+            },
+            {
+              "id": "bored",
+              "type": "word",
+              "text": "bored",
+              "translation": "无聊的",
+              "image": "m9/bored.webp"
+            },
+            {
+              "id": "im-thinking",
+              "type": "sentence",
+              "text": "Nothing. I'm thinking.",
+              "translation": "没什么。我在想事情。",
+              "image": "m9/im-thinking.webp"
+            },
+            {
+              "id": "play-with-my-doll",
+              "type": "sentence",
+              "text": "Do you want to play with my doll?",
+              "translation": "你想玩我的娃娃吗？",
+              "image": "m9/play-with-my-doll.webp"
+            },
+            {
+              "id": "surprise-present",
+              "type": "sentence",
+              "text": "I'm going to make you a surprise present.",
+              "translation": "我要给你做一个惊喜礼物。",
+              "image": "m9/surprise-present.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "She was very happy.",
+          "items": [
+            {
+              "id": "hungry",
+              "type": "word",
+              "text": "hungry",
+              "translation": "饿的",
+              "image": "m9/hungry.webp"
+            },
+            {
+              "id": "thirsty",
+              "type": "word",
+              "text": "thirsty",
+              "translation": "渴的",
+              "image": "m9/thirsty.webp",
+              "same": "drink"
+            },
+            {
+              "id": "zara-couldnt-go-out",
+              "type": "sentence",
+              "text": "Zara couldn't go out. She was sad.",
+              "translation": "扎拉不能出去。她很难过。",
+              "image": "m9/zara-couldnt-go-out.webp",
+              "same": "sad"
+            },
+            {
+              "id": "helped-mum-make-a-cake",
+              "type": "sentence",
+              "text": "She helped her mum make a cake.",
+              "translation": "她帮妈妈做蛋糕。",
+              "image": "m9/helped-mum-make-a-cake.webp"
+            },
+            {
+              "id": "drank-some-water",
+              "type": "sentence",
+              "text": "So she drank some water.",
+              "translation": "所以她喝了一些水。",
+              "image": "m9/drank-some-water.webp",
+              "same": "drink"
+            },
+            {
+              "id": "she-was-very-happy",
+              "type": "sentence",
+              "text": "She was very happy.",
+              "translation": "她非常开心。",
+              "image": "m9/she-was-very-happy.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Module 10",
+      "units": [
+        {
+          "id": "u1",
+          "title": "You should tidy your toys.",
+          "items": [
+            {
+              "id": "go-to-bed",
+              "type": "sentence",
+              "text": "You should go to bed now.",
+              "translation": "你现在应该上床睡觉了。",
+              "image": "m10/go-to-bed.webp"
+            },
+            {
+              "id": "tidy-your-toys",
+              "type": "sentence",
+              "text": "Tom, you should tidy your toys.",
+              "translation": "汤姆，你应该收拾你的玩具。",
+              "image": "m10/tidy-your-toys.webp",
+              "same": "tidy"
+            },
+            {
+              "id": "shouldnt-play-with-cds",
+              "type": "sentence",
+              "text": "You shouldn't play with the CDs!",
+              "translation": "你不应该玩这些光盘！",
+              "image": "m10/shouldnt-play-with-cds.webp",
+              "same": "mess"
+            },
+            {
+              "id": "shouldnt-take-books-down",
+              "type": "sentence",
+              "text": "You shouldn't take the books down.",
+              "translation": "你不应该把书拿下来。",
+              "image": "m10/shouldnt-take-books-down.webp",
+              "same": "mess"
+            },
+            {
+              "id": "room-is-clean",
+              "type": "sentence",
+              "text": "Wow! The room is clean now.",
+              "translation": "哇！房间现在干净了。",
+              "image": "m10/room-is-clean.webp",
+              "same": "tidy"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "You shouldn't be late.",
+          "items": [
+            {
+              "id": "shouldnt-be-late",
+              "type": "sentence",
+              "text": "You shouldn't be late.",
+              "translation": "你不应该迟到。",
+              "image": "m10/shouldnt-be-late.webp"
+            },
+            {
+              "id": "bring-your-books",
+              "type": "sentence",
+              "text": "You should bring your books to class.",
+              "translation": "你应该带书来上课。",
+              "image": "m10/bring-your-books.webp"
+            },
+            {
+              "id": "listen-in-class",
+              "type": "sentence",
+              "text": "You should listen in class.",
+              "translation": "你上课应该认真听。",
+              "image": "m10/listen-in-class.webp"
+            },
+            {
+              "id": "be-helpful",
+              "type": "sentence",
+              "text": "You should be helpful.",
+              "translation": "你应该乐于助人。",
+              "image": "m10/be-helpful.webp"
+            },
+            {
+              "id": "dont-feed-too-much",
+              "type": "sentence",
+              "text": "You shouldn't feed them too much.",
+              "translation": "你不应该喂它们太多。",
+              "image": "m10/dont-feed-too-much.webp"
+            },
+            {
+              "id": "jump-on-the-bed",
+              "type": "sentence",
+              "text": "You shouldn't jump on the bed.",
+              "translation": "你不应该在床上跳。",
+              "image": "m10/jump-on-the-bed.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

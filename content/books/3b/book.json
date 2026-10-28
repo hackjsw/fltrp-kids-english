@@ -1,0 +1,1119 @@
+{
+  "id": "3b",
+  "title": "三年级下册",
+  "subtitle": "新标准英语（一年级起点）",
+  "source": "textbooks/3b.pdf（TapXWorld/ChinaTextbook），词句取自课文和书后 Words and Expressions in Each Module",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "units": [
+        {
+          "id": "u1",
+          "title": "She's very nice.",
+          "items": [
+            {
+              "id": "shes-very-nice",
+              "type": "sentence",
+              "text": "She's very nice.",
+              "translation": "她人很好。",
+              "image": "m1/shes-very-nice.webp",
+              "same": "nice"
+            },
+            {
+              "id": "shes-a-bit-shy",
+              "type": "sentence",
+              "text": "But she's a bit shy.",
+              "translation": "但她有点儿害羞。",
+              "image": "m1/shes-a-bit-shy.webp",
+              "same": "shy"
+            },
+            {
+              "id": "hes-very-clever",
+              "type": "sentence",
+              "text": "He's very clever.",
+              "translation": "他很聪明。",
+              "image": "m1/hes-very-clever.webp",
+              "same": "clever"
+            },
+            {
+              "id": "hes-a-bit-quiet",
+              "type": "sentence",
+              "text": "But he's a bit quiet.",
+              "translation": "但他有点儿文静。",
+              "image": "m1/hes-a-bit-quiet.webp",
+              "same": "quiet"
+            },
+            {
+              "id": "naughty-parrot",
+              "type": "sentence",
+              "text": "He's very, very naughty.",
+              "translation": "他非常非常淘气。",
+              "image": "m1/naughty-parrot.webp",
+              "same": "parrot"
+            },
+            {
+              "id": "clever-elephant",
+              "type": "sentence",
+              "text": "The elephant is clever.",
+              "translation": "这头大象很聪明。",
+              "image": "m1/clever-elephant.webp",
+              "same": "clever"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I'm going to help her.",
+          "items": [
+            {
+              "id": "parrot",
+              "type": "word",
+              "text": "parrot",
+              "translation": "鹦鹉",
+              "image": "m1/parrot.webp",
+              "same": "parrot"
+            },
+            {
+              "id": "help-her",
+              "type": "sentence",
+              "text": "I'm going to help her.",
+              "translation": "我要去帮助她。",
+              "image": "m1/help-her.webp",
+              "same": "parrot"
+            },
+            {
+              "id": "twenty",
+              "type": "word",
+              "text": "twenty",
+              "translation": "二十",
+              "image": "m1/twenty.webp"
+            },
+            {
+              "id": "maths",
+              "type": "word",
+              "text": "Maths",
+              "translation": "数学",
+              "image": "m1/maths.webp"
+            },
+            {
+              "id": "science",
+              "type": "word",
+              "text": "Science",
+              "translation": "科学",
+              "image": "m1/science.webp"
+            },
+            {
+              "id": "im-helpful",
+              "type": "sentence",
+              "text": "I'm helpful.",
+              "translation": "我乐于助人。",
+              "image": "m1/im-helpful.webp"
+            },
+            {
+              "id": "boy-will-cry",
+              "type": "sentence",
+              "text": "This little boy will cry.",
+              "translation": "这个小男孩要哭了。",
+              "image": "m1/boy-will-cry.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "units": [
+        {
+          "id": "u1",
+          "title": "It's very long.",
+          "items": [
+            {
+              "id": "river-is-wide",
+              "type": "sentence",
+              "text": "This river is very wide.",
+              "translation": "这条河很宽。",
+              "image": "m2/river-is-wide.webp",
+              "same": "river"
+            },
+            {
+              "id": "its-very-long",
+              "type": "sentence",
+              "text": "And it's very long.",
+              "translation": "而且它很长。",
+              "image": "m2/its-very-long.webp",
+              "same": "river"
+            },
+            {
+              "id": "big-ben-tall",
+              "type": "sentence",
+              "text": "This is Big Ben. It's very tall.",
+              "translation": "这是大本钟，它很高。",
+              "image": "m2/big-ben-tall.webp",
+              "same": "big-ben"
+            },
+            {
+              "id": "very-old-clock",
+              "type": "sentence",
+              "text": "It's a very old clock.",
+              "translation": "它是一座很古老的钟。",
+              "image": "m2/very-old-clock.webp",
+              "same": "big-ben"
+            },
+            {
+              "id": "london-eye",
+              "type": "sentence",
+              "text": "It's the London Eye.",
+              "translation": "这是伦敦眼。",
+              "image": "m2/london-eye.webp",
+              "same": "london-eye"
+            },
+            {
+              "id": "big-and-small-tree",
+              "type": "sentence",
+              "text": "This tree is big, but that one is small.",
+              "translation": "这棵树大，那棵树小。",
+              "image": "m2/big-and-small-tree.webp"
+            },
+            {
+              "id": "house-very-old",
+              "type": "sentence",
+              "text": "This house is very old.",
+              "translation": "这座房子很古老。",
+              "image": "m2/house-very-old.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "You'll see Tower Bridge.",
+          "items": [
+            {
+              "id": "tower-bridge",
+              "type": "sentence",
+              "text": "You'll see Tower Bridge.",
+              "translation": "你会看到塔桥。",
+              "image": "m2/tower-bridge.webp",
+              "same": "tower-bridge"
+            },
+            {
+              "id": "bridge-can-open",
+              "type": "sentence",
+              "text": "It can open.",
+              "translation": "它能打开。",
+              "image": "m2/bridge-can-open.webp",
+              "same": "tower-bridge"
+            },
+            {
+              "id": "go-on-london-eye",
+              "type": "sentence",
+              "text": "We'll go on the London Eye.",
+              "translation": "我们会去坐伦敦眼。",
+              "image": "m2/go-on-london-eye.webp",
+              "same": "london-eye"
+            },
+            {
+              "id": "youll-love-london",
+              "type": "sentence",
+              "text": "You'll love London.",
+              "translation": "你会爱上伦敦的。",
+              "image": "m2/youll-love-london.webp",
+              "same": [
+                "big-ben",
+                "tower-bridge"
+              ]
+            },
+            {
+              "id": "see-my-new-friend",
+              "type": "sentence",
+              "text": "You'll see my new friend Little Six.",
+              "translation": "你会见到我的新朋友小六。",
+              "image": "m2/see-my-new-friend.webp"
+            },
+            {
+              "id": "wide-river-in-park",
+              "type": "sentence",
+              "text": "In this park, you'll see a wide river.",
+              "translation": "在这个公园里，你会看到一条宽阔的河。",
+              "image": "m2/wide-river-in-park.webp",
+              "same": "river"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "units": [
+        {
+          "id": "u1",
+          "title": "We'll go to the zoo.",
+          "items": [
+            {
+              "id": "go-to-the-zoo",
+              "type": "sentence",
+              "text": "We'll go to the zoo.",
+              "translation": "我们会去动物园。",
+              "image": "m3/go-to-the-zoo.webp",
+              "same": "zoo"
+            },
+            {
+              "id": "lions-tigers-pandas",
+              "type": "sentence",
+              "text": "We'll see lions, tigers and pandas.",
+              "translation": "我们会看到狮子、老虎和熊猫。",
+              "image": "m3/lions-tigers-pandas.webp",
+              "same": "zoo"
+            },
+            {
+              "id": "go-to-school",
+              "type": "sentence",
+              "text": "I'll go to school.",
+              "translation": "我会去上学。",
+              "image": "m3/go-to-school.webp"
+            },
+            {
+              "id": "visit-grandpa",
+              "type": "sentence",
+              "text": "I'll visit my grandpa in the countryside.",
+              "translation": "我会去乡下看望我爷爷。",
+              "image": "m3/visit-grandpa.webp",
+              "same": "countryside"
+            },
+            {
+              "id": "hes-a-farmer",
+              "type": "sentence",
+              "text": "He's a farmer.",
+              "translation": "他是农民。",
+              "image": "m3/hes-a-farmer.webp",
+              "same": "countryside"
+            },
+            {
+              "id": "lots-of-pigs",
+              "type": "sentence",
+              "text": "I will see lots of pigs.",
+              "translation": "我会看到很多猪。",
+              "image": "m3/lots-of-pigs.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Will we have breakfast at 7?",
+          "items": [
+            {
+              "id": "have-breakfast",
+              "type": "sentence",
+              "text": "Will we have breakfast at 7?",
+              "translation": "我们七点吃早饭吗？",
+              "image": "m3/have-breakfast.webp",
+              "same": "breakfast"
+            },
+            {
+              "id": "have-lunch",
+              "type": "sentence",
+              "text": "Will we have lunch at 12?",
+              "translation": "我们十二点吃午饭吗？",
+              "image": "m3/have-lunch.webp"
+            },
+            {
+              "id": "have-dinner",
+              "type": "sentence",
+              "text": "Yes, we'll have dinner at 6.",
+              "translation": "是的，我们六点吃晚饭。",
+              "image": "m3/have-dinner.webp"
+            },
+            {
+              "id": "tea-party",
+              "type": "sentence",
+              "text": "We'll have a tea party at 4.",
+              "translation": "我们四点会开个茶会。",
+              "image": "m3/tea-party.webp"
+            },
+            {
+              "id": "bob-breakfast",
+              "type": "sentence",
+              "text": "Oh no! It's my breakfast.",
+              "translation": "哦，不！那是我的早饭。",
+              "image": "m3/bob-breakfast.webp",
+              "same": "breakfast"
+            },
+            {
+              "id": "boys-playing-toys",
+              "type": "sentence",
+              "text": "I'll see some boys playing with toys.",
+              "translation": "我会看到一些男孩在玩玩具。",
+              "image": "m3/boys-playing-toys.webp"
+            },
+            {
+              "id": "ride-your-bike",
+              "type": "sentence",
+              "text": "Will you ride your bike this weekend?",
+              "translation": "你这周末会骑自行车吗？",
+              "image": "m3/ride-your-bike.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "units": [
+        {
+          "id": "u1",
+          "title": "We'll pick fruit.",
+          "items": [
+            {
+              "id": "pick-fruit",
+              "type": "sentence",
+              "text": "We'll pick fruit.",
+              "translation": "我们会去摘水果。",
+              "image": "m4/pick-fruit.webp"
+            },
+            {
+              "id": "pick-ten-apples",
+              "type": "sentence",
+              "text": "I'll pick ten apples.",
+              "translation": "我会摘十个苹果。",
+              "image": "m4/pick-ten-apples.webp"
+            },
+            {
+              "id": "pick-twelve-pears",
+              "type": "sentence",
+              "text": "I'll pick twelve pears.",
+              "translation": "我会摘十二个梨。",
+              "image": "m4/pick-twelve-pears.webp"
+            },
+            {
+              "id": "pick-eighteen-peaches",
+              "type": "sentence",
+              "text": "Yes, I'll pick eighteen peaches.",
+              "translation": "是的，我会摘十八个桃子。",
+              "image": "m4/pick-eighteen-peaches.webp",
+              "same": "eighteen"
+            },
+            {
+              "id": "fourteen",
+              "type": "word",
+              "text": "fourteen",
+              "translation": "十四",
+              "image": "m4/fourteen.webp"
+            },
+            {
+              "id": "sixteen",
+              "type": "word",
+              "text": "sixteen",
+              "translation": "十六",
+              "image": "m4/sixteen.webp"
+            },
+            {
+              "id": "eighteen",
+              "type": "word",
+              "text": "eighteen",
+              "translation": "十八",
+              "image": "m4/eighteen.webp",
+              "same": "eighteen"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Thirteen, fourteen, fifteen...",
+          "items": [
+            {
+              "id": "thirteen",
+              "type": "word",
+              "text": "thirteen",
+              "translation": "十三",
+              "image": "m4/thirteen.webp"
+            },
+            {
+              "id": "fifteen",
+              "type": "word",
+              "text": "fifteen",
+              "translation": "十五",
+              "image": "m4/fifteen.webp"
+            },
+            {
+              "id": "seventeen",
+              "type": "word",
+              "text": "seventeen",
+              "translation": "十七",
+              "image": "m4/seventeen.webp"
+            },
+            {
+              "id": "nineteen",
+              "type": "word",
+              "text": "nineteen",
+              "translation": "十九",
+              "image": "m4/nineteen.webp"
+            },
+            {
+              "id": "peaches-on-trees",
+              "type": "sentence",
+              "text": "Look at the peaches on these trees!",
+              "translation": "看这些树上的桃子！",
+              "image": "m4/peaches-on-trees.webp",
+              "same": "count-peaches"
+            },
+            {
+              "id": "lets-count-them",
+              "type": "sentence",
+              "text": "Let's count them!",
+              "translation": "我们来数一数吧！",
+              "image": "m4/lets-count-them.webp",
+              "same": "count-peaches"
+            },
+            {
+              "id": "i-feel-tired",
+              "type": "sentence",
+              "text": "I feel tired now.",
+              "translation": "我现在觉得累了。",
+              "image": "m4/i-feel-tired.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module 5",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Will you take your ball tomorrow?",
+          "items": [
+            {
+              "id": "take-your-ball",
+              "type": "sentence",
+              "text": "Will you take your ball tomorrow?",
+              "translation": "你明天会带你的球吗？",
+              "image": "m5/take-your-ball.webp"
+            },
+            {
+              "id": "take-your-kite",
+              "type": "sentence",
+              "text": "Will you take your kite to the picnic tomorrow?",
+              "translation": "你明天会带风筝去野餐吗？",
+              "image": "m5/take-your-kite.webp",
+              "same": [
+                "kite",
+                "picnic"
+              ]
+            },
+            {
+              "id": "fly-your-kite",
+              "type": "sentence",
+              "text": "Will you fly your kite tomorrow?",
+              "translation": "你明天会放风筝吗？",
+              "image": "m5/fly-your-kite.webp",
+              "same": "kite"
+            },
+            {
+              "id": "have-a-picnic",
+              "type": "sentence",
+              "text": "On Saturday, we're going to have a picnic!",
+              "translation": "星期六我们要去野餐！",
+              "image": "m5/have-a-picnic.webp",
+              "same": "picnic"
+            },
+            {
+              "id": "thats-a-good-idea",
+              "type": "sentence",
+              "text": "Yes! That's a good idea.",
+              "translation": "对！那是个好主意。",
+              "image": "m5/thats-a-good-idea.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "On Monday, I'll go swimming.",
+          "items": [
+            {
+              "id": "monday-swimming",
+              "type": "sentence",
+              "text": "On Monday, I'll go swimming.",
+              "translation": "星期一，我会去游泳。",
+              "image": "m5/monday-swimming.webp"
+            },
+            {
+              "id": "tuesday-play-friends",
+              "type": "sentence",
+              "text": "On Tuesday, I'll play with my friends.",
+              "translation": "星期二，我会和朋友们玩。",
+              "image": "m5/tuesday-play-friends.webp"
+            },
+            {
+              "id": "wednesday-park",
+              "type": "sentence",
+              "text": "On Wednesday, I'll go to the park.",
+              "translation": "星期三，我会去公园。",
+              "image": "m5/wednesday-park.webp"
+            },
+            {
+              "id": "thursday-homework",
+              "type": "sentence",
+              "text": "On Thursday, I'll do my homework.",
+              "translation": "星期四，我会做作业。",
+              "image": "m5/thursday-homework.webp"
+            },
+            {
+              "id": "friday-grandma",
+              "type": "sentence",
+              "text": "On Friday, I'll visit my grandma.",
+              "translation": "星期五，我会去看望奶奶。",
+              "image": "m5/friday-grandma.webp"
+            },
+            {
+              "id": "saturday-help-mother",
+              "type": "sentence",
+              "text": "On Saturday, I'll help my mother.",
+              "translation": "星期六，我会帮妈妈的忙。",
+              "image": "m5/saturday-help-mother.webp"
+            },
+            {
+              "id": "sunday-read-books",
+              "type": "sentence",
+              "text": "On Sunday, I'll read my books.",
+              "translation": "星期天，我会看书。",
+              "image": "m5/sunday-read-books.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Module 6",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Here are his hands.",
+          "items": [
+            {
+              "id": "his-head",
+              "type": "sentence",
+              "text": "Here is his head.",
+              "translation": "这是他的头。",
+              "image": "m6/his-head.webp",
+              "same": "monster-head"
+            },
+            {
+              "id": "here-are-his-hands",
+              "type": "sentence",
+              "text": "Here are his hands.",
+              "translation": "这是他的手。",
+              "image": "m6/here-are-his-hands.webp",
+              "same": [
+                "monster-hands",
+                "monster-arms"
+              ]
+            },
+            {
+              "id": "six-arms",
+              "type": "sentence",
+              "text": "Six arms!",
+              "translation": "六只胳膊！",
+              "image": "m6/six-arms.webp",
+              "same": [
+                "monster-arms",
+                "monster-hands"
+              ]
+            },
+            {
+              "id": "one-leg-one-foot",
+              "type": "sentence",
+              "text": "One leg! One foot!",
+              "translation": "一条腿！一只脚！",
+              "image": "m6/one-leg-one-foot.webp",
+              "same": "monster-leg"
+            },
+            {
+              "id": "draw-on-computer",
+              "type": "sentence",
+              "text": "Let's draw a monster on the computer.",
+              "translation": "我们在电脑上画个怪物吧。",
+              "image": "m6/draw-on-computer.webp"
+            },
+            {
+              "id": "stamp",
+              "type": "word",
+              "text": "stamp",
+              "translation": "跺脚",
+              "image": "m6/stamp.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "There is a small monster.",
+          "items": [
+            {
+              "id": "small-monster",
+              "type": "sentence",
+              "text": "There is a small monster.",
+              "translation": "有一个小怪物。",
+              "image": "m6/small-monster.webp"
+            },
+            {
+              "id": "two-big-monsters",
+              "type": "sentence",
+              "text": "And there are two big monsters.",
+              "translation": "还有两个大怪物。",
+              "image": "m6/two-big-monsters.webp"
+            },
+            {
+              "id": "nose-on-face",
+              "type": "sentence",
+              "text": "There is a nose on your face.",
+              "translation": "你的脸上有一个鼻子。",
+              "image": "m6/nose-on-face.webp"
+            },
+            {
+              "id": "two-eyes-on-face",
+              "type": "sentence",
+              "text": "There are two eyes on your face.",
+              "translation": "你的脸上有两只眼睛。",
+              "image": "m6/two-eyes-on-face.webp"
+            },
+            {
+              "id": "three-green-parrots",
+              "type": "sentence",
+              "text": "There are three green parrots.",
+              "translation": "有三只绿鹦鹉。",
+              "image": "m6/three-green-parrots.webp"
+            },
+            {
+              "id": "pen-on-desk",
+              "type": "sentence",
+              "text": "There is a pen on the desk.",
+              "translation": "书桌上有一支钢笔。",
+              "image": "m6/pen-on-desk.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Module 7",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Are there many children in your class?",
+          "items": [
+            {
+              "id": "many-children",
+              "type": "sentence",
+              "text": "Are there many children in your class?",
+              "translation": "你们班有很多孩子吗？",
+              "image": "m7/many-children.webp",
+              "same": "class"
+            },
+            {
+              "id": "any-monkeys",
+              "type": "sentence",
+              "text": "Are there any monkeys here?",
+              "translation": "这里有猴子吗？",
+              "image": "m7/any-monkeys.webp"
+            },
+            {
+              "id": "ask-a-question",
+              "type": "sentence",
+              "text": "Can I ask you a question?",
+              "translation": "我能问你一个问题吗？",
+              "image": "m7/ask-a-question.webp"
+            },
+            {
+              "id": "forty",
+              "type": "word",
+              "text": "forty",
+              "translation": "四十",
+              "image": "m7/forty.webp"
+            },
+            {
+              "id": "thirty",
+              "type": "word",
+              "text": "thirty",
+              "translation": "三十",
+              "image": "m7/thirty.webp"
+            },
+            {
+              "id": "more-friends-china",
+              "type": "sentence",
+              "text": "So we've got more friends in China!",
+              "translation": "这样我们在中国有了更多朋友！",
+              "image": "m7/more-friends-china.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "How many apples are there in the box?",
+          "items": [
+            {
+              "id": "apples-in-box",
+              "type": "sentence",
+              "text": "How many apples are there in the box?",
+              "translation": "箱子里有多少个苹果？",
+              "image": "m7/apples-in-box.webp"
+            },
+            {
+              "id": "pears-in-box",
+              "type": "sentence",
+              "text": "How many pears are there in the box?",
+              "translation": "箱子里有多少个梨？",
+              "image": "m7/pears-in-box.webp"
+            },
+            {
+              "id": "how-many-monkeys",
+              "type": "sentence",
+              "text": "How many monkeys are there?",
+              "translation": "有多少只猴子？",
+              "image": "m7/how-many-monkeys.webp"
+            },
+            {
+              "id": "ten-big-lions",
+              "type": "sentence",
+              "text": "Ten big lions at the zoo.",
+              "translation": "动物园里有十头大狮子。",
+              "image": "m7/ten-big-lions.webp"
+            },
+            {
+              "id": "sixty-parrots",
+              "type": "sentence",
+              "text": "Sixty parrots in a tree.",
+              "translation": "一棵树上有六十只鹦鹉。",
+              "image": "m7/sixty-parrots.webp"
+            },
+            {
+              "id": "twenty-bears-kangaroo",
+              "type": "sentence",
+              "text": "Twenty bears and a kangaroo.",
+              "translation": "二十只熊和一只袋鼠。",
+              "image": "m7/twenty-bears-kangaroo.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "Module 8",
+      "units": [
+        {
+          "id": "u1",
+          "title": "He works hard.",
+          "items": [
+            {
+              "id": "he-works-hard",
+              "type": "sentence",
+              "text": "He works hard.",
+              "translation": "他学习很努力。",
+              "image": "m8/he-works-hard.webp"
+            },
+            {
+              "id": "kitty-is-lazy",
+              "type": "sentence",
+              "text": "Kitty is lazy.",
+              "translation": "基蒂很懒。",
+              "image": "m8/kitty-is-lazy.webp",
+              "same": "lazy-cat"
+            },
+            {
+              "id": "parents-day",
+              "type": "sentence",
+              "text": "It's Parents' Day today.",
+              "translation": "今天是家长日。",
+              "image": "m8/parents-day.webp"
+            },
+            {
+              "id": "his-work-is-good",
+              "type": "sentence",
+              "text": "His work is good.",
+              "translation": "他的作业很好。",
+              "image": "m8/his-work-is-good.webp"
+            },
+            {
+              "id": "naughty-in-class",
+              "type": "sentence",
+              "text": "Is Daming naughty in class?",
+              "translation": "大明在课堂上淘气吗？",
+              "image": "m8/naughty-in-class.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "She's quite good at English.",
+          "items": [
+            {
+              "id": "good-at-english",
+              "type": "sentence",
+              "text": "She's quite good at English.",
+              "translation": "她英语相当好。",
+              "image": "m8/good-at-english.webp"
+            },
+            {
+              "id": "good-at-maths",
+              "type": "sentence",
+              "text": "She's very good at Maths.",
+              "translation": "她数学非常好。",
+              "image": "m8/good-at-maths.webp"
+            },
+            {
+              "id": "tries-hard-science",
+              "type": "sentence",
+              "text": "She tries hard at Science.",
+              "translation": "她在科学课上很努力。",
+              "image": "m8/tries-hard-science.webp"
+            },
+            {
+              "id": "runs-fast-pe",
+              "type": "sentence",
+              "text": "She runs fast in PE.",
+              "translation": "她在体育课上跑得很快。",
+              "image": "m8/runs-fast-pe.webp"
+            },
+            {
+              "id": "art",
+              "type": "word",
+              "text": "Art",
+              "translation": "美术",
+              "image": "m8/art.webp"
+            },
+            {
+              "id": "lazy-cat",
+              "type": "sentence",
+              "text": "And this is a lazy cat.",
+              "translation": "这是一只懒猫。",
+              "image": "m8/lazy-cat.webp",
+              "same": "lazy-cat"
+            },
+            {
+              "id": "funny-giraffe",
+              "type": "sentence",
+              "text": "This is a funny giraffe.",
+              "translation": "这是一只滑稽的长颈鹿。",
+              "image": "m8/funny-giraffe.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Module 9",
+      "units": [
+        {
+          "id": "u1",
+          "title": "They were very young.",
+          "items": [
+            {
+              "id": "they-were-young",
+              "type": "sentence",
+              "text": "They were very young then!",
+              "translation": "那时他们很年轻！",
+              "image": "m9/they-were-young.webp",
+              "same": "grandparents"
+            },
+            {
+              "id": "very-old-now",
+              "type": "sentence",
+              "text": "But they are very old now.",
+              "translation": "但是他们现在很老了。",
+              "image": "m9/very-old-now.webp",
+              "same": "grandparents"
+            },
+            {
+              "id": "you-were-cute",
+              "type": "sentence",
+              "text": "You were very cute!",
+              "translation": "你那时很可爱！",
+              "image": "m9/you-were-cute.webp",
+              "same": "baby-lingling"
+            },
+            {
+              "id": "hair-was-short",
+              "type": "sentence",
+              "text": "Your hair was very short then.",
+              "translation": "你那时头发很短。",
+              "image": "m9/hair-was-short.webp",
+              "same": "baby-lingling"
+            },
+            {
+              "id": "now-its-long",
+              "type": "sentence",
+              "text": "Yes, now it's long.",
+              "translation": "是的，现在头发长了。",
+              "image": "m9/now-its-long.webp"
+            },
+            {
+              "id": "it-was-fat",
+              "type": "sentence",
+              "text": "It was fat then.",
+              "translation": "它那时很胖。",
+              "image": "m9/it-was-fat.webp"
+            },
+            {
+              "id": "now-its-thin",
+              "type": "sentence",
+              "text": "Now it's thin.",
+              "translation": "现在它很瘦。",
+              "image": "m9/now-its-thin.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "He was in Hong Kong.",
+          "items": [
+            {
+              "id": "in-london",
+              "type": "sentence",
+              "text": "They were in London.",
+              "translation": "她们在伦敦。",
+              "image": "m9/in-london.webp"
+            },
+            {
+              "id": "he-was-in-hong-kong",
+              "type": "sentence",
+              "text": "He was in Hong Kong.",
+              "translation": "他在香港。",
+              "image": "m9/he-was-in-hong-kong.webp"
+            },
+            {
+              "id": "i-was-in-beijing",
+              "type": "sentence",
+              "text": "I was in Beijing.",
+              "translation": "我在北京。",
+              "image": "m9/i-was-in-beijing.webp"
+            },
+            {
+              "id": "with-daming-home",
+              "type": "sentence",
+              "text": "I was with Daming at his home.",
+              "translation": "我和大明在他家。",
+              "image": "m9/with-daming-home.webp"
+            },
+            {
+              "id": "slow-now-fast",
+              "type": "sentence",
+              "text": "I was slow. Now I'm fast.",
+              "translation": "我以前很慢，现在我很快。",
+              "image": "m9/slow-now-fast.webp"
+            },
+            {
+              "id": "short-then-tall",
+              "type": "sentence",
+              "text": "Duoduo was short then. Now he's tall.",
+              "translation": "多多以前很矮，现在很高。",
+              "image": "m9/short-then-tall.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Module 10",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Were you on the second floor?",
+          "items": [
+            {
+              "id": "second-floor",
+              "type": "sentence",
+              "text": "Were you on the second floor?",
+              "translation": "你们在二楼吗？",
+              "image": "m10/second-floor.webp",
+              "same": "floor"
+            },
+            {
+              "id": "cant-find-daming",
+              "type": "sentence",
+              "text": "I'm worried. I can't find Daming!",
+              "translation": "我很担心，我找不到大明了！",
+              "image": "m10/cant-find-daming.webp"
+            },
+            {
+              "id": "cat-second-floor",
+              "type": "sentence",
+              "text": "The cat is on the second floor.",
+              "translation": "猫在二楼。",
+              "image": "m10/cat-second-floor.webp",
+              "same": "floor"
+            },
+            {
+              "id": "mothers-day",
+              "type": "sentence",
+              "text": "Happy Mother's Day!",
+              "translation": "母亲节快乐！",
+              "image": "m10/mothers-day.webp"
+            },
+            {
+              "id": "i-was-worried",
+              "type": "sentence",
+              "text": "I was very worried.",
+              "translation": "我非常担心。",
+              "image": "m10/i-was-worried.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "It was there.",
+          "items": [
+            {
+              "id": "where-vegetables",
+              "type": "sentence",
+              "text": "Where are the vegetables?",
+              "translation": "蔬菜在哪里？",
+              "image": "m10/where-vegetables.webp"
+            },
+            {
+              "id": "where-fruit",
+              "type": "sentence",
+              "text": "Where is the fruit?",
+              "translation": "水果在哪里？",
+              "image": "m10/where-fruit.webp"
+            },
+            {
+              "id": "where-milk",
+              "type": "sentence",
+              "text": "And where is the milk?",
+              "translation": "那牛奶在哪里？",
+              "image": "m10/where-milk.webp"
+            },
+            {
+              "id": "where-cakes",
+              "type": "sentence",
+              "text": "Where are the cakes?",
+              "translation": "蛋糕在哪里？",
+              "image": "m10/where-cakes.webp"
+            },
+            {
+              "id": "it-was-there",
+              "type": "sentence",
+              "text": "It was there.",
+              "translation": "它原来在那里。",
+              "image": "m10/it-was-there.webp"
+            },
+            {
+              "id": "wheres-my-fish",
+              "type": "sentence",
+              "text": "Where's my fish?",
+              "translation": "我的鱼在哪里？",
+              "image": "m10/wheres-my-fish.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

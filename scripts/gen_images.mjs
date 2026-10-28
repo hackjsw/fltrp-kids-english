@@ -57,7 +57,8 @@ async function generateOne(job) {
   // 有参考图时提醒保持人物一致；没有人物的图用一张家具图当材质参考。
   // 不能用吉祥物：动物会照着小熊猫的体型画，还背上它的书包
   const styleRef = refs.length ? refs : [path.join(ROOT, 'art/1a/m3/chair.png')]
-  const digits = job.digits ? ' The digit shapes must be clearly readable.' : ' No text, no letters, no numbers.'
+  // digits：画面主体就是数字或字母，要画清楚；其他图一律不要文字
+  const digits = job.digits ? ' The digit or letter shapes must be clearly readable, and no other text.' : ' No text, no letters, no numbers.'
   const refHint = refs.length
     ? 'Keep the characters exactly as in the reference images.'
     : 'Use the reference image only for its soft plush material and lighting; do not copy its subject, shape or accessories.'

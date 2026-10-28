@@ -1,0 +1,956 @@
+{
+  "images": [
+    {
+      "path": "m1/shes-very-nice.png",
+      "item": "She's very nice.",
+      "refs": [],
+      "prompt": "A smiling Chinese girl with a short bob helping an old man carry a bag",
+      "digits": false
+    },
+    {
+      "path": "m1/shes-a-bit-shy.png",
+      "item": "But she's a bit shy.",
+      "refs": [],
+      "prompt": "A Chinese girl with a short bob peeking shyly from behind a tree, cheeks pink",
+      "digits": false
+    },
+    {
+      "path": "m1/hes-very-clever.png",
+      "item": "He's very clever.",
+      "refs": [],
+      "prompt": "A Chinese boy with glasses making a colourful e-card on a computer",
+      "digits": false
+    },
+    {
+      "path": "m1/hes-a-bit-quiet.png",
+      "item": "But he's a bit quiet.",
+      "refs": [],
+      "prompt": "A Chinese boy with glasses sitting quietly in a corner, reading a book",
+      "digits": false
+    },
+    {
+      "path": "m1/naughty-parrot.png",
+      "item": "He's very, very naughty.",
+      "refs": [],
+      "prompt": "A green parrot pulling a girl's hair ribbon, laughing",
+      "digits": false
+    },
+    {
+      "path": "m1/clever-elephant.png",
+      "item": "The elephant is clever.",
+      "refs": [],
+      "prompt": "A grey elephant painting a picture with a brush held in its trunk",
+      "digits": false
+    },
+    {
+      "path": "m1/parrot.png",
+      "item": "parrot",
+      "refs": [],
+      "prompt": "A single green parrot with a red head sitting on a perch",
+      "digits": false
+    },
+    {
+      "path": "m1/help-her.png",
+      "item": "I'm going to help her.",
+      "refs": [],
+      "prompt": "A green parrot on the shoulder of a little girl doing sums, pointing at her paper with its wing",
+      "digits": false
+    },
+    {
+      "path": "m1/twenty.png",
+      "item": "twenty",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 20, two digits side by side, orange felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m1/maths.png",
+      "item": "Maths",
+      "refs": [],
+      "prompt": "An abacus, a ruler and a triangle set square together on a desk",
+      "digits": false
+    },
+    {
+      "path": "m1/science.png",
+      "item": "Science",
+      "refs": [],
+      "prompt": "A magnifying glass, a small plant in a pot and a test tube on a desk",
+      "digits": false
+    },
+    {
+      "path": "m1/im-helpful.png",
+      "item": "I'm helpful.",
+      "refs": [
+        "1a/characters/lingling.png",
+        "1a/characters/ms-smart.png"
+      ],
+      "prompt": "Lingling helping Ms Smart carry a pile of books. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress; Ms Smart, a kind British woman teacher, short wavy brown hair, round glasses, light blue cardigan, gentle smile. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/boy-will-cry.png",
+      "item": "This little boy will cry.",
+      "refs": [],
+      "prompt": "A little boy with a trembling lip and teary eyes, about to cry",
+      "digits": false
+    },
+    {
+      "path": "m2/river-is-wide.png",
+      "item": "This river is very wide.",
+      "refs": [],
+      "prompt": "A very wide river with a city on both banks, seen from above",
+      "digits": false
+    },
+    {
+      "path": "m2/its-very-long.png",
+      "item": "And it's very long.",
+      "refs": [],
+      "prompt": "A very long blue river winding far across the land to the horizon, seen from above",
+      "digits": false
+    },
+    {
+      "path": "m2/big-ben-tall.png",
+      "item": "This is Big Ben. It's very tall.",
+      "refs": [],
+      "prompt": "Big Ben, the tall clock tower in London, against a blue sky",
+      "digits": false
+    },
+    {
+      "path": "m2/very-old-clock.png",
+      "item": "It's a very old clock.",
+      "refs": [],
+      "prompt": "Close-up of the big old round clock face of Big Ben, golden hands",
+      "digits": false
+    },
+    {
+      "path": "m2/london-eye.png",
+      "item": "It's the London Eye.",
+      "refs": [],
+      "prompt": "The London Eye, a giant round Ferris wheel with glass cabins beside a river",
+      "digits": false
+    },
+    {
+      "path": "m2/big-and-small-tree.png",
+      "item": "This tree is big, but that one is small.",
+      "refs": [],
+      "prompt": "One very big tree next to one very small tree",
+      "digits": false
+    },
+    {
+      "path": "m2/house-very-old.png",
+      "item": "This house is very old.",
+      "refs": [],
+      "prompt": "A very old stone house with a crooked roof and ivy on the walls",
+      "digits": false
+    },
+    {
+      "path": "m2/tower-bridge.png",
+      "item": "You'll see Tower Bridge.",
+      "refs": [],
+      "prompt": "Tower Bridge in London, two tall towers joined by a bridge over the river",
+      "digits": false
+    },
+    {
+      "path": "m2/bridge-can-open.png",
+      "item": "It can open.",
+      "refs": [],
+      "prompt": "Tower Bridge with the middle of the road lifted up open, a ship passing under",
+      "digits": false
+    },
+    {
+      "path": "m2/go-on-london-eye.png",
+      "item": "We'll go on the London Eye.",
+      "refs": [
+        "1a/characters/lingling.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Lingling and Amy waving from a glass cabin high up on the London Eye. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/youll-love-london.png",
+      "item": "You'll love London.",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Amy and Lingling hugging happily, Big Ben and Tower Bridge behind them. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/see-my-new-friend.png",
+      "item": "You'll see my new friend Little Six.",
+      "refs": [],
+      "prompt": "A small white cat and a little brown puppy meeting and touching noses",
+      "digits": false
+    },
+    {
+      "path": "m2/wide-river-in-park.png",
+      "item": "In this park, you'll see a wide river.",
+      "refs": [],
+      "prompt": "A green park with trees and a wide river running through it",
+      "digits": false
+    },
+    {
+      "path": "m3/go-to-the-zoo.png",
+      "item": "We'll go to the zoo.",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Amy and Sam walking happily through a zoo gate with animal shapes on top. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/lions-tigers-pandas.png",
+      "item": "We'll see lions, tigers and pandas.",
+      "refs": [],
+      "prompt": "A lion, a tiger and a panda sitting together",
+      "digits": false
+    },
+    {
+      "path": "m3/go-to-school.png",
+      "item": "I'll go to school.",
+      "refs": [],
+      "prompt": "A girl with a schoolbag walking toward a school building",
+      "digits": false
+    },
+    {
+      "path": "m3/visit-grandpa.png",
+      "item": "I'll visit my grandpa in the countryside.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming hugging his grandpa in front of a farmhouse in green fields. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/hes-a-farmer.png",
+      "item": "He's a farmer.",
+      "refs": [],
+      "prompt": "An old Chinese man in a straw hat holding a hoe in a vegetable field",
+      "digits": false
+    },
+    {
+      "path": "m3/lots-of-pigs.png",
+      "item": "I will see lots of pigs.",
+      "refs": [],
+      "prompt": "Lots of pink pigs crowded together in a farm pen",
+      "digits": false
+    },
+    {
+      "path": "m3/have-breakfast.png",
+      "item": "Will we have breakfast at 7?",
+      "refs": [],
+      "prompt": "A breakfast table in the morning with eggs, bread and milk, the sun rising outside the window",
+      "digits": false
+    },
+    {
+      "path": "m3/have-lunch.png",
+      "item": "Will we have lunch at 12?",
+      "refs": [],
+      "prompt": "A lunch plate of rice, chicken and vegetables, the bright midday sun outside the window",
+      "digits": false
+    },
+    {
+      "path": "m3/have-dinner.png",
+      "item": "Yes, we'll have dinner at 6.",
+      "refs": [],
+      "prompt": "A family dinner table with soup and dishes in the evening, the moon outside the window",
+      "digits": false
+    },
+    {
+      "path": "m3/tea-party.png",
+      "item": "We'll have a tea party at 4.",
+      "refs": [],
+      "prompt": "A little tea party table with a teapot, teacups and small cakes",
+      "digits": false
+    },
+    {
+      "path": "m3/bob-breakfast.png",
+      "item": "Oh no! It's my breakfast.",
+      "refs": [],
+      "prompt": "A small brown dog eating the bread off a plate on the breakfast table",
+      "digits": false
+    },
+    {
+      "path": "m3/boys-playing-toys.png",
+      "item": "I'll see some boys playing with toys.",
+      "refs": [],
+      "prompt": "Two boys playing with toy cars and blocks in the park",
+      "digits": false
+    },
+    {
+      "path": "m3/ride-your-bike.png",
+      "item": "Will you ride your bike this weekend?",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam riding a green bike along a path. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/pick-fruit.png",
+      "item": "We'll pick fruit.",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Amy and Sam picking fruit from trees at a fruit farm, holding a basket. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/pick-ten-apples.png",
+      "item": "I'll pick ten apples.",
+      "refs": [],
+      "prompt": "Exactly ten red apples in a basket",
+      "digits": false
+    },
+    {
+      "path": "m4/pick-twelve-pears.png",
+      "item": "I'll pick twelve pears.",
+      "refs": [],
+      "prompt": "Exactly twelve yellow-green pears lined up neatly in a wide flat tray: two straight rows of six pears each, every pear fully visible and not overlapping, NOT a heap",
+      "digits": false
+    },
+    {
+      "path": "m4/pick-eighteen-peaches.png",
+      "item": "Yes, I'll pick eighteen peaches.",
+      "refs": [],
+      "prompt": "Exactly eighteen pink peaches lined up neatly in a wide flat tray: three straight rows of six peaches each, every peach fully visible and not overlapping, NOT a heap",
+      "digits": false
+    },
+    {
+      "path": "m4/fourteen.png",
+      "item": "fourteen",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 14, two digits side by side, blue felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m4/sixteen.png",
+      "item": "sixteen",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 16, two digits side by side, green felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m4/eighteen.png",
+      "item": "eighteen",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 18, two digits side by side, purple felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m4/thirteen.png",
+      "item": "thirteen",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 13, two digits side by side, red felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m4/fifteen.png",
+      "item": "fifteen",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 15, two digits side by side, yellow felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m4/seventeen.png",
+      "item": "seventeen",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 17, two digits side by side, pink felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m4/nineteen.png",
+      "item": "nineteen",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 19, two digits side by side, teal felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m4/peaches-on-trees.png",
+      "item": "Look at the peaches on these trees!",
+      "refs": [],
+      "prompt": "Peach trees full of many pink peaches",
+      "digits": false
+    },
+    {
+      "path": "m4/lets-count-them.png",
+      "item": "Let's count them!",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Sam and Amy pointing up at a peach tree, counting on their fingers. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/i-feel-tired.png",
+      "item": "I feel tired now.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy sitting under a tree, yawning with sleepy eyes. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/take-your-ball.png",
+      "item": "Will you take your ball tomorrow?",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy holding a big red ball, putting it into a bag. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/take-your-kite.png",
+      "item": "Will you take your kite to the picnic tomorrow?",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy holding a yellow kite and a picnic basket. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/fly-your-kite.png",
+      "item": "Will you fly your kite tomorrow?",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam flying a yellow kite high in the sky. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/have-a-picnic.png",
+      "item": "On Saturday, we're going to have a picnic!",
+      "refs": [],
+      "prompt": "A picnic blanket on the grass with a basket, sandwiches and fruit",
+      "digits": false
+    },
+    {
+      "path": "m5/thats-a-good-idea.png",
+      "item": "Yes! That's a good idea.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy giving a big thumbs up with a bright light bulb above her head. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/monday-swimming.png",
+      "item": "On Monday, I'll go swimming.",
+      "refs": [],
+      "prompt": "A Chinese girl with a red hairband swimming in a pool",
+      "digits": false
+    },
+    {
+      "path": "m5/tuesday-play-friends.png",
+      "item": "On Tuesday, I'll play with my friends.",
+      "refs": [],
+      "prompt": "A Chinese girl with a red hairband playing ball with two friends",
+      "digits": false
+    },
+    {
+      "path": "m5/wednesday-park.png",
+      "item": "On Wednesday, I'll go to the park.",
+      "refs": [],
+      "prompt": "A Chinese girl with a red hairband walking along a path in a big green park, clearly surrounded by trees, flower beds and a small pond with ducks; the whole park scene is shown, NOT a plain empty background",
+      "digits": false
+    },
+    {
+      "path": "m5/thursday-homework.png",
+      "item": "On Thursday, I'll do my homework.",
+      "refs": [],
+      "prompt": "A Chinese girl with a red hairband doing homework at a desk",
+      "digits": false
+    },
+    {
+      "path": "m5/friday-grandma.png",
+      "item": "On Friday, I'll visit my grandma.",
+      "refs": [],
+      "prompt": "A Chinese girl with a red hairband hugging her grey-haired grandma",
+      "digits": false
+    },
+    {
+      "path": "m5/saturday-help-mother.png",
+      "item": "On Saturday, I'll help my mother.",
+      "refs": [],
+      "prompt": "A Chinese girl with a red hairband helping her mother wash dishes",
+      "digits": false
+    },
+    {
+      "path": "m5/sunday-read-books.png",
+      "item": "On Sunday, I'll read my books.",
+      "refs": [],
+      "prompt": "A Chinese girl with a red hairband reading a book on the sofa",
+      "digits": false
+    },
+    {
+      "path": "m6/his-head.png",
+      "item": "Here is his head.",
+      "refs": [],
+      "prompt": "A friendly green monster, only its big round head shown, with three eyes",
+      "digits": false
+    },
+    {
+      "path": "m6/here-are-his-hands.png",
+      "item": "Here are his hands.",
+      "refs": [],
+      "prompt": "A friendly green monster with ten small hands, waving all of them",
+      "digits": false
+    },
+    {
+      "path": "m6/six-arms.png",
+      "item": "Six arms!",
+      "refs": [],
+      "prompt": "A friendly green monster with six long arms stretched out",
+      "digits": false
+    },
+    {
+      "path": "m6/one-leg-one-foot.png",
+      "item": "One leg! One foot!",
+      "refs": [],
+      "prompt": "A friendly green monster standing on just one leg and one big foot",
+      "digits": false
+    },
+    {
+      "path": "m6/draw-on-computer.png",
+      "item": "Let's draw a monster on the computer.",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Daming and Sam drawing a monster on a computer screen with a mouse. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/stamp.png",
+      "item": "stamp",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling stamping her feet on the floor, little dust puffs around her shoes. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/small-monster.png",
+      "item": "There is a small monster.",
+      "refs": [],
+      "prompt": "One tiny friendly purple monster all alone",
+      "digits": false
+    },
+    {
+      "path": "m6/two-big-monsters.png",
+      "item": "And there are two big monsters.",
+      "refs": [],
+      "prompt": "Two big friendly orange monsters standing side by side",
+      "digits": false
+    },
+    {
+      "path": "m6/nose-on-face.png",
+      "item": "There is a nose on your face.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy pointing at her own nose. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/two-eyes-on-face.png",
+      "item": "There are two eyes on your face.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam pointing at his own two eyes with two fingers. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/three-green-parrots.png",
+      "item": "There are three green parrots.",
+      "refs": [],
+      "prompt": "Exactly three green parrots standing on a tree branch",
+      "digits": false
+    },
+    {
+      "path": "m6/pen-on-desk.png",
+      "item": "There is a pen on the desk.",
+      "refs": [],
+      "prompt": "A small wooden school desk with four legs, seen from the side, with one blue pen lying flat on top of the desk; the whole desk is clearly visible, NOT a pen alone",
+      "digits": false
+    },
+    {
+      "path": "m7/many-children.png",
+      "item": "Are there many children in your class?",
+      "refs": [],
+      "prompt": "A big classroom full of many children sitting at desks",
+      "digits": false
+    },
+    {
+      "path": "m7/any-monkeys.png",
+      "item": "Are there any monkeys here?",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam looking around an empty tree in a zoo, searching for monkeys. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/ask-a-question.png",
+      "item": "Can I ask you a question?",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Daming raising his hand to ask Amy a question, a question mark above him. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/forty.png",
+      "item": "forty",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 40, two digits side by side, blue felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m7/thirty.png",
+      "item": "thirty",
+      "refs": [],
+      "prompt": "A big chunky toy shaped like the number 30, two digits side by side, red felt, standing up",
+      "digits": true
+    },
+    {
+      "path": "m7/more-friends-china.png",
+      "item": "So we've got more friends in China!",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Amy and Sam holding hands with a group of Chinese children, all smiling. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/apples-in-box.png",
+      "item": "How many apples are there in the box?",
+      "refs": [],
+      "prompt": "An open wooden box full of red apples",
+      "digits": false
+    },
+    {
+      "path": "m7/pears-in-box.png",
+      "item": "How many pears are there in the box?",
+      "refs": [],
+      "prompt": "An open wooden box full of yellow-green pears",
+      "digits": false
+    },
+    {
+      "path": "m7/how-many-monkeys.png",
+      "item": "How many monkeys are there?",
+      "refs": [],
+      "prompt": "Many brown monkeys playing in the branches of big trees",
+      "digits": false
+    },
+    {
+      "path": "m7/ten-big-lions.png",
+      "item": "Ten big lions at the zoo.",
+      "refs": [],
+      "prompt": "Exactly ten big lions sitting in two rows",
+      "digits": false
+    },
+    {
+      "path": "m7/sixty-parrots.png",
+      "item": "Sixty parrots in a tree.",
+      "refs": [],
+      "prompt": "One big tree crowded with many colourful parrots",
+      "digits": false
+    },
+    {
+      "path": "m7/twenty-bears-kangaroo.png",
+      "item": "Twenty bears and a kangaroo.",
+      "refs": [],
+      "prompt": "Many brown bears standing around one kangaroo",
+      "digits": false
+    },
+    {
+      "path": "m8/he-works-hard.png",
+      "item": "He works hard.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming working hard at his desk, writing carefully in his exercise book. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/kitty-is-lazy.png",
+      "item": "Kitty is lazy.",
+      "refs": [],
+      "prompt": "A white cat lying lazily on a cushion, yawning",
+      "digits": false
+    },
+    {
+      "path": "m8/parents-day.png",
+      "item": "It's Parents' Day today.",
+      "refs": [
+        "1a/characters/ms-smart.png"
+      ],
+      "prompt": "Ms Smart talking with a mother and a father in a classroom. Characters: Ms Smart, a kind British woman teacher, short wavy brown hair, round glasses, light blue cardigan, gentle smile. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/his-work-is-good.png",
+      "item": "His work is good.",
+      "refs": [],
+      "prompt": "An open exercise book with big red ticks and a gold star sticker",
+      "digits": false
+    },
+    {
+      "path": "m8/naughty-in-class.png",
+      "item": "Is Daming naughty in class?",
+      "refs": [],
+      "prompt": "A naughty boy throwing a paper plane in class while other children watch",
+      "digits": false
+    },
+    {
+      "path": "m8/good-at-english.png",
+      "item": "She's quite good at English.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling raising her hand happily in an English class. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/good-at-maths.png",
+      "item": "She's very good at Maths.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling counting with an abacus, smiling proudly. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/tries-hard-science.png",
+      "item": "She tries hard at Science.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling looking closely at a leaf through a magnifying glass. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/runs-fast-pe.png",
+      "item": "She runs fast in PE.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling running fast on a school sports field. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/art.png",
+      "item": "Art",
+      "refs": [],
+      "prompt": "A paint palette, brushes and a painting of flowers on an easel",
+      "digits": false
+    },
+    {
+      "path": "m8/lazy-cat.png",
+      "item": "And this is a lazy cat.",
+      "refs": [],
+      "prompt": "A fat orange cat sleeping on its back in the sun",
+      "digits": false
+    },
+    {
+      "path": "m8/funny-giraffe.png",
+      "item": "This is a funny giraffe.",
+      "refs": [],
+      "prompt": "A giraffe making a silly face with its tongue out",
+      "digits": false
+    },
+    {
+      "path": "m9/they-were-young.png",
+      "item": "They were very young then!",
+      "refs": [],
+      "prompt": "An old photo of a young Chinese man and woman smiling side by side",
+      "digits": false
+    },
+    {
+      "path": "m9/very-old-now.png",
+      "item": "But they are very old now.",
+      "refs": [],
+      "prompt": "An old Chinese grandpa and grandma with grey hair sitting together",
+      "digits": false
+    },
+    {
+      "path": "m9/you-were-cute.png",
+      "item": "You were very cute!",
+      "refs": [],
+      "prompt": "An old photo of a cute Chinese baby girl in a pink outfit",
+      "digits": false
+    },
+    {
+      "path": "m9/hair-was-short.png",
+      "item": "Your hair was very short then.",
+      "refs": [],
+      "prompt": "A little Chinese girl with very short hair, about two years old",
+      "digits": false
+    },
+    {
+      "path": "m9/now-its-long.png",
+      "item": "Yes, now it's long.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling smiling and holding up one of her long pigtails. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/it-was-fat.png",
+      "item": "It was fat then.",
+      "refs": [],
+      "prompt": "A very fat round dog sitting",
+      "digits": false
+    },
+    {
+      "path": "m9/now-its-thin.png",
+      "item": "Now it's thin.",
+      "refs": [],
+      "prompt": "A very thin skinny dog standing",
+      "digits": false
+    },
+    {
+      "path": "m9/in-london.png",
+      "item": "They were in London.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy and a woman with long brown hair standing in front of Big Ben. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/he-was-in-hong-kong.png",
+      "item": "He was in Hong Kong.",
+      "refs": [],
+      "prompt": "A wide plush diorama of the Hong Kong harbour skyline filling the whole picture: many very tall skyscrapers, the blue harbour sea and a small red-sailed junk boat; a small man with short blond hair stands on the waterfront in the front corner. The city must fill the background edge to edge, NOT a plain white background",
+      "digits": false
+    },
+    {
+      "path": "m9/i-was-in-beijing.png",
+      "item": "I was in Beijing.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam standing in front of the Great Wall, waving. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/with-daming-home.png",
+      "item": "I was with Daming at his home.",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Sam and Daming playing a board game on the floor of a living room. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/slow-now-fast.png",
+      "item": "I was slow. Now I'm fast.",
+      "refs": [],
+      "prompt": "A pig running very fast with speed lines behind it",
+      "digits": false
+    },
+    {
+      "path": "m9/short-then-tall.png",
+      "item": "Duoduo was short then. Now he's tall.",
+      "refs": [],
+      "prompt": "The same Chinese boy twice side by side: very short on the left, tall on the right",
+      "digits": false
+    },
+    {
+      "path": "m10/second-floor.png",
+      "item": "Were you on the second floor?",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "A two-floor shop seen from the side, Daming standing on the upper floor. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/cant-find-daming.png",
+      "item": "I'm worried. I can't find Daming!",
+      "refs": [],
+      "prompt": "A worried Chinese mother with short black hair looking around a busy shop",
+      "digits": false
+    },
+    {
+      "path": "m10/cat-second-floor.png",
+      "item": "The cat is on the second floor.",
+      "refs": [],
+      "prompt": "A two-floor house cut open: a cat upstairs, a dog downstairs",
+      "digits": false
+    },
+    {
+      "path": "m10/mothers-day.png",
+      "item": "Happy Mother's Day!",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming giving a CD with a red bow to his mother, who is smiling. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/i-was-worried.png",
+      "item": "I was very worried.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "A Chinese mother with short black hair hugging Daming tightly. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/where-vegetables.png",
+      "item": "Where are the vegetables?",
+      "refs": [],
+      "prompt": "A shop shelf full of carrots, cabbages and tomatoes",
+      "digits": false
+    },
+    {
+      "path": "m10/where-fruit.png",
+      "item": "Where is the fruit?",
+      "refs": [],
+      "prompt": "A shop shelf full of apples, bananas and oranges",
+      "digits": false
+    },
+    {
+      "path": "m10/where-milk.png",
+      "item": "And where is the milk?",
+      "refs": [],
+      "prompt": "A shop shelf full of white milk bottles",
+      "digits": false
+    },
+    {
+      "path": "m10/where-cakes.png",
+      "item": "Where are the cakes?",
+      "refs": [],
+      "prompt": "A shop shelf full of small cakes",
+      "digits": false
+    },
+    {
+      "path": "m10/it-was-there.png",
+      "item": "It was there.",
+      "refs": [],
+      "prompt": "A Chinese girl pointing at an empty shop shelf, looking puzzled",
+      "digits": false
+    },
+    {
+      "path": "m10/wheres-my-fish.png",
+      "item": "Where's my fish?",
+      "refs": [],
+      "prompt": "A boy looking into an empty fish bowl, a cat licking its lips beside it",
+      "digits": false
+    }
+  ],
+  "book": "3b"
+}

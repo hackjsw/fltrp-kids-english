@@ -1,0 +1,1060 @@
+{
+  "images": [
+    {
+      "path": "m1/song.png",
+      "item": "song",
+      "refs": [],
+      "prompt": "A group of colourful plush music notes floating in the air above a small open songbook with blank pages",
+      "digits": false
+    },
+    {
+      "path": "m1/i-like-the-abc-song.png",
+      "item": "I like the ABC song.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy singing happily next to a stack of blank colourful toy blocks, music notes floating around her. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/its-my-favourite-song.png",
+      "item": "It's my favourite song.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling hugging a small radio with music notes and little hearts floating out of it. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/letter-a.png",
+      "item": "a",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the lowercase letter a, red felt, standing up, next to a plush red apple",
+      "digits": true
+    },
+    {
+      "path": "m1/letter-b.png",
+      "item": "b",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the lowercase letter b, blue felt, standing up, next to a plush blue ball",
+      "digits": true
+    },
+    {
+      "path": "m1/letter-c.png",
+      "item": "c",
+      "refs": [],
+      "prompt": "A big chunky plush toy shaped like the lowercase letter c, orange felt, standing up, next to a plush orange cat",
+      "digits": true
+    },
+    {
+      "path": "m1/i-like-football.png",
+      "item": "I like football.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming holding a black and white football under his arm, smiling. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/team.png",
+      "item": "team",
+      "refs": [],
+      "prompt": "A football team of five plush kids in matching red shirts standing in a row, one holding a football",
+      "digits": false
+    },
+    {
+      "path": "m1/come-on-team-a.png",
+      "item": "Come on, Team A!",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling cheering and waving a plain red flag beside a green football field. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/i-like-your-bike.png",
+      "item": "I like your bike.",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Amy pointing admiringly at a shiny red bicycle that Sam is holding. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/i-like-your-kite.png",
+      "item": "I like your kite.",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Sam pointing admiringly at a colourful diamond kite that Daming is holding. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/lets-ride-my-bike.png",
+      "item": "Let's ride my bike.",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Sam riding a red bicycle along a path, Amy running beside him laughing. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/lets-fly-my-kite.png",
+      "item": "Let's fly my kite.",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Daming and Sam flying a colourful diamond kite high in the blue sky. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/meat.png",
+      "item": "meat",
+      "refs": [],
+      "prompt": "A plate of cute plush roast meat slices",
+      "digits": false
+    },
+    {
+      "path": "m2/noodles.png",
+      "item": "noodles",
+      "refs": [],
+      "prompt": "A cute plush bowl of noodles with a pair of chopsticks",
+      "digits": false
+    },
+    {
+      "path": "m2/rice.png",
+      "item": "rice",
+      "refs": [],
+      "prompt": "A cute plush bowl of white rice",
+      "digits": false
+    },
+    {
+      "path": "m2/sweets.png",
+      "item": "sweets",
+      "refs": [],
+      "prompt": "A small pile of colourful wrapped plush sweets (candies)",
+      "digits": false
+    },
+    {
+      "path": "m2/i-dont-like-meat.png",
+      "item": "I don't like meat.",
+      "refs": [],
+      "prompt": "A small plush boy with short curly brown hair frowning and pushing away a plate of meat",
+      "digits": false
+    },
+    {
+      "path": "m2/i-like-noodles.png",
+      "item": "I like noodles.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling happily eating a bowl of noodles with chopsticks. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/sweets-for-you.png",
+      "item": "Sweets for you!",
+      "refs": [],
+      "prompt": "A smiling plush woman with long brown hair handing colourful sweets to two happy children",
+      "digits": false
+    },
+    {
+      "path": "m2/ginger.png",
+      "item": "ginger",
+      "refs": [],
+      "prompt": "A single cute plush knobbly ginger root, light brown",
+      "digits": false
+    },
+    {
+      "path": "m2/onion.png",
+      "item": "onion",
+      "refs": [],
+      "prompt": "A single cute plush round onion, light brown with a little sprout on top",
+      "digits": false
+    },
+    {
+      "path": "m2/ice-cream.png",
+      "item": "ice cream",
+      "refs": [],
+      "prompt": "A single cute plush ice cream cone with a pink scoop",
+      "digits": false
+    },
+    {
+      "path": "m2/i-dont-like-ginger.png",
+      "item": "I don't like ginger.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam making a yucky face at a piece of ginger on his fork. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/i-dont-like-onions.png",
+      "item": "I don't like onions.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam holding his nose and pushing away a plate of onions. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/i-like-ice-cream.png",
+      "item": "I like ice cream.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam happily licking a pink ice cream cone. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/noodles-and-rice.png",
+      "item": "Noodles and rice are very, very nice.",
+      "refs": [
+        "mascot.png"
+      ],
+      "prompt": "A steaming bowl of noodles and a steaming bowl of rice side by side, the little red panda mascot rubbing its tummy happily. Characters: the little red panda mascot with a blue backpack. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/banana.png",
+      "item": "banana",
+      "refs": [],
+      "prompt": "A single cute plush yellow banana",
+      "digits": false
+    },
+    {
+      "path": "m3/apple.png",
+      "item": "apple",
+      "refs": [],
+      "prompt": "A single cute plush red apple with a green leaf",
+      "digits": false
+    },
+    {
+      "path": "m3/milk.png",
+      "item": "milk",
+      "refs": [],
+      "prompt": "A single cute plush glass of white milk",
+      "digits": false
+    },
+    {
+      "path": "m3/orange.png",
+      "item": "orange",
+      "refs": [],
+      "prompt": "A single cute plush round orange with a green leaf",
+      "digits": false
+    },
+    {
+      "path": "m3/do-you-like-bananas.png",
+      "item": "Do you like bananas?",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Amy holding out a bunch of bananas to Lingling with a questioning look. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/do-you-like-milk.png",
+      "item": "Do you like milk?",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Amy offering a glass of milk to Daming with a questioning look. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/fruit-milkshake.png",
+      "item": "It's a fruit milkshake.",
+      "refs": [],
+      "prompt": "A tall plush glass of pink fruit milkshake with a straw, a banana and an apple beside it",
+      "digits": false
+    },
+    {
+      "path": "m3/tomato.png",
+      "item": "tomato",
+      "refs": [],
+      "prompt": "A single cute plush red tomato with a green stem",
+      "digits": false
+    },
+    {
+      "path": "m3/do-they-like-apples.png",
+      "item": "Do they like apples?",
+      "refs": [],
+      "prompt": "Three cute plush pink pigs happily munching red apples",
+      "digits": false
+    },
+    {
+      "path": "m3/they-like-rice.png",
+      "item": "They like rice.",
+      "refs": [],
+      "prompt": "Three cute plush pink pigs eating from one big bowl of white rice",
+      "digits": false
+    },
+    {
+      "path": "m3/pigs-like-everything.png",
+      "item": "Pigs like everything.",
+      "refs": [],
+      "prompt": "Three cute plush pink pigs surrounded by apples, bananas, tomatoes, noodles and rice, eating happily",
+      "digits": false
+    },
+    {
+      "path": "m3/rice-is-nice.png",
+      "item": "Rice is nice.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming eating a bowl of rice with chopsticks, smiling. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/girl-likes-frog.png",
+      "item": "The girl likes the frog.",
+      "refs": [],
+      "prompt": "A plush girl with short black hair happily hugging a green frog",
+      "digits": false
+    },
+    {
+      "path": "m4/t-shirt.png",
+      "item": "T-shirt",
+      "refs": [],
+      "prompt": "A single cute plush blue T-shirt laid flat",
+      "digits": false
+    },
+    {
+      "path": "m4/dress.png",
+      "item": "dress",
+      "refs": [],
+      "prompt": "A single cute plush pink dress on a hanger",
+      "digits": false
+    },
+    {
+      "path": "m4/sam-likes-t-shirts.png",
+      "item": "Sam likes T-shirts.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam happily holding up a T-shirt, a pile of colourful T-shirts beside him. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/heres-a-t-shirt.png",
+      "item": "Here's a T-shirt for you.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "A smiling plush woman with long brown hair handing a folded blue T-shirt to Sam. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/amy-likes-dresses.png",
+      "item": "Amy likes dresses.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy smiling in front of a rack of colourful dresses. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/its-too-small.png",
+      "item": "But it's too small.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy holding a tiny dress against herself, the dress is much too small for her, surprised face. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/trousers.png",
+      "item": "trousers",
+      "refs": [],
+      "prompt": "A single pair of cute plush brown long trousers laid flat",
+      "digits": false
+    },
+    {
+      "path": "m4/party.png",
+      "item": "party",
+      "refs": [],
+      "prompt": "A cute plush party table with a cake, balloons and party hats, no people",
+      "digits": false
+    },
+    {
+      "path": "m4/sams-at-a-party.png",
+      "item": "Sam's at a party.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam standing at a party with balloons and a cake, looking unhappy. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/doesnt-like-trousers.png",
+      "item": "He doesn't like these trousers.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam frowning and pointing at the stiff long grey trousers he is wearing. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/doesnt-like-shirt.png",
+      "item": "He doesn't like this shirt.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam frowning and tugging at the collar of a stiff white shirt with a bow tie. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/doesnt-like-shoes.png",
+      "item": "He doesn't like these shoes.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam frowning and looking down at a pair of shiny black shoes that pinch his feet. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/three-colour-t-shirt.png",
+      "item": "He likes the yellow, blue and red T-shirt.",
+      "refs": [],
+      "prompt": "A small plush boy with short curly brown hair proudly wearing a T-shirt with yellow, blue and red stripes",
+      "digits": false
+    },
+    {
+      "path": "m5/get-up.png",
+      "item": "get up",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam stretching his arms and climbing out of bed in the morning. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/go-to-school.png",
+      "item": "go to school",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam walking along a path to a school building with his school bag. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/have-lunch.png",
+      "item": "have lunch",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam sitting at a table eating lunch, a plate of rice and vegetables. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/at-7-get-up.png",
+      "item": "At 7, I get up.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam yawning and getting out of bed, a big round wall clock beside him showing 7 o'clock. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m5/at-8-go-to-school.png",
+      "item": "At 8, I go to school.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam walking to school with his school bag, a big round clock above showing 8 o'clock. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m5/at-12-have-lunch.png",
+      "item": "At 12, I have lunch.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam eating lunch at a table, a big round wall clock showing 12 o'clock. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m5/at-4-play-football.png",
+      "item": "At 4, I play football.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam kicking a football on green grass, a big round clock showing 4 o'clock. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m5/go-home.png",
+      "item": "go home",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy with her school bag walking up to the front door of a cosy house. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/tv.png",
+      "item": "TV",
+      "refs": [],
+      "prompt": "A single cute plush television set with a blank screen",
+      "digits": false
+    },
+    {
+      "path": "m5/watch-tv.png",
+      "item": "watch TV",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming sitting on a sofa watching a TV set; the TV with a glowing screen is clearly visible in front of him, NOT just a remote control. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/go-home-at-5.png",
+      "item": "I go home at 5.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy walking home with her school bag, a big round clock above showing 5 o'clock. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m5/watch-tv-at-7.png",
+      "item": "I watch TV at 7.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming watching TV on a sofa, a big round wall clock showing 7 o'clock. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m5/basketball-at-4.png",
+      "item": "I play basketball at 4.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming bouncing a basketball, a big round clock showing 4 o'clock. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": true
+    },
+    {
+      "path": "m6/park.png",
+      "item": "park",
+      "refs": [],
+      "prompt": "A cute plush park with green grass, round trees, a bench and a small pond, no people",
+      "digits": false
+    },
+    {
+      "path": "m6/what-do-you-do-on-sundays.png",
+      "item": "What do you do on Sundays?",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Amy asking Sam a question on a sunny morning, a big plush question mark floating between them. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/football-on-sundays.png",
+      "item": "I play football on Sundays.",
+      "refs": [
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Sam kicking a football on the grass on a sunny day. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/at-the-park.png",
+      "item": "At the park.",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Daming and Sam playing football together in a green park with trees. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/goal.png",
+      "item": "Goal!",
+      "refs": [],
+      "prompt": "A football flying into a goal net",
+      "digits": false
+    },
+    {
+      "path": "m6/hooray.png",
+      "item": "Hooray!",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/sam.png"
+      ],
+      "prompt": "Daming and Sam jumping for joy with both arms up in the air. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/moon.png",
+      "item": "moon",
+      "refs": [],
+      "prompt": "A single cute plush yellow crescent moon with a sleepy smile",
+      "digits": false
+    },
+    {
+      "path": "m6/sky.png",
+      "item": "sky",
+      "refs": [],
+      "prompt": "A wide blue sky with fluffy white clouds, nothing else",
+      "digits": false
+    },
+    {
+      "path": "m6/city.png",
+      "item": "city",
+      "refs": [],
+      "prompt": "A cute plush big city with many tall buildings",
+      "digits": false
+    },
+    {
+      "path": "m6/i-live-in-the-sky.png",
+      "item": "I live in the sky.",
+      "refs": [],
+      "prompt": "A smiling plush crescent moon high in a dark blue night sky with little stars",
+      "digits": false
+    },
+    {
+      "path": "m6/i-live-in-shanghai.png",
+      "item": "I live in Shanghai.",
+      "refs": [],
+      "prompt": "A plush boy with short black hair standing in front of the Oriental Pearl Tower, waving",
+      "digits": false
+    },
+    {
+      "path": "m6/beijing-big-city.png",
+      "item": "Beijing is a very big city.",
+      "refs": [],
+      "prompt": "A plush girl with a black ponytail standing in front of the Tiananmen gate, tall buildings behind it",
+      "digits": false
+    },
+    {
+      "path": "m7/train.png",
+      "item": "train",
+      "refs": [],
+      "prompt": "A single cute plush red train with three carriages",
+      "digits": false
+    },
+    {
+      "path": "m7/bus.png",
+      "item": "bus",
+      "refs": [],
+      "prompt": "A single cute plush yellow bus",
+      "digits": false
+    },
+    {
+      "path": "m7/bike.png",
+      "item": "bike",
+      "refs": [],
+      "prompt": "A single cute plush blue bicycle",
+      "digits": false
+    },
+    {
+      "path": "m7/by-car.png",
+      "item": "by car",
+      "refs": [],
+      "prompt": "A plush family sitting in a small red car driving along a road",
+      "digits": false
+    },
+    {
+      "path": "m7/school-by-bus.png",
+      "item": "I go to school by bus.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy waving from the window of a yellow bus driving to school. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/walk-to-school.png",
+      "item": "I walk to school.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling walking to school with her school bag on her back. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/work-by-bike.png",
+      "item": "He goes to work by bike.",
+      "refs": [],
+      "prompt": "A plush man in a shirt and tie riding a blue bicycle to work",
+      "digits": false
+    },
+    {
+      "path": "m7/ship.png",
+      "item": "ship",
+      "refs": [],
+      "prompt": "A single cute plush white ship on blue waves",
+      "digits": false
+    },
+    {
+      "path": "m7/plane.png",
+      "item": "plane",
+      "refs": [],
+      "prompt": "A single cute plush white aeroplane flying in the sky",
+      "digits": false
+    },
+    {
+      "path": "m7/i-go-by-train.png",
+      "item": "I go by train.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming waving from the window of a red train. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/then-by-ship.png",
+      "item": "Then I go by ship.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming standing on the deck of a white ship on the sea, waving. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/we-go-by-plane.png",
+      "item": "We go by plane.",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Sam and Amy smiling and looking out of the round window of an aeroplane. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/walk-and-run.png",
+      "item": "I walk and run to school.",
+      "refs": [],
+      "prompt": "A cute plush monkey with a tiny school bag running happily along a path",
+      "digits": false
+    },
+    {
+      "path": "m7/we-love-china.png",
+      "item": "We love China.",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Sam and Amy hugging happily, standing in front of a long section of the Great Wall of China winding over green hills behind them; the Great Wall must be clearly visible, NOT a plain background. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/she-goes-swimming.png",
+      "item": "She goes swimming.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy swimming happily in a blue pool wearing goggles. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/she-watches-tv.png",
+      "item": "She watches TV.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy sitting on a sofa watching a TV set; the TV with a glowing screen is clearly visible in front of her, NOT just a remote control. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/she-reads-books.png",
+      "item": "She reads books.",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy sitting on a cushion reading a picture book. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/mother-goes-swimming.png",
+      "item": "My mother goes swimming on Sundays.",
+      "refs": [],
+      "prompt": "A plush woman with short black hair and a swimming cap swimming in a blue swimming pool, splashing water all around her; the water must be clearly visible, NOT floating on a plain background",
+      "digits": false
+    },
+    {
+      "path": "m8/goodbye-ms-smart.png",
+      "item": "Goodbye, Ms Smart.",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/lingling.png",
+        "1a/characters/ms-smart.png"
+      ],
+      "prompt": "Daming and Lingling waving goodbye to Ms Smart at the school gate. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress; Ms Smart, a kind British woman teacher, short wavy brown hair, round glasses, light blue cardigan, gentle smile. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/have-a-good-weekend.png",
+      "item": "Have a good weekend!",
+      "refs": [
+        "1a/characters/ms-smart.png"
+      ],
+      "prompt": "Ms Smart smiling and waving goodbye with both hands. Characters: Ms Smart, a kind British woman teacher, short wavy brown hair, round glasses, light blue cardigan, gentle smile. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/piano.png",
+      "item": "piano",
+      "refs": [],
+      "prompt": "A single cute plush black piano",
+      "digits": false
+    },
+    {
+      "path": "m8/drum.png",
+      "item": "drum",
+      "refs": [],
+      "prompt": "A single cute plush red drum with two drumsticks",
+      "digits": false
+    },
+    {
+      "path": "m8/music.png",
+      "item": "music",
+      "refs": [],
+      "prompt": "Lots of colourful plush music notes dancing in the air",
+      "digits": false
+    },
+    {
+      "path": "m8/cd.png",
+      "item": "CD",
+      "refs": [],
+      "prompt": "A single shiny round plush CD disc",
+      "digits": false
+    },
+    {
+      "path": "m8/does-he-play-the-piano.png",
+      "item": "Does he play the piano?",
+      "refs": [],
+      "prompt": "A plush teenage boy with spiky brown hair sitting at a piano, a plush question mark above him",
+      "digits": false
+    },
+    {
+      "path": "m8/he-plays-the-drums.png",
+      "item": "He plays the drums.",
+      "refs": [],
+      "prompt": "A plush teenage boy with spiky brown hair happily playing a red drum set",
+      "digits": false
+    },
+    {
+      "path": "m8/listen-to-cds.png",
+      "item": "Does he listen to CDs?",
+      "refs": [],
+      "prompt": "A plush teenage boy with spiky brown hair wearing headphones, putting a CD into a CD player",
+      "digits": false
+    },
+    {
+      "path": "m9/spring.png",
+      "item": "spring",
+      "refs": [],
+      "prompt": "A spring scene: a tree with pink blossoms, green grass and little flowers",
+      "digits": false
+    },
+    {
+      "path": "m9/summer.png",
+      "item": "summer",
+      "refs": [],
+      "prompt": "A summer scene: a big hot sun over a sandy beach and blue sea",
+      "digits": false
+    },
+    {
+      "path": "m9/autumn.png",
+      "item": "autumn",
+      "refs": [],
+      "prompt": "An autumn scene: a tree with orange and yellow leaves falling",
+      "digits": false
+    },
+    {
+      "path": "m9/its-winter.png",
+      "item": "It's winter.",
+      "refs": [],
+      "prompt": "A winter scene: snow on the ground, a snowman and snow falling",
+      "digits": false
+    },
+    {
+      "path": "m9/fly-kites-in-spring.png",
+      "item": "I fly kites in spring.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling flying a kite among blossoming trees in spring. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/we-wear-sweaters.png",
+      "item": "We wear sweaters.",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Daming and Lingling both wearing thick knitted sweaters, plain background. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/coats-and-gloves.png",
+      "item": "We wear coats and gloves.",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Sam and Amy wearing thick winter coats and woolly gloves, plain background. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/swimming-in-summer.png",
+      "item": "He goes swimming in summer.",
+      "refs": [],
+      "prompt": "A plush man with short black hair swimming in the sea under a hot bright sun",
+      "digits": false
+    },
+    {
+      "path": "m9/he-goes-skating.png",
+      "item": "He goes skating.",
+      "refs": [],
+      "prompt": "A plush man with short black hair ice skating on a frozen lake, snowy trees around",
+      "digits": false
+    },
+    {
+      "path": "m9/skating.png",
+      "item": "skating",
+      "refs": [],
+      "prompt": "A single pair of cute plush white ice skates",
+      "digits": false
+    },
+    {
+      "path": "m9/swimming-in-winter.png",
+      "item": "Does he go swimming in winter?",
+      "refs": [],
+      "prompt": "A plush man with short black hair swimming in an icy pool with snow and ice all around it",
+      "digits": false
+    },
+    {
+      "path": "m9/jacket.png",
+      "item": "jacket",
+      "refs": [],
+      "prompt": "A single cute plush red zip-up jacket",
+      "digits": false
+    },
+    {
+      "path": "m9/sunglasses.png",
+      "item": "sunglasses",
+      "refs": [],
+      "prompt": "A single pair of cute plush dark sunglasses",
+      "digits": false
+    },
+    {
+      "path": "m9/glove.png",
+      "item": "glove",
+      "refs": [],
+      "prompt": "A pair of cute plush knitted woolly gloves",
+      "digits": false
+    },
+    {
+      "path": "m10/happy-new-year.png",
+      "item": "Happy New Year!",
+      "refs": [
+        "1a/characters/daming.png",
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Daming and Lingling greeting happily with red lanterns behind them. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/come-in-please.png",
+      "item": "Come in, please!",
+      "refs": [
+        "1a/characters/lingling.png",
+        "1a/characters/sam.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Lingling holding a front door open and welcoming Sam and Amy inside. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress; Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/present.png",
+      "item": "present",
+      "refs": [],
+      "prompt": "A single cute plush gift box wrapped in red paper with a gold bow",
+      "digits": false
+    },
+    {
+      "path": "m10/a-present-for-you.png",
+      "item": "A present for you.",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Amy handing a wrapped gift box to Lingling. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/dumpling.png",
+      "item": "dumpling",
+      "refs": [],
+      "prompt": "A plate of cute plush Chinese dumplings",
+      "digits": false
+    },
+    {
+      "path": "m10/we-eat-dumplings.png",
+      "item": "We eat dumplings at Chinese New Year.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming and his family eating dumplings around a table, red lanterns on the wall. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/firecrackers.png",
+      "item": "They're firecrackers!",
+      "refs": [],
+      "prompt": "A string of cute plush red firecrackers",
+      "digits": false
+    },
+    {
+      "path": "m10/christmas.png",
+      "item": "Christmas",
+      "refs": [],
+      "prompt": "A snowy cosy house with a green Christmas wreath on the door and snow falling",
+      "digits": false
+    },
+    {
+      "path": "m10/christmas-trees.png",
+      "item": "We have Christmas trees and Christmas presents.",
+      "refs": [],
+      "prompt": "A decorated plush Christmas tree with gift boxes underneath",
+      "digits": false
+    },
+    {
+      "path": "m10/big-dinner.png",
+      "item": "We have a big dinner and sing songs.",
+      "refs": [],
+      "prompt": "A plush family around a long table with a big roast dinner, singing with music notes in the air",
+      "digits": false
+    },
+    {
+      "path": "m10/happy-christmas.png",
+      "item": "We wish you a happy Christmas.",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Sam and Amy singing in the snow next to a decorated Christmas tree. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/theyre-sweets.png",
+      "item": "Oh, they're sweets.",
+      "refs": [],
+      "prompt": "An opened gift box full of colourful wrapped sweets",
+      "digits": false
+    }
+  ],
+  "book": "2a"
+}

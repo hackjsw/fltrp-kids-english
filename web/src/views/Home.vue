@@ -1,10 +1,18 @@
 <script setup>
 import { computed, nextTick, onMounted, watch } from 'vue'
-import { allUnits, imageUrl, book, books, bookId, setBook, BOOKS } from '../lib/content.js'
+import { allUnits, imageUrl, book, bookId, setBook, BOOKS, GRADES, gradeOf, termOf, bookTitle } from '../lib/content.js'
 import { unitTotal, bookStars } from '../lib/progress.js'
 import { SCORED, UNLOCK_STARS } from '../lib/games.js'
 
 const MAX = SCORED.length * 3
+
+// 年级按钮切到该年级的同一学期（没有就取该年级第一册）
+const grade = computed(() => gradeOf(bookId.value))
+function pickGrade(g) {
+  const same = `${g}${termOf(bookId.value)}`
+  setBook(BOOKS.includes(same) ? same : BOOKS.find((id) => gradeOf(id) === g))
+}
+const terms = computed(() => BOOKS.filter((id) => gradeOf(id) === grade.value))
 
 // 第 i 关解锁条件：前一关至少拿到 UNLOCK_STARS 颗星
 const levels = computed(() => {
@@ -51,9 +59,14 @@ const paths = computed(() =>
 
 <template>
   <section class="map">
+    <div v-if="GRADES.length > 1" class="grade-row">
+      <button v-for="g in GRADES" :key="g" class="grade-chip" :class="{ on: g === grade }" @click="pickGrade(g)">
+        {{ g }}<small>年级</small>
+      </button>
+    </div>
     <div class="book-tabs">
-      <button v-for="id in BOOKS" :key="id" class="book-tab" :class="{ on: id === bookId }" @click="setBook(id)">
-        {{ books[id]?.title }}
+      <button v-for="id in terms" :key="id" class="book-tab" :class="{ on: id === bookId }" @click="setBook(id)">
+        {{ bookTitle(id) }}
         <small>⭐ {{ bookStars(id) }}</small>
       </button>
     </div>

@@ -1,7 +1,13 @@
 import { computed, ref } from 'vue'
 
-// 一年级上下册；以后加二年级在这里加
-export const BOOKS = ['1a', '1b']
+// 一至六年级上下册。内容做好一册就加一册
+export const BOOKS = ['1a', '1b', '2a', '2b', '3a', '3b', '4a', '4b', '5a', '5b', '6a', '6b']
+
+const GRADE_CN = ['', '一', '二', '三', '四', '五', '六']
+export const gradeOf = (id) => Number(id[0])
+export const termOf = (id) => id[1] // a 上册 / b 下册
+export const bookTitle = (id) => `${GRADE_CN[gradeOf(id)]}年级${termOf(id) === 'a' ? '上' : '下'}册`
+export const GRADES = [...new Set(BOOKS.map(gradeOf))]
 
 const BOOK_KEY = 'kids-english-book'
 export const books = ref({})
@@ -9,25 +15,35 @@ export const bookId = ref(BOOKS.includes(localStorage.getItem(BOOK_KEY)) ? local
 export const book = computed(() => books.value[bookId.value] || null)
 export const error = ref('')
 
-export function setBook(id) {
-  if (!BOOKS.includes(id)) return
-  bookId.value = id
-  localStorage.setItem(BOOK_KEY, id)
+// 12 册的 book.json 按需加载：只取当前这一册，切换时再取
+const loading = {}
+function fetchBook(id) {
+  loading[id] ||= fetch(`/books/${id}/book.json`)
+    .then((res) => {
+      if (!res.ok) throw new Error(`${id}: HTTP ${res.status}`)
+      return res.json()
+    })
+    .then((b) => {
+      books.value = { ...books.value, [id]: b }
+      return b
+    })
+    .catch((e) => {
+      delete loading[id]
+      error.value = `教材内容加载失败：${e.message}`
+    })
+  return loading[id]
 }
 
-export async function loadBook() {
-  try {
-    const list = await Promise.all(
-      BOOKS.map(async (id) => {
-        const res = await fetch(`/books/${id}/book.json`)
-        if (!res.ok) throw new Error(`${id}: HTTP ${res.status}`)
-        return res.json()
-      }),
-    )
-    books.value = Object.fromEntries(list.map((b) => [b.id, b]))
-  } catch (e) {
-    error.value = `教材内容加载失败：${e.message}`
-  }
+export function setBook(id) {
+  if (!BOOKS.includes(id)) return
+  error.value = ''
+  bookId.value = id
+  localStorage.setItem(BOOK_KEY, id)
+  fetchBook(id)
+}
+
+export function loadBook() {
+  return fetchBook(bookId.value)
 }
 
 export function imageUrl(path) {

@@ -1,0 +1,925 @@
+{
+  "images": [
+    {
+      "path": "m1/great-wall.png",
+      "item": "the Great Wall",
+      "refs": [],
+      "prompt": "The Great Wall of China winding over green mountains",
+      "digits": false
+    },
+    {
+      "path": "m1/how-long-great-wall.png",
+      "item": "How long is the Great Wall?",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming and a plush boy with short blond hair looking at a very long Great Wall that stretches over many mountains to the far horizon. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/near-my-home.png",
+      "item": "It's near my home.",
+      "refs": [],
+      "prompt": "A small house with a red roof at the foot of a mountain, the Great Wall running along the mountain right behind it",
+      "digits": false
+    },
+    {
+      "path": "m1/how-long-river.png",
+      "item": "How long is the river?",
+      "refs": [],
+      "prompt": "A very long blue river winding through green fields far into the distance",
+      "digits": false
+    },
+    {
+      "path": "m1/how-old-school.png",
+      "item": "How old is the school?",
+      "refs": [],
+      "prompt": "An old school building with grey bricks and a huge old tree beside the gate",
+      "digits": false
+    },
+    {
+      "path": "m1/cant-walk-along.png",
+      "item": "We can't walk along all of it.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming and a plush boy with short blond hair sitting tired on the steps of the Great Wall, the wall going on endlessly ahead. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/office-building.png",
+      "item": "office building",
+      "refs": [],
+      "prompt": "A tall grey office building with many rows of windows",
+      "digits": false
+    },
+    {
+      "path": "m1/four-hundred-metres.png",
+      "item": "It's more than four hundred metres high!",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming looking up with his mouth open at a very tall skyscraper with a pointed top, towering high above small buildings. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/climb-the-stairs.png",
+      "item": "Do you want to climb the stairs to the top?",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming at the bottom of a very long staircase that goes up and up, looking worried. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m1/thirty-metres-tall.png",
+      "item": "It's thirty metres tall.",
+      "refs": [],
+      "prompt": "A very tall tree reaching up to the clouds, a tiny boy standing at its foot looking up",
+      "digits": false
+    },
+    {
+      "path": "m1/people-built-it.png",
+      "item": "Thousands of people built it.",
+      "refs": [],
+      "prompt": "Many workers in old Chinese clothes carrying big stones and building a long stone wall on a mountain",
+      "digits": false
+    },
+    {
+      "path": "m1/favourite-place.png",
+      "item": "This park is my favourite place.",
+      "refs": [],
+      "prompt": "A big green park with a lake, trees, flowers and a little bridge",
+      "digits": false
+    },
+    {
+      "path": "m1/metre.png",
+      "item": "metre",
+      "refs": [],
+      "prompt": "A yellow tape measure partly unrolled on a table",
+      "digits": false
+    },
+    {
+      "path": "m2/chinatown.png",
+      "item": "Chinatown",
+      "refs": [],
+      "prompt": "A busy street with a big Chinese-style gate, red lanterns and Chinese shops, tall city buildings behind",
+      "digits": false
+    },
+    {
+      "path": "m2/went-to-chinatown.png",
+      "item": "I went to Chinatown in New York yesterday.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming walking happily under a big Chinese-style gate with red lanterns, tall city buildings in the background. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/lion-dance.png",
+      "item": "lion dance",
+      "refs": [],
+      "prompt": "A colourful Chinese lion dance costume jumping, two dancers inside, red and gold",
+      "digits": false
+    },
+    {
+      "path": "m2/saw-lion-dance.png",
+      "item": "We saw a lion dance in the street.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming and a plush boy with short blond hair watching a red and gold lion dance in a street, clapping. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/chinese-restaurant.png",
+      "item": "We ate in a Chinese restaurant.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming and a plush boy with short blond hair eating noodles and dumplings with chopsticks at a round table in a restaurant. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/send-an-email.png",
+      "item": "I'm going to send an email to Mum.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming typing on a laptop, a small envelope icon flying out of the screen. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m2/library.png",
+      "item": "library",
+      "refs": [],
+      "prompt": "A big library room with tall shelves full of books, computers on a long table",
+      "digits": false
+    },
+    {
+      "path": "m2/went-to-library.png",
+      "item": "I went to a library yesterday.",
+      "refs": [],
+      "prompt": "A plush girl with a ponytail standing in a library, holding a book, tall wooden bookshelves full of books on both sides of her and behind her (the shelves must be clearly visible, NOT just a girl alone)",
+      "digits": false
+    },
+    {
+      "path": "m2/ming-tombs.png",
+      "item": "We went to the Ming Tombs yesterday.",
+      "refs": [],
+      "prompt": "A long path lined with big stone animal statues, a big red gate at the end",
+      "digits": false
+    },
+    {
+      "path": "m2/wrote-a-story.png",
+      "item": "I wrote a story in English class yesterday.",
+      "refs": [],
+      "prompt": "A plush girl with curly hair writing in a notebook at her school desk, a teacher smiling behind her",
+      "digits": false
+    },
+    {
+      "path": "m2/taste-a-pear.png",
+      "item": "Let me taste a pear!",
+      "refs": [],
+      "prompt": "A plush boy reaching for a pear from a farmer with a basket of pears at a country fair",
+      "digits": false
+    },
+    {
+      "path": "m2/fruit-farm.png",
+      "item": "I went to a fruit farm yesterday.",
+      "refs": [],
+      "prompt": "Rows of fruit trees full of apples and pears, a child picking fruit into a basket",
+      "digits": false
+    },
+    {
+      "path": "m3/stamp.png",
+      "item": "stamp",
+      "refs": [],
+      "prompt": "A single colourful postage stamp with zigzag edges showing a panda",
+      "digits": false
+    },
+    {
+      "path": "m3/putting-stamps.png",
+      "item": "I'm putting my new stamps into my stamp book.",
+      "refs": [],
+      "prompt": "A plush boy with short blond hair putting colourful stamps into an open stamp album on a table",
+      "digits": false
+    },
+    {
+      "path": "m3/stamps-from-china.png",
+      "item": "Have you got any stamps from China?",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming handing an envelope with Chinese stamps to a plush boy with short blond hair holding a stamp album. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m3/knife-and-fork.png",
+      "item": "Have you got a knife and fork?",
+      "refs": [],
+      "prompt": "A plush boy holding up a shiny knife in one hand and a fork in the other, a plate in front of him",
+      "digits": false
+    },
+    {
+      "path": "m3/fish-from-china.png",
+      "item": "Have you got any fish from China?",
+      "refs": [],
+      "prompt": "A hungry plush cat looking up hopefully at a girl holding a food bag",
+      "digits": false
+    },
+    {
+      "path": "m3/collect.png",
+      "item": "collect",
+      "refs": [],
+      "prompt": "A shelf with neat rows of collected seashells, toy cars and small stones",
+      "digits": false
+    },
+    {
+      "path": "m3/collecting-stamps.png",
+      "item": "Collecting stamps is my hobby.",
+      "refs": [],
+      "prompt": "A plush girl looking at stamps through a magnifying glass, a stamp album open in front of her",
+      "digits": false
+    },
+    {
+      "path": "m3/picture-of-sun.png",
+      "item": "It's a picture of the sun.",
+      "refs": [],
+      "prompt": "A big postage stamp with zigzag edges showing a bright orange smiling sun",
+      "digits": false
+    },
+    {
+      "path": "m3/picture-of-moon.png",
+      "item": "It's a picture of the moon.",
+      "refs": [],
+      "prompt": "A big postage stamp with zigzag edges showing a yellow crescent moon in a dark blue night sky",
+      "digits": false
+    },
+    {
+      "path": "m3/island.png",
+      "item": "island",
+      "refs": [],
+      "prompt": "A small green island with a sandy beach in the middle of a blue sea",
+      "digits": false
+    },
+    {
+      "path": "m3/coconut-tree.png",
+      "item": "coconut tree",
+      "refs": [],
+      "prompt": "A tall coconut palm tree with brown coconuts hanging under its leaves",
+      "digits": false
+    },
+    {
+      "path": "m3/collecting-toy-cars.png",
+      "item": "Collecting toy cars is my hobby.",
+      "refs": [],
+      "prompt": "A plush boy proudly showing shelves full of colourful toy cars",
+      "digits": false
+    },
+    {
+      "path": "m4/thanksgiving.png",
+      "item": "Thanksgiving",
+      "refs": [],
+      "prompt": "A big roast turkey on a table with pumpkin pie, corn and autumn leaves",
+      "digits": false
+    },
+    {
+      "path": "m4/special-dinner.png",
+      "item": "We always have a big, special dinner.",
+      "refs": [],
+      "prompt": "A happy family sitting around a long table with a roast turkey and many dishes",
+      "digits": false
+    },
+    {
+      "path": "m4/national-day.png",
+      "item": "National Day is his favourite day.",
+      "refs": [],
+      "prompt": "A plush boy waving a small Chinese national flag, colourful fireworks in the night sky behind him",
+      "digits": false
+    },
+    {
+      "path": "m4/halloween.png",
+      "item": "Halloween is her favourite day.",
+      "refs": [],
+      "prompt": "A plush girl in a witch costume holding a glowing pumpkin lantern",
+      "digits": false
+    },
+    {
+      "path": "m4/childrens-day.png",
+      "item": "Children's Day is our favourite day.",
+      "refs": [],
+      "prompt": "A group of happy plush children with balloons and flowers jumping and cheering on a sunny day",
+      "digits": false
+    },
+    {
+      "path": "m4/wrote-a-poem.png",
+      "item": "I wrote a poem about Thanksgiving.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "A plush boy with short blond hair reading aloud from a sheet of paper, a small turkey drawing on the paper, Daming listening. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/christmas-trees.png",
+      "item": "We put Christmas trees in our homes.",
+      "refs": [],
+      "prompt": "A family decorating a green Christmas tree with stars and balls in a cosy living room",
+      "digits": false
+    },
+    {
+      "path": "m4/lights-in-streets.png",
+      "item": "There are lights in the streets and the shops.",
+      "refs": [],
+      "prompt": "A night street with strings of colourful lights hanging over the road and shop windows glowing",
+      "digits": false
+    },
+    {
+      "path": "m4/give-presents.png",
+      "item": "We give presents.",
+      "refs": [
+        "1a/characters/sam.png",
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Sam giving Amy a box wrapped in red paper with a big bow. Characters: Sam, a friendly British boy about 7 years old, short blond hair, green T-shirt, brown shorts; Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m4/december.png",
+      "item": "December",
+      "refs": [],
+      "prompt": "A calendar page with snowflakes on top and the number 25 circled in red",
+      "digits": true
+    },
+    {
+      "path": "m4/spring-festival.png",
+      "item": "At the Spring Festival, we eat lots of food.",
+      "refs": [],
+      "prompt": "A Chinese family eating dumplings and fish at a round table, red lanterns and paper cuts around",
+      "digits": false
+    },
+    {
+      "path": "m4/autumn-now.png",
+      "item": "But it's autumn now.",
+      "refs": [],
+      "prompt": "Trees with orange and yellow leaves falling onto the ground",
+      "digits": false
+    },
+    {
+      "path": "m4/dragon-boat-festival.png",
+      "item": "The Dragon Boat Festival is a very important festival.",
+      "refs": [],
+      "prompt": "Long dragon boats with dragon heads racing on a river, people rowing hard",
+      "digits": false
+    },
+    {
+      "path": "m5/pleased-to-meet-you.png",
+      "item": "Pleased to meet you.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming shaking hands with a plush girl with long yellow hair and blue eyes, both smiling. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/shes-pretty.png",
+      "item": "Oh, she's pretty!",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "A plush girl with long yellow hair looking at a framed photo of Lingling and smiling. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/pretty.png",
+      "item": "pretty",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling in a pretty pink dress with a flower in her hair. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/can-i-write-to-her.png",
+      "item": "Can I write to her?",
+      "refs": [],
+      "prompt": "A plush girl with long yellow hair writing a letter at a desk, an envelope beside her",
+      "digits": false
+    },
+    {
+      "path": "m5/panda-in-zoo.png",
+      "item": "There's a panda in the zoo now.",
+      "refs": [],
+      "prompt": "A giant panda sitting in a zoo enclosure, eating bamboo, a fence in front",
+      "digits": false
+    },
+    {
+      "path": "m5/i-come-from-china.png",
+      "item": "I'm from China.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming holding a small Chinese national flag and smiling. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m5/pen-friend.png",
+      "item": "I want a Chinese pen friend.",
+      "refs": [],
+      "prompt": "A plush girl with long brown hair holding a letter and pointing at China on a big globe",
+      "digits": false
+    },
+    {
+      "path": "m5/be-my-pen-friend.png",
+      "item": "Do you want to be my pen friend?",
+      "refs": [],
+      "prompt": "A plush boy with red hair holding out an envelope with a smile, a globe behind him",
+      "digits": false
+    },
+    {
+      "path": "m5/phone.png",
+      "item": "phone",
+      "refs": [],
+      "prompt": "A single cute red telephone with a curly cord",
+      "digits": false
+    },
+    {
+      "path": "m5/phone-friend.png",
+      "item": "He wants a phone friend.",
+      "refs": [],
+      "prompt": "A plush boy happily talking on a red telephone, laughing",
+      "digits": false
+    },
+    {
+      "path": "m5/write-in-french.png",
+      "item": "We can write in French.",
+      "refs": [],
+      "prompt": "A plush girl writing a letter, the Eiffel Tower drawn on the envelope",
+      "digits": false
+    },
+    {
+      "path": "m5/she-can-play-football.png",
+      "item": "She can play football.",
+      "refs": [],
+      "prompt": "A plush girl kicking a black and white football on green grass",
+      "digits": false
+    },
+    {
+      "path": "m6/chopsticks.png",
+      "item": "I've got some Chinese chopsticks.",
+      "refs": [],
+      "prompt": "A plush girl with long yellow hair proudly holding up a pair of red Chinese chopsticks",
+      "digits": false
+    },
+    {
+      "path": "m6/difficult.png",
+      "item": "difficult",
+      "refs": [],
+      "prompt": "A plush girl with long yellow hair trying to pick up noodles with chopsticks, the noodles slipping, a puzzled face",
+      "digits": false
+    },
+    {
+      "path": "m6/chinese-kite.png",
+      "item": "My brother has got a Chinese kite.",
+      "refs": [],
+      "prompt": "A plush boy flying a big bird-shaped Chinese kite in a park",
+      "digits": false
+    },
+    {
+      "path": "m6/book-about-world.png",
+      "item": "I've got a book about the world.",
+      "refs": [],
+      "prompt": "A plush boy holding a big book with a globe on its cover",
+      "digits": false
+    },
+    {
+      "path": "m6/yellow-hair-blue-eyes.png",
+      "item": "I've got long, yellow hair and blue eyes.",
+      "refs": [],
+      "prompt": "A close-up of a smiling plush girl with long yellow hair and big blue eyes",
+      "digits": false
+    },
+    {
+      "path": "m6/desk-and-chair.png",
+      "item": "I've got a desk and a chair.",
+      "refs": [],
+      "prompt": "A small bedroom with one wooden desk and one chair by a window",
+      "digits": false
+    },
+    {
+      "path": "m6/no-book-about-us.png",
+      "item": "I haven't got a book about the US.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling shaking her head beside a bookshelf with an empty space on it. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/letter.png",
+      "item": "Thank you for your letter.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling happily reading a letter, an opened envelope with a stamp in her other hand. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/photos-of-new-york.png",
+      "item": "I have got some photos of New York.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling holding up a few photos of tall city buildings and a big green statue holding a torch. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m6/school-starts.png",
+      "item": "My school starts at eight o'clock.",
+      "refs": [],
+      "prompt": "A school building with a big round clock above the door showing eight o'clock, children walking in",
+      "digits": true
+    },
+    {
+      "path": "m6/kite-from-china.png",
+      "item": "I've got a kite from China.",
+      "refs": [],
+      "prompt": "A plush boy holding up a colourful butterfly-shaped Chinese kite",
+      "digits": false
+    },
+    {
+      "path": "m6/long-legs.png",
+      "item": "He's got long legs. And he plays basketball well.",
+      "refs": [],
+      "prompt": "A very tall plush basketball player with very long legs jumping to put a ball into the hoop",
+      "digits": false
+    },
+    {
+      "path": "m7/bamboo.png",
+      "item": "bamboo",
+      "refs": [],
+      "prompt": "A few tall green bamboo stalks with leaves",
+      "digits": false
+    },
+    {
+      "path": "m7/pandas-love-bamboo.png",
+      "item": "Pandas love bamboo.",
+      "refs": [],
+      "prompt": "A giant panda sitting and happily munching a bamboo stalk",
+      "digits": false
+    },
+    {
+      "path": "m7/watching-dvd.png",
+      "item": "I'm watching a new DVD about animals.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming and his grandma sitting on a sofa watching animals on a TV screen. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m7/snake-dance.png",
+      "item": "The snake can use its body to dance.",
+      "refs": [],
+      "prompt": "A man playing a flute in front of a basket, a snake rising up and swaying out of it",
+      "digits": false
+    },
+    {
+      "path": "m7/i-love-noodles.png",
+      "item": "I love noodles.",
+      "refs": [],
+      "prompt": "A plush boy happily eating a big bowl of noodles with chopsticks",
+      "digits": false
+    },
+    {
+      "path": "m7/oh-my-cd.png",
+      "item": "Oh, my CD!",
+      "refs": [],
+      "prompt": "A puppy chewing a shiny CD while a plush boy looks shocked with his hands on his cheeks",
+      "digits": false
+    },
+    {
+      "path": "m7/child-sleeps.png",
+      "item": "A child sleeps for ten hours a night.",
+      "refs": [],
+      "prompt": "A plush child sleeping in bed under a blanket, the moon and stars in the window",
+      "digits": false
+    },
+    {
+      "path": "m7/baby-sleeps.png",
+      "item": "A baby sleeps for sixteen hours a day.",
+      "refs": [],
+      "prompt": "A tiny baby sleeping in a cot with a dummy, sunshine coming through the window",
+      "digits": false
+    },
+    {
+      "path": "m7/fox.png",
+      "item": "fox",
+      "refs": [],
+      "prompt": "A single cute orange fox with a fluffy white-tipped tail",
+      "digits": false
+    },
+    {
+      "path": "m7/tiger-sleeping.png",
+      "item": "Sh! The tiger is sleeping.",
+      "refs": [],
+      "prompt": "A big tiger asleep under a tree, a small monkey with a finger on its lips",
+      "digits": false
+    },
+    {
+      "path": "m7/snake-sleeps.png",
+      "item": "This snake sleeps for eighteen hours a day.",
+      "refs": [],
+      "prompt": "A green snake curled up asleep on a rock, eyes closed",
+      "digits": false
+    },
+    {
+      "path": "m7/old-owl.png",
+      "item": "This old owl lives in a tree.",
+      "refs": [],
+      "prompt": "A wise old brown owl sitting in a hole in a big tree",
+      "digits": false
+    },
+    {
+      "path": "m7/bears-sleep-in-winter.png",
+      "item": "Bears sleep in winter.",
+      "refs": [],
+      "prompt": "A brown bear sleeping curled up in a cave, snow falling outside",
+      "digits": false
+    },
+    {
+      "path": "m8/tidy-bed.png",
+      "item": "Do you often tidy your bed?",
+      "refs": [
+        "1a/characters/amy.png"
+      ],
+      "prompt": "Amy smoothing the blanket on a neatly made bed, the pillow straight. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/tidying-toms-bed.png",
+      "item": "I'm tidying Tom's bed.",
+      "refs": [
+        "1a/characters/amy.png",
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Amy and Lingling tidying a small boy's messy bed together, toys on the floor. Characters: Amy, a happy British girl about 7 years old, brown hair in a ponytail, yellow dress; Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/found-a-coin.png",
+      "item": "I tidied my room and I found a coin.",
+      "refs": [],
+      "prompt": "A plush boy holding up a shiny gold coin in a tidy bedroom, smiling",
+      "digits": false
+    },
+    {
+      "path": "m8/coin.png",
+      "item": "coin",
+      "refs": [],
+      "prompt": "A single shiny round gold coin",
+      "digits": false
+    },
+    {
+      "path": "m8/messy.png",
+      "item": "It's very messy.",
+      "refs": [],
+      "prompt": "A very messy desk piled with open books, crumpled paper and pencils everywhere",
+      "digits": false
+    },
+    {
+      "path": "m8/tidy-your-desk.png",
+      "item": "I will tidy your desk.",
+      "refs": [
+        "1a/characters/lingling.png"
+      ],
+      "prompt": "Lingling putting books in a neat pile on a desk. Characters: Lingling, a sweet Chinese girl about 7 years old, black hair in two pigtails with pink bows, pink dress. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m8/read-english-books.png",
+      "item": "I often read English books.",
+      "refs": [],
+      "prompt": "A plush boy sitting on a beanbag reading a book, a pile of books beside him",
+      "digits": false
+    },
+    {
+      "path": "m8/never-play-football.png",
+      "item": "I never play football.",
+      "refs": [],
+      "prompt": "A plush boy crossing his arms and shaking his head, turning away from a football",
+      "digits": false
+    },
+    {
+      "path": "m8/ride-bike-to-school.png",
+      "item": "I always ride my bike to school.",
+      "refs": [],
+      "prompt": "A plush boy riding a bicycle on a road toward a school building",
+      "digits": false
+    },
+    {
+      "path": "m8/clean-blackboard.png",
+      "item": "I sometimes clean the blackboard for my teachers.",
+      "refs": [],
+      "prompt": "A plush girl wiping a green blackboard with a board rubber",
+      "digits": false
+    },
+    {
+      "path": "m8/go-swimming.png",
+      "item": "I often go swimming.",
+      "refs": [],
+      "prompt": "A plush girl in goggles swimming in a blue pool",
+      "digits": false
+    },
+    {
+      "path": "m8/eat-bananas.png",
+      "item": "Yes, I sometimes eat bananas.",
+      "refs": [],
+      "prompt": "A plush boy peeling and eating a yellow banana",
+      "digits": false
+    },
+    {
+      "path": "m9/un-building.png",
+      "item": "Do you want to visit the UN building?",
+      "refs": [],
+      "prompt": "A tall flat glass building with a long row of colourful national flags on poles in front",
+      "digits": false
+    },
+    {
+      "path": "m9/make-peace.png",
+      "item": "The UN wants to make peace in the world.",
+      "refs": [],
+      "prompt": "Children of different countries holding hands in a circle around a globe, a white dove flying above",
+      "digits": false
+    },
+    {
+      "path": "m9/member-state.png",
+      "item": "member state",
+      "refs": [],
+      "prompt": "A long row of many different colourful national flags on poles",
+      "digits": false
+    },
+    {
+      "path": "m9/visit-great-wall.png",
+      "item": "I want to visit the Great Wall.",
+      "refs": [],
+      "prompt": "A small bird flying over the Great Wall on green mountains",
+      "digits": false
+    },
+    {
+      "path": "m9/building-is-beautiful.png",
+      "item": "Wow! The building is beautiful.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming looking up with wide eyes at a tall shining glass building. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m9/shanghai.png",
+      "item": "I want to go to Shanghai.",
+      "refs": [],
+      "prompt": "The Shanghai skyline with the Oriental Pearl Tower and tall buildings along a river",
+      "digits": false
+    },
+    {
+      "path": "m9/kunming.png",
+      "item": "Kunming is a beautiful place.",
+      "refs": [],
+      "prompt": "A beautiful lake surrounded by colourful flowers and green hills, white seagulls flying",
+      "digits": false
+    },
+    {
+      "path": "m9/guilin.png",
+      "item": "There are lots of mountains and lakes in Guilin.",
+      "refs": [],
+      "prompt": "Round green karst hills rising from a calm river, a small bamboo raft on the water",
+      "digits": false
+    },
+    {
+      "path": "m9/changjiang-river.png",
+      "item": "Do you want to visit the Changjiang River?",
+      "refs": [],
+      "prompt": "A very wide long river flowing between mountains, a big boat on it",
+      "digits": false
+    },
+    {
+      "path": "m9/huangshan-mountain.png",
+      "item": "Do you want to visit the Huangshan Mountain?",
+      "refs": [],
+      "prompt": "Tall grey rocky mountain peaks with pine trees and white clouds around them",
+      "digits": false
+    },
+    {
+      "path": "m9/go-to-the-sea.png",
+      "item": "Do you want to go to the sea?",
+      "refs": [],
+      "prompt": "A wide sandy beach with big blue sea waves and a blue sky, two small plush children running on the sand toward the water (the sea and beach must fill most of the picture, NOT just children on a white background)",
+      "digits": false
+    },
+    {
+      "path": "m10/clean-water.png",
+      "item": "Only drink clean water!",
+      "refs": [],
+      "prompt": "A plush boy with short blond hair drinking clear water from his cupped hands at a little spring",
+      "digits": false
+    },
+    {
+      "path": "m10/water-is-clean.png",
+      "item": "This water is very clean.",
+      "refs": [],
+      "prompt": "Clear sparkling water flowing from rocks into a small pool, the stones at the bottom easy to see",
+      "digits": false
+    },
+    {
+      "path": "m10/picnic.png",
+      "item": "Can we have our picnic now?",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "A picnic blanket on the grass in a park with a basket and sandwiches, Daming and a plush boy with short blond hair sitting on it. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/im-hungry.png",
+      "item": "I'm hungry.",
+      "refs": [],
+      "prompt": "A plush boy with short blond hair rubbing his tummy, looking hungry",
+      "digits": false
+    },
+    {
+      "path": "m10/im-thirsty.png",
+      "item": "And I'm thirsty.",
+      "refs": [
+        "1a/characters/daming.png"
+      ],
+      "prompt": "Daming holding an empty cup upside down, looking thirsty. Characters: Daming, a cheerful Chinese boy about 7 years old, short black hair, red T-shirt, blue shorts. Keep characters exactly as in the reference images",
+      "digits": false
+    },
+    {
+      "path": "m10/i-forgot.png",
+      "item": "I didn't bring any drinks! I forgot!",
+      "refs": [],
+      "prompt": "A plush woman with short blond hair looking into an open picnic basket with her hand on her forehead",
+      "digits": false
+    },
+    {
+      "path": "m10/fun-to-play-football.png",
+      "item": "It's fun to play football.",
+      "refs": [],
+      "prompt": "Two plush boys playing football on green grass, laughing",
+      "digits": false
+    },
+    {
+      "path": "m10/go-straight-on.png",
+      "item": "Go straight on.",
+      "refs": [],
+      "prompt": "A plush boy walking straight ahead along a long road, a big arrow on the road pointing forward",
+      "digits": false
+    },
+    {
+      "path": "m10/turn-left.png",
+      "item": "Turn left.",
+      "refs": [],
+      "prompt": "A plush girl at a crossroads turning and pointing to the left",
+      "digits": false
+    },
+    {
+      "path": "m10/light-is-red.png",
+      "item": "The light is red. Please don't cross.",
+      "refs": [],
+      "prompt": "Children waiting at the side of a road, the traffic light showing red",
+      "digits": false
+    },
+    {
+      "path": "m10/you-can-cross.png",
+      "item": "Now it's green. You can cross.",
+      "refs": [],
+      "prompt": "Children walking across a zebra crossing, the traffic light showing green",
+      "digits": false
+    },
+    {
+      "path": "m10/dont-ride-bicycle.png",
+      "item": "Don't ride your bicycle here!",
+      "refs": [],
+      "prompt": "A policeman holding up his hand to stop a plush boy riding a bicycle on a footpath",
+      "digits": false
+    },
+    {
+      "path": "m10/sit-down.png",
+      "item": "Sit down!",
+      "refs": [],
+      "prompt": "A plush girl sitting down on a chair",
+      "digits": false
+    },
+    {
+      "path": "m10/stand-up.png",
+      "item": "Please stand up!",
+      "refs": [],
+      "prompt": "A plush boy standing up from his chair, arms at his sides",
+      "digits": false
+    }
+  ],
+  "book": "6a"
+}

@@ -1,0 +1,1142 @@
+{
+  "id": "2b",
+  "title": "二年级下册",
+  "subtitle": "新标准英语（一年级起点）",
+  "source": "textbooks/2b.pdf（TapXWorld/ChinaTextbook），词句取自课文和书后 Words and Expressions in Each Module",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1",
+      "units": [
+        {
+          "id": "u1",
+          "title": "What's the weather like?",
+          "items": [
+            {
+              "id": "sunny",
+              "type": "word",
+              "text": "sunny",
+              "translation": "晴朗的",
+              "image": "m1/sunny.webp",
+              "same": "sunny"
+            },
+            {
+              "id": "windy",
+              "type": "word",
+              "text": "windy",
+              "translation": "刮风的",
+              "image": "m1/windy.webp",
+              "same": "windy"
+            },
+            {
+              "id": "cap",
+              "type": "word",
+              "text": "cap",
+              "translation": "帽子",
+              "image": "m1/cap.webp",
+              "same": "cap"
+            },
+            {
+              "id": "sofa",
+              "type": "word",
+              "text": "sofa",
+              "translation": "沙发",
+              "image": "m1/sofa.webp",
+              "same": "sofa"
+            },
+            {
+              "id": "hot-and-sunny",
+              "type": "sentence",
+              "text": "It's hot and sunny.",
+              "translation": "天气又热又晴朗。",
+              "image": "m1/hot-and-sunny.webp",
+              "same": [
+                "sunny",
+                "cap"
+              ]
+            },
+            {
+              "id": "oh-no-my-cap",
+              "type": "sentence",
+              "text": "Oh no! My cap!",
+              "translation": "哎呀！我的帽子！",
+              "image": "m1/oh-no-my-cap.webp",
+              "same": [
+                "windy",
+                "cap"
+              ]
+            },
+            {
+              "id": "its-raining-now",
+              "type": "sentence",
+              "text": "It's raining now!",
+              "translation": "现在下雨了！",
+              "image": "m1/its-raining-now.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I like swimming.",
+          "items": [
+            {
+              "id": "it-snows",
+              "type": "sentence",
+              "text": "It's cold and it snows.",
+              "translation": "天气寒冷，还下雪。",
+              "image": "m1/it-snows.webp",
+              "same": "snow"
+            },
+            {
+              "id": "i-like-skiing",
+              "type": "sentence",
+              "text": "I like skiing.",
+              "translation": "我喜欢滑雪。",
+              "image": "m1/i-like-skiing.webp",
+              "same": "snow"
+            },
+            {
+              "id": "i-like-swimming",
+              "type": "sentence",
+              "text": "I like swimming.",
+              "translation": "我喜欢游泳。",
+              "image": "m1/i-like-swimming.webp",
+              "same": "swim"
+            },
+            {
+              "id": "i-like-running",
+              "type": "sentence",
+              "text": "I like running.",
+              "translation": "我喜欢跑步。",
+              "image": "m1/i-like-running.webp"
+            },
+            {
+              "id": "i-like-flying-kites",
+              "type": "sentence",
+              "text": "I like flying kites.",
+              "translation": "我喜欢放风筝。",
+              "image": "m1/i-like-flying-kites.webp",
+              "same": "kite"
+            },
+            {
+              "id": "its-warm",
+              "type": "sentence",
+              "text": "It's warm.",
+              "translation": "天气暖和。",
+              "image": "m1/its-warm.webp",
+              "same": [
+                "kite",
+                "sunny"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Module 2",
+      "units": [
+        {
+          "id": "u1",
+          "title": "She's listening to the radio.",
+          "items": [
+            {
+              "id": "radio",
+              "type": "word",
+              "text": "radio",
+              "translation": "收音机",
+              "image": "m2/radio.webp",
+              "same": "radio"
+            },
+            {
+              "id": "newspaper",
+              "type": "word",
+              "text": "newspaper",
+              "translation": "报纸",
+              "image": "m2/newspaper.webp",
+              "same": "newspaper"
+            },
+            {
+              "id": "camera",
+              "type": "word",
+              "text": "camera",
+              "translation": "照相机",
+              "image": "m2/camera.webp",
+              "same": "camera"
+            },
+            {
+              "id": "listening-to-the-radio",
+              "type": "sentence",
+              "text": "She's listening to the radio.",
+              "translation": "她正在听收音机。",
+              "image": "m2/listening-to-the-radio.webp",
+              "same": "radio"
+            },
+            {
+              "id": "reading-a-newspaper",
+              "type": "sentence",
+              "text": "He's reading a newspaper.",
+              "translation": "他正在看报纸。",
+              "image": "m2/reading-a-newspaper.webp",
+              "same": "newspaper"
+            },
+            {
+              "id": "playing-with-his-train",
+              "type": "sentence",
+              "text": "Tom's playing with his train.",
+              "translation": "Tom正在玩他的火车。",
+              "image": "m2/playing-with-his-train.webp"
+            },
+            {
+              "id": "smile-please",
+              "type": "sentence",
+              "text": "Smile, please!",
+              "translation": "请笑一笑！",
+              "image": "m2/smile-please.webp",
+              "same": "camera"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "I'm drawing a picture.",
+          "items": [
+            {
+              "id": "letter",
+              "type": "word",
+              "text": "letter",
+              "translation": "信",
+              "image": "m2/letter.webp",
+              "same": "letter"
+            },
+            {
+              "id": "drawing-a-panda",
+              "type": "sentence",
+              "text": "I'm drawing a panda.",
+              "translation": "我正在画一只熊猫。",
+              "image": "m2/drawing-a-panda.webp",
+              "same": "draw"
+            },
+            {
+              "id": "writing-a-letter",
+              "type": "sentence",
+              "text": "I'm writing a letter.",
+              "translation": "我正在写信。",
+              "image": "m2/writing-a-letter.webp",
+              "same": "letter"
+            },
+            {
+              "id": "colouring-the-picture",
+              "type": "sentence",
+              "text": "Now, I'm colouring the picture.",
+              "translation": "现在我正在给图画涂色。",
+              "image": "m2/colouring-the-picture.webp",
+              "same": "draw"
+            },
+            {
+              "id": "playing-the-piano",
+              "type": "sentence",
+              "text": "She's playing the piano.",
+              "translation": "她正在弹钢琴。",
+              "image": "m2/playing-the-piano.webp"
+            },
+            {
+              "id": "my-father-is-eating",
+              "type": "sentence",
+              "text": "My father is eating.",
+              "translation": "我爸爸正在吃东西。",
+              "image": "m2/my-father-is-eating.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Module 3",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Sam isn't tidying his room.",
+          "items": [
+            {
+              "id": "homework",
+              "type": "word",
+              "text": "homework",
+              "translation": "家庭作业",
+              "image": "m3/homework.webp",
+              "same": "homework"
+            },
+            {
+              "id": "card",
+              "type": "word",
+              "text": "card",
+              "translation": "贺卡",
+              "image": "m3/card.webp",
+              "same": "card"
+            },
+            {
+              "id": "isnt-tidying-his-room",
+              "type": "sentence",
+              "text": "Sam isn't tidying his room.",
+              "translation": "Sam没有在整理房间。",
+              "image": "m3/isnt-tidying-his-room.webp",
+              "same": "room"
+            },
+            {
+              "id": "tidy-your-room",
+              "type": "sentence",
+              "text": "Tidy your room!",
+              "translation": "整理你的房间！",
+              "image": "m3/tidy-your-room.webp",
+              "same": "room"
+            },
+            {
+              "id": "doing-his-homework",
+              "type": "sentence",
+              "text": "He's doing his homework.",
+              "translation": "他正在做作业。",
+              "image": "m3/doing-his-homework.webp",
+              "same": "homework"
+            },
+            {
+              "id": "hes-sleeping",
+              "type": "sentence",
+              "text": "He's sleeping.",
+              "translation": "他正在睡觉。",
+              "image": "m3/hes-sleeping.webp"
+            },
+            {
+              "id": "happy-birthday-mum",
+              "type": "sentence",
+              "text": "Happy birthday!",
+              "translation": "生日快乐！",
+              "image": "m3/happy-birthday-mum.webp",
+              "same": "card"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Are you doing your homework?",
+          "items": [
+            {
+              "id": "flower",
+              "type": "word",
+              "text": "flower",
+              "translation": "花",
+              "image": "m3/flower.webp",
+              "same": "flower"
+            },
+            {
+              "id": "are-you-doing-your-homework",
+              "type": "sentence",
+              "text": "Are you doing your homework?",
+              "translation": "你在做作业吗？",
+              "image": "m3/are-you-doing-your-homework.webp",
+              "same": "homework"
+            },
+            {
+              "id": "picture-of-flowers",
+              "type": "sentence",
+              "text": "I'm drawing a picture of flowers.",
+              "translation": "我在画一幅花的画。",
+              "image": "m3/picture-of-flowers.webp",
+              "same": "flower"
+            },
+            {
+              "id": "listening-to-music",
+              "type": "sentence",
+              "text": "Are you listening to music?",
+              "translation": "你在听音乐吗？",
+              "image": "m3/listening-to-music.webp"
+            },
+            {
+              "id": "reading-a-book",
+              "type": "sentence",
+              "text": "Are you reading a book?",
+              "translation": "你在看书吗？",
+              "image": "m3/reading-a-book.webp"
+            },
+            {
+              "id": "watching-tv",
+              "type": "sentence",
+              "text": "Are you watching TV?",
+              "translation": "你在看电视吗？",
+              "image": "m3/watching-tv.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Module 4",
+      "units": [
+        {
+          "id": "u1",
+          "title": "What are you doing?",
+          "items": [
+            {
+              "id": "lingling-is-calling-amy",
+              "type": "sentence",
+              "text": "Lingling is calling Amy.",
+              "translation": "玲玲在给Amy打电话。",
+              "image": "m4/lingling-is-calling-amy.webp",
+              "same": "phone"
+            },
+            {
+              "id": "are-you-drinking",
+              "type": "sentence",
+              "text": "Are you drinking?",
+              "translation": "你在喝东西吗？",
+              "image": "m4/are-you-drinking.webp"
+            },
+            {
+              "id": "im-swimming",
+              "type": "sentence",
+              "text": "I'm swimming.",
+              "translation": "我在游泳。",
+              "image": "m4/im-swimming.webp"
+            },
+            {
+              "id": "are-you-dancing",
+              "type": "sentence",
+              "text": "Are you dancing?",
+              "translation": "你在跳舞吗？",
+              "image": "m4/are-you-dancing.webp"
+            },
+            {
+              "id": "are-you-eating",
+              "type": "sentence",
+              "text": "Are you eating?",
+              "translation": "你在吃东西吗？",
+              "image": "m4/are-you-eating.webp"
+            },
+            {
+              "id": "im-talking-to-you",
+              "type": "sentence",
+              "text": "I'm talking to you!",
+              "translation": "我在和你说话！",
+              "image": "m4/im-talking-to-you.webp",
+              "same": "phone"
+            },
+            {
+              "id": "what-noise",
+              "type": "sentence",
+              "text": "What's that noise?",
+              "translation": "那是什么声音？",
+              "image": "m4/what-noise.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "What's he doing?",
+          "items": [
+            {
+              "id": "hes-eating",
+              "type": "sentence",
+              "text": "He's eating.",
+              "translation": "他在吃东西。",
+              "image": "m4/hes-eating.webp"
+            },
+            {
+              "id": "hes-running",
+              "type": "sentence",
+              "text": "He's running.",
+              "translation": "他在跑步。",
+              "image": "m4/hes-running.webp"
+            },
+            {
+              "id": "five-stones",
+              "type": "sentence",
+              "text": "They're playing five-stones.",
+              "translation": "她们在玩抓石子游戏。",
+              "image": "m4/five-stones.webp"
+            },
+            {
+              "id": "behind-the-tree",
+              "type": "sentence",
+              "text": "He's behind the tree.",
+              "translation": "他在树后面。",
+              "image": "m4/behind-the-tree.webp",
+              "same": "hide"
+            },
+            {
+              "id": "hide-and-seek",
+              "type": "sentence",
+              "text": "He's playing hide-and-seek with me.",
+              "translation": "他在和我玩捉迷藏。",
+              "image": "m4/hide-and-seek.webp",
+              "same": "hide"
+            },
+            {
+              "id": "put-on-your-shoes",
+              "type": "sentence",
+              "text": "Please put on your shoes!",
+              "translation": "请穿上你的鞋！",
+              "image": "m4/put-on-your-shoes.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Module 5",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Lingling is skipping.",
+          "items": [
+            {
+              "id": "lingling-is-skipping",
+              "type": "sentence",
+              "text": "Lingling is skipping.",
+              "translation": "玲玲在跳绳。",
+              "image": "m5/lingling-is-skipping.webp",
+              "same": "skip"
+            },
+            {
+              "id": "sad",
+              "type": "word",
+              "text": "sad",
+              "translation": "伤心的",
+              "image": "m5/sad.webp"
+            },
+            {
+              "id": "clapping-games",
+              "type": "sentence",
+              "text": "Those girls are playing clapping games.",
+              "translation": "那些女孩在玩拍手游戏。",
+              "image": "m5/clapping-games.webp",
+              "same": "clap"
+            },
+            {
+              "id": "daming-and-sam-hide-and-seek",
+              "type": "sentence",
+              "text": "Daming and Sam are playing hide-and-seek.",
+              "translation": "大明和Sam在玩捉迷藏。",
+              "image": "m5/daming-and-sam-hide-and-seek.webp"
+            },
+            {
+              "id": "opening-the-door",
+              "type": "sentence",
+              "text": "I'm opening the door.",
+              "translation": "我在开门。",
+              "image": "m5/opening-the-door.webp"
+            },
+            {
+              "id": "hurry-up",
+              "type": "sentence",
+              "text": "Hurry up! Don't be late!",
+              "translation": "快点！别迟到！",
+              "image": "m5/hurry-up.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "What are the kids playing?",
+          "items": [
+            {
+              "id": "playing-catch",
+              "type": "sentence",
+              "text": "They're playing catch.",
+              "translation": "他们在玩追人游戏。",
+              "image": "m5/playing-catch.webp",
+              "same": "catch"
+            },
+            {
+              "id": "the-girls-are-running",
+              "type": "sentence",
+              "text": "The girls are running.",
+              "translation": "女孩们在跑。",
+              "image": "m5/the-girls-are-running.webp",
+              "same": "catch"
+            },
+            {
+              "id": "boys-are-catching-them",
+              "type": "sentence",
+              "text": "The boys are catching them.",
+              "translation": "男孩们在抓她们。",
+              "image": "m5/boys-are-catching-them.webp",
+              "same": "catch"
+            },
+            {
+              "id": "some-are-skipping",
+              "type": "sentence",
+              "text": "Some are skipping.",
+              "translation": "有些在跳绳。",
+              "image": "m5/some-are-skipping.webp",
+              "same": "skip"
+            },
+            {
+              "id": "football-match",
+              "type": "sentence",
+              "text": "Some are playing football together in a match.",
+              "translation": "有些在一起踢足球比赛。",
+              "image": "m5/football-match.webp"
+            },
+            {
+              "id": "can-i-play",
+              "type": "sentence",
+              "text": "Can I play with them?",
+              "translation": "我能和他们一起玩吗？",
+              "image": "m5/can-i-play.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Module 6",
+      "units": [
+        {
+          "id": "u1",
+          "title": "I usually play basketball.",
+          "items": [
+            {
+              "id": "usually-play-basketball",
+              "type": "sentence",
+              "text": "On Sundays, I usually play basketball.",
+              "translation": "星期天我通常打篮球。",
+              "image": "m6/usually-play-basketball.webp"
+            },
+            {
+              "id": "hes-ill",
+              "type": "sentence",
+              "text": "He's in bed. He's ill.",
+              "translation": "他躺在床上，他病了。",
+              "image": "m6/hes-ill.webp"
+            },
+            {
+              "id": "usually-ride-my-bike",
+              "type": "sentence",
+              "text": "I usually ride my bike.",
+              "translation": "我通常骑自行车。",
+              "image": "m6/usually-ride-my-bike.webp",
+              "same": "bike"
+            },
+            {
+              "id": "usually-do-my-homework",
+              "type": "sentence",
+              "text": "I usually do my homework.",
+              "translation": "我通常做作业。",
+              "image": "m6/usually-do-my-homework.webp"
+            },
+            {
+              "id": "go-home-at-four",
+              "type": "sentence",
+              "text": "I usually go home at four.",
+              "translation": "我通常四点回家。",
+              "image": "m6/go-home-at-four.webp"
+            },
+            {
+              "id": "youre-reading-a-book",
+              "type": "sentence",
+              "text": "You're reading a book.",
+              "translation": "你在看书。",
+              "image": "m6/youre-reading-a-book.webp",
+              "same": "bike"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "My grandma usually cooks.",
+          "items": [
+            {
+              "id": "kitchen",
+              "type": "word",
+              "text": "kitchen",
+              "translation": "厨房",
+              "image": "m6/kitchen.webp",
+              "same": "cook"
+            },
+            {
+              "id": "grandma-cooks",
+              "type": "sentence",
+              "text": "My grandma usually cooks.",
+              "translation": "我奶奶通常做饭。",
+              "image": "m6/grandma-cooks.webp",
+              "same": "cook"
+            },
+            {
+              "id": "go-shopping",
+              "type": "word",
+              "text": "go shopping",
+              "translation": "去购物",
+              "image": "m6/go-shopping.webp",
+              "same": "shop"
+            },
+            {
+              "id": "im-cooking",
+              "type": "sentence",
+              "text": "I'm in the kitchen and I'm cooking.",
+              "translation": "我在厨房里做饭。",
+              "image": "m6/im-cooking.webp",
+              "same": "cook"
+            },
+            {
+              "id": "father-goes-shopping",
+              "type": "sentence",
+              "text": "My father is going shopping.",
+              "translation": "我爸爸正在去购物。",
+              "image": "m6/father-goes-shopping.webp",
+              "same": "shop"
+            },
+            {
+              "id": "grandmas-birthday",
+              "type": "sentence",
+              "text": "Today is Grandma's birthday!",
+              "translation": "今天是奶奶的生日！",
+              "image": "m6/grandmas-birthday.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Module 7",
+      "units": [
+        {
+          "id": "u1",
+          "title": "It's Children's Day today.",
+          "items": [
+            {
+              "id": "childrens-day",
+              "type": "sentence",
+              "text": "It's Children's Day today.",
+              "translation": "今天是儿童节。",
+              "image": "m7/childrens-day.webp"
+            },
+            {
+              "id": "doing-a-play",
+              "type": "sentence",
+              "text": "Daming is doing a play with some children.",
+              "translation": "大明和一些孩子在演戏。",
+              "image": "m7/doing-a-play.webp"
+            },
+            {
+              "id": "singing-a-song",
+              "type": "sentence",
+              "text": "Lingling is singing a song.",
+              "translation": "玲玲在唱歌。",
+              "image": "m7/singing-a-song.webp"
+            },
+            {
+              "id": "amy-is-dancing",
+              "type": "sentence",
+              "text": "Amy is dancing.",
+              "translation": "Amy在跳舞。",
+              "image": "m7/amy-is-dancing.webp"
+            },
+            {
+              "id": "saying-a-poem",
+              "type": "sentence",
+              "text": "Sam is saying a poem.",
+              "translation": "Sam在朗诵诗歌。",
+              "image": "m7/saying-a-poem.webp"
+            },
+            {
+              "id": "dragon-dance",
+              "type": "sentence",
+              "text": "Some children are doing a dragon dance.",
+              "translation": "一些孩子在舞龙。",
+              "image": "m7/dragon-dance.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "We're having a picnic.",
+          "items": [
+            {
+              "id": "picnic",
+              "type": "word",
+              "text": "picnic",
+              "translation": "野餐",
+              "image": "m7/picnic.webp",
+              "same": "picnic"
+            },
+            {
+              "id": "beach",
+              "type": "word",
+              "text": "beach",
+              "translation": "海滩",
+              "image": "m7/beach.webp",
+              "same": "beach"
+            },
+            {
+              "id": "having-a-picnic",
+              "type": "sentence",
+              "text": "We're having a picnic.",
+              "translation": "我们在野餐。",
+              "image": "m7/having-a-picnic.webp",
+              "same": [
+                "picnic",
+                "beach"
+              ]
+            },
+            {
+              "id": "flying-a-kite",
+              "type": "sentence",
+              "text": "My father is flying a kite.",
+              "translation": "我爸爸在放风筝。",
+              "image": "m7/flying-a-kite.webp"
+            },
+            {
+              "id": "grandma-is-sleeping",
+              "type": "sentence",
+              "text": "My grandma is sleeping.",
+              "translation": "我奶奶在睡觉。",
+              "image": "m7/grandma-is-sleeping.webp"
+            },
+            {
+              "id": "lions-are-eating",
+              "type": "sentence",
+              "text": "They're eating.",
+              "translation": "它们在吃东西。",
+              "image": "m7/lions-are-eating.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "title": "Module 8",
+      "units": [
+        {
+          "id": "u1",
+          "title": "The train is going up a hill.",
+          "items": [
+            {
+              "id": "station",
+              "type": "word",
+              "text": "station",
+              "translation": "车站",
+              "image": "m8/station.webp",
+              "same": "station"
+            },
+            {
+              "id": "hospital",
+              "type": "word",
+              "text": "hospital",
+              "translation": "医院",
+              "image": "m8/hospital.webp",
+              "same": "hospital"
+            },
+            {
+              "id": "going-up-a-hill",
+              "type": "sentence",
+              "text": "The train is going up a hill.",
+              "translation": "火车在上山。",
+              "image": "m8/going-up-a-hill.webp",
+              "same": "up"
+            },
+            {
+              "id": "going-down-a-hill",
+              "type": "sentence",
+              "text": "Now, it's going down a hill.",
+              "translation": "现在火车在下山。",
+              "image": "m8/going-down-a-hill.webp",
+              "same": "down"
+            },
+            {
+              "id": "going-past-a-hospital",
+              "type": "sentence",
+              "text": "It's going past a hospital.",
+              "translation": "火车正经过一家医院。",
+              "image": "m8/going-past-a-hospital.webp",
+              "same": "hospital"
+            },
+            {
+              "id": "stopping-at-the-station",
+              "type": "sentence",
+              "text": "Now, it's stopping at the station.",
+              "translation": "现在火车正在进站停车。",
+              "image": "m8/stopping-at-the-station.webp",
+              "same": "station"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "The horse is turning around.",
+          "items": [
+            {
+              "id": "turning-around",
+              "type": "sentence",
+              "text": "The horse is turning around.",
+              "translation": "马在转身。",
+              "image": "m8/turning-around.webp"
+            },
+            {
+              "id": "horse-is-jumping",
+              "type": "sentence",
+              "text": "The horse is jumping.",
+              "translation": "马在跳。",
+              "image": "m8/horse-is-jumping.webp"
+            },
+            {
+              "id": "horse-is-running",
+              "type": "sentence",
+              "text": "The horse is running.",
+              "translation": "马在跑。",
+              "image": "m8/horse-is-running.webp"
+            },
+            {
+              "id": "horse-coming-back",
+              "type": "sentence",
+              "text": "The horse is coming back.",
+              "translation": "马回来了。",
+              "image": "m8/horse-coming-back.webp"
+            },
+            {
+              "id": "touching-the-sky",
+              "type": "sentence",
+              "text": "We're touching the sky.",
+              "translation": "我们摸到了天空。",
+              "image": "m8/touching-the-sky.webp"
+            },
+            {
+              "id": "touching-the-ground",
+              "type": "sentence",
+              "text": "We're touching the ground.",
+              "translation": "我们摸到了地面。",
+              "image": "m8/touching-the-ground.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "title": "Module 9",
+      "units": [
+        {
+          "id": "u1",
+          "title": "Turn left!",
+          "items": [
+            {
+              "id": "turn-left",
+              "type": "sentence",
+              "text": "Turn left!",
+              "translation": "向左转！",
+              "image": "m9/turn-left.webp",
+              "same": "left"
+            },
+            {
+              "id": "turn-right",
+              "type": "sentence",
+              "text": "Turn right!",
+              "translation": "向右转！",
+              "image": "m9/turn-right.webp",
+              "same": "right"
+            },
+            {
+              "id": "go-straight-on",
+              "type": "sentence",
+              "text": "Go straight on!",
+              "translation": "直走！",
+              "image": "m9/go-straight-on.webp",
+              "same": "straight"
+            },
+            {
+              "id": "road",
+              "type": "word",
+              "text": "road",
+              "translation": "路",
+              "image": "m9/road.webp"
+            },
+            {
+              "id": "excuse-me",
+              "type": "sentence",
+              "text": "Excuse me. Where's Xihu Road?",
+              "translation": "劳驾，西湖路在哪里？",
+              "image": "m9/excuse-me.webp"
+            },
+            {
+              "id": "im-lost",
+              "type": "sentence",
+              "text": "Daming, I'm lost!",
+              "translation": "大明，我迷路了！",
+              "image": "m9/im-lost.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Where do you live?",
+          "items": [
+            {
+              "id": "factory",
+              "type": "word",
+              "text": "factory",
+              "translation": "工厂",
+              "image": "m9/factory.webp",
+              "same": "factory"
+            },
+            {
+              "id": "go-past-the-factory",
+              "type": "sentence",
+              "text": "You go past the factory.",
+              "translation": "你经过工厂。",
+              "image": "m9/go-past-the-factory.webp",
+              "same": "factory"
+            },
+            {
+              "id": "im-going-home",
+              "type": "sentence",
+              "text": "I'm going home.",
+              "translation": "我要回家。",
+              "image": "m9/im-going-home.webp"
+            },
+            {
+              "id": "go-out-of-the-school",
+              "type": "sentence",
+              "text": "Go out of the school.",
+              "translation": "走出学校。",
+              "image": "m9/go-out-of-the-school.webp"
+            },
+            {
+              "id": "i-live-on-the-hill",
+              "type": "sentence",
+              "text": "I live on the hill.",
+              "translation": "我住在山上。",
+              "image": "m9/i-live-on-the-hill.webp"
+            },
+            {
+              "id": "i-live-at-the-zoo",
+              "type": "sentence",
+              "text": "I live at the zoo.",
+              "translation": "我住在动物园。",
+              "image": "m9/i-live-at-the-zoo.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Module 10",
+      "units": [
+        {
+          "id": "u1",
+          "title": "It's next to the park.",
+          "items": [
+            {
+              "id": "supermarket",
+              "type": "word",
+              "text": "supermarket",
+              "translation": "超市",
+              "image": "m10/supermarket.webp",
+              "same": "supermarket"
+            },
+            {
+              "id": "taxi",
+              "type": "word",
+              "text": "taxi",
+              "translation": "出租车",
+              "image": "m10/taxi.webp",
+              "same": "taxi"
+            },
+            {
+              "id": "next-to-the-park",
+              "type": "sentence",
+              "text": "It's next to the park.",
+              "translation": "它在公园旁边。",
+              "image": "m10/next-to-the-park.webp",
+              "same": "supermarket"
+            },
+            {
+              "id": "in-front-of-the-school",
+              "type": "sentence",
+              "text": "It's in front of the school.",
+              "translation": "它在学校前面。",
+              "image": "m10/in-front-of-the-school.webp"
+            },
+            {
+              "id": "im-a-taxi-driver",
+              "type": "sentence",
+              "text": "I'm a taxi driver!",
+              "translation": "我是出租车司机！",
+              "image": "m10/im-a-taxi-driver.webp",
+              "same": "taxi"
+            },
+            {
+              "id": "turn-back",
+              "type": "sentence",
+              "text": "Turn back.",
+              "translation": "往回走。",
+              "image": "m10/turn-back.webp"
+            },
+            {
+              "id": "nice-to-meet-you",
+              "type": "sentence",
+              "text": "Nice to meet you.",
+              "translation": "很高兴见到你。",
+              "image": "m10/nice-to-meet-you.webp"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "He's helping a child.",
+          "items": [
+            {
+              "id": "cinema",
+              "type": "word",
+              "text": "cinema",
+              "translation": "电影院",
+              "image": "m10/cinema.webp",
+              "same": "cinema"
+            },
+            {
+              "id": "helping-a-child",
+              "type": "sentence",
+              "text": "I'm helping a child.",
+              "translation": "我在帮助一个孩子。",
+              "image": "m10/helping-a-child.webp"
+            },
+            {
+              "id": "mother-in-front-of-cinema",
+              "type": "sentence",
+              "text": "Her mother, Mrs White, is in front of the cinema!",
+              "translation": "她妈妈在电影院前面！",
+              "image": "m10/mother-in-front-of-cinema.webp",
+              "same": "cinema"
+            },
+            {
+              "id": "a-car-is-coming",
+              "type": "sentence",
+              "text": "A car is coming.",
+              "translation": "一辆车开过来了。",
+              "image": "m10/a-car-is-coming.webp"
+            },
+            {
+              "id": "look-left-look-right",
+              "type": "sentence",
+              "text": "Look left, look right.",
+              "translation": "向左看，向右看。",
+              "image": "m10/look-left-look-right.webp"
+            },
+            {
+              "id": "lets-cross-now",
+              "type": "sentence",
+              "text": "Let's cross now.",
+              "translation": "我们现在过马路吧。",
+              "image": "m10/lets-cross-now.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

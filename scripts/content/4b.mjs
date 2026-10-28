@@ -1,0 +1,326 @@
+// 四年级下册 Module 1–10，格式见 AUTHORING.md
+export default {
+  id: '4b',
+  title: '四年级下册',
+  subtitle: '新标准英语（一年级起点）',
+  source: 'textbooks/4b.pdf（TapXWorld/ChinaTextbook），词句取自课文和书后 Words and Expressions in Each Module',
+  modules: [
+    {
+      id: 'm1',
+      title: 'Module 1',
+      units: [
+        {
+          id: 'u1',
+          title: "Don't touch the machines, please!",
+          items: [
+            ['machine', 'machine', '机器', 'A big friendly factory machine with a conveyor belt and round coloured buttons', [], { same: 'machine' }],
+            ['potato', 'potato', '土豆', 'A small pile of round brown potatoes', [], { same: 'potato' }],
+            ['crisps', 'crisps', '炸薯片', 'An open bag of golden potato crisps with a few crisps spilling out', [], { same: 'crisps' }],
+            ['welcome-to-our-factory', 'Welcome to our factory, children!', '欢迎来到我们的工厂，孩子们！', 'A plush factory worker in a white coat and white cap welcoming a group of children at the factory door', []],
+            ['machine-cuts-the-potatoes', 'This machine cuts the potatoes.', '这台机器切土豆。', 'A factory machine slicing potatoes into thin round slices on a conveyor belt', [], { same: ['machine', 'potato'] }],
+            ['dont-touch-the-machines', "Don't touch the machines, please!", '请不要碰机器！', 'A plush factory worker in a white coat holding up a hand to stop Sam as he reaches toward a big machine', ['sam'], { same: 'machine' }],
+            ['each-have-a-bag-of-crisps', 'You can each have a bag of crisps.', '你们每人可以拿一袋薯片。', 'Daming and Amy each holding up a bag of crisps, smiling', ['daming', 'amy'], { same: 'crisps' }],
+          ],
+        },
+        {
+          id: 'u2',
+          title: "Don't feed the fish!",
+          items: [
+            ['dont-feed-the-fish', "Don't feed the fish!", '不要喂鱼！', 'A plush park keeper gently stopping Daming from throwing bread into a pond of orange fish', ['daming']],
+            ['dont-walk-on-the-grass', "Don't walk on the grass!", '不要在草地上走！', 'A plush park keeper waving a hand as Lingling is about to step onto a fresh green lawn full of little flowers', ['lingling']],
+            ['dont-play-ball-games-here', "Don't play ball games here!", '不要在这里玩球类游戏！', 'Sam holding a football next to a flowerbed of tulips, a plush park keeper shaking his head', ['sam']],
+            ['dont-write-on-the-books', "Don't write on the books!", '不要在书上写字！', 'A plush librarian stopping Amy from drawing with a crayon in an open library book', ['amy']],
+            ['the-baby-is-sleeping', 'The baby is sleeping.', '宝宝在睡觉。', 'A plush baby sleeping peacefully in a crib under a soft blanket', [], { same: 'baby' }],
+            ['play-with-the-baby', 'Play with the baby!', '和宝宝一起玩！', 'The little red panda mascot shaking a rattle for a giggling plush baby', ['mascot'], { same: 'baby' }],
+            ['be-quiet-please', 'Be quiet, please!', '请安静！', 'Ms Smart holding a finger to her lips, saying shh', ['ms-smart']],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'm2',
+      title: 'Module 2',
+      units: [
+        {
+          id: 'u1',
+          title: "It's cheap.",
+          items: [
+            ['cheap', 'cheap', '便宜的', 'A small plain plush pencil with a tiny price tag showing ¥1', [], { same: 'cheap', digits: true }],
+            ['expensive', 'expensive', '昂贵的', 'A shiny plush gold crown covered in sparkling jewels', [], { same: 'expensive' }],
+            ['camera-is-expensive', 'This camera is expensive.', '这台相机很贵。', 'A shiny black camera with a big price tag showing ¥22,000', [], { same: 'expensive', digits: true }],
+            ['ive-got-a-new-hat', "I've got a new hat.", '我有一顶新帽子。', 'A plush British grandma with white hair in a bun and glasses, proudly wearing a new pink hat', [], { same: 'hat' }],
+            ['is-it-pink', 'Is it pink?', '它是粉色的吗？', 'Amy thinking, with a thought bubble showing a pink hat with a question mark', ['amy'], { same: 'hat' }],
+            ['dad-bought-a-computer', 'Dad bought a computer for me yesterday.', '爸爸昨天给我买了一台电脑。', 'Amy hugging a brand-new computer on her desk, a gift ribbon on top', ['amy']],
+            ['send-emails', 'Now I can send emails to you, too.', '现在我也可以给你发电子邮件了。', 'A plush British grandma with white hair and glasses typing on a laptop, a small envelope flying out of the screen', [], { same: 'email' }],
+          ],
+        },
+        {
+          id: 'u2',
+          title: 'It costs one hundred and eighteen yuan.',
+          items: [
+            ['hundred', 'hundred', '一百', 'A big chunky plush toy shaped like the number 100, three digits side by side, orange felt, standing up', [], { same: 'hundred', digits: true }],
+            ['costs-118-yuan', 'It costs one hundred and eighteen yuan.', '它的价格是一百一十八元。', 'A fancy golden fountain pen next to a price tag showing ¥118', [], { same: ['hundred', 'pen'], digits: true }],
+            ['pen-costs-19-yuan', 'This pen costs nineteen yuan.', '这支钢笔十九元。', 'A pretty blue pen with flowers on it next to a price tag showing ¥19', [], { same: 'pen', digits: true }],
+            ['pen-costs-1-yuan', 'This pen costs one yuan.', '这支钢笔一元。', 'A simple plain yellow pen next to a price tag showing ¥1', [], { same: ['cheap', 'pen'], digits: true }],
+            ['i-want-to-buy-a-pen', 'I want to buy a pen.', '我想买一支钢笔。', 'Daming at a shop counter looking at a row of different pens, holding a banknote', ['daming'], { same: 'pen' }],
+            ['bag-costs-130-yuan', 'This bag costs one hundred and thirty yuan.', '这个包一百三十元。', 'A smart leather handbag next to a price tag showing ¥130', [], { same: ['hundred', 'expensive'], digits: true }],
+            ['bear-costs-30-yuan', 'It costs 30 yuan.', '它三十元。', 'A cute plush teddy bear next to a price tag showing ¥30', [], { digits: true }],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'm3',
+      title: 'Module 3',
+      units: [
+        {
+          id: 'u1',
+          title: 'He shouted, "Wolf, wolf!"',
+          items: [
+            ['wolf', 'wolf', '狼', 'A single plush grey wolf with pointy ears and a big bushy tail', [], { same: 'wolf' }],
+            ['village', 'village', '乡村', 'A small plush village of little houses with red roofs among green fields', []],
+            ['looked-after-sheep', 'He looked after sheep every day.', '他每天都照看羊群。', 'A plush shepherd boy with a straw hat and a stick standing on a green hill with a flock of white sheep', [], { same: 'sheep' }],
+            ['the-boy-was-bored', 'The boy was bored.', '这个男孩很无聊。', 'A plush shepherd boy with a straw hat sitting on a rock on a hill, chin in hands, yawning', []],
+            ['he-shouted-wolf', 'He shouted, "Wolf, wolf!"', '他大喊："狼来了，狼来了！"', 'A plush shepherd boy with a straw hat cupping his hands around his mouth and shouting loudly', []],
+            ['the-people-were-angry', 'The people were angry.', '人们很生气。', 'A group of plush villagers with angry red faces, frowning, hands on hips', []],
+            ['the-wolf-ate-the-sheep', 'The wolf ate all the sheep.', '狼吃掉了所有的羊。', 'A plush grey wolf with a fat round full tummy sitting on an empty hill, licking its lips', [], { same: 'wolf' }],
+          ],
+        },
+        {
+          id: 'u2',
+          title: 'She went into a shop.',
+          items: [
+            ['cheese', 'cheese', '奶酪', 'A single yellow wedge of plush cheese with round holes', [], { same: 'cheese' }],
+            ['went-into-a-shop', 'She went into a shop.', '她走进了一家商店。', 'A small plush grey mouse in a pink skirt walking through the door of a little shop', [], { same: 'mouse' }],
+            ['ate-the-cheese', 'She ate the cheese.', '她吃了奶酪。', 'A small plush grey mouse in a pink skirt nibbling a big wedge of yellow cheese', [], { same: ['mouse', 'cheese'] }],
+            ['saw-a-cat-in-the-shop', 'Then Tilly saw a cat in the shop.', '然后蒂莉在商店里看见了一只猫。', 'A small plush grey mouse in a pink skirt looking up at a big orange cat behind a shop counter', [], { same: 'mouse' }],
+            ['scared-and-ran-away', 'She was scared and ran away.', '她很害怕，逃跑了。', 'A small plush grey mouse in a pink skirt running away fast with a frightened face', [], { same: 'mouse' }],
+            ['i-bought-some-apples', 'I bought some apples and ate two.', '我买了一些苹果，吃了两个。', 'Lingling holding a bag of red apples and biting into one, an apple core beside her', ['lingling']],
+            ['mouse-ran-up-the-clock', 'The mouse ran up the clock.', '老鼠爬上了钟。', 'A small brown plush mouse climbing up the side of a tall old grandfather clock', []],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'm4',
+      title: 'Module 4',
+      units: [
+        {
+          id: 'u1',
+          title: 'Dad played the erhu.',
+          items: [
+            ['violin', 'violin', '小提琴', 'A single cute plush brown violin with its bow', [], { same: 'violin' }],
+            ['guitar', 'guitar', '吉他', 'A single cute plush acoustic guitar', [], { same: 'guitar' }],
+            ['concert', 'concert', '音乐会', 'A small stage with red curtains and musicians playing instruments in front of a seated audience', [], { same: 'concert' }],
+            ['i-went-to-a-concert', 'I went to a concert yesterday.', '我昨天去听了一场音乐会。', 'Lingling sitting in a concert hall seat, watching a stage happily', ['lingling'], { same: 'concert' }],
+            ['dad-played-the-erhu', 'Dad played the erhu.', '爸爸拉了二胡。', 'A plush Chinese dad with short black hair sitting and playing a Chinese erhu with a bow', [], { same: 'violin' }],
+            ['mum-played-the-pipa', 'And Mum played the pipa.', '妈妈弹了琵琶。', 'A plush Chinese mum with short black hair sitting and playing a Chinese pipa held upright', [], { same: 'guitar' }],
+            ['love-chinese-music', 'I love Chinese music.', '我爱中国音乐。', 'Amy listening with her eyes closed and a big smile, music notes floating out of a CD player', ['amy']],
+          ],
+        },
+        {
+          id: 'u2',
+          title: 'I was very nervous.',
+          items: [
+            ['i-was-very-nervous', 'I was very nervous before the concert.', '音乐会前我非常紧张。', 'Daming biting his nails backstage next to a piano, looking worried and sweating', ['daming'], { same: 'nervous' }],
+            ['im-nervous-too', "I'm nervous, too.", '我也很紧张。', 'A plush rabbit and a plush bear standing on a stage, both trembling with worried faces', [], { same: 'nervous' }],
+            ['come-and-dance', "Don't be nervous! Come and dance!", '别紧张！来跳舞吧！', 'A cheerful plush monkey pulling a shy plush rabbit by the hand to dance', []],
+            ['everyone-clapped', 'In the end, everyone clapped.', '最后，大家都鼓掌了。', 'A happy plush audience in rows of seats all clapping their hands', []],
+            ['i-was-very-proud', 'And I was very proud.', '我感到非常自豪。', 'Daming bowing on a stage next to a piano, holding a bunch of flowers', ['daming']],
+            ['he-played-the-drums', 'He played the drums.', '他打了鼓。', 'A plush musician with curly hair playing a drum set with drumsticks', []],
+            ['the-lion-played-the-piano', 'The lion played the piano.', '狮子弹了钢琴。', 'A plush lion with a big fluffy mane playing a piano at an animal concert', []],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'm5',
+      title: 'Module 5',
+      units: [
+        {
+          id: 'u1',
+          title: "We're having a party.",
+          items: [
+            ['happy-mothers-day', "Happy Mother's Day!", '母亲节快乐！', 'Lingling giving a bunch of red carnations to a plush Chinese mum with short black hair', ['lingling'], { same: 'mum' }],
+            ['what-a-surprise', 'Oh, what a surprise!', '哦，真是个惊喜！', 'Ms Smart with both hands on her cheeks, delighted, holding a gift box with a ribbon', ['ms-smart'], { same: 'mum' }],
+            ['were-having-a-party', "We're having a party.", '我们正在开派对。', 'A party room with balloons, streamers and a cake on a table, children and mums celebrating', []],
+            ['amy-is-playing-the-piano', 'Amy is playing the piano.', '埃米正在弹钢琴。', 'Amy playing a piano with music notes floating around', ['amy']],
+            ['tom-is-singing', 'Tom is singing.', '汤姆正在唱歌。', 'A small plush toddler boy with curly red hair singing into a microphone', []],
+            ['sam-is-playing-the-violin', 'Sam is playing the violin.', '萨姆正在拉小提琴。', 'Sam playing a violin with a bow', ['sam'], { same: 'violin-m5' }],
+            ['they-are-clapping', 'Now they are clapping.', '现在她们正在鼓掌。', 'A row of happy plush mums sitting on chairs, clapping their hands', []],
+          ],
+        },
+        {
+          id: 'u2',
+          title: "He's drawing books and birds.",
+          items: [
+            ['happy-fathers-day', "Happy Father's Day!", '父亲节快乐！', 'Daming hugging a plush Chinese dad with short black hair and glasses, giving him a handmade card', ['daming'], { same: 'card' }],
+            ['making-a-card', 'Daming is making a card for his father.', '大明正在给爸爸做贺卡。', 'Daming at a table folding a big sheet of coloured paper into a card, scissors and glue beside him', ['daming'], { same: 'card' }],
+            ['drawing-books-and-birds', "He's drawing books and birds.", '他正在画书和鸟。', 'Daming drawing a book and two little birds on a card with coloured pencils', ['daming'], { same: 'card' }],
+            ['writing-a-message', "He's writing a message to his father.", '他正在给爸爸写留言。', 'Daming writing with a pen inside an open card, a heart drawn on the cover', ['daming'], { same: 'card' }],
+            ['violin-for-your-father', "You're playing the violin for your father.", '你正在为爸爸拉小提琴。', 'Amy playing a violin for a smiling plush British dad with brown hair and glasses who sits in an armchair', ['amy'], { same: 'violin-m5' }],
+            ['painting-a-picture-m5', 'Are you painting a picture on this special day?', '在这个特别的日子你在画画吗？', 'Lingling painting a picture of her smiling dad on an easel', ['lingling']],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'm6',
+      title: 'Module 6',
+      units: [
+        {
+          id: 'u1',
+          title: "I'll draw the pictures.",
+          items: [
+            ['lets-make-a-newspaper', "Let's make an English newspaper!", '我们来做一份英语报纸吧！', 'Daming, Lingling, Sam and Amy gathered around a big blank sheet of paper on a table, excited', ['daming', 'lingling', 'sam', 'amy'], { same: 'newspaper' }],
+            ['ill-draw-the-pictures', "I'll draw the pictures.", '我来画图。', 'Sam drawing a picture with coloured pencils', ['sam'], { same: 'draw' }],
+            ['ill-write-the-reports', "I'll write the reports.", '我来写报道。', 'Amy writing neat lines on a sheet of paper with a pen', ['amy']],
+            ['ill-cut-the-paper', "I'll cut the paper.", '我来剪纸。', 'Daming cutting a sheet of paper with a pair of scissors', ['daming']],
+            ['stick-the-pictures', 'Will you stick the pictures on the newspaper?', '你来把图片贴到报纸上好吗？', 'Lingling gluing a picture onto a big sheet of newspaper with a glue stick', ['lingling'], { same: 'newspaper' }],
+            ['newspaper-is-fantastic', 'Our English newspaper is fantastic!', '我们的英语报纸棒极了！', 'Daming, Lingling, Sam and Amy holding up a finished colourful newspaper full of pictures, cheering', ['daming', 'lingling', 'sam', 'amy'], { same: 'newspaper' }],
+            ['good-at-pe', 'You are good at PE.', '你擅长体育。', 'Daming running fast on a running track, sweatband on his head', ['daming']],
+          ],
+        },
+        {
+          id: 'u2',
+          title: "Let's have fun this Saturday!",
+          items: [
+            ['lets-paint-a-picture', "Let's paint a picture!", '我们画一幅画吧！', 'Lingling and Amy painting a big picture together on an easel', ['lingling', 'amy'], { same: 'draw' }],
+            ['lets-do-some-sport', "Let's do some sport!", '我们做些运动吧！', 'Daming and Sam doing jumping jacks on the grass', ['daming', 'sam']],
+            ['lets-play-the-piano', "Let's play the piano!", '我们弹钢琴吧！', 'Amy and Lingling sitting together at a piano, playing', ['amy', 'lingling']],
+            ['lets-fly-our-kites', "Let's fly our kites!", '我们放风筝吧！', 'Daming and Sam flying colourful kites in a sunny park', ['daming', 'sam'], { same: 'kite' }],
+            ['but-its-raining', "But it's raining.", '但是正在下雨。', 'Daming holding a kite and looking sadly out of a window at heavy rain', ['daming'], { same: 'kite' }],
+            ['lets-watch-tv', "Let's watch TV!", '我们看电视吧！', 'Sam and Amy sitting on a sofa holding a remote control in front of a TV', ['sam', 'amy']],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'm7',
+      title: 'Module 7',
+      units: [
+        {
+          id: 'u1',
+          title: "What's the time?",
+          items: [
+            ['whats-the-time', "What's the time?", '几点了？', 'Sam tapping his bare wrist and looking puzzled, a question mark above his head', ['sam']],
+            ['its-10-oclock', "It's 10 o'clock.", '十点了。', "A big round plush wall clock showing exactly 10 o'clock, hour hand on 10 and minute hand on 12", [], { digits: true }],
+            ['its-2-oclock', "It's 2 o'clock.", '两点了。', "A big round plush wall clock showing exactly 2 o'clock, hour hand on 2 and minute hand on 12", [], { digits: true }],
+            ['its-4-oclock', "It's 4 o'clock.", '四点了。', "A big round plush alarm clock showing exactly 4 o'clock, hour hand on 4 and minute hand on 12", [], { digits: true }],
+            ['its-6-oclock', "It's 6 o'clock.", '六点了。', "A big round plush alarm clock showing exactly 6 o'clock, hour hand pointing straight down to 6 and minute hand straight up to 12", [], { digits: true }],
+            ['cartoon', 'cartoon', '动画片', 'A plush TV set on a low stand, its screen clearly framed by the TV casing, showing a flat cartoon of a little kung fu boy doing a high kick; the TV itself must be the main object, NOT a standalone kung fu boy', []],
+            ['im-a-train', "I'm a train.", '我是一列火车。', 'Sam running with his arms moving like train wheels, Daming holding his shoulders behind him like a carriage', ['sam', 'daming']],
+          ],
+        },
+        {
+          id: 'u2',
+          title: "It's 6:30 am in New York.",
+          items: [
+            ['630-am-in-new-york', "It's 6:30 am in New York.", '纽约现在是早上六点半。', 'A clock showing 6:30 next to a sunrise over tall city skyscrapers', [], { same: 'breakfast', digits: true }],
+            ['breakfast-time', "It's breakfast time.", '现在是早饭时间。', 'A breakfast table with a fried egg, toast and a glass of milk in morning sunshine', [], { same: 'breakfast' }],
+            ['1130-am-in-london', "It's 11:30 am in London.", '伦敦现在是上午十一点半。', 'The Big Ben clock tower in London under a bright midday sun', [], { same: 'lunch' }],
+            ['lunch-time', "It's lunch time.", '现在是午饭时间。', 'A lunch plate with a sandwich, an apple and a bowl of soup under a bright midday sun', [], { same: 'lunch' }],
+            ['730-pm-in-beijing', "It's 7:30 pm in Beijing.", '北京现在是晚上七点半。', 'A clock showing 7:30 next to the red Tiananmen gate in Beijing at night with stars and a moon', [], { same: 'dinner', digits: true }],
+            ['dinner-time', "It's dinner time.", '现在是晚饭时间。', 'A family dinner table with rice, dishes and chopsticks under a warm lamp, dark night outside the window', [], { same: 'dinner' }],
+            ['school-time', "No, it's school time.", '不，现在是上学时间。', 'Children sitting at desks in a classroom with a blank green blackboard', []],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'm8',
+      title: 'Module 8',
+      units: [
+        {
+          id: 'u1',
+          title: 'He lives in the east of the US.',
+          items: [
+            ['map', 'map', '地图', 'A folded paper map partly opened, showing green land, blue rivers and a red dotted path, a small compass beside it', []],
+            ['lives-in-the-east-of-the-us', 'He lives in the east of the US.', '他住在美国东部。', 'A map of the United States with a big red pin on the far RIGHT side, near the east coast', [], { same: 'us-east' }],
+            ['los-angeles-west', 'Los Angeles is in the west of the US.', '洛杉矶在美国西部。', 'A map of the United States with a big red pin on the far LEFT side, near the west coast', [], { same: 'us-west' }],
+            ['capital-of-the-us', 'The capital of the US is Washington DC.', '美国的首都是华盛顿特区。', 'A big white building with a round dome and columns, a flag flying above it', []],
+            ['go-to-the-us-one-day', 'I want to go to the US one day.', '我想有一天去美国。', 'Daming dreaming with a thought bubble showing a plane flying toward the Statue of Liberty', ['daming']],
+            ['home-is-the-best', 'Home is the best.', '家是最好的。', 'A cosy little plush house with a warm glowing window and a happy family waving at the door', []],
+            ['lets-have-a-rest', "Let's have a rest.", '我们休息一下吧。', 'Lingling and Amy sitting on a park bench with their eyes closed, relaxing', ['lingling', 'amy']],
+          ],
+        },
+        {
+          id: 'u2',
+          title: "It's in the north of China.",
+          items: [
+            ['north-of-china', "It's in the north of China.", '它在中国的北部。', 'A map of China with a big red star near the TOP of the map', [], { same: 'north' }],
+            ['beijing-is-the-capital', 'Beijing is the capital.', '北京是首都。', 'The red Tiananmen gate in Beijing with red flags in front', []],
+            ['suzhou-is-an-old-city', 'Suzhou is an old city.', '苏州是一座古城。', 'An old Chinese water town with white houses, black roofs and a stone bridge over a canal', []],
+            ['lhasa-is-beautiful', 'Lhasa is a beautiful city.', '拉萨是一座美丽的城市。', 'The white and red Potala Palace on a hill under a deep blue sky', []],
+            ['guangzhou-is-a-big-city', 'Guangzhou is a big city.', '广州是一座大城市。', 'A big modern city with many tall buildings and one very tall slim tower beside a river', []],
+            ['point-to-the-north', 'Point to the north.', '指向北方。', 'Amy pointing straight up toward the top arrow of a big compass rose', ['amy'], { same: 'north' }],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'm9',
+      title: 'Module 9',
+      units: [
+        {
+          id: 'u1',
+          title: 'Why do you like Australia?',
+          items: [
+            ['kangaroo', 'kangaroo', '袋鼠', 'A single cute plush brown kangaroo standing on its back legs', [], { same: 'kangaroo' }],
+            ['i-love-koalas', 'I love koalas.', '我爱考拉。', 'A cute fluffy plush grey koala hugging a green eucalyptus branch', [], { same: 'koala' }],
+            ['why-do-you-like-australia', 'Why do you like Australia?', '你为什么喜欢澳大利亚？', 'Daming holding up a map of Australia with a curious face', ['daming']],
+            ['australian-animals', 'Because I love Australian animals.', '因为我喜欢澳大利亚的动物。', 'Sam hugging a plush kangaroo and a plush koala, one in each arm', ['sam'], { same: ['kangaroo', 'koala'] }],
+            ['because-its-healthy', "Because it's healthy.", '因为它有益健康。', 'Amy holding an apple and a banana, flexing her arm and smiling', ['amy']],
+            ['dont-eat-too-much', "But don't eat too much!", '但是不要吃太多！', 'A plush boy with a big round full tummy sitting next to a huge pile of fruit', []],
+            ['because-they-are-cute', 'Because they are cute.', '因为它们很可爱。', 'Lingling cuddling two fluffy little kittens', ['lingling']],
+          ],
+        },
+        {
+          id: 'u2',
+          title: 'Kangaroos live in Australia.',
+          items: [
+            ['kangaroos-live-in-australia', 'Kangaroos live in Australia.', '袋鼠生活在澳大利亚。', 'Two plush kangaroos in red Australian outback land, the Sydney Opera House far away', [], { same: 'kangaroo' }],
+            ['special-bag-for-her-baby', 'The mother kangaroo has a special bag for her baby.', '袋鼠妈妈有一个装宝宝的特别口袋。', 'A plush mother kangaroo with a tiny baby kangaroo peeking out of her front pouch', [], { same: 'kangaroo' }],
+            ['i-eat-grass', 'I eat grass.', '我吃草。', 'A plush cow eating green grass in a field', []],
+            ['fish-live-in-the-river', 'Fish live in the river.', '鱼生活在河里。', 'Three small plush orange fish swimming in a winding blue river with grassy green banks and pebbles on both sides; the river must be clearly visible, NOT a single fish on a plain background', []],
+            ['birds-live-in-the-tree', 'Birds live in the tree.', '鸟生活在树上。', 'Plush birds sitting in a nest in a green tree', []],
+            ['dogs-eat-meat', 'Dogs eat meat and vegetables.', '狗吃肉和蔬菜。', 'A plush brown dog eating from a bowl of meat and carrots', []],
+            ['do-you-eat-ice-cream', 'Do you eat ice cream?', '你吃冰激凌吗？', 'A plush kangaroo licking a big ice cream cone', [], { same: 'kangaroo' }],
+          ],
+        },
+      ],
+    },
+    {
+      id: 'm10',
+      title: 'Module 10',
+      units: [
+        {
+          id: 'u1',
+          title: "I'll send you a postcard.",
+          items: [
+            ['postcard', 'postcard', '明信片', 'A single postcard with a picture of a mountain and a stamp in the corner', [], { same: 'postcard' }],
+            ['send-you-a-postcard', "I'll send you a postcard from China.", '我会从中国给你寄一张明信片。', 'Lingling putting a postcard into a green postbox', ['lingling'], { same: 'postcard' }],
+            ['go-back-to-the-uk', 'I will go back to the UK.', '我将回英国。', 'Amy pulling a suitcase in front of the Big Ben clock tower in London', ['amy'], { same: 'london' }],
+            ['visit-australia', "She's going to visit Australia.", '她要去澳大利亚游览。', 'A plush girl in a sunhat with a suitcase in front of the Sydney Opera House', []],
+            ['london-zoo', 'He will go to London Zoo.', '他将去伦敦动物园。', 'A plush boy with a backpack walking through a zoo gate with animal shapes on top', [], { same: 'zoo' }],
+            ['speak-english-every-day', "I'm going to speak English every day.", '我要每天说英语。', 'Lingling chatting happily with two plush British children', ['lingling']],
+            ['grandpas-farm', "Maybe I'll visit my grandpa's farm.", '也许我会去爷爷的农场。', 'Daming waving to a plush Chinese grandpa with white hair at a farm with a red barn, chickens and a cow', ['daming']],
+          ],
+        },
+        {
+          id: 'u2',
+          title: "I'm going to visit London.",
+          items: [
+            ['museum', 'museum', '博物馆', 'A grand museum building with tall columns and wide steps, a dinosaur skeleton visible through the doors', []],
+            ['restaurant', 'restaurant', '餐馆', 'A cosy restaurant with small tables, chairs and a waiter carrying a plate', [], { same: 'restaurant' }],
+            ['im-going-to-visit-london', "Tomorrow, I'm going to visit London.", '明天我要去伦敦游览。', 'Lingling pointing excitedly at the Big Ben clock tower and a red double-decker bus', ['lingling'], { same: 'london' }],
+            ['eat-in-an-english-restaurant', "We're going to eat in an English restaurant.", '我们要在一家英国餐馆吃饭。', 'Lingling and a plush British family eating fish and chips at a restaurant table', ['lingling'], { same: 'restaurant' }],
+            ['going-to-the-zoo', "I'm going to the zoo.", '我要去动物园。', 'Sam walking happily toward a zoo gate, a giraffe peeking over the fence', ['sam'], { same: 'zoo' }],
+            ['eat-some-fruit', "I'm going to eat some fruit.", '我要吃一些水果。', 'Amy holding a big bunch of grapes and an apple, about to take a bite', ['amy']],
+            ['zoo-by-bus', 'We will go to the zoo by bus.', '我们将坐公共汽车去动物园。', 'A yellow bus full of happy children driving toward a zoo gate', [], { same: 'zoo' }],
+          ],
+        },
+      ],
+    },
+  ],
+}

@@ -171,3 +171,15 @@
 .book-tab.on { color: var(--primary); border-color: var(--primary); }
 .book-tab:active { transform: translateY(3px); }
 @media (max-width: 600px) { .book-tab { font-size: 17px; padding: 8px; } }
+
+/* ---------- 年级选择 ---------- */
+.grade-row { display: flex; gap: 8px; justify-content: center; margin: 2px 0 10px; flex-wrap: wrap; }
+.grade-chip {
+  width: 56px; height: 56px; border-radius: 50%; background: #fff; box-shadow: 0 4px 0 #f1dccb;
+  font-size: 24px; font-weight: 800; color: var(--muted); display: flex; flex-direction: column;
+  align-items: center; justify-content: center; line-height: 1; border: 3px solid transparent;
+}
+.grade-chip small { font-size: 11px; font-weight: 700; margin-top: 2px; }
+.grade-chip.on { background: var(--primary); color: #fff; box-shadow: 0 4px 0 var(--primary-dark); }
+.grade-chip:active { transform: translateY(3px); }
+@media (max-width: 600px) { .grade-chip { width: 48px; height: 48px; font-size: 20px; } }
