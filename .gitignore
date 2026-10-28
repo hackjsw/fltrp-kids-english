@@ -5,3 +5,6 @@ textbooks/
 
 # Magpie 原图（447 MB），App 只用 content/images/ 里压缩后的 WebP；manifest.json 保留
 art/**/*.png
+
+# 选风格时的原始样图，同样不上传
+assets/**/*.png
