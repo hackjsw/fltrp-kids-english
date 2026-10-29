@@ -42,27 +42,25 @@ npm run dev:phone
 
 现在部署在 https://es.rew.de5.net （Cloudflare 账号 leisurelywolf@869669.xyz，Worker 名 `fltrp-kids-english`）。
 
-**本机直接部署**（wrangler 要登录上面的账号：`npx wrangler login`）
+**日常更新：推送到 GitHub 就自动部署**
 
-```bash
-npm run deploy
-```
+推送到 `main` 后，Cloudflare 会自动拉代码、运行 `npm run build`，再运行 `npx wrangler deploy`。家庭密码（机密 `FAMILY_PASSWORD`）和自定义域名都保存在 Cloudflare 上，自动部署不会改动它们。构建记录在后台这个 Worker 的「部署」页里能看到。
 
-改家庭密码：`npx wrangler secret put FAMILY_PASSWORD`，自己在终端里输入。
+**第一次连接 GitHub（只做一次，在 Cloudflare 后台）**
 
-**改用 GitHub 自动部署（可选，在 Cloudflare 后台）**
+Worker 已经建好了，直接把它连到仓库，不要另外新建一个：
 
-1. Workers 和 Pages → 创建 → 导入 Git 存储库，选 `hackjsw/fltrp-kids-english`。
-2. 构建命令填 `npm run build`，部署命令填 `npx wrangler deploy`（默认值就是这两个）。
-3. 部署完成后，在这个 Worker 的 设置 → 变量和机密 里添加机密 `FAMILY_PASSWORD`（家庭密码）。没设置之前网站会显示"还没设置家庭密码"，不会把内容放出去。
-4. 设置 → 域和路由 → 添加自定义域，填你自己的域名。workers.dev 默认域名在国内经常打不开。
+1. Workers 和 Pages → 点开 `fltrp-kids-english` → 设置 → 构建 → 连接，授权 Cloudflare 访问 GitHub，选仓库 `hackjsw/fltrp-kids-english`。
+2. 生产分支选 `main`；构建命令 `npm run build`；部署命令 `npx wrangler deploy`；根目录留空。
+3. 保存。之后每次推送到 `main` 都会自动构建和部署。
 
-之后每次推送到 `main`，Cloudflare 会自动重新构建和部署。
+**改家庭密码**：后台这个 Worker 的 设置 → 变量和机密 里改 `FAMILY_PASSWORD`，或者在终端运行 `npx wrangler secret put FAMILY_PASSWORD` 自己输入。改完所有设备都要重新登录。
+
+**临时从本机部署**（一般用不到）：wrangler 登录上面的账号（`npx wrangler login`）后运行 `npm run deploy`。
 
 **其他**
 
 - 本地模拟线上环境：在项目根目录建 `.dev.vars`，写一行 `FAMILY_PASSWORD=随便一个测试密码`（这个文件不入库），然后 `npm run cf:dev`，打开 http://127.0.0.1:8787 。
-- 改密码：在后台改 `FAMILY_PASSWORD`，所有设备都要重新登录。
 - 退出登录：访问 `/logout`。
 - 本地 `npm run dev` 不走 Worker，没有密码，家里局域网用还是原来的方式。
 - 跟读识别用的是浏览器自带的语音识别：Chrome 要连谷歌服务器，国内用不了；Edge 用微软的服务，一般能用。
