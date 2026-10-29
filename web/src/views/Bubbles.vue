@@ -2,7 +2,8 @@
 import { computed, onBeforeUnmount, ref } from 'vue'
 import { imageUrl, unitItems, distractors } from '../lib/content.js'
 import { speakItem } from '../lib/speech.js'
-import { recordStars } from '../lib/progress.js'
+import { finishGame, markCorrect } from '../lib/rewards.js'
+import { sparkle } from '../lib/fx.js'
 import { sfx } from '../lib/sfx.js'
 import Result from '../components/Result.vue'
 
@@ -14,6 +15,7 @@ const LANES = 4
 
 const items = computed(() => unitItems(props.module, props.unit))
 const state = ref('ready') // ready | playing | done
+const reward = ref(null)
 const target = ref(null)
 const bubbles = ref([])
 const score = ref(0)
@@ -58,7 +60,7 @@ function finish() {
   stop()
   state.value = 'done'
   sfx.win()
-  recordStars(props.module, props.unit, 'bubbles', stars.value)
+  reward.value = finishGame(props.module, props.unit, 'bubbles', stars.value)
 }
 
 function nextTarget() {
@@ -93,11 +95,13 @@ function remove(b) {
   bubbles.value = bubbles.value.filter((x) => x.key !== b.key)
 }
 
-function tap(b) {
+function tap(b, e) {
   if (b.popped || state.value !== 'playing') return
   if (b.item.id === target.value.id) {
     b.popped = true
     sfx.pop()
+    sparkle(e?.currentTarget)
+    markCorrect(b.item)
     score.value++
     setTimeout(() => remove(b), 300)
     nextTarget()
@@ -116,7 +120,7 @@ onBeforeUnmount(stop)
   <section class="game bubbles">
     <router-link :to="`/u/${module}/${unit}`" class="back">← 返回</router-link>
 
-    <Result v-if="state === 'done'" :stars="stars" @again="start" :back="`/u/${module}/${unit}`">
+    <Result v-if="state === 'done'" :stars="stars" :reward="reward" @again="start" :back="`/u/${module}/${unit}`">
       戳中了 {{ score }} 个泡泡
     </Result>
 
@@ -133,14 +137,14 @@ onBeforeUnmount(stop)
         <button class="hud-play" @click="speakItem(target)">🔊</button>
         <span class="hud-pill">🫧 {{ score }}</span>
       </div>
-      <div class="bubble-field">
+      <div class="bubble-field" data-quiet>
         <button
           v-for="b in bubbles"
           :key="b.key"
           class="bubble"
           :class="{ popped: b.popped }"
           :style="{ left: b.x + '%', animationDuration: b.dur + 's' }"
-          @pointerdown.prevent="tap(b)"
+          @pointerdown.prevent="tap(b, $event)"
           @animationend.self="!b.popped && remove(b)"
         >
           <span class="bubble-inner" :class="{ wrong: b.wrong }">

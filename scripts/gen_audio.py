@@ -21,6 +21,14 @@ COMMON = {
     "great": "Great job!",
     "good": "Good!",
     "try-again": "Try again.",
+    "good-morning": "Good morning!",
+    "good-afternoon": "Good afternoon!",
+    "good-evening": "Good evening!",
+    "welcome-back": "Welcome back!",
+    "well-done": "Well done!",
+    "amazing": "Amazing!",
+    "lets-play": "Let's play!",
+    "keep-trying": "Keep trying!",
 }
 
 

@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import { imageUrl, unitItems, distractors, shuffle, canConfuse } from '../lib/content.js'
 import { speak, speakItem } from '../lib/speech.js'
-import { recordStars } from '../lib/progress.js'
+import { finishGame, markCorrect } from '../lib/rewards.js'
 import { sfx } from '../lib/sfx.js'
 import Result from '../components/Result.vue'
 
@@ -19,6 +19,7 @@ const shaking = ref(null)
 const leaving = ref(false)
 const mistakes = ref(0)
 const finished = ref(false)
+const reward = ref(null)
 
 const round = computed(() => rounds.value[ri.value])
 const stars = computed(() => (mistakes.value === 0 ? 3 : mistakes.value <= 2 ? 2 : 1))
@@ -60,6 +61,7 @@ async function choose(item) {
   const expect = round.value.seq[loaded.value.length]
   if (item.id === expect.id) {
     sfx.ding()
+    markCorrect(item)
     loaded.value.push(item)
     if (loaded.value.length === round.value.seq.length) {
       leaving.value = true
@@ -87,7 +89,7 @@ function next() {
   } else {
     finished.value = true
     sfx.win()
-    recordStars(props.module, props.unit, 'train', stars.value)
+    reward.value = finishGame(props.module, props.unit, 'train', stars.value)
   }
 }
 
@@ -97,7 +99,7 @@ onMounted(build)
 <template>
   <section class="game train">
     <router-link :to="`/u/${module}/${unit}`" class="back">← 返回</router-link>
-    <Result v-if="finished" :stars="stars" @again="build" :back="`/u/${module}/${unit}`" />
+    <Result v-if="finished" :stars="stars" :reward="reward" @again="build" :back="`/u/${module}/${unit}`" />
     <template v-else-if="round">
       <div class="progress-dots">
         <span v-for="(x, i) in rounds" :key="i" :class="{ on: i < ri, cur: i === ri }"></span>
@@ -120,7 +122,7 @@ onMounted(build)
 
       <button class="hud-play" :disabled="busy" @click="announce">🔊</button>
 
-      <div class="choices">
+      <div class="choices" data-quiet>
         <button
           v-for="c in round.choices"
           :key="c.id"

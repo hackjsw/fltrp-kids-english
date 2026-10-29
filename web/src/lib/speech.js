@@ -9,6 +9,14 @@ const COMMON_AUDIO = {
   'Great!': 'great',
   'Good!': 'good',
   'Try again.': 'try-again',
+  'Good morning!': 'good-morning',
+  'Good afternoon!': 'good-afternoon',
+  'Good evening!': 'good-evening',
+  'Welcome back!': 'welcome-back',
+  'Well done!': 'well-done',
+  'Amazing!': 'amazing',
+  "Let's play!": 'lets-play',
+  'Keep trying!': 'keep-trying',
 }
 
 // 共用一个 Audio，切换时自动停掉上一段；手机浏览器解锁一次播放后后续都能自动播

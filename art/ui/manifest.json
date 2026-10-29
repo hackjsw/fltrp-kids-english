@@ -1,0 +1,248 @@
+{
+  "book": "ui",
+  "note": "界面图：吉祥物装扮、徽章、宝箱、竹子币。transparent=去白底；装扮用 art/mascot.png 当参考",
+  "images": [
+    {
+      "path": "bamboo.png",
+      "item": "bamboo coin",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A single short chunky plush green bamboo stalk segment with two small leaves, cute icon, front view"
+    },
+    {
+      "path": "chest-closed.png",
+      "item": "chest closed",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A cute chunky plush wooden treasure chest, CLOSED, brown wood with golden trim and a golden heart-shaped lock, front view, icon"
+    },
+    {
+      "path": "chest-open.png",
+      "item": "chest open",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A cute chunky plush wooden treasure chest, lid WIDE OPEN, brown wood with golden trim, overflowing with green bamboo stalks and little sparkles, front view, icon"
+    },
+    {
+      "path": "outfits/default.png",
+      "item": "原来的样子",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours, body shape and its blue backpack, standing and waving happily with one paw, full body, centered"
+    },
+    {
+      "path": "outfits/scarf.png",
+      "item": "红围巾",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a cosy red knitted scarf and a matching red woolly hat with a white pompom (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/sunglasses.png",
+      "item": "酷酷墨镜",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing cool round black sunglasses and a bright flower-print summer shirt (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/chef.png",
+      "item": "小厨师",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a tall white chef hat and a white chef jacket, holding a small wooden spoon (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/painter.png",
+      "item": "小画家",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a red beret and a paint-splattered painter smock, holding a paintbrush and a small colour palette (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/football.png",
+      "item": "足球小将",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a blue football jersey and blue shorts, one foot resting on a black and white soccer ball (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/doctor.png",
+      "item": "小医生",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a white doctor coat and a stethoscope around its neck, holding a small red medical bag (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/pirate.png",
+      "item": "小海盗",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a black pirate tricorn hat with gold trim, a red and white striped shirt and a toy wooden sword (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/police.png",
+      "item": "小警察",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a dark blue police uniform and a police cap with a gold badge (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/wizard.png",
+      "item": "小魔法师",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a tall purple wizard hat and a purple cape covered in little yellow stars, holding a star-tipped magic wand (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/astronaut.png",
+      "item": "宇航员",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a white astronaut space suit with a small flag patch, holding a round clear space helmet under one arm (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/knight.png",
+      "item": "小骑士",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing shiny silver felt knight armour, a red cape and a small round blue shield (instead of its blue backpack)"
+    },
+    {
+      "path": "outfits/king.png",
+      "item": "小国王",
+      "digits": false,
+      "refs": [
+        "mascot.png"
+      ],
+      "transparent": true,
+      "prompt": "The little red panda mascot from the reference image, exactly the same face, fur colours and body shape, standing and waving happily with one paw, full body, centered, wearing a golden crown and a red royal cape with white fluffy trim, holding a little golden scepter (instead of its blue backpack)"
+    },
+    {
+      "path": "badges/first.png",
+      "item": "初次上路",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a green ribbon on top, a soft golden rim, and in the middle: a small green sprout with two leaves growing from soil. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/perfect.png",
+      "item": "满分小星星",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a yellow ribbon on top, a soft golden rim, and in the middle: three shiny gold stars in a row. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/streak3.png",
+      "item": "坚持 3 天",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a orange ribbon on top, a soft golden rim, and in the middle: a small cute orange flame with a happy face. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/streak7.png",
+      "item": "坚持 7 天",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a red ribbon on top, a soft golden rim, and in the middle: a big red-orange flame with a happy face and tiny stars around it. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/streak30.png",
+      "item": "坚持 30 天",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a purple ribbon on top, a soft golden rim, and in the middle: a golden trophy cup with a small flame on top. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/sticker50.png",
+      "item": "贴纸达人",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a blue ribbon on top, a soft golden rim, and in the middle: a small stack of colourful round stickers. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/sticker200.png",
+      "item": "贴纸大王",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a teal ribbon on top, a soft golden rim, and in the middle: an open sticker album full of colourful stickers. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/speaker.png",
+      "item": "小小播音员",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a pink ribbon on top, a soft golden rim, and in the middle: a pink microphone with curved sound waves. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/chest10.png",
+      "item": "寻宝高手",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a brown ribbon on top, a soft golden rim, and in the middle: a tiny golden treasure chest overflowing with green bamboo. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/bookclear.png",
+      "item": "一册通关",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a gold ribbon on top, a soft golden rim, and in the middle: an open book glowing with a big gold star above it. Front view, chunky, cute icon"
+    },
+    {
+      "path": "badges/fashion.png",
+      "item": "时尚达人",
+      "digits": false,
+      "refs": [],
+      "transparent": true,
+      "prompt": "A round plush felt medal badge with a lilac ribbon on top, a soft golden rim, and in the middle: a little coat hanger holding a tiny red scarf and a tiny hat. Front view, chunky, cute icon"
+    }
+  ]
+}

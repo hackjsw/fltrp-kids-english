@@ -1,18 +1,31 @@
 <script setup>
 import { computed, watchEffect } from 'vue'
-import { findUnit, preloadModule } from '../lib/content.js'
-import { unitStars } from '../lib/progress.js'
-import { GAMES } from '../lib/games.js'
+import { findUnit, preloadModule, imageUrl } from '../lib/content.js'
+import { unitStars, unitTotal } from '../lib/progress.js'
+import { GAMES, SCORED } from '../lib/games.js'
+import { rememberUnit } from '../lib/rewards.js'
 
 const props = defineProps({ module: String, unit: String })
 const found = computed(() => findUnit(props.module, props.unit))
-watchEffect(() => found.value && preloadModule(props.module))
+watchEffect(() => {
+  if (!found.value) return
+  preloadModule(props.module)
+  rememberUnit(found.value.mod, found.value.unit)
+})
+const total = computed(() => unitTotal(props.module, props.unit, SCORED))
 </script>
 
 <template>
   <section v-if="found" class="unit">
     <router-link to="/" class="back">← 地图</router-link>
-    <h1>{{ found.mod.title }} · {{ found.unit.title }}</h1>
+    <div class="unit-hero">
+      <img :src="imageUrl(found.unit.items[0].image)" alt="" />
+      <div>
+        <small>{{ found.mod.title }} · {{ found.unit.id.replace('u', 'Unit ') }}</small>
+        <h1>{{ found.unit.title }}</h1>
+        <span class="unit-total">⭐ {{ total }} / {{ SCORED.length * 3 }}</span>
+      </div>
+    </div>
     <div class="activity-grid">
       <router-link
         v-for="g in GAMES"

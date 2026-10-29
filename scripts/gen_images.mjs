@@ -56,17 +56,22 @@ async function generateOne(job) {
   const refs = job.refs.map((r) => path.join(ROOT, 'art', r)).filter((f) => fs.existsSync(f))
   // 有参考图时提醒保持人物一致；没有人物的图用一张家具图当材质参考。
   // 不能用吉祥物：动物会照着小熊猫的体型画，还背上它的书包
-  const styleRef = refs.length ? refs : [path.join(ROOT, 'art/1a/m3/chair.png')]
+  // 界面图（徽章、宝箱）可以单独指定材质参考 styleRefs
+  const fallback = (job.styleRefs || ['1a/m3/chair.png']).map((r) => path.join(ROOT, 'art', r))
+  const styleRef = refs.length ? refs : fallback
   // digits：画面主体就是数字或字母，要画清楚；其他图一律不要文字
   const digits = job.digits ? ' The digit or letter shapes must be clearly readable, and no other text.' : ' No text, no letters, no numbers.'
   const refHint = refs.length
     ? 'Keep the characters exactly as in the reference images.'
     : 'Use the reference image only for its soft plush material and lighting; do not copy its subject, shape or accessories.'
-  const prompt = `${job.prompt}. ${refHint} ${style.style}${digits}`
+  // transparent：界面图要叠在彩色背景上，去掉白底
+  const styleText = job.transparent ? style.style.replace('plain pure white background', 'transparent background') : style.style
+  const prompt = `${job.prompt}. ${refHint} ${styleText}${digits}`
   let result = await call('generate_image', {
     prompt,
     size: style.size,
     reference_images: styleRef.slice(0, 4).map(toDataUrl),
+    ...(job.transparent ? { background: 'transparent' } : {}),
   })
   for (let k = 0; k < 30; k++) {
     const data = imageData(result)

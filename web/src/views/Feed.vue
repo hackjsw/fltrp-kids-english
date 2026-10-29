@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import { imageUrl, unitItems, moduleItems, distractors, shuffle } from '../lib/content.js'
 import { speak, speakItem } from '../lib/speech.js'
-import { recordStars } from '../lib/progress.js'
+import { finishGame, markCorrect } from '../lib/rewards.js'
 import { sfx } from '../lib/sfx.js'
 import Result from '../components/Result.vue'
 
@@ -14,6 +14,9 @@ const rounds = ref([])
 const ri = ref(0)
 const mistakes = ref(0)
 const finished = ref(false)
+const reward = ref(null)
+// 这一轮是否喂错过；第一次就喂对才算答对
+let missed = false
 const mood = ref('hungry') // hungry | chomp | no
 const eaten = ref(null)
 
@@ -82,10 +85,12 @@ async function feed(item) {
     mood.value = 'chomp'
     eaten.value = item.id
     sfx.chomp()
+    if (!missed) markCorrect(item)
     await speakItem(item)
     setTimeout(next, 600)
   } else {
     mistakes.value++
+    missed = true
     mood.value = 'no'
     sfx.buzz()
     await speak('Try again.')
@@ -95,6 +100,7 @@ async function feed(item) {
 }
 
 function next() {
+  missed = false
   eaten.value = null
   mood.value = 'hungry'
   if (ri.value + 1 < rounds.value.length) {
@@ -103,7 +109,7 @@ function next() {
   } else {
     finished.value = true
     sfx.win()
-    recordStars(props.module, props.unit, 'feed', stars.value)
+    reward.value = finishGame(props.module, props.unit, 'feed', stars.value)
   }
 }
 
@@ -119,7 +125,7 @@ onMounted(build)
 <template>
   <section class="game feed" @pointermove="onMove" @pointerup="onUp" @pointercancel="drag = null">
     <router-link :to="`/u/${module}/${unit}`" class="back">← 返回</router-link>
-    <Result v-if="finished" :stars="stars" @again="build" :back="`/u/${module}/${unit}`" />
+    <Result v-if="finished" :stars="stars" :reward="reward" @again="build" :back="`/u/${module}/${unit}`" />
     <template v-else-if="round">
       <div class="progress-dots">
         <span v-for="(x, i) in rounds" :key="i" :class="{ on: i < ri, cur: i === ri }"></span>
@@ -133,7 +139,7 @@ onMounted(build)
         <p class="feed-hint">把听到的图片拖给小熊猫</p>
       </div>
 
-      <div class="foods">
+      <div class="foods" data-quiet>
         <button
           v-for="f in round.foods"
           :key="f.id"

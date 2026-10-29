@@ -2,7 +2,9 @@
 import { computed, onMounted, ref } from 'vue'
 import { findUnit, imageUrl, moduleItems, shuffle, distractors } from '../lib/content.js'
 import { speak, speakItem } from '../lib/speech.js'
-import { recordStars } from '../lib/progress.js'
+import { finishGame, markCorrect } from '../lib/rewards.js'
+import { sfx } from '../lib/sfx.js'
+import { sparkle } from '../lib/fx.js'
 import Result from '../components/Result.vue'
 
 const props = defineProps({ module: String, unit: String })
@@ -13,6 +15,8 @@ const qi = ref(0)
 const picked = ref(null)
 const mistakes = ref(0)
 const finished = ref(false)
+const reward = ref(null)
+const missed = ref(false)
 
 const q = computed(() => questions.value[qi.value])
 
@@ -38,29 +42,35 @@ function play() {
   if (q.value) speakItem(q.value.target)
 }
 
-async function choose(opt) {
+async function choose(opt, e) {
   if (picked.value?.correct) return
   const correct = opt.id === q.value.target.id
   picked.value = { id: opt.id, correct }
   if (!correct) {
     mistakes.value++
+    missed.value = true
+    sfx.buzz()
     await speak('Try again.')
     picked.value = null
     play()
     return
   }
+  sfx.ding()
+  sparkle(e?.currentTarget)
+  if (!missed.value) markCorrect(q.value.target)
   await speakItem(q.value.target)
   setTimeout(next, 500)
 }
 
 function next() {
   picked.value = null
+  missed.value = false
   if (qi.value + 1 < questions.value.length) {
     qi.value++
     play()
   } else {
     finished.value = true
-    recordStars(props.module, props.unit, 'listen', stars.value)
+    reward.value = finishGame(props.module, props.unit, 'listen', stars.value)
   }
 }
 
@@ -72,19 +82,19 @@ onMounted(build)
 <template>
   <section class="listen">
     <router-link :to="`/u/${module}/${unit}`" class="back">← 返回</router-link>
-    <Result v-if="finished" :stars="stars" @again="build" :back="`/u/${module}/${unit}`" />
+    <Result v-if="finished" :stars="stars" :reward="reward" @again="build" :back="`/u/${module}/${unit}`" />
     <template v-else-if="q">
       <div class="progress-dots">
         <span v-for="(x, i) in questions" :key="i" :class="{ on: i < qi, cur: i === qi }"></span>
       </div>
       <button class="play-btn" @click="play">🔊</button>
-      <div class="options">
+      <div class="options" data-quiet>
         <button
           v-for="opt in q.options"
           :key="opt.id"
           class="option"
           :class="{ right: picked?.id === opt.id && picked.correct, wrong: picked?.id === opt.id && !picked.correct }"
-          @click="choose(opt)"
+          @click="choose(opt, $event)"
         >
           <img :src="imageUrl(opt.image)" :alt="''" />
         </button>

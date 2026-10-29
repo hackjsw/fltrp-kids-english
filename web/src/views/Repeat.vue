@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import { findUnit, imageUrl } from '../lib/content.js'
 import { speak, speakItem, listen, canRecognize, scoreReading } from '../lib/speech.js'
-import { recordStars } from '../lib/progress.js'
+import { finishGame, markCorrect, markRepeat } from '../lib/rewards.js'
 import Result from '../components/Result.vue'
 
 const props = defineProps({ module: String, unit: String })
@@ -15,6 +15,7 @@ const state = ref('idle')
 const result = ref(null)
 const scores = ref([])
 const finished = ref(false)
+const reward = ref(null)
 const hint = ref('')
 
 // 不支持识别时：录音回放 + 孩子/家长自评
@@ -86,13 +87,16 @@ function selfRate(stars) {
 }
 
 function accept() {
-  scores.value.push(result.value?.stars || 0)
+  const s = result.value?.stars || 0
+  scores.value.push(s)
+  markRepeat()
+  if (s >= 2) markCorrect(item.value)
   if (index.value + 1 < items.value.length) {
     index.value++
     nextItem()
   } else {
     finished.value = true
-    recordStars(props.module, props.unit, 'repeat', totalStars.value)
+    reward.value = finishGame(props.module, props.unit, 'repeat', totalStars.value)
   }
 }
 
@@ -107,7 +111,7 @@ onMounted(reset)
 <template>
   <section class="repeat">
     <router-link :to="`/u/${module}/${unit}`" class="back">← 返回</router-link>
-    <Result v-if="finished" :stars="totalStars" @again="reset" :back="`/u/${module}/${unit}`" />
+    <Result v-if="finished" :stars="totalStars" :reward="reward" @again="reset" :back="`/u/${module}/${unit}`" />
     <template v-else-if="item">
       <div class="progress-dots">
         <span v-for="(x, i) in items" :key="i" :class="{ on: i < index, cur: i === index }"></span>
