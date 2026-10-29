@@ -1,8 +1,11 @@
 <script setup>
 import { computed, onBeforeUnmount, ref } from 'vue'
 import { imageUrl, unitItems } from '../lib/content.js'
-import { speakItem } from '../lib/speech.js'
+import { useAudio } from '../lib/useAudio.js'
+import ReplayButton from '../components/ReplayButton.vue'
 import { audioCtx } from '../lib/sfx.js'
+
+const { speakItem, stopSpeech, isActive } = useAudio()
 
 const props = defineProps({ module: String, unit: String })
 
@@ -11,9 +14,10 @@ const index = ref(0)
 const item = computed(() => items.value[index.value])
 
 const MAX_MS = 5000
-const state = ref('idle') // idle | recording | ready
+const state = ref('idle') // idle | requesting | recording | processing | ready
 const hint = ref('')
 const playing = ref(null)
+const lastVoice = ref(null)
 let buffer = null
 let source = null
 let recorder = null
@@ -30,37 +34,55 @@ const VOICES = [
 
 async function record() {
   if (state.value === 'recording') return stopRec()
+  if (state.value === 'requesting' || state.value === 'processing') return
   hint.value = ''
   stopPlay()
+  stopSpeech()
+  state.value = 'requesting'
   try {
     stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+    if (!isActive()) return stream.getTracks().forEach((t) => t.stop())
   } catch {
+    state.value = 'idle'
     hint.value = '需要允许使用麦克风（手机要用 https 地址打开）'
     return
   }
-  const chunks = []
-  recorder = new MediaRecorder(stream)
-  recorder.ondataavailable = (e) => chunks.push(e.data)
-  recorder.onstop = async () => {
-    stream.getTracks().forEach((t) => t.stop())
-    try {
-      const data = await new Blob(chunks).arrayBuffer()
-      buffer = await audioCtx().decodeAudioData(data)
-      state.value = 'ready'
-      play(VOICES[0])
-    } catch {
-      state.value = 'idle'
-      hint.value = '没录到声音，再试一次'
+  try {
+    const chunks = []
+    recorder = new MediaRecorder(stream)
+    recorder.ondataavailable = (e) => chunks.push(e.data)
+    recorder.onstop = async () => {
+      stream.getTracks().forEach((t) => t.stop())
+      if (!isActive()) return
+      state.value = 'processing'
+      try {
+        const data = await new Blob(chunks).arrayBuffer()
+        buffer = await audioCtx().decodeAudioData(data)
+        if (!isActive()) return
+        state.value = 'ready'
+        play(VOICES[0])
+      } catch {
+        if (!isActive()) return
+        state.value = 'idle'
+        hint.value = '没录到声音，再试一次'
+      }
     }
+    recorder.start()
+    state.value = 'recording'
+    stopTimer = setTimeout(stopRec, MAX_MS)
+  } catch {
+    stream?.getTracks().forEach((t) => t.stop())
+    state.value = 'idle'
+    hint.value = '当前设备无法开始录音，请换一个支持录音的浏览器'
   }
-  recorder.start()
-  state.value = 'recording'
-  stopTimer = setTimeout(stopRec, MAX_MS)
 }
 
 function stopRec() {
   clearTimeout(stopTimer)
-  if (recorder?.state === 'recording') recorder.stop()
+  if (recorder?.state === 'recording') {
+    state.value = 'processing'
+    recorder.stop()
+  }
 }
 
 function stopPlay() {
@@ -72,8 +94,10 @@ function stopPlay() {
 }
 
 function play(v) {
-  if (!buffer) return
+  if (!buffer || !isActive()) return
+  stopSpeech()
   stopPlay()
+  lastVoice.value = v
   const ac = audioCtx()
   source = ac.createBufferSource()
   source.buffer = buffer
@@ -102,15 +126,24 @@ function play(v) {
   s.start()
 }
 
-function go(step) {
+function playModel() {
+  if (state.value === 'recording' || state.value === 'requesting' || state.value === 'processing') return
   stopPlay()
-  buffer = null
-  state.value = 'idle'
-  index.value = (index.value + step + items.value.length) % items.value.length
   speakItem(item.value)
 }
 
+function go(step) {
+  if (state.value === 'recording' || state.value === 'requesting' || state.value === 'processing') return
+  stopPlay()
+  buffer = null
+  state.value = 'idle'
+  lastVoice.value = null
+  index.value = (index.value + step + items.value.length) % items.value.length
+  playModel()
+}
+
 onBeforeUnmount(() => {
+  if (recorder) recorder.onstop = null
   stopRec()
   stopPlay()
   stream?.getTracks().forEach((t) => t.stop())
@@ -121,15 +154,15 @@ onBeforeUnmount(() => {
   <section v-if="item" class="game voice">
     <router-link :to="`/u/${module}/${unit}`" class="back">← 返回</router-link>
 
-    <div class="card small" @click="speakItem(item)">
+    <div class="card small" @click="playModel">
       <img :src="imageUrl(item.image)" :alt="item.text" />
       <div class="card-text">{{ item.text }}</div>
     </div>
 
     <div class="repeat-actions">
-      <button class="big-btn ghost" @click="speakItem(item)">🔊 听</button>
-      <button class="mic-btn" :class="{ on: state === 'recording' }" @click="record">
-        {{ state === 'recording' ? '读完点我' : '🎤 读' }}
+      <ReplayButton label="重听示范" :disabled="state === 'recording' || state === 'requesting' || state === 'processing'" @click="playModel" />
+      <button class="mic-btn" :class="{ on: state === 'recording' }" :disabled="state === 'requesting' || state === 'processing'" @click="record">
+        {{ state === 'recording' ? '读完点我' : state === 'requesting' || state === 'processing' ? '稍等…' : '🎤 读' }}
       </button>
     </div>
     <p v-if="hint" class="hint">{{ hint }}</p>
@@ -145,13 +178,16 @@ onBeforeUnmount(() => {
       >
         <img :src="v.img" alt="" draggable="false" />
         <span>{{ v.name }}</span>
+        <small>🔊 重听</small>
       </button>
     </div>
 
+    <ReplayButton v-if="state === 'ready' && lastVoice" class="voice-replay" :label="'重听' + lastVoice.name" @click="play(lastVoice)" />
+
     <div class="pager">
-      <button class="big-btn" @click="go(-1)">◀</button>
+      <button class="big-btn" :disabled="state === 'recording' || state === 'requesting' || state === 'processing'" @click="go(-1)">◀</button>
       <span>{{ index + 1 }} / {{ items.length }}</span>
-      <button class="big-btn" @click="go(1)">▶</button>
+      <button class="big-btn" :disabled="state === 'recording' || state === 'requesting' || state === 'processing'" @click="go(1)">▶</button>
     </div>
   </section>
 </template>

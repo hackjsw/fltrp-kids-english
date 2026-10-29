@@ -1,10 +1,13 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
 import { imageUrl, unitItems, moduleItems, distractors, shuffle } from '../lib/content.js'
-import { speak, speakItem } from '../lib/speech.js'
+import { useAudio } from '../lib/useAudio.js'
+import ReplayButton from '../components/ReplayButton.vue'
 import { finishGame, markCorrect } from '../lib/rewards.js'
 import { sfx } from '../lib/sfx.js'
 import Result from '../components/Result.vue'
+
+const { speak, speakItem, wait } = useAudio()
 
 const props = defineProps({ module: String, unit: String })
 
@@ -15,6 +18,7 @@ const ri = ref(0)
 const mistakes = ref(0)
 const finished = ref(false)
 const reward = ref(null)
+const hadFeedback = ref(false)
 // 这一轮是否喂错过；第一次就喂对才算答对
 let missed = false
 const mood = ref('hungry') // hungry | chomp | no
@@ -38,18 +42,21 @@ function build() {
     return { target: t, foods: shuffle([t, ...others]) }
   })
   ri.value = 0
+  hadFeedback.value = false
   mistakes.value = 0
   finished.value = false
   mood.value = 'hungry'
-  setTimeout(play, 400)
+  missed = false
+  eaten.value = null
+  wait(400).then((active) => active && play())
 }
 
 function play() {
-  if (round.value) speakItem(round.value.target)
+  if (round.value && mood.value === 'hungry' && !finished.value) speakItem(round.value.target)
 }
 
 function onDown(e, item) {
-  if (mood.value === 'chomp') return
+  if (mood.value !== 'hungry' || finished.value) return
   const el = e.currentTarget
   el.setPointerCapture(e.pointerId)
   const r = el.getBoundingClientRect()
@@ -80,26 +87,28 @@ function onUp(e) {
 }
 
 async function feed(item) {
-  if (mood.value === 'chomp') return
+  if (mood.value !== 'hungry' || finished.value) return
   if (item.id === round.value.target.id) {
     mood.value = 'chomp'
     eaten.value = item.id
     sfx.chomp()
     if (!missed) markCorrect(item)
-    await speakItem(item)
-    setTimeout(next, 600)
+    if (await speakItem(item) === 'cancelled') return
+    if (await wait(600)) next()
   } else {
+    hadFeedback.value = true
     mistakes.value++
     missed = true
     mood.value = 'no'
     sfx.buzz()
-    await speak('Try again.')
+    if (await speak('Try again.') === 'cancelled') return
     mood.value = 'hungry'
     play()
   }
 }
 
 function next() {
+  hadFeedback.value = false
   missed = false
   eaten.value = null
   mood.value = 'hungry'
@@ -132,13 +141,14 @@ onMounted(build)
       </div>
 
       <div class="panda-zone">
-        <button class="hud-play" @click="play">🔊</button>
+        <ReplayButton class="feed-replay" label="重听题目" :disabled="mood !== 'hungry'" @click="play" />
         <div ref="mouth" class="panda" :class="[mood, { target: drag && moved(drag) && overMouth(drag.x, drag.y) }]">
           <img :src="mood === 'chomp' ? '/images/ui/mascot-happy.webp' : '/images/ui/mascot-hungry.webp'" alt="" draggable="false" />
         </div>
         <p class="feed-hint">把听到的图片拖给小熊猫</p>
       </div>
 
+      <ReplayButton v-if="hadFeedback" class="feedback-replay" label="重听提示" :disabled="mood !== 'hungry'" @click="speak('Try again.')" />
       <div class="foods" data-quiet>
         <button
           v-for="f in round.foods"

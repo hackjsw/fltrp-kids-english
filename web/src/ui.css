@@ -331,3 +331,16 @@ main.with-tabs { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
   .grade-card b { font-size: 17px; }
 }
 @media (min-width: 700px) { .grade-grid { grid-template-columns: repeat(6, 1fr); } }
+
+/* 重听只播声音，不触发翻卡、答题或领取奖励 */
+.card-tools { display: flex; justify-content: center; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
+.card-tools .flip-btn { margin-top: 0; min-height: 44px; }
+.panda-zone .feed-replay { align-self: flex-start; }
+.sticker-replay { color: #245da1; font-size: 12px; font-weight: 800; margin-top: auto; }
+.bubble-say .replay-button { align-self: flex-start; margin-top: 8px; }
+.voice-btn small { color: #245da1; font-size: 13px; }
+.recording-audio { max-width: 100%; }
+.result-actions { flex-wrap: wrap; justify-content: center; }
+
+.voice-replay { margin-top: 18px; }
+.feedback-replay { margin: 10px 0; }

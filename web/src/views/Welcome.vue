@@ -5,8 +5,11 @@ import { useRouter } from 'vue-router'
 import { allUnits, imageUrl, bookId, setBook, pickGrade, BOOKS, GRADES, gradeOf, termOf } from '../lib/content.js'
 import { bookStars } from '../lib/progress.js'
 import { rewards, outfit, streak, stickerCount, studiedToday, ensureDaily } from '../lib/rewards.js'
-import { speak } from '../lib/speech.js'
+import { useAudio } from '../lib/useAudio.js'
+import ReplayButton from '../components/ReplayButton.vue'
 import QuestCard from '../components/QuestCard.vue'
+
+const { speak } = useAudio()
 
 const router = useRouter()
 ensureDaily()
@@ -68,13 +71,14 @@ function openGrade(g) {
 <template>
   <section class="welcome">
     <div class="hero">
-      <button class="hero-mascot" :class="{ jump }" @click="hello" @animationend="jump = false">
+      <button class="hero-mascot" :class="{ jump }" aria-label="重听小熊猫问候" data-quiet @click="hello" @animationend="jump = false">
         <img :src="outfit.img" alt="小熊猫" />
       </button>
       <div class="hero-side">
-        <div class="bubble-say" @click="hello">
+        <div class="bubble-say">
           <b>{{ greeting.en }}</b>
           <span>{{ greeting.cn }}</span>
+          <ReplayButton label="重听问候" @click="hello" />
         </div>
         <div class="hero-chips">
           <span class="chip">🔥 {{ streak }} 天</span>

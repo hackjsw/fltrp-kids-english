@@ -2,9 +2,12 @@
 // 结算页：星星一颗颗蹦出来，竹子飞进顶栏，满分撒彩纸
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { outfit, landBamboo, settleBamboo, events } from '../lib/rewards.js'
-import { speak } from '../lib/speech.js'
+import { useAudio } from '../lib/useAudio.js'
+import ReplayButton from './ReplayButton.vue'
 import { sfx } from '../lib/sfx.js'
 import { confetti, flyTo } from '../lib/fx.js'
+
+const { speak } = useAudio()
 
 const props = defineProps({
   stars: Number,
@@ -21,6 +24,12 @@ const hero = ref(null)
 const timers = []
 const later = (fn, ms) => timers.push(setTimeout(fn, ms))
 
+let praiseTimer
+function replayPraise() {
+  clearTimeout(praiseTimer)
+  speak(praise)
+}
+
 const praise = props.stars === 3 ? 'Amazing!' : props.stars === 2 ? 'Well done!' : props.stars === 1 ? 'Good!' : 'Keep trying!'
 
 onMounted(() => {
@@ -32,7 +41,8 @@ onMounted(() => {
     }, 350 + i * 380)
   }
   const afterStars = 350 + props.stars * 380
-  later(() => speak(praise), afterStars)
+  praiseTimer = setTimeout(replayPraise, afterStars)
+  timers.push(praiseTimer)
   if (props.stars === 3) later(() => confetti({ from: hero.value }), afterStars)
 
   const n = props.reward?.bamboo || 0
@@ -71,6 +81,7 @@ onBeforeUnmount(() => {
       <span v-for="i in 3" :key="i" :class="{ on: i <= shown }">★</span>
     </div>
     <p>{{ praise }}</p>
+    <ReplayButton label="重听鼓励" @click="replayPraise" />
     <div class="result-note"><slot /></div>
     <div class="reward-slot">
       <Transition name="pop">

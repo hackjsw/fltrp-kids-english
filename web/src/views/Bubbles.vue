@@ -1,11 +1,14 @@
 <script setup>
 import { computed, onBeforeUnmount, ref } from 'vue'
 import { imageUrl, unitItems, distractors } from '../lib/content.js'
-import { speakItem } from '../lib/speech.js'
+import { useAudio } from '../lib/useAudio.js'
+import ReplayButton from '../components/ReplayButton.vue'
 import { finishGame, markCorrect } from '../lib/rewards.js'
 import { sparkle } from '../lib/fx.js'
 import { sfx } from '../lib/sfx.js'
 import Result from '../components/Result.vue'
+
+const { speakItem, stopSpeech } = useAudio()
 
 const props = defineProps({ module: String, unit: String })
 
@@ -52,6 +55,7 @@ function start() {
 }
 
 function stop() {
+  stopSpeech()
   clearInterval(spawnTimer)
   clearInterval(clockTimer)
 }
@@ -134,7 +138,7 @@ onBeforeUnmount(stop)
     <template v-else>
       <div class="game-hud">
         <span class="hud-pill">⏱ {{ timeLeft }}</span>
-        <button class="hud-play" @click="speakItem(target)">🔊</button>
+        <ReplayButton @click="speakItem(target)" />
         <span class="hud-pill">🫧 {{ score }}</span>
       </div>
       <div class="bubble-field" data-quiet>

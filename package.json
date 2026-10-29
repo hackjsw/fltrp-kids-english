@@ -7,6 +7,7 @@
     "dev": "vite --host",
     "dev:phone": "node scripts/dev-phone.mjs",
     "build": "vite build",
+    "test": "node --test tests/*.test.js",
     "preview": "vite preview --host",
     "cf:dev": "vite build && wrangler dev",
     "deploy": "vite build && wrangler deploy"

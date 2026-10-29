@@ -1,11 +1,14 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
 import { findUnit, imageUrl, moduleItems, shuffle, distractors } from '../lib/content.js'
-import { speak, speakItem } from '../lib/speech.js'
+import { useAudio } from '../lib/useAudio.js'
+import ReplayButton from '../components/ReplayButton.vue'
 import { finishGame, markCorrect } from '../lib/rewards.js'
 import { sfx } from '../lib/sfx.js'
 import { sparkle } from '../lib/fx.js'
 import Result from '../components/Result.vue'
+
+const { speak, speakItem, wait } = useAudio()
 
 const props = defineProps({ module: String, unit: String })
 
@@ -16,7 +19,9 @@ const picked = ref(null)
 const mistakes = ref(0)
 const finished = ref(false)
 const reward = ref(null)
+const hadFeedback = ref(false)
 const missed = ref(false)
+const busy = ref(false)
 
 const q = computed(() => questions.value[qi.value])
 
@@ -32,25 +37,31 @@ function build() {
     ]),
   }))
   qi.value = 0
+  hadFeedback.value = false
   mistakes.value = 0
   picked.value = null
   finished.value = false
-  setTimeout(play, 400)
+  busy.value = false
+  missed.value = false
+  wait(400).then((active) => active && play())
 }
 
 function play() {
-  if (q.value) speakItem(q.value.target)
+  if (q.value && !busy.value && !finished.value) speakItem(q.value.target)
 }
 
 async function choose(opt, e) {
-  if (picked.value?.correct) return
+  if (busy.value || finished.value) return
+  busy.value = true
   const correct = opt.id === q.value.target.id
   picked.value = { id: opt.id, correct }
   if (!correct) {
+    hadFeedback.value = true
     mistakes.value++
     missed.value = true
     sfx.buzz()
-    await speak('Try again.')
+    if (await speak('Try again.') === 'cancelled') return
+    busy.value = false
     picked.value = null
     play()
     return
@@ -58,11 +69,13 @@ async function choose(opt, e) {
   sfx.ding()
   sparkle(e?.currentTarget)
   if (!missed.value) markCorrect(q.value.target)
-  await speakItem(q.value.target)
-  setTimeout(next, 500)
+  if (await speakItem(q.value.target) === 'cancelled') return
+  if (await wait(500)) next()
 }
 
 function next() {
+  hadFeedback.value = false
+  busy.value = false
   picked.value = null
   missed.value = false
   if (qi.value + 1 < questions.value.length) {
@@ -87,13 +100,15 @@ onMounted(build)
       <div class="progress-dots">
         <span v-for="(x, i) in questions" :key="i" :class="{ on: i < qi, cur: i === qi }"></span>
       </div>
-      <button class="play-btn" @click="play">🔊</button>
+      <ReplayButton class="prominent" label="重听题目" :disabled="busy" @click="play" />
+      <ReplayButton v-if="hadFeedback" class="feedback-replay" label="重听提示" :disabled="busy" @click="speak('Try again.')" />
       <div class="options" data-quiet>
         <button
           v-for="opt in q.options"
           :key="opt.id"
           class="option"
           :class="{ right: picked?.id === opt.id && picked.correct, wrong: picked?.id === opt.id && !picked.correct }"
+          :disabled="busy"
           @click="choose(opt, $event)"
         >
           <img :src="imageUrl(opt.image)" :alt="''" />

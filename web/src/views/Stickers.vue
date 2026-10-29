@@ -3,8 +3,11 @@
 import { computed } from 'vue'
 import { book, bookId, imageUrl } from '../lib/content.js'
 import { rewards, stickerCount, bookStickers, STICKER_AT } from '../lib/rewards.js'
-import { speakItem } from '../lib/speech.js'
+import { useAudio } from '../lib/useAudio.js'
+
 import BookPicker from '../components/BookPicker.vue'
+
+const { speakItem } = useAudio()
 
 const have = (it) => rewards.mastery[`${bookId.value}/${it.id}`] || 0
 const total = computed(() => book.value.modules.reduce((s, m) => s + m.units.reduce((t, u) => t + u.items.length, 0), 0))
@@ -36,10 +39,14 @@ function tap(it) {
             class="sticker"
             :class="{ got: have(it) >= STICKER_AT }"
             :style="{ '--tilt': tilt(it.id) + 'deg' }"
+            :aria-label="have(it) >= STICKER_AT ? '重听 ' + it.text : '尚未收集'"
+            :disabled="have(it) < STICKER_AT"
+            data-quiet
             @click="tap(it)"
           >
             <img :src="imageUrl(it.image)" alt="" loading="lazy" draggable="false" />
             <span v-if="have(it) >= STICKER_AT" class="sticker-text">{{ it.text }}</span>
+            <span v-if="have(it) >= STICKER_AT" class="sticker-replay">🔊 重听</span>
             <span v-else class="sticker-dots">
               <i v-for="k in STICKER_AT" :key="k" :class="{ on: k <= have(it) }"></i>
             </span>

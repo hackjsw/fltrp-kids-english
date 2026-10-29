@@ -1,10 +1,13 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
 import { imageUrl, unitItems, distractors, shuffle, canConfuse } from '../lib/content.js'
-import { speak, speakItem } from '../lib/speech.js'
+import { useAudio } from '../lib/useAudio.js'
+import ReplayButton from '../components/ReplayButton.vue'
 import { finishGame, markCorrect } from '../lib/rewards.js'
 import { sfx } from '../lib/sfx.js'
 import Result from '../components/Result.vue'
+
+const { speak, speakItem, wait, isActive } = useAudio()
 
 const props = defineProps({ module: String, unit: String })
 
@@ -20,6 +23,7 @@ const leaving = ref(false)
 const mistakes = ref(0)
 const finished = ref(false)
 const reward = ref(null)
+const hadFeedback = ref(false)
 
 const round = computed(() => rounds.value[ri.value])
 const stars = computed(() => (mistakes.value === 0 ? 3 : mistakes.value <= 2 ? 2 : 1))
@@ -33,19 +37,23 @@ function build() {
     return { seq: clean, choices: shuffle([...clean, ...distractors(clean, items, 5 - clean.length)]) }
   })
   ri.value = 0
+  hadFeedback.value = false
   mistakes.value = 0
   finished.value = false
   startRound()
 }
 
-const wait = (ms) => new Promise((r) => setTimeout(r, ms))
+let announcement = 0
 
 async function announce() {
+  if (leaving.value || finished.value) return
+  const run = ++announcement
+  const seq = [...round.value.seq]
   busy.value = true
-  await wait(400)
-  for (const it of round.value.seq) {
-    await speakItem(it)
-    await wait(350)
+  if (!await wait(400) || run !== announcement) return
+  for (const it of seq) {
+    if (await speakItem(it) === 'cancelled' || run !== announcement) return
+    if (!await wait(350) || run !== announcement) return
   }
   busy.value = false
 }
@@ -66,16 +74,16 @@ async function choose(item) {
     if (loaded.value.length === round.value.seq.length) {
       leaving.value = true
       sfx.toot()
-      await wait(1600)
-      next()
+      if (await wait(1600)) next()
     }
   } else {
+    hadFeedback.value = true
     mistakes.value++
     sfx.buzz()
     shaking.value = item.id
-    setTimeout(() => (shaking.value = null), 400)
+    wait(400).then((active) => active && (shaking.value = null))
     busy.value = true
-    await speak('Try again.')
+    if (await speak('Try again.') === 'cancelled' || !isActive()) return
     // 清空重来，按顺序再报一遍
     loaded.value = []
     await announce()
@@ -83,6 +91,7 @@ async function choose(item) {
 }
 
 function next() {
+  hadFeedback.value = false
   if (ri.value + 1 < rounds.value.length) {
     ri.value++
     startRound()
@@ -120,8 +129,9 @@ onMounted(build)
         <div class="rail"></div>
       </div>
 
-      <button class="hud-play" :disabled="busy" @click="announce">🔊</button>
+      <ReplayButton label="重听整列" :disabled="busy || leaving" @click="announce" />
 
+      <ReplayButton v-if="hadFeedback" class="feedback-replay" label="重听提示" :disabled="busy || leaving" @click="speak('Try again.')" />
       <div class="choices" data-quiet>
         <button
           v-for="c in round.choices"

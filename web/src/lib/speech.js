@@ -1,4 +1,5 @@
 import { audioUrl } from './content.js'
+import { audioCache } from './audio-cache.js'
 
 // 发音优先播 scripts/gen_audio.py 生成的 MP3（微软神经语音，自然很多），
 // 文件缺失或播放失败时退回浏览器 speechSynthesis。跟读识别用浏览器 SpeechRecognition。
@@ -26,24 +27,29 @@ const player = typeof Audio !== 'undefined' ? new Audio() : null
 const SILENT = 'data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRBqpAAAAAAD/+xDEAAPAAAGkAAAAIAAANIAAAARMQU1FMy4xMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//sQxDsDwAABpAAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV'
 if (player && typeof window !== 'undefined') {
   const unlock = () => {
-    window.removeEventListener('pointerdown', unlock, true)
-    if (player.src) return
-    player.src = SILENT
+    if (!player.src) player.src = SILENT
     player.play().catch(() => {})
   }
+  player.addEventListener('playing', () => window.removeEventListener('pointerdown', unlock, true), { once: true })
   window.addEventListener('pointerdown', unlock, true)
 }
 
-function playFile(src) {
-  return new Promise((resolve, reject) => {
-    if (!player) return reject(new Error('no audio'))
+let active = null
+let currentBlob = null
+let objectUrl = null
+
+// 取消时也结清上一段 Promise，防止火车报词、答题反馈永远卡在 await。
+export function stopSpeech(owner) {
+  if (owner && active?.owner !== owner) return
+  const previous = active
+  active = null
+  if (player) {
+    player.onended = null
+    player.onerror = null
     player.pause()
-    player.onended = () => resolve()
-    player.onerror = () => reject(new Error('load failed'))
-    player.src = src
-    player.currentTime = 0
-    player.play().catch(reject)
-  })
+  }
+  if ('speechSynthesis' in window) speechSynthesis.cancel()
+  previous?.resolve('cancelled')
 }
 
 let voice = null
@@ -64,44 +70,79 @@ if ('speechSynthesis' in window) {
   speechSynthesis.onvoiceschanged = () => (voice = pickVoice())
 }
 
-function speakTts(text, rate) {
+// 返回 ended / failed / blocked / cancelled；只有 cancelled 需要中断游戏后续流程。
+// 文件无法加载时可退回 TTS；用户主动停止、或浏览器禁止自动播放时不偷偷补播。
+export function speak(text, { src, rate = 0.8, owner } = {}) {
+  stopSpeech()
   return new Promise((resolve) => {
-    if (!('speechSynthesis' in window)) return resolve()
-    speechSynthesis.cancel()
-    const u = new SpeechSynthesisUtterance(text)
-    u.lang = voice?.lang || 'en-US'
-    if (voice) u.voice = voice
-    u.rate = rate
-    u.onend = resolve
-    u.onerror = resolve
-    speechSynthesis.speak(u)
+    const task = { resolve, owner }
+    active = task
+    const current = () => active === task
+    const finish = (status) => {
+      if (!current()) return
+      active = null
+      if (player) {
+        player.onended = null
+        player.onerror = null
+      }
+      resolve(status)
+    }
+    const fallback = () => {
+      if (!current() || task.fallback) return
+      task.fallback = true
+      if (player) {
+        player.onended = null
+        player.onerror = null
+        player.pause()
+      }
+      if (!('speechSynthesis' in window)) return finish('failed')
+      const u = new SpeechSynthesisUtterance(text)
+      u.lang = voice?.lang || 'en-US'
+      if (voice) u.voice = voice
+      u.rate = rate
+      u.onend = () => finish('ended')
+      u.onerror = () => finish('failed')
+      try {
+        speechSynthesis.speak(u)
+      } catch {
+        finish('failed')
+      }
+    }
+    const file = src || (COMMON_AUDIO[text] && `/audio/common/${COMMON_AUDIO[text]}.mp3`)
+    if (!file || !player) return fallback()
+    audioCache.load(file).then((blob) => {
+      if (!current()) return
+      if (currentBlob !== blob) {
+        const previousUrl = objectUrl
+        objectUrl = URL.createObjectURL(blob)
+        player.src = objectUrl
+        currentBlob = blob
+        if (previousUrl) URL.revokeObjectURL(previousUrl)
+      }
+      player.currentTime = 0
+      player.onended = () => finish('ended')
+      player.onerror = fallback
+      player.play().catch((e) => {
+        if (!current()) return
+        if (e.name === 'NotAllowedError') finish('blocked')
+        else fallback()
+      })
+    }).catch(fallback)
   })
 }
 
-// src 不传时按提示语查 common 音频；都没有就用浏览器语音
-export async function speak(text, { src, rate = 0.8 } = {}) {
-  const file = src || (COMMON_AUDIO[text] && `/audio/common/${COMMON_AUDIO[text]}.mp3`)
-  if (file) {
-    try {
-      return await playFile(file)
-    } catch {
-      // 落到下面的 TTS
-    }
-  }
-  return speakTts(text, rate)
-}
-
-export function speakItem(item) {
-  return speak(item.text, { src: audioUrl(item) })
+export function speakItem(item, options) {
+  return speak(item.text, { ...options, src: audioUrl(item) })
 }
 
 const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition
 export const canRecognize = Boolean(Recognition)
 
 // 返回识别出的若干候选文本
-export function listen({ timeoutMs = 6000 } = {}) {
+export function listen({ timeoutMs = 6000, signal } = {}) {
   return new Promise((resolve, reject) => {
     if (!Recognition) return reject(new Error('unsupported'))
+    if (signal?.aborted) return resolve([])
     const rec = new Recognition()
     rec.lang = 'en-US'
     rec.interimResults = false
@@ -111,8 +152,14 @@ export function listen({ timeoutMs = 6000 } = {}) {
       if (done) return
       done = true
       clearTimeout(timer)
+      signal?.removeEventListener('abort', abort)
       fn(v)
     }
+    const abort = () => {
+      finish(resolve, [])
+      rec.abort()
+    }
+    signal?.addEventListener('abort', abort, { once: true })
     const timer = setTimeout(() => {
       rec.stop()
       finish(resolve, [])
@@ -123,7 +170,11 @@ export function listen({ timeoutMs = 6000 } = {}) {
     }
     rec.onerror = (e) => finish(e.error === 'no-speech' ? resolve : reject, e.error === 'no-speech' ? [] : new Error(e.error))
     rec.onend = () => finish(resolve, [])
-    rec.start()
+    try {
+      rec.start()
+    } catch (e) {
+      finish(reject, e)
+    }
   })
 }
 

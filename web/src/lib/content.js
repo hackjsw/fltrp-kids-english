@@ -60,7 +60,7 @@ export function audioUrl(item) {
   return `/audio/${bookId.value}/${item.id}.mp3`
 }
 
-// 进单元时把这个 Module 的图和音频都预取到缓存，答题时切图不用等
+// 图片用整个 Module 做选项池；音频只在播放时加载，不预取还没学到的词句
 const warmed = new Set()
 export function preloadModule(moduleId) {
   const key = `${bookId.value}/${moduleId}`
@@ -69,7 +69,6 @@ export function preloadModule(moduleId) {
   for (const it of moduleItems(moduleId)) {
     const img = new Image()
     img.src = imageUrl(it.image)
-    fetch(audioUrl(it)).catch(() => {})
   }
 }
 export function findUnit(moduleId, unitId) {

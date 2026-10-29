@@ -2,8 +2,11 @@
 // 看图学：点卡片听发音，翻面看中文，左右切换时卡片滑动
 import { computed, onMounted, ref } from 'vue'
 import { findUnit, imageUrl } from '../lib/content.js'
-import { speakItem } from '../lib/speech.js'
+import { useAudio } from '../lib/useAudio.js'
+import ReplayButton from '../components/ReplayButton.vue'
 import { markCard } from '../lib/rewards.js'
+
+const { speakItem } = useAudio()
 
 const props = defineProps({ module: String, unit: String })
 const items = computed(() => findUnit(props.module, props.unit)?.unit.items || [])
@@ -44,13 +47,16 @@ onMounted(() => item.value && show())
             <div class="card face front" @click="speakItem(item)">
               <img :src="imageUrl(item.image)" :alt="item.text" />
               <div class="card-text">{{ item.text }}</div>
-              <button class="flip-btn" @click.stop="flipped = true">🔄 中文</button>
+              <div class="card-tools">
+                <ReplayButton @click.stop="speakItem(item)" />
+                <button class="flip-btn" @click.stop="flipped = true">🔄 中文</button>
+              </div>
             </div>
             <div class="card face back" @click="flipped = false">
               <img :src="imageUrl(item.image)" alt="" class="back-img" />
               <div class="card-cn-big">{{ item.translation }}</div>
               <div class="card-en-small">{{ item.text }}</div>
-              <button class="flip-btn" @click.stop="speakItem(item)">🔊 再听一遍</button>
+              <ReplayButton @click.stop="speakItem(item)" />
             </div>
           </div>
         </div>

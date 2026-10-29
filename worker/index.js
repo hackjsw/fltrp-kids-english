@@ -38,7 +38,11 @@ async function validToken(secret, token) {
 
 function readCookie(req) {
   const m = /(?:^|;\s*)family=([^;]+)/.exec(req.headers.get('Cookie') || '')
-  return m ? decodeURIComponent(m[1]) : ''
+  try {
+    return m ? decodeURIComponent(m[1]) : ''
+  } catch {
+    return ''
+  }
 }
 
 const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
@@ -79,7 +83,8 @@ ${error ? `<p class="err">${esc(error)}</p>` : ''}
     error ? 401 : 200,
   )
 
-// 打包文件名带 hash，可以长期缓存；图和音频改动少，缓存一天；其余（index.html、book.json）每次校验
+// 打包文件名带 hash，可以长期缓存；课本图片和音频缓存 1 天；其余（index.html、book.json）每次校验
+// 免费额度全账号每天 10 万次；浏览器直接复用、不发网络请求时才省下 Worker 调用
 function cacheControl(path) {
   if (path.startsWith('/assets/')) return 'private, max-age=31536000, immutable'
   if (/^\/(images|audio)\//.test(path)) return 'private, max-age=86400'
@@ -89,7 +94,9 @@ function cacheControl(path) {
 async function serve(req, env, path) {
   const res = await env.ASSETS.fetch(req)
   const out = new Response(res.body, res)
-  if (res.ok) out.headers.set('Cache-Control', cacheControl(path))
+  // 304 也要带上我们的缓存头：否则静态资源默认的 max-age=0 会覆盖浏览器里的缓存期，
+  // 之后每次显示图片、播放音频都要回来问一次
+  out.headers.set('Cache-Control', res.ok || res.status === 304 ? cacheControl(path) : 'no-store')
   out.headers.set('X-Content-Type-Options', 'nosniff')
   return out
 }
@@ -125,7 +132,7 @@ export default {
     if (path === '/logout') {
       return new Response(null, {
         status: 303,
-        headers: { Location: '/', 'Set-Cookie': `${COOKIE}=; Max-Age=0; Path=/; HttpOnly; Secure; SameSite=Lax` },
+        headers: { Location: '/', 'Cache-Control': 'no-store', 'Set-Cookie': `${COOKIE}=; Max-Age=0; Path=/; HttpOnly; Secure; SameSite=Lax` },
       })
     }
 
