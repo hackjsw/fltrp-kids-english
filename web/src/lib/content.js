@@ -42,6 +42,12 @@ export function setBook(id) {
   fetchBook(id)
 }
 
+// 换年级时停在同一学期（没有就取该年级第一册）
+export function pickGrade(g) {
+  const same = `${g}${termOf(bookId.value)}`
+  setBook(BOOKS.includes(same) ? same : BOOKS.find((id) => gradeOf(id) === g))
+}
+
 export function loadBook() {
   return fetchBook(bookId.value)
 }

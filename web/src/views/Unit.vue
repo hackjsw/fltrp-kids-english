@@ -17,7 +17,7 @@ const total = computed(() => unitTotal(props.module, props.unit, SCORED))
 
 <template>
   <section v-if="found" class="unit">
-    <router-link to="/" class="back">← 地图</router-link>
+    <router-link to="/map" class="back">← 地图</router-link>
     <div class="unit-hero">
       <img :src="imageUrl(found.unit.items[0].image)" alt="" />
       <div>

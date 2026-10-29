@@ -1,0 +1,16 @@
+// Cloudflare Workers 部署配置：Worker 先跑（检查家庭密码），再返回 dist/ 里的静态文件
+// 家庭密码是 Secret，不写在这里：npx wrangler secret put FAMILY_PASSWORD
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fltrp-kids-english",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  // 自定义域名：rew.de5.net 要托管在部署用的 Cloudflare 账号里
+  "routes": [{ "pattern": "es.rew.de5.net", "custom_domain": true }],
+  "observability": { "enabled": true }
+}

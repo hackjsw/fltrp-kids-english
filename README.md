@@ -36,6 +36,37 @@ npm run dev:phone
 
 学习进度仍保存在各设备浏览器内；HTTP、HTTPS、原电脑开发地址之间不自动互通，建议固定使用 HTTPS 入口。
 
+## 部署到 Cloudflare
+
+网站部署成一个 Cloudflare Worker：`worker/index.js` 先检查家庭密码，通过后返回 `dist/` 里打包好的静态文件。课本词句、单词图和音频都要登录后才能访问。
+
+现在部署在 https://es.rew.de5.net （Cloudflare 账号 leisurelywolf@869669.xyz，Worker 名 `fltrp-kids-english`）。
+
+**本机直接部署**（wrangler 要登录上面的账号：`npx wrangler login`）
+
+```bash
+npm run deploy
+```
+
+改家庭密码：`npx wrangler secret put FAMILY_PASSWORD`，自己在终端里输入。
+
+**改用 GitHub 自动部署（可选，在 Cloudflare 后台）**
+
+1. Workers 和 Pages → 创建 → 导入 Git 存储库，选 `hackjsw/fltrp-kids-english`。
+2. 构建命令填 `npm run build`，部署命令填 `npx wrangler deploy`（默认值就是这两个）。
+3. 部署完成后，在这个 Worker 的 设置 → 变量和机密 里添加机密 `FAMILY_PASSWORD`（家庭密码）。没设置之前网站会显示"还没设置家庭密码"，不会把内容放出去。
+4. 设置 → 域和路由 → 添加自定义域，填你自己的域名。workers.dev 默认域名在国内经常打不开。
+
+之后每次推送到 `main`，Cloudflare 会自动重新构建和部署。
+
+**其他**
+
+- 本地模拟线上环境：在项目根目录建 `.dev.vars`，写一行 `FAMILY_PASSWORD=随便一个测试密码`（这个文件不入库），然后 `npm run cf:dev`，打开 http://127.0.0.1:8787 。
+- 改密码：在后台改 `FAMILY_PASSWORD`，所有设备都要重新登录。
+- 退出登录：访问 `/logout`。
+- 本地 `npm run dev` 不走 Worker，没有密码，家里局域网用还是原来的方式。
+- 跟读识别用的是浏览器自带的语音识别：Chrome 要连谷歌服务器，国内用不了；Edge 用微软的服务，一般能用。
+
 ## 发音
 
 发音是 `scripts/gen_audio.py` 用 edge-tts（微软神经语音，默认美音女孩声 en-US-AnaNeural，语速 -15%）预先生成的 MP3，放在 `content/audio/`。加了新词句后重新运行：

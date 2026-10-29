@@ -1,7 +1,8 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue'
-import Home from './views/Home.vue'
+import Welcome from './views/Welcome.vue'
+import Map from './views/Map.vue'
 import Unit from './views/Unit.vue'
 import Cards from './views/Cards.vue'
 import ListenPick from './views/ListenPick.vue'
@@ -23,7 +24,8 @@ const GAME_VIEWS = { cards: Cards, listen: ListenPick, repeat: Repeat, bubbles: 
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
-    { path: '/', component: Home },
+    { path: '/', component: Welcome },
+    { path: '/map', component: Map },
     { path: '/stickers', component: Stickers },
     { path: '/shop', component: Shop },
     { path: '/me', component: Me },

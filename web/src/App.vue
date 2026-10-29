@@ -12,7 +12,8 @@ const route = useRoute()
 onMounted(loadBook)
 
 const TABS = [
-  { to: '/', icon: '🗺️', name: '闯关' },
+  { to: '/', icon: '🏠', name: '首页' },
+  { to: '/map', icon: '🗺️', name: '闯关' },
   { to: '/stickers', icon: '🏷️', name: '贴纸' },
   { to: '/shop', icon: '👕', name: '衣橱' },
   { to: '/me', icon: '🏅', name: '成就' },

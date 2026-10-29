@@ -7,7 +7,9 @@
     "dev": "vite --host",
     "dev:phone": "node scripts/dev-phone.mjs",
     "build": "vite build",
-    "preview": "vite preview --host"
+    "preview": "vite preview --host",
+    "cf:dev": "vite build && wrangler dev",
+    "deploy": "vite build && wrangler deploy"
   },
   "dependencies": {
     "@fontsource-variable/nunito": "^5.3.0",
@@ -17,6 +19,7 @@
   "devDependencies": {
     "@vitejs/plugin-basic-ssl": "^1.2.0",
     "@vitejs/plugin-vue": "^5.2.1",
-    "vite": "^6.0.7"
+    "vite": "^6.0.7",
+    "wrangler": "^4.154.0"
   }
 }
