@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { afterEach, test } from 'node:test'
-import { openMic, micHint, micState, RECOGNIZER_BROKEN } from '../web/src/lib/mic.js'
+import { openMic, micHint } from '../web/src/lib/mic.js'
 
 const saved = { secure: globalThis.isSecureContext, nav: Object.getOwnPropertyDescriptor(globalThis, 'navigator') }
 function setNavigator(value) {
@@ -51,20 +51,4 @@ test('other mic failures get their own hint and keep the browser error code', ()
   const unknown = micHint(new TypeError('boom'))
   assert.match(unknown.text, /刷新/)
   assert.equal(unknown.code, 'TypeError: boom')
-})
-
-test('micState reads the browser permission and tolerates browsers without the API', async () => {
-  setNavigator({ permissions: { query: async ({ name }) => (assert.equal(name, 'microphone'), { state: 'denied' }) } })
-  assert.equal(await micState(), 'denied')
-  setNavigator({})
-  assert.equal(await micState(), '')
-  setNavigator({ permissions: { query: async () => { throw new TypeError('not a valid permission name') } } })
-  assert.equal(await micState(), '')
-})
-
-test('recognizer errors that mean the service is unusable switch to self-rating', () => {
-  assert.ok(RECOGNIZER_BROKEN.includes('not-allowed'))
-  assert.ok(RECOGNIZER_BROKEN.includes('service-not-allowed'))
-  assert.ok(!RECOGNIZER_BROKEN.includes('no-speech'))
-  assert.ok(!RECOGNIZER_BROKEN.includes('aborted'))
 })

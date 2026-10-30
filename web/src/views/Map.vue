@@ -3,7 +3,7 @@
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { allUnits, imageUrl, bookId } from '../lib/content.js'
 import { unitTotal, bookStars } from '../lib/progress.js'
-import { SCORED, UNLOCK_STARS } from '../lib/games.js'
+import { SCORED, UNLOCK_GAMES, UNLOCK_STARS } from '../lib/games.js'
 import { rewards, outfit } from '../lib/rewards.js'
 import { sfx } from '../lib/sfx.js'
 import BookPicker from '../components/BookPicker.vue'
@@ -18,7 +18,7 @@ const levels = computed(() => {
   return allUnits().map(({ mod, unit }, i) => {
     const stars = unitTotal(mod.id, unit.id, SCORED)
     const open = i === 0 || prevStars >= UNLOCK_STARS
-    prevStars = stars
+    prevStars = unitTotal(mod.id, unit.id, UNLOCK_GAMES)
     return { mod, unit, stars, open, n: i + 1 }
   })
 })

@@ -6,6 +6,7 @@ import ReplayButton from '../components/ReplayButton.vue'
 import Icon from '../components/Icon.vue'
 import { audioCtx } from '../lib/sfx.js'
 import { openMic, micHint } from '../lib/mic.js'
+import { markRecording } from '../lib/rewards.js'
 
 const { speakItem, stopSpeech, isActive } = useAudio()
 
@@ -66,6 +67,7 @@ async function record() {
         buffer = await audioCtx().decodeAudioData(data)
         if (!isActive()) return
         state.value = 'ready'
+        markRecording()
         play(VOICES[0])
       } catch {
         if (!isActive()) return

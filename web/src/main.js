@@ -6,7 +6,7 @@ import Map from './views/Map.vue'
 import Unit from './views/Unit.vue'
 import Cards from './views/Cards.vue'
 import ListenPick from './views/ListenPick.vue'
-import Repeat from './views/Repeat.vue'
+import Memory from './views/Memory.vue'
 import Bubbles from './views/Bubbles.vue'
 import Feed from './views/Feed.vue'
 import Train from './views/Train.vue'
@@ -23,7 +23,7 @@ import './ui.css'
 import './journal.css'
 import './play.css'
 
-const GAME_VIEWS = { cards: Cards, listen: ListenPick, repeat: Repeat, bubbles: Bubbles, feed: Feed, train: Train, order: Order, voice: Voice }
+const GAME_VIEWS = { cards: Cards, listen: ListenPick, bubbles: Bubbles, feed: Feed, train: Train, memory: Memory, order: Order, voice: Voice }
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -35,6 +35,8 @@ const router = createRouter({
     { path: '/me', component: Me },
     { path: '/review', component: Review },
     { path: '/u/:module/:unit', component: Unit, props: true },
+    // 「跟我读」去掉了，旧链接回到单元页
+    { path: '/u/:module/:unit/repeat', redirect: (to) => `/u/${to.params.module}/${to.params.unit}` },
     ...Object.entries(GAME_VIEWS).map(([id, component]) => ({
       path: `/u/:module/:unit/${id}`,
       component,

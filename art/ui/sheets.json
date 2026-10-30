@@ -69,6 +69,18 @@
       ],
       "prompt": "A sprite sheet of 4 separate cute icons in a neat grid of 2 rows by 2 columns. Every icon sits alone in its own cell, centered, all the same size, with wide empty transparent gaps between icons so that no two icons touch or overlap. Each icon is one small soft 3D plush toy object in front view.\nRow 1, left to right: three colorful plain toy building blocks standing in a little row, with no letters on them; a small closed notebook with a red bookmark ribbon and a short pencil lying on it.\nRow 2, left to right: a big shiny golden star with two tiny sparkles next to it; a pair of round reading glasses.\nSoft 3D plush toy render, fluffy felt texture, pastel warm colors, smooth rounded cuddly forms, gentle soft studio lighting, transparent background, no ground shadows, no text, no letters, no numbers, no words, no labels, no grid lines, no frames, no borders.",
       "refs": []
+    },
+    {
+      "path": "sheets/memory-1.png",
+      "size": "1536x1024",
+      "rows": 1,
+      "cols": 2,
+      "names": [
+        "memory",
+        "eye"
+      ],
+      "prompt": "A sprite sheet of 2 separate cute icons side by side in a neat grid of 1 row by 2 columns. Each icon sits alone in its own half, centered, both the same size, with a wide empty transparent gap between them so they do not touch or overlap. Each icon is one small soft 3D plush toy object in front view.\nLeft: two small rounded playing cards leaning on each other, the back card face-down with a little paw print pattern, the front card face-up showing a simple red heart.\nRight: a single big friendly cartoon eye with long eyelashes.\nSoft 3D plush toy render, fluffy felt texture, pastel warm colors, smooth rounded cuddly forms, gentle soft studio lighting, transparent background, no ground shadows, no text, no letters, no numbers, no words, no labels, no grid lines, no frames, no borders.",
+      "refs": []
     }
   ]
 }

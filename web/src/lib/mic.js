@@ -5,15 +5,6 @@ export async function openMic() {
   return navigator.mediaDevices.getUserMedia({ audio: true })
 }
 
-// 浏览器记下的这个网站的麦克风权限：granted / denied / prompt；浏览器不支持查询时返回 ''
-export async function micState() {
-  try {
-    return (await navigator.permissions?.query({ name: 'microphone' }))?.state || ''
-  } catch {
-    return ''
-  }
-}
-
 // NotAllowedError 分两种：浏览器禁止了这个网站（不会再弹窗），和手机系统没给浏览器 App 权限（信息里带 system）
 const SITE_BLOCKED = '浏览器禁止了这个网站用麦克风，所以不再弹窗询问。点地址栏左边的图标 → 权限 → 麦克风 → 允许，再刷新页面'
 const APP_BLOCKED = '手机没给浏览器这个 App 麦克风权限。到手机「设置」里找到这个浏览器，打开麦克风权限，再刷新页面'
@@ -38,6 +29,3 @@ export function micHint(err) {
     code: [name, message].filter(Boolean).join(': '),
   }
 }
-
-// 这些识别错误说明浏览器的语音识别这次用不了（不是没听清），改成录音自己打分
-export const RECOGNIZER_BROKEN = ['not-allowed', 'service-not-allowed', 'language-not-supported', 'audio-capture', 'network']

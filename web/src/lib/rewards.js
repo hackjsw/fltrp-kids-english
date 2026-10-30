@@ -4,7 +4,7 @@ import { computed, reactive, watch } from 'vue'
 import { BADGES, BADGE_BAMBOO, OUTFITS, QUESTS, STREAK_GIFTS } from './catalog.js'
 import { allUnits, bookId } from './content.js'
 import { progress, recordStars, unitStars, unitTotal } from './progress.js'
-import { SCORED, UNLOCK_STARS } from './games.js'
+import { UNLOCK_GAMES, UNLOCK_STARS } from './games.js'
 import { afterMiss, afterHit, dueKeys } from './review.js'
 
 const KEY = 'kids-english-rewards'
@@ -33,13 +33,13 @@ export const rewards = reactive({
   gifts: [], // 已领的连续学习礼物（天数）
   badges: {}, // id: 获得日期
   daily: null, // { day, quests: [{ id, have }], chest: false }
-  stats: { games: 0, perfect: 0, correct: 0, repeats: 0, cards: 0, chests: 0, books: [] },
+  stats: { games: 0, perfect: 0, correct: 0, pairs: 0, recordings: 0, cards: 0, chests: 0, books: [] },
   seenOpen: {}, // 每册已经看过解锁动画的关卡数
   last: null, // 上次学的单元，首页"继续学习"
   review: {}, // 错题本 '3a/lake': { box, due }，见 review.js
   ...saved,
 })
-rewards.stats = { games: 0, perfect: 0, correct: 0, repeats: 0, cards: 0, chests: 0, books: [], ...saved.stats }
+rewards.stats = { games: 0, perfect: 0, correct: 0, pairs: 0, recordings: 0, cards: 0, chests: 0, books: [], ...saved.stats }
 
 // 旧版只在 progress 里记了 lastDay + streak，补成日期列表，连续天数不丢
 if (!saved.days && progress.lastDay && progress.streak) {
@@ -134,10 +134,11 @@ export function ensureDaily() {
   rewards.daily = { day: t, quests: picked.map((q) => ({ id: q.id, have: 0 })), chest: false }
 }
 
+// 已经下线的任务（比如去掉的跟读）跳过，不让当天的任务卡坏掉
 export const dailyQuests = computed(() =>
-  (rewards.daily?.quests || []).map((q) => {
+  (rewards.daily?.quests || []).flatMap((q) => {
     const tpl = QUESTS.find((x) => x.id === q.id)
-    return { ...tpl, have: Math.min(q.have, tpl.goal), done: q.have >= tpl.goal }
+    return tpl ? [{ ...tpl, have: Math.min(q.have, tpl.goal), done: q.have >= tpl.goal }] : []
   }),
 )
 export const chestReady = computed(
@@ -148,7 +149,7 @@ function bumpQuest(stat, n = 1) {
   ensureDaily()
   for (const q of rewards.daily.quests) {
     const tpl = QUESTS.find((x) => x.id === q.id)
-    if (tpl.stat !== stat || q.have >= tpl.goal) continue
+    if (!tpl || tpl.stat !== stat || q.have >= tpl.goal) continue
     q.have += n
     if (q.have >= tpl.goal) {
       notify({ kind: 'toast', icon: tpl.icon, text: `任务完成：${tpl.text}` })
@@ -221,9 +222,17 @@ export function finishReview(right, total) {
   return { stars, bamboo, prev: 0, newBest: false }
 }
 
-export function markRepeat() {
-  rewards.stats.repeats++
-  bumpQuest('repeats')
+// 翻翻乐配上一对
+export function markPair() {
+  rewards.stats.pairs++
+  bumpQuest('pairs')
+}
+
+// 魔法变声录完一次
+export function markRecording() {
+  rewards.stats.recordings++
+  markDay()
+  checkBadges()
 }
 
 export function markCard() {
@@ -233,7 +242,7 @@ export function markCard() {
 }
 
 const bookCleared = (book) =>
-  allUnits().every(({ mod, unit }) => unitTotal(mod.id, unit.id, SCORED, book) >= UNLOCK_STARS)
+  allUnits().every(({ mod, unit }) => unitTotal(mod.id, unit.id, UNLOCK_GAMES, book) >= UNLOCK_STARS)
 
 // 游戏结束：记星、打卡、任务、发竹子。返回给结算页 { bamboo, prev, newBest }
 export function finishGame(moduleId, unitId, activity, stars) {

@@ -60,6 +60,8 @@ test('difficulty follows the grade', () => {
   assert.ok(level(1).bubbles.rise[0] > level(4).bubbles.rise[0])
   assert.ok(level(1).bubbles.max < level(4).bubbles.max)
   assert.ok(level(1).train.plan.every((n) => n <= 3))
+  assert.equal(level(1).pairs, 3)
+  assert.equal(level(6).pairs, 6)
 })
 
 test('sentence ordering only appears from grade 3 with enough sentences', () => {
@@ -69,4 +71,6 @@ test('sentence ordering only appears from grade 3 with enough sentences', () => 
   assert.ok(ids(3, items).includes('order'))
   assert.ok(!ids(3, items.slice(1)).includes('order'))
   assert.equal(ids(1, items).length, 7)
+  assert.ok(ids(1, items).includes('memory'))
+  assert.ok(!ids(1, items).includes('repeat'))
 })

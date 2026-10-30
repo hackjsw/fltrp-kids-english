@@ -88,7 +88,7 @@ const badgeCount = computed(() => Object.keys(rewards.badges).length)
       <div class="stat"><b>{{ progress.totalStars }}</b><span><Icon name="star" /> 星星</span></div>
       <div class="stat"><b>{{ stickerCount }}</b><span><Icon name="album" /> 贴纸</span></div>
       <div class="stat"><b>{{ rewards.stats.games }}</b><span><Icon name="gamepad" /> 游戏</span></div>
-      <div class="stat"><b>{{ rewards.stats.repeats }}</b><span><Icon name="parrot" /> 跟读</span></div>
+      <div class="stat"><b>{{ rewards.stats.pairs }}</b><span><Icon name="memory" /> 配对</span></div>
       <div class="stat"><b>{{ rewards.days.length }}</b><span><Icon name="calendar" /> 学习天数</span></div>
       <div class="stat"><b>{{ rewards.bambooTotal }}</b><span><img src="/images/ui/bamboo.webp" alt="" /> 一共赚到</span></div>
     </div>

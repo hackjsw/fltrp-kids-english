@@ -27,7 +27,8 @@ export const BADGES = [
   { id: 'streak30', name: '坚持 30 天', desc: '连续学习 30 天', test: (c) => c.streak >= 30 },
   { id: 'sticker50', name: '贴纸达人', desc: '收集 50 张贴纸', test: (c) => c.stickers >= 50 },
   { id: 'sticker200', name: '贴纸大王', desc: '收集 200 张贴纸', test: (c) => c.stickers >= 200 },
-  { id: 'speaker', name: '小小播音员', desc: '跟读 50 句', test: (c) => c.repeats >= 50 },
+  // 以前跟读的次数也算
+  { id: 'speaker', name: '小小播音员', desc: '魔法变声录 30 次', test: (c) => (c.recordings || 0) + (c.repeats || 0) >= 30 },
   { id: 'chest10', name: '寻宝高手', desc: '打开 10 个宝箱', test: (c) => c.chests >= 10 },
   { id: 'bookclear', name: '一册通关', desc: '打开一册书的全部关卡', test: (c) => c.books >= 1 },
   { id: 'fashion', name: '时尚达人', desc: '拥有 5 套新装扮', test: (c) => c.outfits >= 5 },
@@ -49,7 +50,7 @@ export const QUESTS = [
   { id: 'stars8', text: '拿到 8 颗星', icon: 'star', goal: 8, stat: 'stars' },
   { id: 'correct15', text: '答对 15 题', icon: 'check', goal: 15, stat: 'correct' },
   { id: 'correct25', text: '答对 25 题', icon: 'check', goal: 25, stat: 'correct' },
-  { id: 'repeat5', text: '跟读 5 句', icon: 'parrot', goal: 5, stat: 'repeats' },
+  { id: 'pairs5', text: '翻翻乐配对 5 对', icon: 'memory', goal: 5, stat: 'pairs' },
   { id: 'perfect1', text: '拿一次满分', icon: 'medal', goal: 1, stat: 'perfect' },
   { id: 'sticker1', text: '收集 1 张新贴纸', icon: 'album', goal: 1, stat: 'stickers' },
   { id: 'cards10', text: '看图学 10 张卡', icon: 'cards', goal: 10, stat: 'cards' },
