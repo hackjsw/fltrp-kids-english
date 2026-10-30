@@ -2,7 +2,7 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { findUnit, imageUrl } from '../lib/content.js'
 import { listen, canRecognize, scoreReading } from '../lib/speech.js'
-import { openMic, micHint, RECOGNIZER_BROKEN } from '../lib/mic.js'
+import { openMic, micHint, micState, RECOGNIZER_BROKEN } from '../lib/mic.js'
 import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from '../components/ReplayButton.vue'
 import Icon from '../components/Icon.vue'
@@ -33,8 +33,8 @@ let autoPlay = 0
 const playbackUrl = ref('')
 const recordingAudio = ref(null)
 // 识别连续两次没听清：让孩子改成录音自己打分
-// 浏览器的语音识别根本用不了（华为浏览器常见：有这个接口，一调就报 not-allowed）：直接改成录音自己打分；
-// 录音能用的话记在这台设备上，下次不再先试识别
+// 识别报 not-allowed 有两种可能：浏览器禁止了这个网站用麦克风（按提示去打开），
+// 或者麦克风已经允许、识别服务本身用不了。后一种改成录音自己打分，录音能用就记在这台设备上，下次不再先试识别
 const NO_ASR = 'kids-english-no-asr'
 const unclear = ref(0)
 const selfMode = ref(localStorage.getItem(NO_ASR) === '1')
@@ -115,8 +115,17 @@ async function record() {
     } catch (e) {
       if (!isActive()) return
       state.value = 'idle'
-      if (RECOGNIZER_BROKEN.includes(e.message)) {
-        asrBroken = e.message
+      // 麦克风被浏览器禁止了：直接说怎么打开，不算识别坏了
+      if (['not-allowed', 'service-not-allowed'].includes(e.message) && (await micState()) === 'denied') {
+        if (!isActive()) return
+        const h = micHint(Object.assign(new Error('Permission denied'), { name: 'NotAllowedError' }))
+        hint.value = h.text
+        micError.value = `识别 ${e.message}，麦克风权限 denied`
+        offerSelf.value = false
+      } else if (RECOGNIZER_BROKEN.includes(e.message)) {
+        // 只有确认麦克风已经允许时，才把「识别用不了」记在这台设备上
+        asrBroken = (await micState()) === 'granted' ? e.message : ''
+        if (!isActive()) return
         selfMode.value = true
         offerSelf.value = false
         hint.value = '这个浏览器不能自动打分。再点一次「读」，录完听一听，自己给几颗星'
