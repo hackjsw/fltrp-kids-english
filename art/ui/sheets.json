@@ -1,0 +1,20 @@
+{
+  "note": "界面小图标：一张拼图生成多个透明图标，再由 scripts/icon_sheets.py 切开并打包成一张精灵图。后面的拼图覆盖前面同名的图标（用来单独重画几个）",
+  "cell": 128,
+  "sheets": [
+    {
+      "path": "sheets/icons-1.png",
+      "size": "1536x1024",
+      "rows": 4,
+      "cols": 5,
+      "names": [
+        "home", "map", "album", "wardrobe", "medal",
+        "cards", "headphones", "bubbles", "parrot", "speaker",
+        "star", "flame", "gift", "check", "paw",
+        "calendar", "lock", "clock", "gamepad", "mic"
+      ],
+      "prompt": "A sprite sheet of 20 separate cute icons in a neat grid of 4 rows by 5 columns. Every icon sits alone in its own cell, centered, all icons the same size, with wide empty transparent gaps between icons so that no two icons touch or overlap. Each icon is one small soft 3D plush toy object in front view.\nRow 1, left to right: a little house with a red roof; a folded treasure map with a dotted path and a small red cross; a sticker album book with three round stickers on its cover; a small T-shirt on a wooden hanger; a round gold medal with a red ribbon.\nRow 2, left to right: two overlapping picture cards, the front card showing a simple red apple; a pair of headphones; a cluster of three shiny soap bubbles; a cheerful green parrot; a loudspeaker with curved sound waves.\nRow 3, left to right: a yellow five-pointed star; an orange fire flame; a wrapped gift box with a ribbon bow; a round green badge with a white check mark; a brown paw print.\nRow 4, left to right: a small desk calendar with a blank page; a closed golden padlock; a red alarm clock with a blank face; a game controller; a microphone.\nUse the reference image only for its soft plush material and lighting; do not draw the reference object.\nSoft 3D plush toy render, fluffy felt texture, pastel warm colors, smooth rounded cuddly forms, gentle soft studio lighting, transparent background, no ground shadows, no text, no letters, no numbers, no words, no labels, no grid lines, no frames, no borders.",
+      "refs": ["ui/bamboo.png"]
+    }
+  ]
+}

@@ -18,7 +18,6 @@ const ri = ref(0)
 const mistakes = ref(0)
 const finished = ref(false)
 const reward = ref(null)
-const hadFeedback = ref(false)
 // 这一轮是否喂错过；第一次就喂对才算答对
 let missed = false
 const mood = ref('hungry') // hungry | chomp | no
@@ -42,7 +41,6 @@ function build() {
     return { target: t, foods: shuffle([t, ...others]) }
   })
   ri.value = 0
-  hadFeedback.value = false
   mistakes.value = 0
   finished.value = false
   mood.value = 'hungry'
@@ -96,7 +94,6 @@ async function feed(item) {
     if (await speakItem(item) === 'cancelled') return
     if (await wait(600)) next()
   } else {
-    hadFeedback.value = true
     mistakes.value++
     missed = true
     mood.value = 'no'
@@ -108,7 +105,6 @@ async function feed(item) {
 }
 
 function next() {
-  hadFeedback.value = false
   missed = false
   eaten.value = null
   mood.value = 'hungry'
@@ -141,14 +137,13 @@ onMounted(build)
       </div>
 
       <div class="panda-zone">
-        <ReplayButton class="feed-replay" label="重听题目" :disabled="mood !== 'hungry'" @click="play" />
+        <ReplayButton compact class="feed-replay prominent" label="重听题目" :disabled="mood !== 'hungry'" @click="play" />
         <div ref="mouth" class="panda" :class="[mood, { target: drag && moved(drag) && overMouth(drag.x, drag.y) }]">
           <img :src="mood === 'chomp' ? '/images/ui/mascot-happy.webp' : '/images/ui/mascot-hungry.webp'" alt="" draggable="false" />
         </div>
         <p class="feed-hint">把听到的图片拖给小熊猫</p>
       </div>
 
-      <ReplayButton v-if="hadFeedback" class="feedback-replay" label="重听提示" :disabled="mood !== 'hungry'" @click="speak('Try again.')" />
       <div class="foods" data-quiet>
         <button
           v-for="f in round.foods"

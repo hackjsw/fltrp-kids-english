@@ -23,7 +23,6 @@ const leaving = ref(false)
 const mistakes = ref(0)
 const finished = ref(false)
 const reward = ref(null)
-const hadFeedback = ref(false)
 
 const round = computed(() => rounds.value[ri.value])
 const stars = computed(() => (mistakes.value === 0 ? 3 : mistakes.value <= 2 ? 2 : 1))
@@ -37,7 +36,6 @@ function build() {
     return { seq: clean, choices: shuffle([...clean, ...distractors(clean, items, 5 - clean.length)]) }
   })
   ri.value = 0
-  hadFeedback.value = false
   mistakes.value = 0
   finished.value = false
   startRound()
@@ -77,7 +75,6 @@ async function choose(item) {
       if (await wait(1600)) next()
     }
   } else {
-    hadFeedback.value = true
     mistakes.value++
     sfx.buzz()
     shaking.value = item.id
@@ -91,7 +88,6 @@ async function choose(item) {
 }
 
 function next() {
-  hadFeedback.value = false
   if (ri.value + 1 < rounds.value.length) {
     ri.value++
     startRound()
@@ -131,7 +127,6 @@ onMounted(build)
 
       <ReplayButton label="重听整列" :disabled="busy || leaving" @click="announce" />
 
-      <ReplayButton v-if="hadFeedback" class="feedback-replay" label="重听提示" :disabled="busy || leaving" @click="speak('Try again.')" />
       <div class="choices" data-quiet>
         <button
           v-for="c in round.choices"

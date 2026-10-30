@@ -100,6 +100,7 @@ npm test
 - 每日任务：每天按日期挑 3 个，全部完成可开宝箱。
 - 数值都在 `web/src/lib/catalog.js` 和 `web/src/lib/rewards.js` 里改；进度存在浏览器 localStorage（`kids-english-progress-v1`、`kids-english-rewards`）。
 - 界面图（装扮、徽章、宝箱、竹子）的提示词在 `art/ui/manifest.json`，用 `node scripts/gen_images.mjs ui` 生成。
+- 界面小图标（底部标签、玩法、星星、喇叭等）一张拼图出 20 个：提示词和格子顺序在 `art/ui/sheets.json`，本地 Magpie 生成拼图后运行 `python -I scripts/icon_sheets.py`，按透明区域切开、打包成一张精灵图 `web/src/assets/icons.webp`，页面里用 `Icon.vue` 按名字显示，整站只多一次图片请求。
 
 ## 目录
 

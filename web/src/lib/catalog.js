@@ -43,14 +43,14 @@ export const STREAK_GIFTS = [
 
 // 每日任务模板：每天按日期挑 3 个 stat 不同的
 export const QUESTS = [
-  { id: 'games2', text: '完成 2 个游戏', icon: '🎮', goal: 2, stat: 'games' },
-  { id: 'games3', text: '完成 3 个游戏', icon: '🎮', goal: 3, stat: 'games' },
-  { id: 'stars5', text: '拿到 5 颗星', icon: '⭐', goal: 5, stat: 'stars' },
-  { id: 'stars8', text: '拿到 8 颗星', icon: '⭐', goal: 8, stat: 'stars' },
-  { id: 'correct15', text: '答对 15 题', icon: '✅', goal: 15, stat: 'correct' },
-  { id: 'correct25', text: '答对 25 题', icon: '✅', goal: 25, stat: 'correct' },
-  { id: 'repeat5', text: '跟读 5 句', icon: '🎤', goal: 5, stat: 'repeats' },
-  { id: 'perfect1', text: '拿一次满分', icon: '🌟', goal: 1, stat: 'perfect' },
-  { id: 'sticker1', text: '收集 1 张新贴纸', icon: '🏷️', goal: 1, stat: 'stickers' },
-  { id: 'cards10', text: '看图学 10 张卡', icon: '🃏', goal: 10, stat: 'cards' },
+  { id: 'games2', text: '完成 2 个游戏', icon: 'gamepad', goal: 2, stat: 'games' },
+  { id: 'games3', text: '完成 3 个游戏', icon: 'gamepad', goal: 3, stat: 'games' },
+  { id: 'stars5', text: '拿到 5 颗星', icon: 'star', goal: 5, stat: 'stars' },
+  { id: 'stars8', text: '拿到 8 颗星', icon: 'star', goal: 8, stat: 'stars' },
+  { id: 'correct15', text: '答对 15 题', icon: 'check', goal: 15, stat: 'correct' },
+  { id: 'correct25', text: '答对 25 题', icon: 'check', goal: 25, stat: 'correct' },
+  { id: 'repeat5', text: '跟读 5 句', icon: 'parrot', goal: 5, stat: 'repeats' },
+  { id: 'perfect1', text: '拿一次满分', icon: 'medal', goal: 1, stat: 'perfect' },
+  { id: 'sticker1', text: '收集 1 张新贴纸', icon: 'album', goal: 1, stat: 'stickers' },
+  { id: 'cards10', text: '看图学 10 张卡', icon: 'cards', goal: 10, stat: 'cards' },
 ]

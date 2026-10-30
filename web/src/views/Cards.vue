@@ -48,15 +48,15 @@ onMounted(() => item.value && show())
               <img :src="imageUrl(item.image)" :alt="item.text" />
               <div class="card-text">{{ item.text }}</div>
               <div class="card-tools">
-                <ReplayButton @click.stop="speakItem(item)" />
-                <button class="flip-btn" @click.stop="flipped = true">🔄 中文</button>
+                <ReplayButton compact @click.stop="speakItem(item)" />
+                <button class="flip-btn" @click.stop="flipped = true">看中文</button>
               </div>
             </div>
             <div class="card face back" @click="flipped = false">
               <img :src="imageUrl(item.image)" alt="" class="back-img" />
               <div class="card-cn-big">{{ item.translation }}</div>
               <div class="card-en-small">{{ item.text }}</div>
-              <ReplayButton @click.stop="speakItem(item)" />
+              <ReplayButton compact @click.stop="speakItem(item)" />
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { computed, onBeforeUnmount, ref } from 'vue'
 import { imageUrl, unitItems, distractors } from '../lib/content.js'
 import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from '../components/ReplayButton.vue'
+import Icon from '../components/Icon.vue'
 import { finishGame, markCorrect } from '../lib/rewards.js'
 import { sparkle } from '../lib/fx.js'
 import { sfx } from '../lib/sfx.js'
@@ -129,7 +130,7 @@ onBeforeUnmount(stop)
     </Result>
 
     <div v-else-if="state === 'ready'" class="game-intro">
-      <div class="intro-icon">🫧</div>
+      <Icon name="bubbles" class="intro-icon" />
       <h1>泡泡快快点</h1>
       <p>听到哪个，就戳哪个泡泡！一共 {{ DURATION }} 秒。</p>
       <button class="big-btn" @click="start">开始</button>
@@ -137,9 +138,9 @@ onBeforeUnmount(stop)
 
     <template v-else>
       <div class="game-hud">
-        <span class="hud-pill">⏱ {{ timeLeft }}</span>
+        <span class="hud-pill"><Icon name="clock" /> {{ timeLeft }}</span>
         <ReplayButton @click="speakItem(target)" />
-        <span class="hud-pill">🫧 {{ score }}</span>
+        <span class="hud-pill"><Icon name="bubbles" /> {{ score }}</span>
       </div>
       <div class="bubble-field" data-quiet>
         <button

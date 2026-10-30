@@ -80,8 +80,10 @@ onBeforeUnmount(() => {
     <div class="result-stars">
       <span v-for="i in 3" :key="i" :class="{ on: i <= shown }">★</span>
     </div>
-    <p>{{ praise }}</p>
-    <ReplayButton label="重听鼓励" @click="replayPraise" />
+    <div class="praise-row">
+      <p>{{ praise }}</p>
+      <ReplayButton compact label="重听鼓励" @click="replayPraise" />
+    </div>
     <div class="result-note"><slot /></div>
     <div class="reward-slot">
       <Transition name="pop">

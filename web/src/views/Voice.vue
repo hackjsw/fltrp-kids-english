@@ -3,6 +3,7 @@ import { computed, onBeforeUnmount, ref } from 'vue'
 import { imageUrl, unitItems } from '../lib/content.js'
 import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from '../components/ReplayButton.vue'
+import Icon from '../components/Icon.vue'
 import { audioCtx } from '../lib/sfx.js'
 
 const { speakItem, stopSpeech, isActive } = useAudio()
@@ -17,7 +18,6 @@ const MAX_MS = 5000
 const state = ref('idle') // idle | requesting | recording | processing | ready
 const hint = ref('')
 const playing = ref(null)
-const lastVoice = ref(null)
 let buffer = null
 let source = null
 let recorder = null
@@ -97,7 +97,6 @@ function play(v) {
   if (!buffer || !isActive()) return
   stopSpeech()
   stopPlay()
-  lastVoice.value = v
   const ac = audioCtx()
   source = ac.createBufferSource()
   source.buffer = buffer
@@ -137,7 +136,6 @@ function go(step) {
   stopPlay()
   buffer = null
   state.value = 'idle'
-  lastVoice.value = null
   index.value = (index.value + step + items.value.length) % items.value.length
   playModel()
 }
@@ -162,11 +160,13 @@ onBeforeUnmount(() => {
     <div class="repeat-actions">
       <ReplayButton label="重听示范" :disabled="state === 'recording' || state === 'requesting' || state === 'processing'" @click="playModel" />
       <button class="mic-btn" :class="{ on: state === 'recording' }" :disabled="state === 'requesting' || state === 'processing'" @click="record">
-        {{ state === 'recording' ? '读完点我' : state === 'requesting' || state === 'processing' ? '稍等…' : '🎤 读' }}
+        <template v-if="state === 'recording'">读完点我</template>
+        <template v-else-if="state === 'requesting' || state === 'processing'">稍等…</template>
+        <template v-else><Icon name="mic" />读</template>
       </button>
     </div>
     <p v-if="hint" class="hint">{{ hint }}</p>
-    <p v-else-if="state !== 'ready'" class="hint">读一读，然后听听小动物怎么说</p>
+    <p v-else class="hint">{{ state === 'ready' ? '点小动物，再听一遍' : '读一读，然后听听小动物怎么说' }}</p>
 
     <div v-if="state === 'ready'" class="voices">
       <button
@@ -174,15 +174,14 @@ onBeforeUnmount(() => {
         :key="v.id"
         class="voice-btn"
         :class="{ on: playing === v.id }"
+        :aria-label="'听' + v.name + '的声音'"
         @click="play(v)"
       >
         <img :src="v.img" alt="" draggable="false" />
         <span>{{ v.name }}</span>
-        <small>🔊 重听</small>
+        <span class="replay-badge"><Icon name="speaker" /></span>
       </button>
     </div>
-
-    <ReplayButton v-if="state === 'ready' && lastVoice" class="voice-replay" :label="'重听' + lastVoice.name" @click="play(lastVoice)" />
 
     <div class="pager">
       <button class="big-btn" :disabled="state === 'recording' || state === 'requesting' || state === 'processing'" @click="go(-1)">◀</button>

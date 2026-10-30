@@ -7,6 +7,7 @@ import { SCORED, UNLOCK_STARS } from '../lib/games.js'
 import { rewards, outfit } from '../lib/rewards.js'
 import { sfx } from '../lib/sfx.js'
 import BookPicker from '../components/BookPicker.vue'
+import Icon from '../components/Icon.vue'
 
 const MAX = SCORED.length * 3
 
@@ -90,13 +91,13 @@ watch(bookId, () => nextTick(syncMascot))
       >
         <div class="level-node">
           <img :src="imageUrl(l.unit.items[0].image)" alt="" draggable="false" loading="lazy" width="112" height="112" />
-          <span v-if="!l.open || popping === i" class="lock">🔒</span>
+          <span v-if="!l.open || popping === i" class="lock"><Icon name="lock" /></span>
           <span class="level-n">{{ l.n }}</span>
         </div>
         <div class="level-label">
           <b>{{ l.mod.title }} · {{ l.unit.id.replace('u', 'U') }}</b>
           <span>{{ l.unit.title }}</span>
-          <span class="level-stars">⭐ {{ l.stars }}/{{ MAX }}</span>
+          <span class="level-stars"><Icon name="star" /> {{ l.stars }}/{{ MAX }}</span>
         </div>
       </component>
 

@@ -4,6 +4,7 @@ import { ref } from 'vue'
 import { rewards, dailyQuests, chestReady, openChest, landBamboo, settleBamboo } from '../lib/rewards.js'
 import { sfx } from '../lib/sfx.js'
 import { flyTo, confetti } from '../lib/fx.js'
+import Icon from './Icon.vue'
 
 const chest = ref(null)
 const gotten = ref(0)
@@ -39,7 +40,7 @@ function open() {
     <div class="quest-body">
       <ul class="quest-list">
         <li v-for="q in dailyQuests" :key="q.id" :class="{ done: q.done }">
-          <span class="quest-icon">{{ q.done ? '✅' : q.icon }}</span>
+          <Icon class="quest-icon" :name="q.done ? 'check' : q.icon" />
           <span class="quest-text">{{ q.text }}</span>
           <span class="quest-bar"><i :style="{ width: (q.have / q.goal) * 100 + '%' }"></i></span>
           <span class="quest-num">{{ q.have }}/{{ q.goal }}</span>

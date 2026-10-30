@@ -104,7 +104,7 @@ function markDay() {
     if (streak.value >= g.days && !rewards.gifts.includes(g.days)) {
       rewards.gifts.push(g.days)
       earn(g.bamboo)
-      notify({ kind: 'toast', icon: '🔥', text: `连续学习 ${g.days} 天！`, bamboo: g.bamboo })
+      notify({ kind: 'toast', icon: 'flame', text: `连续学习 ${g.days} 天！`, bamboo: g.bamboo })
     }
   }
 }
@@ -150,7 +150,7 @@ function bumpQuest(stat, n = 1) {
     q.have += n
     if (q.have >= tpl.goal) {
       notify({ kind: 'toast', icon: tpl.icon, text: `任务完成：${tpl.text}` })
-      if (chestReady.value) notify({ kind: 'toast', icon: '🎁', text: '今天的宝箱可以打开啦！' })
+      if (chestReady.value) notify({ kind: 'toast', icon: 'gift', text: '今天的宝箱可以打开啦！' })
     }
   }
 }

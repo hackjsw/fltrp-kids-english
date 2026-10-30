@@ -4,6 +4,7 @@ import { findUnit, preloadModule, imageUrl } from '../lib/content.js'
 import { unitStars, unitTotal } from '../lib/progress.js'
 import { GAMES, SCORED } from '../lib/games.js'
 import { rememberUnit } from '../lib/rewards.js'
+import Icon from '../components/Icon.vue'
 
 const props = defineProps({ module: String, unit: String })
 const found = computed(() => findUnit(props.module, props.unit))
@@ -23,7 +24,7 @@ const total = computed(() => unitTotal(props.module, props.unit, SCORED))
       <div>
         <small>{{ found.mod.title }} · {{ found.unit.id.replace('u', 'Unit ') }}</small>
         <h1>{{ found.unit.title }}</h1>
-        <span class="unit-total">⭐ {{ total }} / {{ SCORED.length * 3 }}</span>
+        <span class="unit-total"><Icon name="star" /> {{ total }} / {{ SCORED.length * 3 }}</span>
       </div>
     </div>
     <div class="activity-grid">
@@ -34,7 +35,7 @@ const total = computed(() => unitTotal(props.module, props.unit, SCORED))
         class="activity"
       >
         <img v-if="g.img" class="icon-img" :src="g.img" alt="" draggable="false" />
-        <span v-else class="icon">{{ g.icon }}</span>
+        <Icon v-else :name="g.icon" class="icon-img" />
         <span class="name">{{ g.name }}</span>
         <span class="desc">{{ g.desc }}</span>
         <span v-if="g.scored" class="unit-stars">

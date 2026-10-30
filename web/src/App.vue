@@ -7,16 +7,17 @@ import { shownBamboo, streak, outfit } from './lib/rewards.js'
 import { sfx } from './lib/sfx.js'
 import { bump } from './lib/fx.js'
 import RewardLayer from './components/RewardLayer.vue'
+import Icon from './components/Icon.vue'
 
 const route = useRoute()
 onMounted(loadBook)
 
 const TABS = [
-  { to: '/', icon: '🏠', name: '首页' },
-  { to: '/map', icon: '🗺️', name: '闯关' },
-  { to: '/stickers', icon: '🏷️', name: '贴纸' },
-  { to: '/shop', icon: '👕', name: '衣橱' },
-  { to: '/me', icon: '🏅', name: '成就' },
+  { to: '/', icon: 'home', name: '首页' },
+  { to: '/map', icon: 'map', name: '闯关' },
+  { to: '/stickers', icon: 'album', name: '贴纸' },
+  { to: '/shop', icon: 'wardrobe', name: '衣橱' },
+  { to: '/me', icon: 'medal', name: '成就' },
 ]
 // 底部标签只在这几个大页面显示，进游戏后收起
 const showTabs = computed(() => TABS.some((t) => t.to === route.path))
@@ -43,8 +44,8 @@ onBeforeUnmount(() => document.removeEventListener('pointerdown', onTap, true))
       <span>小熊猫学英语</span>
     </router-link>
     <span id="bamboo-counter" ref="counter" class="pill"><img src="/images/ui/bamboo.webp" alt="竹子" />{{ shownBamboo }}</span>
-    <span class="pill">⭐ {{ progress.totalStars }}</span>
-    <span v-if="streak > 0" class="pill">🔥 {{ streak }}</span>
+    <span class="pill"><Icon name="star" />{{ progress.totalStars }}</span>
+    <span v-if="streak > 0" class="pill"><Icon name="flame" />{{ streak }}</span>
   </header>
   <main :class="{ 'with-tabs': showTabs }">
     <p v-if="error" class="error">{{ error }}</p>
@@ -57,7 +58,7 @@ onBeforeUnmount(() => document.removeEventListener('pointerdown', onTap, true))
   </main>
   <nav v-if="showTabs" class="tabbar">
     <router-link v-for="t in TABS" :key="t.to" :to="t.to" class="tab" :class="{ on: route.path === t.to }">
-      <span class="tab-icon">{{ t.icon }}</span>
+      <Icon :name="t.icon" class="tab-icon" />
       <span>{{ t.name }}</span>
     </router-link>
   </nav>

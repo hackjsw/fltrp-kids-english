@@ -22,6 +22,8 @@ SIZES = [
     ("ui/", 384),
     ("mascot.png", 384),
 ]
+# 图标拼图由 scripts/icon_sheets.py 切开打包，不单独上传
+SKIP = ("ui/sheets/", "ui/icons/")
 DEFAULT = 512
 QUALITY = 80
 
@@ -50,6 +52,8 @@ def main():
     before = after = made = 0
     for src in sorted(SRC.rglob("*.png")):
         rel = src.relative_to(SRC).as_posix()
+        if rel.startswith(SKIP):
+            continue
         dst = DST / Path(rel).with_suffix(".webp")
         if not args.force and dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
             continue

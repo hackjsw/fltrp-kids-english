@@ -5,6 +5,7 @@ import { events, dismiss } from '../lib/rewards.js'
 import { BADGE_BAMBOO } from '../lib/catalog.js'
 import { sfx } from '../lib/sfx.js'
 import { confetti } from '../lib/fx.js'
+import Icon from './Icon.vue'
 
 const toast = computed(() => (events.hold ? null : events.queue.find((e) => e.kind === 'toast')))
 const badge = computed(() => (events.hold ? null : events.queue.find((e) => e.kind === 'badge')))
@@ -36,7 +37,7 @@ watch(
   <Transition name="toast">
     <div v-if="toast" :key="toast.id" class="toast" @click="dismiss(toast.id)">
       <img v-if="toast.img" :src="toast.img" alt="" class="toast-img" />
-      <span v-else class="toast-icon">{{ toast.icon }}</span>
+      <Icon v-else class="toast-icon" :name="toast.icon" />
       <span class="toast-text">{{ toast.text }}</span>
       <span v-if="toast.bamboo" class="toast-bamboo">+{{ toast.bamboo }}<img src="/images/ui/bamboo.webp" alt="" /></span>
     </div>

@@ -19,7 +19,6 @@ const picked = ref(null)
 const mistakes = ref(0)
 const finished = ref(false)
 const reward = ref(null)
-const hadFeedback = ref(false)
 const missed = ref(false)
 const busy = ref(false)
 
@@ -37,7 +36,6 @@ function build() {
     ]),
   }))
   qi.value = 0
-  hadFeedback.value = false
   mistakes.value = 0
   picked.value = null
   finished.value = false
@@ -56,7 +54,6 @@ async function choose(opt, e) {
   const correct = opt.id === q.value.target.id
   picked.value = { id: opt.id, correct }
   if (!correct) {
-    hadFeedback.value = true
     mistakes.value++
     missed.value = true
     sfx.buzz()
@@ -74,7 +71,6 @@ async function choose(opt, e) {
 }
 
 function next() {
-  hadFeedback.value = false
   busy.value = false
   picked.value = null
   missed.value = false
@@ -101,7 +97,6 @@ onMounted(build)
         <span v-for="(x, i) in questions" :key="i" :class="{ on: i < qi, cur: i === qi }"></span>
       </div>
       <ReplayButton class="prominent" label="重听题目" :disabled="busy" @click="play" />
-      <ReplayButton v-if="hadFeedback" class="feedback-replay" label="重听提示" :disabled="busy" @click="speak('Try again.')" />
       <div class="options" data-quiet>
         <button
           v-for="opt in q.options"

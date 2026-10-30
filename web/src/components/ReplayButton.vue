@@ -1,11 +1,14 @@
 <script setup>
-defineProps({ label: { type: String, default: '重听' } })
+import Icon from './Icon.vue'
+
+// compact：地方小的时候只显示喇叭，文字留给读屏软件
+defineProps({ label: { type: String, default: '重听' }, compact: Boolean })
 </script>
 
 <template>
-  <button type="button" class="replay-button" data-quiet :aria-label="label">
-    <span class="replay-icon" aria-hidden="true">🔊</span>
-    <span>{{ label }}</span>
+  <button type="button" class="replay-button" :class="{ compact }" data-quiet :aria-label="label">
+    <Icon name="speaker" class="replay-icon" />
+    <span v-if="!compact">{{ label }}</span>
   </button>
 </template>
 
@@ -17,12 +20,14 @@ defineProps({ label: { type: String, default: '重听' } })
   box-shadow: 0 3px 0 #bad8f5; white-space: nowrap;
 }
 .replay-button > span { color: inherit; font-weight: inherit; }
-.replay-icon { font-size: 22px; line-height: 1; }
+.replay-icon { width: 26px; height: 26px; }
 .replay-button:active:not(:disabled) { transform: translateY(2px); }
 .replay-button:focus-visible { outline: 3px solid #245da1; outline-offset: 4px; }
 .replay-button:disabled { opacity: .5; cursor: default; }
 .replay-button.prominent { min-height: 76px; padding: 12px 28px; font-size: 21px; margin: 0 0 22px; }
-.replay-button.prominent .replay-icon { font-size: 34px; }
+.replay-button.prominent .replay-icon { width: 38px; height: 38px; }
+.replay-button.compact { width: 44px; padding: 0; }
+.replay-button.compact.prominent { width: 64px; min-height: 64px; margin: 0; }
 @media (max-width: 600px) {
   .replay-button { padding: 9px 14px; }
   .replay-button.prominent { margin-bottom: 16px; }

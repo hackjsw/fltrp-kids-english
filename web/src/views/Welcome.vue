@@ -2,12 +2,13 @@
 // 欢迎页：小熊猫问候、继续学习、今日任务、6 个年级入口
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { allUnits, imageUrl, bookId, setBook, pickGrade, BOOKS, GRADES, gradeOf, termOf } from '../lib/content.js'
+import { allUnits, imageUrl, bookId, setBook, pickGrade, BOOKS, GRADES, gradeOf } from '../lib/content.js'
 import { bookStars } from '../lib/progress.js'
-import { rewards, outfit, streak, stickerCount, studiedToday, ensureDaily } from '../lib/rewards.js'
+import { rewards, outfit, studiedToday, ensureDaily } from '../lib/rewards.js'
 import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from '../components/ReplayButton.vue'
 import QuestCard from '../components/QuestCard.vue'
+import Icon from '../components/Icon.vue'
 
 const { speak } = useAudio()
 
@@ -42,6 +43,11 @@ const cont = computed(() => {
     label: '开始第一关',
   }
 })
+// 标题拆成两行：Module 小字在上，单元名在下，长句子也不会被截断
+const contParts = computed(() => {
+  const [kicker, ...rest] = cont.value.title.split(' · ')
+  return rest.length ? { kicker, name: rest.join(' · ') } : { kicker: '', name: cont.value.title }
+})
 function goOn() {
   if (cont.value.book !== bookId.value) setBook(cont.value.book)
   router.push(`/u/${cont.value.module}/${cont.value.unit}`)
@@ -56,7 +62,6 @@ const grades = computed(() =>
       g,
       img: FACES[g - 1] ? `/images/1a/characters/${FACES[g - 1]}.webp` : outfit.value.img,
       stars: ids.reduce((s, id) => s + bookStars(id), 0),
-      terms: ids.map((id) => ({ id, label: termOf(id) === 'a' ? '上' : '下', stars: bookStars(id) })),
       current: gradeOf(bookId.value) === g,
     }
   }),
@@ -77,13 +82,10 @@ function openGrade(g) {
       <div class="hero-side">
         <div class="bubble-say">
           <b>{{ greeting.en }}</b>
-          <span>{{ greeting.cn }}</span>
-          <ReplayButton label="重听问候" @click="hello" />
-        </div>
-        <div class="hero-chips">
-          <span class="chip">🔥 {{ streak }} 天</span>
-          <span class="chip">🏷️ {{ stickerCount }}</span>
-          <span class="chip"><img src="/images/ui/bamboo.webp" alt="" /> {{ rewards.bamboo }}</span>
+          <div class="bubble-row">
+            <span>{{ greeting.cn }}</span>
+            <ReplayButton compact label="重听问候" @click="hello" />
+          </div>
         </div>
       </div>
     </div>
@@ -91,8 +93,8 @@ function openGrade(g) {
     <button class="continue big" @click="goOn">
       <img :src="cont.img" alt="" />
       <span class="continue-text">
-        <small>{{ cont.label }}</small>
-        <b>{{ cont.title }}</b>
+        <small>{{ cont.label }}<template v-if="contParts.kicker"> · {{ contParts.kicker }}</template></small>
+        <b>{{ contParts.name }}</b>
       </span>
       <span class="continue-go">▶</span>
     </button>
@@ -114,9 +116,7 @@ function openGrade(g) {
         <span v-if="c.current" class="grade-now">正在学</span>
         <img :src="c.img" alt="" loading="lazy" />
         <b>{{ CN[c.g] }}年级</b>
-        <span class="grade-terms">
-          <span v-for="t in c.terms" :key="t.id">{{ t.label }} ⭐{{ t.stars }}</span>
-        </span>
+        <span class="grade-stars"><Icon name="star" /> {{ c.stars }}</span>
       </button>
     </div>
   </section>

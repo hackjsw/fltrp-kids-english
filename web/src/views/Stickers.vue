@@ -6,6 +6,7 @@ import { rewards, stickerCount, bookStickers, STICKER_AT } from '../lib/rewards.
 import { useAudio } from '../lib/useAudio.js'
 
 import BookPicker from '../components/BookPicker.vue'
+import Icon from '../components/Icon.vue'
 
 const { speakItem } = useAudio()
 
@@ -23,10 +24,10 @@ function tap(it) {
   <section class="stickers">
     <div class="page-head">
       <h1>贴纸册</h1>
-      <span class="head-pill">🏷️ 共 {{ stickerCount }} 张</span>
+      <span class="head-pill"><Icon name="album" /> 共 {{ stickerCount }} 张</span>
     </div>
     <p class="muted page-tip">一个词句答对 {{ STICKER_AT }} 次，就能收集一张贴纸</p>
-    <BookPicker icon="🏷️" :count="bookStickers" />
+    <BookPicker icon="album" :count="bookStickers" />
     <p class="album-count">这一册：{{ bookStickers(bookId) }} / {{ total }}</p>
 
     <div v-for="m in book.modules" :key="m.id" class="album-module">
@@ -46,7 +47,7 @@ function tap(it) {
           >
             <img :src="imageUrl(it.image)" alt="" loading="lazy" draggable="false" />
             <span v-if="have(it) >= STICKER_AT" class="sticker-text">{{ it.text }}</span>
-            <span v-if="have(it) >= STICKER_AT" class="sticker-replay">🔊 重听</span>
+            <span v-if="have(it) >= STICKER_AT" class="replay-badge"><Icon name="speaker" /></span>
             <span v-else class="sticker-dots">
               <i v-for="k in STICKER_AT" :key="k" :class="{ on: k <= have(it) }"></i>
             </span>
