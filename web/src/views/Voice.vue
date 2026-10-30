@@ -5,6 +5,7 @@ import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from '../components/ReplayButton.vue'
 import Icon from '../components/Icon.vue'
 import { audioCtx } from '../lib/sfx.js'
+import { openMic, micHint } from '../lib/mic.js'
 
 const { speakItem, stopSpeech, isActive } = useAudio()
 
@@ -17,6 +18,7 @@ const item = computed(() => items.value[index.value])
 const MAX_MS = 5000
 const state = ref('idle') // idle | requesting | recording | processing | ready
 const hint = ref('')
+const micError = ref('') // 打不开麦克风时浏览器给的原始错误
 const playing = ref(null)
 let buffer = null
 let source = null
@@ -36,15 +38,19 @@ async function record() {
   if (state.value === 'recording') return stopRec()
   if (state.value === 'requesting' || state.value === 'processing') return
   hint.value = ''
+  micError.value = ''
   stopPlay()
   stopSpeech()
   state.value = 'requesting'
   try {
-    stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+    if (typeof MediaRecorder === 'undefined') throw Object.assign(new Error('no MediaRecorder'), { name: 'NoMediaRecorder' })
+    stream = await openMic()
     if (!isActive()) return stream.getTracks().forEach((t) => t.stop())
-  } catch {
+  } catch (e) {
     state.value = 'idle'
-    hint.value = '需要允许使用麦克风（手机要用 https 地址打开）'
+    const h = micHint(e)
+    hint.value = h.text
+    micError.value = h.code
     return
   }
   try {
@@ -70,10 +76,11 @@ async function record() {
     recorder.start()
     state.value = 'recording'
     stopTimer = setTimeout(stopRec, MAX_MS)
-  } catch {
+  } catch (e) {
     stream?.getTracks().forEach((t) => t.stop())
     state.value = 'idle'
     hint.value = '当前设备无法开始录音，请换一个支持录音的浏览器'
+    micError.value = micHint(e).code
   }
 }
 
@@ -167,6 +174,7 @@ onBeforeUnmount(() => {
     </div>
     <p v-if="hint" class="hint">{{ hint }}</p>
     <p v-else class="hint">{{ state === 'ready' ? '点小动物，再听一遍' : '读一读，然后听听小动物怎么说' }}</p>
+    <p v-if="micError" class="mic-error">错误代码：{{ micError }}</p>
 
     <div v-if="state === 'ready'" class="voices">
       <button

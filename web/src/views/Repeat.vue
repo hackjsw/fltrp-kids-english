@@ -2,6 +2,7 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { findUnit, imageUrl } from '../lib/content.js'
 import { listen, canRecognize, scoreReading } from '../lib/speech.js'
+import { openMic, micHint, RECOGNIZER_BROKEN } from '../lib/mic.js'
 import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from '../components/ReplayButton.vue'
 import Icon from '../components/Icon.vue'
@@ -31,16 +32,15 @@ let recordTimer = null
 let autoPlay = 0
 const playbackUrl = ref('')
 const recordingAudio = ref(null)
-// 识别连续两次没听清，或者识别服务出错：让孩子改成录音自己打分
+// 识别连续两次没听清：让孩子改成录音自己打分
+// 浏览器的语音识别根本用不了（华为浏览器常见：有这个接口，一调就报 not-allowed）：直接改成录音自己打分；
+// 录音能用的话记在这台设备上，下次不再先试识别
+const NO_ASR = 'kids-english-no-asr'
 const unclear = ref(0)
-const selfMode = ref(false)
+const selfMode = ref(localStorage.getItem(NO_ASR) === '1')
 const offerSelf = ref(false)
-const ERRORS = {
-  'not-allowed': '需要允许使用麦克风',
-  'service-not-allowed': '这个浏览器不让用语音识别',
-  'audio-capture': '没找到麦克风',
-  network: '语音识别要联网，网络好像不通',
-}
+const micError = ref('') // 打不开麦克风时浏览器给的原始错误，显示在提示下面方便排查
+let asrBroken = ''
 const feedback = computed(() => !result.value ? '' : result.value.stars === 3 ? 'Great!' : result.value.stars === 2 ? 'Good!' : 'Try again.')
 
 function clearRecording() {
@@ -80,6 +80,7 @@ function nextItem() {
   state.value = 'idle'
   result.value = null
   hint.value = ''
+  micError.value = ''
   clearRecording()
   const run = ++autoPlay
   wait(300).then((active) => {
@@ -90,6 +91,7 @@ function nextItem() {
 async function record() {
   if (state.value === 'listening') return
   hint.value = ''
+  micError.value = ''
   autoPlay++
   stopSpeech()
   clearRecording()
@@ -113,8 +115,15 @@ async function record() {
     } catch (e) {
       if (!isActive()) return
       state.value = 'idle'
-      hint.value = ERRORS[e.message] || `识别出错：${e.message}`
-      offerSelf.value = e.message !== 'not-allowed'
+      if (RECOGNIZER_BROKEN.includes(e.message)) {
+        asrBroken = e.message
+        selfMode.value = true
+        offerSelf.value = false
+        hint.value = '这个浏览器不能自动打分。再点一次「读」，录完听一听，自己给几颗星'
+      } else {
+        hint.value = `识别出错：${e.message}`
+        offerSelf.value = true
+      }
     }
   } else {
     await recordFallback()
@@ -123,8 +132,10 @@ async function record() {
 
 async function recordFallback() {
   try {
-    stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+    if (typeof MediaRecorder === 'undefined') throw Object.assign(new Error('no MediaRecorder'), { name: 'NoMediaRecorder' })
+    stream = await openMic()
     if (!isActive()) return stream.getTracks().forEach((t) => t.stop())
+    if (['not-allowed', 'service-not-allowed', 'language-not-supported'].includes(asrBroken)) localStorage.setItem(NO_ASR, '1')
     const chunks = []
     const mr = new MediaRecorder(stream)
     mr.ondataavailable = (e) => chunks.push(e.data)
@@ -138,11 +149,13 @@ async function recordFallback() {
     recorder = mr
     mr.start()
     recordTimer = setTimeout(() => mr.state === 'recording' && mr.stop(), 4000)
-  } catch {
+  } catch (e) {
     stream?.getTracks().forEach((t) => t.stop())
     if (!isActive()) return
     state.value = 'idle'
-    hint.value = '需要允许使用麦克风'
+    const h = micHint(e)
+    hint.value = h.text
+    micError.value = h.code
   }
 }
 
@@ -217,6 +230,7 @@ onBeforeUnmount(() => {
         </button>
       </div>
       <p v-if="hint" class="hint">{{ hint }}</p>
+      <p v-if="micError" class="mic-error">错误代码：{{ micError }}</p>
       <button v-if="offerSelf && state === 'idle'" type="button" class="big-btn ghost small-btn" @click="useSelf">改成自己打分</button>
 
       <div v-if="state === 'scored'" class="score">
@@ -243,7 +257,7 @@ onBeforeUnmount(() => {
           </div>
         </template>
       </div>
-      <p v-if="!canRecognize" class="hint">这个浏览器不能自动打分：录完听一听，自己给几颗星</p>
+      <p v-if="(!canRecognize || selfMode) && !hint" class="hint">这个浏览器不能自动打分：录完听一听，自己给几颗星</p>
     </template>
   </section>
 </template>
