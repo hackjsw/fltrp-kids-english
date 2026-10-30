@@ -1,6 +1,6 @@
 {
   "cols": 5,
-  "rows": 4,
+  "rows": 7,
   "names": [
     "home",
     "map",
@@ -21,6 +21,18 @@
     "lock",
     "clock",
     "gamepad",
-    "mic"
+    "mic",
+    "sun",
+    "rainbow",
+    "moon",
+    "cloud",
+    "sparkle",
+    "heart",
+    "flower",
+    "butterfly",
+    "sprig",
+    "balloon",
+    "bow",
+    "note"
   ]
 }

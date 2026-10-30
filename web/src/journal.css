@@ -1,0 +1,155 @@
+/* ---------- 贴纸手账主题：米色点点纸、白边贴纸卡片、彩色纸胶带、轻轻歪一点 ----------
+   这里只管外观（颜色、描边、阴影、角度），尺寸和排版还在 style / games / ui.css，这个文件最后加载 */
+:root {
+  --paper: #fff7ea; --line: #ead8c6;
+  --pink: #ffe1ea; --sky: #dff0ff; --lemon: #fff3c4; --mint: #ddf5e6; --lilac: #ece4ff; --peach: #ffe6d3;
+  --shadow: 0 3px 0 var(--line), 0 6px 14px rgba(150, 100, 60, .12);
+  /* 透明图外面描一圈白边，像剪下来的贴纸 */
+  --outline: drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 4px 5px rgba(120, 70, 30, .18));
+}
+body { background: radial-gradient(circle, #ecdcc9 1.2px, transparent 1.7px) 0 0 / 22px 22px, linear-gradient(var(--paper), #fff2e2); }
+
+/* ---------- 顶栏、底栏 ---------- */
+.topbar { background: rgba(255, 247, 234, .9); border-bottom: 2px dashed var(--line); box-shadow: none; }
+.tabbar { background: rgba(255, 252, 246, .95); border-top: 2px dashed var(--line); }
+.tab.on { background: var(--peach); }
+.tab:active .tab-icon { transform: scale(.88); }
+.pill { border: 2px solid #fff; box-shadow: 0 2px 0 var(--line), 0 3px 8px rgba(150, 100, 60, .1); }
+.brand img, .hero-mascot img, .result .mascot, .shop-preview, .map-board .map-mascot,
+.quest-card .quest-icon, .activity .icon-img, .unit-hero img { filter: var(--outline); }
+
+/* ---------- 卡片：白色粗边贴纸 ---------- */
+.bubble-say, .quest-card, .unit-hero, .activity, .card, .option, .foods .food, .calendar, .shop-stage, .outfit, .badge,
+.stat, .gift, .voice-btn, .level-label, .hud-pill, .modal, .toast, .sticker.got, .book-current, .book-panel {
+  border: 3px solid #fff; box-shadow: var(--shadow);
+}
+.option { border-width: 4px; }
+.level-label { border-width: 2px; }
+.continue, .streak-card { border: 3px solid #fff; box-shadow: 0 4px 0 var(--primary-dark), 0 8px 16px rgba(224, 106, 44, .2); }
+.big-btn { border: 3px solid #fff; }
+.big-btn:active { transform: translateY(3px) scale(.97); }
+.quest-card { background: var(--mint); }
+.quest-bar { background: rgba(255, 255, 255, .75); }
+.unit-hero, .badge.got, .toast { background: var(--lemon); }
+.gift { background: var(--sky); }
+.shop-stage { background: radial-gradient(circle at 30% 40%, #fff, var(--lilac)); }
+.sticker:not(.got) { background: rgba(246, 236, 227, .7); }
+.stat:nth-child(6n + 1), .activity:nth-child(6n + 1) { background: var(--pink); }
+.stat:nth-child(6n + 2), .activity:nth-child(6n + 2) { background: var(--sky); }
+.stat:nth-child(6n + 3), .activity:nth-child(6n + 3) { background: var(--lemon); }
+.stat:nth-child(6n + 4), .activity:nth-child(6n + 4) { background: var(--mint); }
+.stat:nth-child(6n + 5), .activity:nth-child(6n + 5) { background: var(--lilac); }
+.stat:nth-child(6n), .activity:nth-child(6n) { background: var(--peach); }
+.progress-dots span { background: #f3e7db; border: 2px solid #fff; box-shadow: 0 2px 0 var(--line); }
+.progress-dots span.on { background: #8ad6a6; }
+
+/* ---------- 轻轻歪一点，像手贴上去的；按下去摆正 ---------- */
+.bubble-say { transform: rotate(-1.5deg); }
+.continue { transform: rotate(1deg); }
+.continue:active { transform: rotate(0) translateY(3px); }
+.quest-card, .unit-hero, .card.small { transform: rotate(-1deg); }
+.activity, .options .option, .choices .option, .foods .food, .outfit, .badge, .gift {
+  transform: rotate(var(--tilt, 0deg)); transition: transform .15s cubic-bezier(.3, 1.6, .6, 1);
+}
+:is(.activity, .options .option, .choices .option, .foods .food, .outfit, .badge, .gift):nth-child(odd) { --tilt: -1.5deg; }
+:is(.activity, .options .option, .choices .option, .foods .food, .outfit, .badge, .gift):nth-child(even) { --tilt: 1.5deg; }
+:is(.activity, .options .option, .choices .option, .foods .food, .outfit):active { transform: rotate(0) scale(.95); }
+.foods .food.gone { transform: scale(.3); }
+
+/* ---------- 彩色纸胶带：两头剪成锯齿 ---------- */
+.continue, .quest-card, .unit-hero, .card.small, .flip .face, .calendar, .shop-stage, .streak-card, .modal { position: relative; }
+:is(.continue, .quest-card, .unit-hero, .card.small, .flip .face, .calendar, .shop-stage, .streak-card, .modal)::after {
+  content: ''; position: absolute; top: -12px; left: var(--tape-x, 50%); z-index: 2; width: 84px; height: 24px;
+  transform: translateX(-50%) rotate(var(--tape-r, -4deg)); pointer-events: none; opacity: .92;
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, .45) 0 6px, transparent 6px 12px), var(--tape, #ffc4d6);
+  clip-path: polygon(0 0, 6% 18%, 0 36%, 6% 54%, 0 72%, 6% 90%, 0 100%, 100% 100%, 94% 82%, 100% 64%, 94% 46%, 100% 28%, 94% 10%, 100% 0);
+}
+.continue { --tape: #a9dcff; --tape-x: 22%; --tape-r: -8deg; }
+.quest-card, .streak-card { --tape: #ffe27a; --tape-x: 78%; --tape-r: 6deg; }
+.unit-hero { --tape: #ffc4d6; --tape-x: 82%; --tape-r: 5deg; }
+.calendar, .card.small { --tape: #b8eccb; }
+.shop-stage { --tape: #d6c8ff; --tape-x: 20%; }
+.modal { --tape: #a9dcff; }
+
+/* ---------- 小标题下面垫一截胶带 ---------- */
+.home-title, .quest-head h2, .album-module h2, .me h2, .shop .page-head h1, .stickers .page-head h1 {
+  display: inline-block; padding: 0 10px; margin-left: -6px;
+  background: linear-gradient(transparent 44%, var(--tape-h, #ffe27a) 44%, var(--tape-h, #ffe27a) 90%, transparent 90%);
+}
+.quest-head h2 { --tape-h: #fff; }
+.album-module:nth-child(odd) h2 { --tape-h: #ffc4d6; }
+.album-module:nth-child(even) h2 { --tape-h: #a9dcff; }
+.me h2 { --tape-h: #b8eccb; }
+
+/* ---------- 年级小圆贴纸（首页、选书面板共用） ---------- */
+.grade-dots { display: flex; justify-content: center; gap: 10px; }
+.grade-dot {
+  position: relative; width: 48px; height: 48px; padding: 0; border-radius: 50%; border: 3px solid #fff; color: #fff;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1;
+  box-shadow: var(--shadow); transform: rotate(var(--tilt, 0deg)); transition: transform .15s cubic-bezier(.3, 1.6, .6, 1);
+}
+.grade-dot b { font-size: 20px; text-shadow: 0 1px 0 rgba(0, 0, 0, .15); }
+.grade-dot small { font-size: 12px; font-weight: 800; margin-top: 1px; }
+.grade-dot:nth-child(odd) { --tilt: -5deg; }
+.grade-dot:nth-child(even) { --tilt: 4deg; }
+.grade-dot.on { transform: rotate(0) scale(1.1); box-shadow: 0 0 0 3px var(--primary), var(--shadow); }
+.grade-dot:active { transform: rotate(0) scale(.92); }
+.grade-dot.g1 { background: #ff9f6e; } .grade-dot.g2 { background: #f58bb0; } .grade-dot.g3 { background: #5fc283; }
+.grade-dot.g4 { background: #f2b53a; } .grade-dot.g5 { background: #5ea8f2; } .grade-dot.g6 { background: #a587f0; }
+.grade-bow { position: absolute; top: -12px; right: -10px; width: 28px; height: 28px; transform: rotate(18deg); }
+
+/* ---------- 选书条和面板 ---------- */
+.book-bar { position: relative; z-index: 15; display: flex; justify-content: center; margin: 2px 0 14px; }
+.book-current {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 8px 18px; border-radius: 999px;
+  background: var(--peach); color: var(--text); font-size: 18px; font-weight: 800; transform: rotate(-1deg);
+}
+.book-current:active { transform: rotate(0) scale(.96); }
+.book-count { display: inline-flex; align-items: center; gap: 3px; font-size: 15px; color: var(--primary); }
+.book-count .ui-icon { width: 20px; height: 20px; }
+.book-caret { color: var(--muted); font-size: 14px; }
+.book-panel {
+  position: absolute; top: calc(100% + 10px); width: min(360px, calc(100vw - 24px)); padding: 14px 14px 12px;
+  border-radius: 26px; background: var(--paper); text-align: center; transform-origin: 50% 0;
+  box-shadow: 0 4px 0 var(--line), 0 14px 30px rgba(120, 70, 30, .22);
+}
+.book-panel-title { margin: 0 0 10px; font-weight: 800; color: var(--muted); }
+.book-panel .grade-dots { gap: 8px; }
+.book-panel .grade-dot { width: 44px; height: 44px; }
+.book-panel .grade-dot b { font-size: 18px; }
+.book-terms { display: flex; gap: 10px; justify-content: center; margin-top: 14px; }
+.book-term {
+  flex: 1; max-width: 150px; min-height: 52px; border-radius: 18px; background: #fff; border: 3px solid #fff; box-shadow: var(--shadow);
+  font-size: 18px; font-weight: 800; color: var(--muted); display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.2;
+}
+.book-term small { display: inline-flex; align-items: center; gap: 2px; font-size: 13px; }
+.book-term small .ui-icon { width: 16px; height: 16px; }
+.book-term.on { background: var(--peach); color: var(--primary); border-color: var(--primary); }
+.book-panel-note { margin: 10px 0 0; font-size: 12px; color: var(--muted); }
+
+/* ---------- 小装饰贴纸 ---------- */
+@keyframes deco-bob { 50% { translate: 0 -6px; } }
+.map-deco { position: absolute; width: 40px; height: 40px; pointer-events: none; filter: drop-shadow(0 3px 3px rgba(80, 60, 20, .15)); animation: deco-bob 3.2s ease-in-out infinite; }
+.map-deco:nth-of-type(even) { animation-delay: -1.6s; }
+.bubble-deco { position: absolute; top: -30px; right: 10px; width: 40px; height: 40px; transform: rotate(12deg); }
+.unit-deco { position: absolute; left: 76px; bottom: 2px; width: 32px; height: 32px; transform: rotate(-12deg); }
+.result-hero .deco { position: absolute; width: 40px; height: 40px; animation: deco-bob 2.6s ease-in-out infinite; }
+.result-hero .deco-a { top: 18px; left: -26px; transform: rotate(-14deg); }
+.result-hero .deco-b { top: 70px; right: -30px; transform: rotate(10deg); animation-delay: -1.3s; }
+
+/* ---------- 留白：块和块之间多空一点 ---------- */
+.welcome .hero { margin: 18px 0 22px; }
+.welcome .continue { margin-bottom: 26px; }
+.welcome .quest-card { margin-bottom: 22px; }
+.home-grades { margin: 14px 0 8px; }
+.unit-hero { margin-bottom: 20px; }
+
+@media (max-width: 600px) {
+  /* 单元页玩法排成两列贴纸；单出来的最后一个占满一行 */
+  .activity-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .activity { flex-direction: column; align-items: center; text-align: center; padding: 16px 10px 14px; gap: 4px; border-radius: 24px; }
+  .activity .icon-img { width: 56px; height: 56px; }
+  .activity .name { font-size: 18px; }
+  .activity .desc { font-size: 13px; line-height: 1.35; flex: 1; }
+  .activity:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}

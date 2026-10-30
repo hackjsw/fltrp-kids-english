@@ -1,13 +1,13 @@
 <script setup>
-// 欢迎页：小熊猫问候、继续学习、今日任务、6 个年级入口
+// 欢迎页：小熊猫问候、继续学习、今日任务、一排年级小贴纸
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { allUnits, imageUrl, bookId, setBook, pickGrade, BOOKS, GRADES, gradeOf } from '../lib/content.js'
-import { bookStars } from '../lib/progress.js'
+import { allUnits, imageUrl, bookId, setBook, pickGrade, gradeOf } from '../lib/content.js'
 import { rewards, outfit, studiedToday, ensureDaily } from '../lib/rewards.js'
 import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from '../components/ReplayButton.vue'
 import QuestCard from '../components/QuestCard.vue'
+import GradeCircles from '../components/GradeCircles.vue'
 import Icon from '../components/Icon.vue'
 
 const { speak } = useAudio()
@@ -18,9 +18,10 @@ ensureDaily()
 // ---------- 问候 ----------
 const greeting = computed(() => {
   const h = new Date().getHours()
-  if (h < 5 || h >= 21) return { en: 'Good evening!', cn: '这么晚了，学一会儿就去睡觉吧' }
+  if (h < 5 || h >= 21) return { en: 'Good evening!', cn: '这么晚了，学一会儿就去睡觉吧', deco: 'moon' }
   const en = h < 12 ? 'Good morning!' : h < 18 ? 'Good afternoon!' : 'Good evening!'
-  return { en, cn: studiedToday.value ? '今天真棒！再来一关吧' : '今天也来学英语吧' }
+  const deco = h < 12 ? 'sun' : h < 18 ? 'rainbow' : 'moon'
+  return { en, deco, cn: studiedToday.value ? '今天真棒！再来一关吧' : '今天也来学英语吧' }
 })
 const jump = ref(false)
 function hello() {
@@ -54,19 +55,6 @@ function goOn() {
 }
 
 // ---------- 年级入口 ----------
-const FACES = ['daming', 'lingling', 'sam', 'amy', 'ms-smart']
-const grades = computed(() =>
-  GRADES.map((g) => {
-    const ids = BOOKS.filter((id) => gradeOf(id) === g)
-    return {
-      g,
-      img: FACES[g - 1] ? `/images/1a/characters/${FACES[g - 1]}.webp` : outfit.value.img,
-      stars: ids.reduce((s, id) => s + bookStars(id), 0),
-      current: gradeOf(bookId.value) === g,
-    }
-  }),
-)
-const CN = ['', '一', '二', '三', '四', '五', '六']
 function openGrade(g) {
   if (gradeOf(bookId.value) !== g) pickGrade(g)
   router.push('/map')
@@ -81,6 +69,7 @@ function openGrade(g) {
       </button>
       <div class="hero-side">
         <div class="bubble-say">
+          <Icon :name="greeting.deco" class="bubble-deco" />
           <b>{{ greeting.en }}</b>
           <div class="bubble-row">
             <span>{{ greeting.cn }}</span>
@@ -101,23 +90,7 @@ function openGrade(g) {
 
     <QuestCard />
 
-    <div class="page-head">
-      <h2>选年级</h2>
-      <router-link to="/map" class="muted">去闯关地图 ›</router-link>
-    </div>
-    <div class="grade-grid">
-      <button
-        v-for="c in grades"
-        :key="c.g"
-        class="grade-card"
-        :class="[`g${c.g}`, { current: c.current }]"
-        @click="openGrade(c.g)"
-      >
-        <span v-if="c.current" class="grade-now">正在学</span>
-        <img :src="c.img" alt="" loading="lazy" />
-        <b>{{ CN[c.g] }}年级</b>
-        <span class="grade-stars"><Icon name="star" /> {{ c.stars }}</span>
-      </button>
-    </div>
+    <h2 class="home-title">选年级</h2>
+    <GradeCircles class="home-grades" :current="gradeOf(bookId)" @pick="openGrade" />
   </section>
 </template>

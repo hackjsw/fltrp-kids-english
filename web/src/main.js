@@ -18,6 +18,7 @@ import '@fontsource-variable/nunito'
 import './style.css'
 import './games.css'
 import './ui.css'
+import './journal.css'
 
 const GAME_VIEWS = { cards: Cards, listen: ListenPick, repeat: Repeat, bubbles: Bubbles, feed: Feed, train: Train, voice: Voice }
 

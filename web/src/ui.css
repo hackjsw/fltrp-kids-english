@@ -304,31 +304,11 @@ main.with-tabs { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
 .continue.big { padding: 16px 18px; }
 .continue.big img { width: 76px; height: 76px; }
 .continue.big .continue-text b { font-size: 21px; }
-.grade-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
-.grade-card {
-  position: relative; border-radius: 24px; padding: 10px 6px 10px; display: flex; flex-direction: column; align-items: center; gap: 2px;
-  color: #fff; box-shadow: 0 6px 0 rgba(0,0,0,.14); overflow: hidden;
-}
-.grade-card:active { transform: translateY(3px); }
-.grade-card img { width: 80%; aspect-ratio: 1; object-fit: contain; background: #fff; border-radius: 18px; padding: 4px; box-shadow: 0 3px 0 rgba(0,0,0,.1); }
-.grade-card b { font-size: 20px; text-shadow: 0 2px 0 rgba(0,0,0,.12); }
-.grade-stars { background: rgba(255,255,255,.28); border-radius: 999px; padding: 1px 10px; font-size: 14px; font-weight: 800; white-space: nowrap; }
-.grade-card.current { box-shadow: 0 6px 0 rgba(0,0,0,.14), inset 0 0 0 4px #fff; }
-.grade-now { position: absolute; top: 4px; right: 4px; z-index: 1; box-shadow: 0 2px 0 rgba(0,0,0,.12); background: #fff; color: var(--primary); font-size: 12px; font-weight: 800; padding: 1px 7px; border-radius: 999px; }
-.grade-card.g1 { background: linear-gradient(160deg, #ffb35c, #ff7b3a); }
-.grade-card.g2 { background: linear-gradient(160deg, #ff8fb8, #f0588f); }
-.grade-card.g3 { background: linear-gradient(160deg, #7fd36b, #3cae5a); }
-.grade-card.g4 { background: linear-gradient(160deg, #ffd25a, #f2a91f); }
-.grade-card.g5 { background: linear-gradient(160deg, #6fb6ff, #3c82e6); }
-.grade-card.g6 { background: linear-gradient(160deg, #b597ff, #8460e8); }
 @media (max-width: 600px) {
   .hero-mascot { width: 116px; height: 116px; }
-  .grade-grid { gap: 8px; }
-  .grade-card b { font-size: 17px; }
   .chest { width: 76px; }
   .chest img { width: 76px; height: 76px; }
 }
-@media (min-width: 700px) { .grade-grid { grid-template-columns: repeat(6, 1fr); } }
 
 /* 重听只播声音，不触发翻卡、答题或领取奖励 */
 .card-tools { display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 16px; }
@@ -347,16 +327,6 @@ main.with-tabs { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
 .mic-btn { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; }
 .mic-btn .ui-icon { width: 44px; height: 44px; }
 .mic-btn:disabled { cursor: default; }
-.page-head a.muted { padding: 9px 0; margin: -9px 0; font-weight: 700; }
 @media (max-width: 600px) {
   .mic-btn .ui-icon { width: 36px; height: 36px; }
-  /* 单元页玩法：图标占两行，名字和星星一行，说明在下面一行 */
-  .activity {
-    display: grid; grid-template-columns: 48px 1fr auto; grid-template-areas: 'icon name stars' 'icon desc desc';
-    column-gap: 14px; row-gap: 2px; align-items: center; padding: 14px 16px;
-  }
-  .activity .icon-img { grid-area: icon; }
-  .activity .name { grid-area: name; }
-  .activity .desc { grid-area: desc; }
-  .activity .unit-stars { grid-area: stars; }
 }

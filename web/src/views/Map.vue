@@ -1,7 +1,7 @@
 <script setup>
 // 闯关地图：选书 + S 形小路上的关卡
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
-import { allUnits, imageUrl, book, bookId } from '../lib/content.js'
+import { allUnits, imageUrl, bookId } from '../lib/content.js'
 import { unitTotal, bookStars } from '../lib/progress.js'
 import { SCORED, UNLOCK_STARS } from '../lib/games.js'
 import { rewards, outfit } from '../lib/rewards.js'
@@ -38,6 +38,16 @@ const paths = computed(() =>
   }),
 )
 
+// 小路空出来的那一侧隔一关贴一张小贴纸
+const DECOS = ['flower', 'butterfly', 'cloud', 'sprig', 'balloon']
+const decos = computed(() =>
+  levels.value.map((l, i) => i).filter((i) => i % 2).map((i, k) => ({
+    i,
+    name: DECOS[k % DECOS.length],
+    style: { left: xs[i % xs.length] > 50 ? '6%' : '82%', top: 60 + i * STEP + 34 + 'px' },
+  })),
+)
+
 // 小熊猫站在最新打开的关卡。新打开了关卡：先站在上一关，再沿路走过去，锁头弹开
 const mascotAt = ref(0)
 const popping = ref(-1)
@@ -72,9 +82,6 @@ watch(bookId, () => nextTick(syncMascot))
 <template>
   <section class="map-page">
     <BookPicker :count="bookStars" />
-    <div class="map-head">
-      <span class="map-sub">{{ book.subtitle }}</span>
-    </div>
     <div class="map-board" :style="{ height: height + 'px' }">
       <svg class="map-path" :viewBox="`0 0 100 ${height}`" preserveAspectRatio="none">
         <path v-for="(p, i) in paths" :key="i" :d="p.d" :class="{ open: p.open }" vector-effect="non-scaling-stroke" />
@@ -100,6 +107,8 @@ watch(bookId, () => nextTick(syncMascot))
           <span class="level-stars"><Icon name="star" /> {{ l.stars }}/{{ MAX }}</span>
         </div>
       </component>
+
+      <Icon v-for="d in decos" :key="'deco' + d.i" :name="d.name" class="map-deco" :style="d.style" />
 
       <img ref="walker" class="map-mascot" :src="outfit.img" alt="" draggable="false" :style="mascotStyle" />
     </div>

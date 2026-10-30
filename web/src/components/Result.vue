@@ -4,6 +4,7 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { outfit, landBamboo, settleBamboo, events } from '../lib/rewards.js'
 import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from './ReplayButton.vue'
+import Icon from './Icon.vue'
 import { sfx } from '../lib/sfx.js'
 import { confetti, flyTo } from '../lib/fx.js'
 
@@ -76,6 +77,8 @@ onBeforeUnmount(() => {
     <div ref="hero" class="result-hero">
       <span v-if="reward?.newBest" class="ribbon">新纪录！</span>
       <img :src="outfit.img" alt="" class="mascot" :class="{ cheer: stars >= 2 }" />
+      <Icon name="heart" class="deco deco-a" />
+      <Icon name="sparkle" class="deco deco-b" />
     </div>
     <div class="result-stars">
       <span v-for="i in 3" :key="i" :class="{ on: i <= shown }">★</span>

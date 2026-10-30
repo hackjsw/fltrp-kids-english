@@ -8,13 +8,53 @@
       "rows": 4,
       "cols": 5,
       "names": [
-        "home", "map", "album", "wardrobe", "medal",
-        "cards", "headphones", "bubbles", "parrot", "speaker",
-        "star", "flame", "gift", "check", "paw",
-        "calendar", "lock", "clock", "gamepad", "mic"
+        "home",
+        "map",
+        "album",
+        "wardrobe",
+        "medal",
+        "cards",
+        "headphones",
+        "bubbles",
+        "parrot",
+        "speaker",
+        "star",
+        "flame",
+        "gift",
+        "check",
+        "paw",
+        "calendar",
+        "lock",
+        "clock",
+        "gamepad",
+        "mic"
       ],
       "prompt": "A sprite sheet of 20 separate cute icons in a neat grid of 4 rows by 5 columns. Every icon sits alone in its own cell, centered, all icons the same size, with wide empty transparent gaps between icons so that no two icons touch or overlap. Each icon is one small soft 3D plush toy object in front view.\nRow 1, left to right: a little house with a red roof; a folded treasure map with a dotted path and a small red cross; a sticker album book with three round stickers on its cover; a small T-shirt on a wooden hanger; a round gold medal with a red ribbon.\nRow 2, left to right: two overlapping picture cards, the front card showing a simple red apple; a pair of headphones; a cluster of three shiny soap bubbles; a cheerful green parrot; a loudspeaker with curved sound waves.\nRow 3, left to right: a yellow five-pointed star; an orange fire flame; a wrapped gift box with a ribbon bow; a round green badge with a white check mark; a brown paw print.\nRow 4, left to right: a small desk calendar with a blank page; a closed golden padlock; a red alarm clock with a blank face; a game controller; a microphone.\nUse the reference image only for its soft plush material and lighting; do not draw the reference object.\nSoft 3D plush toy render, fluffy felt texture, pastel warm colors, smooth rounded cuddly forms, gentle soft studio lighting, transparent background, no ground shadows, no text, no letters, no numbers, no words, no labels, no grid lines, no frames, no borders.",
-      "refs": ["ui/bamboo.png"]
+      "refs": [
+        "ui/bamboo.png"
+      ]
+    },
+    {
+      "path": "sheets/deco-1.png",
+      "size": "1536x1024",
+      "rows": 3,
+      "cols": 4,
+      "names": [
+        "sun",
+        "rainbow",
+        "moon",
+        "cloud",
+        "sparkle",
+        "heart",
+        "flower",
+        "butterfly",
+        "sprig",
+        "balloon",
+        "bow",
+        "note"
+      ],
+      "prompt": "A sprite sheet of 12 separate cute decorative stickers in a neat grid of 3 rows by 4 columns. Every sticker sits alone in its own cell, centered, all the same size, with wide empty transparent gaps between them so that no two stickers touch or overlap. Each sticker is one small soft 3D plush toy object in front view, styled as a die-cut sticker with a thick clean white border following its outline.\nRow 1, left to right: a round yellow sun with short rounded rays; a pastel rainbow arc; a yellow crescent moon; a pale blue fluffy cloud.\nRow 2, left to right: a yellow four-pointed sparkle; a pink heart; a pink cherry blossom flower; a light blue butterfly.\nRow 3, left to right: a green bamboo sprig with two leaves; a round red balloon with a short curly string; a pink ribbon bow; a purple music note.\nSoft 3D plush toy render, fluffy felt texture, pastel warm colors, smooth rounded cuddly forms, gentle soft studio lighting, transparent background, no ground shadows, no text, no letters, no numbers, no words, no labels, no grid lines, no frames.",
+      "refs": []
     }
   ]
 }

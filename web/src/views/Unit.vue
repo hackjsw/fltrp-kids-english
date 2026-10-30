@@ -21,6 +21,7 @@ const total = computed(() => unitTotal(props.module, props.unit, SCORED))
     <router-link to="/map" class="back">← 地图</router-link>
     <div class="unit-hero">
       <img :src="imageUrl(found.unit.items[0].image)" alt="" />
+      <Icon name="sparkle" class="unit-deco" />
       <div>
         <small>{{ found.mod.title }} · {{ found.unit.id.replace('u', 'Unit ') }}</small>
         <h1>{{ found.unit.title }}</h1>
