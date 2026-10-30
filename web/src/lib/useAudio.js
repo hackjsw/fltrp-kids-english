@@ -28,7 +28,7 @@ export function useAudio() {
   onBeforeUnmount(dispose)
   return {
     speak: (text, options) => active ? speak(text, { ...options, owner }) : Promise.resolve('cancelled'),
-    speakItem: (item) => active ? speakItem(item, { owner }) : Promise.resolve('cancelled'),
+    speakItem: (item, book) => active ? speakItem(item, { owner, book }) : Promise.resolve('cancelled'),
     stopSpeech,
     wait,
     isActive: () => active,

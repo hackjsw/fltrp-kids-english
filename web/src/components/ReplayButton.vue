@@ -24,12 +24,11 @@ defineProps({ label: { type: String, default: '重听' }, compact: Boolean })
 .replay-button:active:not(:disabled) { transform: translateY(2px); }
 .replay-button:focus-visible { outline: 3px solid #245da1; outline-offset: 4px; }
 .replay-button:disabled { opacity: .5; cursor: default; }
-.replay-button.prominent { min-height: 76px; padding: 12px 28px; font-size: 21px; margin: 0 0 22px; }
+.replay-button.prominent { min-height: 76px; padding: 12px 28px; font-size: 21px; }
 .replay-button.prominent .replay-icon { width: 38px; height: 38px; }
 .replay-button.compact { width: 44px; padding: 0; }
-.replay-button.compact.prominent { width: 64px; min-height: 64px; margin: 0; }
+.replay-button.compact.prominent { width: 64px; min-height: 64px; }
 @media (max-width: 600px) {
   .replay-button { padding: 9px 14px; }
-  .replay-button.prominent { margin-bottom: 16px; }
 }
 </style>

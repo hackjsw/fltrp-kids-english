@@ -3,7 +3,7 @@
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { allUnits, imageUrl, bookId, setBook, pickGrade, gradeOf } from '../lib/content.js'
-import { rewards, outfit, studiedToday, ensureDaily } from '../lib/rewards.js'
+import { rewards, outfit, studiedToday, ensureDaily, dueCount } from '../lib/rewards.js'
 import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from '../components/ReplayButton.vue'
 import QuestCard from '../components/QuestCard.vue'
@@ -87,6 +87,12 @@ function openGrade(g) {
       </span>
       <span class="continue-go">▶</span>
     </button>
+
+    <router-link v-if="dueCount" to="/review" class="review-card">
+      <Icon name="notebook" />
+      <span class="review-text"><b>复习一下</b><small>{{ dueCount }} 个词句要再认一认</small></span>
+      <span class="review-go">›</span>
+    </router-link>
 
     <QuestCard />
 

@@ -75,6 +75,15 @@ Worker 已经建好了，直接把它连到仓库，不要另外新建一个：
 
 官方规则：[Workers 定价](https://developers.cloudflare.com/workers/platform/pricing/)、[Static Assets 计费](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/)、[平台限制](https://developers.cloudflare.com/workers/platform/limits/)。
 
+## 玩法
+
+- 难度按年级（`web/src/lib/games.js` 的 `level()`）：一年级听选、喂熊猫只有 2 张图，五六年级听选 4 张图；低年级泡泡飘得慢、同时最多 4 个，小火车每轮 2–3 节车厢。
+- 答错有提示：听选、喂熊猫、错题复习答错一次，那张图变灰不能再点；再错，正确的图晃一晃。小火车答错不清空，只把这一节再报一遍，同一节错两次对的图晃一晃。泡泡 6 秒没戳中，再报一遍，对的泡泡发光。
+- 错题复习：第一次就答错的词句记进错题本（`kids-english-rewards` 里的 `review`），第二天首页出现「复习一下」。隔 1、3、7 天连续答对 3 次才算记住，复习时答错从头来。
+- 三年级起：听选里每 3 题（五六年级每 2 题）有一题不放声音，改成看英文选图；单元里多一个「排句子」，把打乱的词块按顺序点出来（不算闯关星星）。
+- 新鲜感：连对 2 次起出现「连对 N」，音一次比一次高；听选、喂熊猫每局一道幸运题，泡泡每局一个金色泡泡，第一次就答对多给 2 根竹子。
+- 跟读打分：I'm/I am、7/seven、to/two、colour/color、单复数、Daming 被识别成 da ming 都算读对，漏读 a/the 不扣分，长词错一两个字母也算对；连续两次没听清或识别出错时，可以改成录音自己打分。
+
 ## 发音
 
 发音是 `scripts/gen_audio.py` 用 edge-tts（微软神经语音，默认美音女孩声 en-US-AnaNeural，语速 -15%）预先生成的 MP3，放在 `content/audio/`。加了新词句后重新运行：
@@ -100,7 +109,7 @@ npm test
 - 每日任务：每天按日期挑 3 个，全部完成可开宝箱。
 - 数值都在 `web/src/lib/catalog.js` 和 `web/src/lib/rewards.js` 里改；进度存在浏览器 localStorage（`kids-english-progress-v1`、`kids-english-rewards`）。
 - 界面图（装扮、徽章、宝箱、竹子）的提示词在 `art/ui/manifest.json`，用 `node scripts/gen_images.mjs ui` 生成。
-- 界面小图标（底部标签、玩法、星星、喇叭等）一张拼图出 20 个：提示词和格子顺序在 `art/ui/sheets.json`，本地 Magpie 生成拼图后运行 `python -I scripts/icon_sheets.py`，按透明区域切开、打包成一张精灵图 `web/src/assets/icons.webp`，页面里用 `Icon.vue` 按名字显示，整站只多一次图片请求。
+- 界面小图标和装饰贴纸（底部标签、玩法、星星、喇叭、彩虹等）一张拼图出一批：提示词和格子顺序在 `art/ui/sheets.json`，本地 Magpie 生成拼图后运行 `python -I scripts/icon_sheets.py`，按透明区域切开、打包成一张精灵图 `web/src/assets/icons.webp`，页面里用 `Icon.vue` 按名字显示，整站只多一次图片请求。
 
 ## 目录
 

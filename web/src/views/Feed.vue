@@ -1,11 +1,15 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
-import { imageUrl, unitItems, moduleItems, distractors, shuffle } from '../lib/content.js'
+import { bookId, gradeOf, imageUrl, unitItems, moduleItems, distractors, shuffle } from '../lib/content.js'
+import { level } from '../lib/games.js'
 import { useAudio } from '../lib/useAudio.js'
 import ReplayButton from '../components/ReplayButton.vue'
-import { finishGame, markCorrect } from '../lib/rewards.js'
+import { finishGame, markCorrect, markMiss } from '../lib/rewards.js'
+import { useCombo, pickLucky, payLucky } from '../lib/play.js'
 import { sfx } from '../lib/sfx.js'
 import Result from '../components/Result.vue'
+import ComboBadge from '../components/ComboBadge.vue'
+import Icon from '../components/Icon.vue'
 
 const { speak, speakItem, wait } = useAudio()
 
@@ -22,9 +26,16 @@ const reward = ref(null)
 let missed = false
 const mood = ref('hungry') // hungry | chomp | no
 const eaten = ref(null)
+// 喂错的食物变灰不能再点；错两次（或只剩一个），对的那个晃一晃
+const out = ref(new Set())
+const wrongs = ref(0)
+const luckyAt = ref(-1)
+const lucky = ref(null)
+const { combo, hit, miss, reset } = useCombo()
 
 const round = computed(() => rounds.value[ri.value])
 const stars = computed(() => (mistakes.value === 0 ? 3 : mistakes.value <= 2 ? 2 : 1))
+const glow = computed(() => wrongs.value >= 2 || (round.value && out.value.size >= round.value.foods.length - 1))
 
 // 拖拽状态：用 pointer 事件自己实现，手机上 HTML5 拖放不可用
 const drag = ref(null) // { item, x, y, el }
@@ -34,10 +45,11 @@ function build() {
   const items = unitItems(props.module, props.unit)
   const pool = moduleItems(props.module)
   const targets = shuffle(items).slice(0, Math.min(ROUNDS, items.length))
+  const n = level(gradeOf(bookId.value)).foods - 1
   rounds.value = targets.map((t) => {
     // 本单元干扰项不够时（比如 hat 和"帽子里/上/下的小鸟"互斥），从整个 Module 补
-    let others = distractors([t], items, 2)
-    if (others.length < 2) others = [...others, ...distractors([t, ...others], pool.filter((p) => !items.includes(p)), 2 - others.length)]
+    let others = distractors([t], items, n)
+    if (others.length < n) others = [...others, ...distractors([t, ...others], pool.filter((p) => !items.includes(p)), n - others.length)]
     return { target: t, foods: shuffle([t, ...others]) }
   })
   ri.value = 0
@@ -46,6 +58,10 @@ function build() {
   mood.value = 'hungry'
   missed = false
   eaten.value = null
+  out.value = new Set()
+  wrongs.value = 0
+  luckyAt.value = pickLucky(rounds.value.length)
+  reset()
   wait(400).then((active) => active && play())
 }
 
@@ -54,7 +70,7 @@ function play() {
 }
 
 function onDown(e, item) {
-  if (mood.value !== 'hungry' || finished.value) return
+  if (mood.value !== 'hungry' || finished.value || out.value.has(item.id)) return
   const el = e.currentTarget
   el.setPointerCapture(e.pointerId)
   const r = el.getBoundingClientRect()
@@ -85,20 +101,28 @@ function onUp(e) {
 }
 
 async function feed(item) {
-  if (mood.value !== 'hungry' || finished.value) return
+  if (mood.value !== 'hungry' || finished.value || out.value.has(item.id)) return
   if (item.id === round.value.target.id) {
     mood.value = 'chomp'
     eaten.value = item.id
     sfx.chomp()
-    if (!missed) markCorrect(item)
+    hit({ quiet: true })
+    if (!missed) {
+      markCorrect(item)
+      if (ri.value === luckyAt.value) payLucky(lucky.value)
+    }
     if (await speakItem(item) === 'cancelled') return
     if (await wait(600)) next()
   } else {
     mistakes.value++
+    wrongs.value++
+    if (!missed) markMiss(round.value.target)
     missed = true
+    miss()
     mood.value = 'no'
     sfx.buzz()
     if (await speak('Try again.') === 'cancelled') return
+    out.value = new Set([...out.value, item.id])
     mood.value = 'hungry'
     play()
   }
@@ -107,6 +131,8 @@ async function feed(item) {
 function next() {
   missed = false
   eaten.value = null
+  out.value = new Set()
+  wrongs.value = 0
   mood.value = 'hungry'
   if (ri.value + 1 < rounds.value.length) {
     ri.value++
@@ -132,12 +158,14 @@ onMounted(build)
     <router-link :to="`/u/${module}/${unit}`" class="back">← 返回</router-link>
     <Result v-if="finished" :stars="stars" :reward="reward" @again="build" :back="`/u/${module}/${unit}`" />
     <template v-else-if="round">
+      <ComboBadge :n="combo" />
       <div class="progress-dots">
-        <span v-for="(x, i) in rounds" :key="i" :class="{ on: i < ri, cur: i === ri }"></span>
+        <span v-for="(x, i) in rounds" :key="i" :class="{ on: i < ri, cur: i === ri, lucky: i === luckyAt && i >= ri }"></span>
       </div>
 
       <div class="panda-zone">
         <ReplayButton compact class="feed-replay prominent" label="重听题目" :disabled="mood !== 'hungry'" @click="play" />
+        <span v-if="ri === luckyAt" ref="lucky" class="lucky-tag feed-lucky"><Icon name="lucky" />幸运题</span>
         <div ref="mouth" class="panda" :class="[mood, { target: drag && moved(drag) && overMouth(drag.x, drag.y) }]">
           <img :src="mood === 'chomp' ? '/images/ui/mascot-happy.webp' : '/images/ui/mascot-hungry.webp'" alt="" draggable="false" />
         </div>
@@ -149,7 +177,7 @@ onMounted(build)
           v-for="f in round.foods"
           :key="f.id"
           class="food"
-          :class="{ dragging: drag?.item.id === f.id && moved(drag), gone: eaten === f.id }"
+          :class="{ dragging: drag?.item.id === f.id && moved(drag), gone: eaten === f.id, out: out.has(f.id), 'hint-glow': glow && f.id === round.target.id && mood === 'hungry' }"
           @pointerdown="onDown($event, f)"
         >
           <img :src="imageUrl(f.image)" alt="" draggable="false" />

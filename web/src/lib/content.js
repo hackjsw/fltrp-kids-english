@@ -52,12 +52,30 @@ export function loadBook() {
   return fetchBook(bookId.value)
 }
 
-export function imageUrl(path) {
-  return `/images/${bookId.value}/${path}`
+// book 默认当前这一册；错题复习的题目可能来自别的册
+export function imageUrl(path, book = bookId.value) {
+  return `/images/${book}/${path}`
 }
 
-export function audioUrl(item) {
-  return `/audio/${bookId.value}/${item.id}.mp3`
+export function audioUrl(item, book = bookId.value) {
+  return `/audio/${book}/${item.id}.mp3`
+}
+
+// 错题复习要用到几册书：没加载过的一起取，返回 { 册号: book }
+export async function ensureBooks(ids) {
+  const valid = [...new Set(ids)].filter((id) => BOOKS.includes(id))
+  await Promise.all(valid.map((id) => books.value[id] || fetchBook(id)))
+  return books.value
+}
+
+// 在某一册里找一个词句，顺带给出同 Module 的所有词句（当干扰项）
+export function locate(b, itemId) {
+  for (const m of b?.modules || []) {
+    const pool = m.units.flatMap((u) => u.items)
+    const item = pool.find((it) => it.id === itemId)
+    if (item) return { item, pool }
+  }
+  return null
 }
 
 // 图片用整个 Module 做选项池；音频只在播放时加载，不预取还没学到的词句

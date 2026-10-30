@@ -5,6 +5,7 @@ import { BADGES, BADGE_BAMBOO, OUTFITS, QUESTS, STREAK_GIFTS } from './catalog.j
 import { allUnits, bookId } from './content.js'
 import { progress, recordStars, unitStars, unitTotal } from './progress.js'
 import { SCORED, UNLOCK_STARS } from './games.js'
+import { afterMiss, afterHit, dueKeys } from './review.js'
 
 const KEY = 'kids-english-rewards'
 // 一个词句累计答对这么多次，就收进贴纸册
@@ -35,6 +36,7 @@ export const rewards = reactive({
   stats: { games: 0, perfect: 0, correct: 0, repeats: 0, cards: 0, chests: 0, books: [] },
   seenOpen: {}, // 每册已经看过解锁动画的关卡数
   last: null, // 上次学的单元，首页"继续学习"
+  review: {}, // 错题本 '3a/lake': { box, due }，见 review.js
   ...saved,
 })
 rewards.stats = { games: 0, perfect: 0, correct: 0, repeats: 0, cards: 0, chests: 0, books: [], ...saved.stats }
@@ -166,19 +168,57 @@ export function openChest() {
 }
 // ---------- 答题 / 游戏结束 ----------
 // 每答对一题。返回 true 表示这个词句刚好集满，变成了新贴纸
-export function markCorrect(item) {
-  const k = `${bookId.value}/${item.id}`
+export function markCorrect(item, book = bookId.value) {
+  const k = `${book}/${item.id}`
   const before = rewards.mastery[k] || 0
   rewards.mastery[k] = before + 1
   rewards.stats.correct++
   bumpQuest('correct')
   if (before + 1 === STICKER_AT) {
-    notify({ kind: 'toast', img: `/images/${bookId.value}/${item.image}`, text: `新贴纸：${item.text}` })
+    notify({ kind: 'toast', img: `/images/${book}/${item.image}`, text: `新贴纸：${item.text}` })
     bumpQuest('stickers')
     checkBadges()
     return true
   }
   return false
+}
+
+// ---------- 错题本 ----------
+// 第一次就答错的词句记进错题本，明天出现在首页「复习一下」
+export function markMiss(item, book = bookId.value) {
+  rewards.review[`${book}/${item.id}`] = afterMiss(dayKey())
+}
+
+export const dueReview = (limit) => dueKeys(rewards.review, dayKey(), limit)
+export const dueCount = computed(() => dueReview().length)
+
+// 复习时第一次作答的结果；返回 true 表示这一项记住了，从错题本里拿掉
+export function answerReview(key, right) {
+  const next = right ? afterHit(rewards.review[key], dayKey()) : afterMiss(dayKey())
+  if (next) rewards.review[key] = next
+  else delete rewards.review[key]
+  return right && !next
+}
+
+export function dropReview(key) {
+  delete rewards.review[key]
+}
+
+// 复习完一组：打卡、任务、竹子（1 + 星数），不记单元星星
+export function finishReview(right, total) {
+  markDay()
+  rewards.stats.games++
+  bumpQuest('games')
+  const stars = !total ? 0 : right === total ? 3 : right / total >= 0.6 ? 2 : right > 0 ? 1 : 0
+  if (stars > 0) bumpQuest('stars', stars)
+  if (stars === 3) {
+    rewards.stats.perfect++
+    bumpQuest('perfect')
+  }
+  const bamboo = 1 + stars
+  earn(bamboo, { animate: true })
+  checkBadges()
+  return { stars, bamboo, prev: 0, newBest: false }
 }
 
 export function markRepeat() {

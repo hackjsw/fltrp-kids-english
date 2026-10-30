@@ -1,0 +1,108 @@
+/* ---------- 玩法里的小机制：答错提示、连对、幸运题、看英文选图、排句子、错题复习 ---------- */
+@keyframes hint-wiggle { 0%, 100% { transform: rotate(0) scale(1.04); } 25% { transform: rotate(-5deg) scale(1.08); } 75% { transform: rotate(5deg) scale(1.08); } }
+.option.hint-glow, .foods .food.hint-glow, .order-tile.hint-glow, .bubble-inner.hint-glow {
+  animation: hint-wiggle .7s ease-in-out infinite; box-shadow: 0 0 0 4px #ffd84d, 0 0 18px 4px rgba(255, 200, 40, .55);
+}
+.option.out, .foods .food.out { opacity: .3; filter: grayscale(1); cursor: default; }
+
+/* 连对小贴纸 */
+.listen, .game { position: relative; }
+.combo-badge {
+  position: absolute; top: 2px; right: 0; z-index: 5; display: inline-flex; align-items: center; gap: 4px;
+  padding: 4px 12px 4px 8px; border-radius: 999px; background: var(--peach); border: 3px solid #fff; box-shadow: var(--shadow);
+  color: var(--primary); font-weight: 800; font-size: 16px; transform: rotate(4deg);
+}
+.combo-badge .ui-icon { width: 24px; height: 24px; }
+
+/* 幸运题 */
+.lucky-tag {
+  display: inline-flex; align-items: center; gap: 4px; padding: 4px 12px 4px 6px; border-radius: 999px; background: var(--lemon);
+  border: 3px solid #fff; box-shadow: var(--shadow); color: #b07a00; font-weight: 800; font-size: 15px;
+  transform: rotate(-4deg); animation: deco-bob 2.4s ease-in-out infinite;
+}
+.lucky-tag .ui-icon { width: 26px; height: 26px; }
+.feed-lucky { position: absolute; right: 0; top: 6px; z-index: 1; }
+.progress-dots span.lucky { background: #ffd84d; box-shadow: 0 0 0 2px #fff, 0 0 8px rgba(255, 200, 40, .7); }
+
+/* 听音选图：题目这一行（喇叭或英文卡片 + 幸运题） */
+.pick-head { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; min-height: 76px; }
+.read-card {
+  display: flex; align-items: center; gap: 10px; max-width: 100%; padding: 10px 12px 10px 16px; border-radius: 24px;
+  background: #fff; border: 3px solid #fff; box-shadow: var(--shadow); transform: rotate(-1deg);
+}
+.read-card b { font-size: 26px; line-height: 1.25; }
+.read-icon { width: 34px; height: 34px; }
+.options.n2 { grid-template-columns: repeat(2, 1fr); max-width: 640px; margin: 0 auto; }
+.options.n4 { grid-template-columns: repeat(4, 1fr); }
+
+/* 小火车：报到哪节哪节跳；下一节要装的虚线框闪一闪；候选图按数量排 */
+@keyframes car-hop { 50% { transform: translateY(-12px); } }
+.car.speaking { animation: car-hop .45s ease-in-out; }
+.car.speaking .cargo, .car.next .cargo { border-color: var(--primary); background: var(--peach); }
+.car.next .cargo { animation: pulse 1.2s ease-in-out infinite; }
+/* 手机上 .option 是给听选一排两张用的 50% 宽，小火车的候选图要占满格子，不然只有一半大 */
+.choices .option { width: 100%; }
+.choices.n4 { grid-template-columns: repeat(4, 1fr); max-width: 640px; margin-left: auto; margin-right: auto; }
+.choices.n6 { grid-template-columns: repeat(6, 1fr); }
+
+/* 金色泡泡 */
+.bubble.gold .bubble-inner {
+  border-color: #ffd84d;
+  box-shadow: 0 0 0 4px rgba(255, 216, 77, .6), 0 0 22px 6px rgba(255, 200, 40, .55), inset 0 -6px 14px rgba(255, 210, 80, .4);
+}
+
+/* 首页「复习一下」 */
+.review-card {
+  display: flex; align-items: center; gap: 12px; padding: 10px 16px; margin: -8px 0 22px; border-radius: 24px; color: var(--text);
+  background: var(--lilac); border: 3px solid #fff; box-shadow: var(--shadow); transform: rotate(-1deg);
+}
+.review-card:active { transform: rotate(0) scale(.97); }
+.review-card .ui-icon { width: 46px; height: 46px; filter: var(--outline); }
+.review-text { flex: 1; display: flex; flex-direction: column; line-height: 1.25; }
+.review-text b { font-size: 18px; }
+.review-text small { color: var(--muted); font-weight: 700; }
+.review-go { font-size: 26px; font-weight: 800; color: #8460e8; }
+/* 多了复习卡时首页各块挨紧一点，手机一屏还放得下 */
+.welcome:has(.review-card) .hero { margin: 6px 0 14px; }
+.welcome:has(.review-card) .continue { margin-bottom: 18px; }
+.welcome:has(.review-card) .quest-card { margin-bottom: 12px; }
+.welcome:has(.review-card) .home-grades { margin-top: 8px; }
+.review-title { display: flex; align-items: center; gap: 6px; margin: 0 0 4px; font-size: 22px; }
+.review-title .ui-icon { width: 34px; height: 34px; }
+
+/* 排句子 */
+.order-card { cursor: default; }
+.order-card img { display: block; width: 62%; margin: 0 auto; }
+.order-line { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; min-height: 40px; margin: 8px 0 0; }
+.order-slot {
+  display: inline-flex; align-items: center; justify-content: center; min-width: 46px; height: 36px; padding: 0 8px;
+  border-bottom: 3px dashed var(--line); font-size: 20px; font-weight: 800;
+}
+.order-slot.next { border-bottom-color: var(--primary); }
+.order-slot.filled { border-bottom: 3px solid #8ad6a6; animation: drop .3s; }
+.order-done { margin: 8px 0 0; font-size: 26px; font-weight: 800; color: #3cae5a; }
+.order-cn { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+.order-tiles { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 520px; margin: 16px 0 10px; }
+.order-tile {
+  min-height: 48px; padding: 6px 16px; border-radius: 16px; border: 3px solid #fff; box-shadow: var(--shadow);
+  font-size: 20px; font-weight: 800; color: var(--text); transform: rotate(var(--tilt, 0deg)); transition: transform .15s, opacity .2s;
+}
+.order-tile:nth-child(4n + 1) { --tilt: -2deg; background: var(--pink); }
+.order-tile:nth-child(4n + 2) { --tilt: 1.5deg; background: var(--sky); }
+.order-tile:nth-child(4n + 3) { --tilt: -1deg; background: var(--lemon); }
+.order-tile:nth-child(4n) { --tilt: 2deg; background: var(--mint); }
+.order-tile:active:not(:disabled) { transform: scale(.94); }
+.order-tile.used { opacity: .25; transform: scale(.9); }
+.order-tile.wrong { animation: shake .3s; }
+.order-hear { margin-top: 4px; }
+.small-btn { margin-top: 6px; padding: 8px 18px; font-size: 16px; }
+
+@media (max-width: 600px) {
+  .choices.n4 { grid-template-columns: repeat(2, 1fr); max-width: 300px; }
+  .choices.n6 { grid-template-columns: repeat(3, 1fr); }
+  .read-card b { font-size: 22px; }
+  .welcome:has(.review-card) .hero-mascot { width: 100px; height: 100px; }
+  .order-slot { min-width: 38px; height: 32px; font-size: 17px; }
+  .order-tile { padding: 6px 12px; font-size: 18px; }
+  .order-done { font-size: 22px; }
+}

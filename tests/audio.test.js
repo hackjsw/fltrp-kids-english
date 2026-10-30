@@ -80,7 +80,7 @@ globalThis.window = { speechSynthesis, SpeechRecognition: FakeRecognition, addEv
 const { audioCache } = await import('../web/src/lib/audio-cache.js')
 const testPlayerCache = createAudioCache({ fetcher: (...args) => globalThis.fetch(...args) })
 audioCache.load = testPlayerCache.load
-const { speak, stopSpeech, listen } = await import('../web/src/lib/speech.js')
+const { speak, stopSpeech, listen, scoreReading } = await import('../web/src/lib/speech.js')
 const player = FakeAudio.instance
 const originalFetch = globalThis.fetch
 
@@ -171,4 +171,43 @@ test('recording recognition can be cancelled when leaving the page', async () =>
   controller.abort()
   assert.deepEqual(await pending, [])
   assert.equal(FakeRecognition.instance.aborted, true)
+})
+
+test('recognition keeps the last partial transcript when the child stops before it is final', async () => {
+  const pending = listen()
+  const rec = FakeRecognition.instance
+  rec.onresult({ results: [Object.assign([{ transcript: 'I am da' }], { isFinal: false })] })
+  rec.onresult({ results: [Object.assign([{ transcript: 'I am da ming' }], { isFinal: false })] })
+  rec.onend()
+  assert.deepEqual(await pending, ['I am da ming'])
+})
+
+test('a final recognition result resolves right away with every alternative', async () => {
+  const pending = listen()
+  FakeRecognition.instance.onresult({ results: [Object.assign([{ transcript: 'hello' }, { transcript: 'hallo' }], { isFinal: true })] })
+  assert.deepEqual(await pending, ['hello', 'hallo'])
+})
+
+test('read-along scoring accepts how recognizers write what the child said', () => {
+  const ok = [
+    ["I'm Daming.", 'I am da ming'],
+    ["It's 6:30 am in New York.", 'it is six thirty a.m. in new york'],
+    ['At 7, I get up.', 'at seven I get up'],
+    ['My favourite colour is blue.', 'my favorite colors is blue'],
+    ['Hi, Sam!', 'high sam'],
+    ['Two elephants.', 'to elefants'],
+    ["They're dragon boats.", 'their dragon boat'],
+    ["Let's feed the ducks.", 'lets feed ducks'],
+  ]
+  for (const [target, heard] of ok) assert.equal(scoreReading(target, [heard]).stars, 3, `${target} <- ${heard}`)
+})
+
+test('read-along scoring still catches wrong and missing words', () => {
+  const cat = scoreReading('This is a cat.', ['this is a hat'])
+  assert.equal(cat.stars, 2)
+  assert.deepEqual(cat.marks.map((m) => m.ok), [true, true, true, false])
+  assert.equal(scoreReading('I like red apples.', ['I like green']).stars, 1)
+  assert.equal(scoreReading("I'm Daming.", ['I am']).stars, 1)
+  assert.equal(scoreReading('Good morning!', []).stars, 0)
+  assert.equal(scoreReading('Good morning!', ['could morning', 'good morning']).stars, 3)
 })

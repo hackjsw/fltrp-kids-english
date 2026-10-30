@@ -11,6 +11,8 @@ import Bubbles from './views/Bubbles.vue'
 import Feed from './views/Feed.vue'
 import Train from './views/Train.vue'
 import Voice from './views/Voice.vue'
+import Order from './views/Order.vue'
+import Review from './views/Review.vue'
 import Stickers from './views/Stickers.vue'
 import Shop from './views/Shop.vue'
 import Me from './views/Me.vue'
@@ -19,8 +21,9 @@ import './style.css'
 import './games.css'
 import './ui.css'
 import './journal.css'
+import './play.css'
 
-const GAME_VIEWS = { cards: Cards, listen: ListenPick, repeat: Repeat, bubbles: Bubbles, feed: Feed, train: Train, voice: Voice }
+const GAME_VIEWS = { cards: Cards, listen: ListenPick, repeat: Repeat, bubbles: Bubbles, feed: Feed, train: Train, order: Order, voice: Voice }
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -30,6 +33,7 @@ const router = createRouter({
     { path: '/stickers', component: Stickers },
     { path: '/shop', component: Shop },
     { path: '/me', component: Me },
+    { path: '/review', component: Review },
     { path: '/u/:module/:unit', component: Unit, props: true },
     ...Object.entries(GAME_VIEWS).map(([id, component]) => ({
       path: `/u/:module/:unit/${id}`,

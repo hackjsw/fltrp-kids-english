@@ -1,8 +1,8 @@
 <script setup>
 import { computed, watchEffect } from 'vue'
-import { findUnit, preloadModule, imageUrl } from '../lib/content.js'
+import { bookId, gradeOf, findUnit, preloadModule, imageUrl } from '../lib/content.js'
 import { unitStars, unitTotal } from '../lib/progress.js'
-import { GAMES, SCORED } from '../lib/games.js'
+import { gamesFor, SCORED } from '../lib/games.js'
 import { rememberUnit } from '../lib/rewards.js'
 import Icon from '../components/Icon.vue'
 
@@ -14,6 +14,8 @@ watchEffect(() => {
   rememberUnit(found.value.mod, found.value.unit)
 })
 const total = computed(() => unitTotal(props.module, props.unit, SCORED))
+// 排句子只在三年级起、单元里句子够的时候出现
+const games = computed(() => gamesFor(gradeOf(bookId.value), found.value?.unit.items || []))
 </script>
 
 <template>
@@ -30,7 +32,7 @@ const total = computed(() => unitTotal(props.module, props.unit, SCORED))
     </div>
     <div class="activity-grid">
       <router-link
-        v-for="g in GAMES"
+        v-for="g in games"
         :key="g.id"
         :to="`/u/${module}/${unit}/${g.id}`"
         class="activity"

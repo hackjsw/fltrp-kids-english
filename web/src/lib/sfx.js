@@ -36,6 +36,12 @@ export const sfx = {
     tone(1320, { start: 0.1, dur: 0.22 })
     buzzPhone(12)
   },
+  // 连对：一次比一次高，最多升 8 个半音
+  combo: (n) => {
+    const f = 523 * 2 ** (Math.min(n, 8) / 12)
+    tone(f, { dur: 0.12, type: 'triangle', vol: 0.2 })
+    tone(f * 1.5, { start: 0.08, dur: 0.18, type: 'triangle', vol: 0.18 })
+  },
   buzz: () => {
     tone(170, { dur: 0.22, type: 'square', vol: 0.07 })
     buzzPhone([25, 40, 25])

@@ -31,6 +31,16 @@ let recordTimer = null
 let autoPlay = 0
 const playbackUrl = ref('')
 const recordingAudio = ref(null)
+// 识别连续两次没听清，或者识别服务出错：让孩子改成录音自己打分
+const unclear = ref(0)
+const selfMode = ref(false)
+const offerSelf = ref(false)
+const ERRORS = {
+  'not-allowed': '需要允许使用麦克风',
+  'service-not-allowed': '这个浏览器不让用语音识别',
+  'audio-capture': '没找到麦克风',
+  network: '语音识别要联网，网络好像不通',
+}
 const feedback = computed(() => !result.value ? '' : result.value.stars === 3 ? 'Great!' : result.value.stars === 2 ? 'Good!' : 'Try again.')
 
 function clearRecording() {
@@ -84,23 +94,27 @@ async function record() {
   stopSpeech()
   clearRecording()
   state.value = 'listening'
-  if (canRecognize) {
+  if (canRecognize && !selfMode.value) {
     recognition = new AbortController()
     try {
       const alts = await listen({ signal: recognition.signal })
       if (!isActive()) return
       if (!alts.length) {
         state.value = 'idle'
-        hint.value = '没听到声音，再大声一点试试'
+        unclear.value++
+        offerSelf.value = unclear.value >= 2
+        hint.value = offerSelf.value ? '还是没听清。可以离近一点再读，或者改成自己打分' : '没听到声音，离近一点、大声一点试试'
         return
       }
+      unclear.value = 0
       result.value = scoreReading(item.value.text, alts)
       state.value = 'scored'
       replayFeedback()
     } catch (e) {
       if (!isActive()) return
       state.value = 'idle'
-      hint.value = e.message === 'not-allowed' ? '需要允许使用麦克风' : `识别出错：${e.message}`
+      hint.value = ERRORS[e.message] || `识别出错：${e.message}`
+      offerSelf.value = e.message !== 'not-allowed'
     }
   } else {
     await recordFallback()
@@ -130,6 +144,12 @@ async function recordFallback() {
     state.value = 'idle'
     hint.value = '需要允许使用麦克风'
   }
+}
+
+function useSelf() {
+  selfMode.value = true
+  offerSelf.value = false
+  hint.value = '点「读」录音，读完听一听，自己给几颗星'
 }
 
 function selfRate(stars) {
@@ -197,6 +217,7 @@ onBeforeUnmount(() => {
         </button>
       </div>
       <p v-if="hint" class="hint">{{ hint }}</p>
+      <button v-if="offerSelf && state === 'idle'" type="button" class="big-btn ghost small-btn" @click="useSelf">改成自己打分</button>
 
       <div v-if="state === 'scored'" class="score">
         <template v-if="playbackUrl">

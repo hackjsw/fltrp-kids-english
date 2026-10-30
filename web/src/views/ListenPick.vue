@@ -1,89 +1,67 @@
 <script setup>
+// 听音选图：每题一个目标词句 + 同 Module 的干扰图。选项数量和看英文题的比例按年级定（games.js level）
 import { computed, onMounted, ref } from 'vue'
-import { findUnit, imageUrl, moduleItems, shuffle, distractors } from '../lib/content.js'
-import { useAudio } from '../lib/useAudio.js'
-import ReplayButton from '../components/ReplayButton.vue'
-import { finishGame, markCorrect } from '../lib/rewards.js'
-import { sfx } from '../lib/sfx.js'
-import { sparkle } from '../lib/fx.js'
+import { bookId, gradeOf, findUnit, moduleItems, shuffle, distractors } from '../lib/content.js'
+import { level } from '../lib/games.js'
+import { finishGame, markCorrect, markMiss } from '../lib/rewards.js'
+import { useCombo, pickLucky, payLucky } from '../lib/play.js'
+import PickRound from '../components/PickRound.vue'
+import ComboBadge from '../components/ComboBadge.vue'
+import Icon from '../components/Icon.vue'
 import Result from '../components/Result.vue'
-
-const { speak, speakItem, wait } = useAudio()
 
 const props = defineProps({ module: String, unit: String })
 
-// 每题：目标项 + 从同 Module 抽的干扰项，共 3 张图
 const questions = ref([])
 const qi = ref(0)
-const picked = ref(null)
 const mistakes = ref(0)
 const finished = ref(false)
 const reward = ref(null)
-const missed = ref(false)
-const busy = ref(false)
+const luckyAt = ref(-1)
+const lucky = ref(null)
+const { combo, hit, miss, reset } = useCombo()
 
 const q = computed(() => questions.value[qi.value])
+const stars = computed(() => (mistakes.value === 0 ? 3 : mistakes.value <= 2 ? 2 : 1))
 
 function build() {
+  const lv = level(gradeOf(bookId.value))
   const targets = shuffle(findUnit(props.module, props.unit)?.unit.items || [])
   const pool = moduleItems(props.module)
-  questions.value = targets.map((t) => ({
+  questions.value = targets.map((t, i) => ({
     target: t,
+    read: lv.readEvery > 0 && (i + 1) % lv.readEvery === 0,
     // 同义项（hi/hello、bye/goodbye）不互为干扰项
-    options: shuffle([
-      t,
-      ...distractors([t], pool, 2),
-    ]),
+    options: shuffle([t, ...distractors([t], pool, lv.options - 1)]),
   }))
   qi.value = 0
   mistakes.value = 0
-  picked.value = null
   finished.value = false
-  busy.value = false
-  missed.value = false
-  wait(400).then((active) => active && play())
+  luckyAt.value = pickLucky(questions.value.length)
+  reset()
 }
 
-function play() {
-  if (q.value && !busy.value && !finished.value) speakItem(q.value.target)
+function onWrong(first) {
+  mistakes.value++
+  miss()
+  if (first) markMiss(q.value.target)
 }
 
-async function choose(opt, e) {
-  if (busy.value || finished.value) return
-  busy.value = true
-  const correct = opt.id === q.value.target.id
-  picked.value = { id: opt.id, correct }
-  if (!correct) {
-    mistakes.value++
-    missed.value = true
-    sfx.buzz()
-    if (await speak('Try again.') === 'cancelled') return
-    busy.value = false
-    picked.value = null
-    play()
-    return
-  }
-  sfx.ding()
-  sparkle(e?.currentTarget)
-  if (!missed.value) markCorrect(q.value.target)
-  if (await speakItem(q.value.target) === 'cancelled') return
-  if (await wait(500)) next()
+function onRight(firstTry) {
+  hit()
+  if (!firstTry) return
+  markCorrect(q.value.target)
+  if (qi.value === luckyAt.value) payLucky(lucky.value)
 }
 
 function next() {
-  busy.value = false
-  picked.value = null
-  missed.value = false
   if (qi.value + 1 < questions.value.length) {
     qi.value++
-    play()
   } else {
     finished.value = true
     reward.value = finishGame(props.module, props.unit, 'listen', stars.value)
   }
 }
-
-const stars = computed(() => (mistakes.value === 0 ? 3 : mistakes.value <= 2 ? 2 : 1))
 
 onMounted(build)
 </script>
@@ -93,22 +71,13 @@ onMounted(build)
     <router-link :to="`/u/${module}/${unit}`" class="back">← 返回</router-link>
     <Result v-if="finished" :stars="stars" :reward="reward" @again="build" :back="`/u/${module}/${unit}`" />
     <template v-else-if="q">
+      <ComboBadge :n="combo" />
       <div class="progress-dots">
-        <span v-for="(x, i) in questions" :key="i" :class="{ on: i < qi, cur: i === qi }"></span>
+        <span v-for="(x, i) in questions" :key="i" :class="{ on: i < qi, cur: i === qi, lucky: i === luckyAt && i >= qi }"></span>
       </div>
-      <ReplayButton class="prominent" label="重听题目" :disabled="busy" @click="play" />
-      <div class="options" data-quiet>
-        <button
-          v-for="opt in q.options"
-          :key="opt.id"
-          class="option"
-          :class="{ right: picked?.id === opt.id && picked.correct, wrong: picked?.id === opt.id && !picked.correct }"
-          :disabled="busy"
-          @click="choose(opt, $event)"
-        >
-          <img :src="imageUrl(opt.image)" :alt="''" />
-        </button>
-      </div>
+      <PickRound :key="qi" :q="q" @wrong="onWrong" @right="onRight" @next="next">
+        <span v-if="qi === luckyAt" ref="lucky" class="lucky-tag"><Icon name="lucky" />幸运题</span>
+      </PickRound>
     </template>
   </section>
 </template>

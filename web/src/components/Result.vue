@@ -15,6 +15,9 @@ const props = defineProps({
   back: String,
   // finishGame() 的返回值：{ bamboo, prev, newBest }
   reward: { type: Object, default: null },
+  // 错题复习做完没有「再来一次」，返回按钮写「回首页」
+  showAgain: { type: Boolean, default: true },
+  backLabel: { type: String, default: '回到单元' },
 })
 defineEmits(['again'])
 
@@ -94,8 +97,8 @@ onBeforeUnmount(() => {
       </Transition>
     </div>
     <div class="result-actions">
-      <button class="big-btn" @click="$emit('again')">再来一次</button>
-      <router-link :to="back" class="big-btn ghost">回到单元</router-link>
+      <button v-if="showAgain" class="big-btn" @click="$emit('again')">再来一次</button>
+      <router-link :to="back" class="big-btn" :class="{ ghost: showAgain }">{{ backLabel }}</router-link>
     </div>
   </div>
 </template>
