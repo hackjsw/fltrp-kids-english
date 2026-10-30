@@ -127,6 +127,16 @@
   .mem-grid.c6 .mem-card { flex-basis: calc((100% - 20px) / 3); }
 }
 
+/* 拼单词：句子里挖空的地方画一条线；字母块是正方形，10 个字母也能排在一行 */
+.spell-sentence { margin: 8px 0 0; font-size: 22px; font-weight: 800; line-height: 1.4; }
+.spell-blank { display: inline-block; width: 3.2em; height: 1em; margin: 0 4px; border-bottom: 3px solid var(--primary); vertical-align: -0.1em; }
+/* 每个字母一个小方框，孩子一眼能数出有几个字母 */
+.spell-line { gap: 3px; }
+.spell-line .order-slot { min-width: 30px; height: 38px; padding: 0 2px; border: 2px solid var(--line); border-radius: 9px; background: #fffaf4; }
+.spell-line .order-slot.next { border-color: var(--primary); }
+.spell-line .order-slot.filled { border: 2px solid #8ad6a6; background: #effaf3; }
+.spell-tiles .order-tile { min-width: 50px; padding: 6px 0; font-size: 24px; }
+
 @media (max-width: 600px) {
   .choices.n4 { grid-template-columns: repeat(2, 1fr); max-width: 300px; }
   .choices.n6 { grid-template-columns: repeat(3, 1fr); }
@@ -135,4 +145,8 @@
   .order-slot { min-width: 38px; height: 32px; font-size: 17px; }
   .order-tile { padding: 6px 12px; font-size: 18px; }
   .order-done { font-size: 22px; }
+  .spell-sentence { font-size: 19px; }
+  .spell-line { gap: 2px; }
+  .spell-line .order-slot { min-width: 23px; height: 32px; padding: 0; }
+  .spell-tiles .order-tile { min-width: 46px; font-size: 22px; }
 }

@@ -1,5 +1,6 @@
 // 单元里的玩法。scored 的玩法计星（每个最多 3 星），用于闯关解锁
 import { canOrder } from './order.js'
+import { canSpell } from './spell.js'
 
 export const GAMES = [
   { id: 'cards', name: '看图学', desc: '点卡片听发音', icon: 'cards' },
@@ -10,6 +11,7 @@ export const GAMES = [
   { id: 'memory', name: '翻翻乐', desc: '听一听，翻出对的图', icon: 'memory', scored: true },
   // 三年级起、单元里至少有两句能排的句子才出现；不算闯关星星
   { id: 'order', name: '排句子', desc: '把词块排成一句话', icon: 'blocks', when: (grade, items) => grade >= 3 && items.filter(canOrder).length >= 2 },
+  { id: 'spell', name: '拼单词', desc: '听一听，拼出单词', icon: 'pencil', when: (grade, items) => grade >= 3 && items.filter(canSpell).length >= 2 },
   { id: 'voice', name: '魔法变声', desc: '读一读，变成小动物的声音', img: '/images/ui/fx-mic.webp' },
 ]
 
@@ -31,6 +33,7 @@ export function level(grade) {
     options: grade <= 1 ? 2 : grade <= 4 ? 3 : 4, // 听选、错题复习的图片数
     foods: grade <= 1 ? 2 : 3, // 喂熊猫的食物数（手机上一排最多放 3 个）
     pairs: grade <= 1 ? 3 : grade <= 2 ? 4 : grade <= 4 ? 5 : 6, // 翻翻乐几对
+    spellExtra: grade >= 5 ? 2 : 1, // 拼单词多放几个干扰字母
     readEvery: grade >= 5 ? 2 : grade >= 3 ? 3 : 0, // 每几题有一题看英文选图，0 = 没有
     bubbles: low
       ? { duration: 60, spawnMs: 1600, max: 4, rise: [9, 11.5], targetRate: 0.4, stars: [1, 5, 8] }

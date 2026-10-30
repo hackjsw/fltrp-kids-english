@@ -12,6 +12,7 @@ import Feed from './views/Feed.vue'
 import Train from './views/Train.vue'
 import Voice from './views/Voice.vue'
 import Order from './views/Order.vue'
+import Spell from './views/Spell.vue'
 import Review from './views/Review.vue'
 import Stickers from './views/Stickers.vue'
 import Shop from './views/Shop.vue'
@@ -23,7 +24,7 @@ import './ui.css'
 import './journal.css'
 import './play.css'
 
-const GAME_VIEWS = { cards: Cards, listen: ListenPick, bubbles: Bubbles, feed: Feed, train: Train, memory: Memory, order: Order, voice: Voice }
+const GAME_VIEWS = { cards: Cards, listen: ListenPick, bubbles: Bubbles, feed: Feed, train: Train, memory: Memory, order: Order, spell: Spell, voice: Voice }
 
 const router = createRouter({
   history: createWebHashHistory(),
